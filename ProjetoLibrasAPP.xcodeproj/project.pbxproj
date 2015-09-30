@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902A1BBC9B6100F8C56B /* Translator.swift */; settings = {ASSET_TAGS = (); }; };
+		41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902C1BBC9B7200F8C56B /* Word.swift */; settings = {ASSET_TAGS = (); }; };
+		41DA90301BBC9B7200F8C56B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902D1BBC9B7200F8C56B /* Category.swift */; settings = {ASSET_TAGS = (); }; };
+		41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902E1BBC9B7200F8C56B /* Flexion.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41DA902A1BBC9B6100F8C56B /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		41DA902C1BBC9B7200F8C56B /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		41DA902D1BBC9B7200F8C56B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		41DA902E1BBC9B7200F8C56B /* Flexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flexion.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41DA90321BBC9B8300F8C56B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41DA902C1BBC9B7200F8C56B /* Word.swift */,
+				41DA902D1BBC9B7200F8C56B /* Category.swift */,
+				41DA902E1BBC9B7200F8C56B /* Flexion.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C3CBBE611BBC94050035A1D4 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +124,8 @@
 				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
 				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
 				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
+				41DA90321BBC9B8300F8C56B /* Models */,
+				41DA902A1BBC9B6100F8C56B /* Translator.swift */,
 			);
 			path = ProjetoLibrasAPP;
 			sourceTree = "<group>";
@@ -259,8 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
+				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
+				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
+				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
+				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +511,7 @@
 				C3CBBE971BBC94060035A1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3CBBE981BBC94060035A1D4 /* Build configuration list for PBXNativeTarget "ProjetoLibrasAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +520,7 @@
 				C3CBBE9A1BBC94060035A1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3CBBE9B1BBC94060035A1D4 /* Build configuration list for PBXNativeTarget "ProjetoLibrasAPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +529,7 @@
 				C3CBBE9D1BBC94060035A1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
