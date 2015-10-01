@@ -10,8 +10,65 @@ import UIKit
 
 class Translator: NSObject {
     
+    var WordsList:[Word]
+    
     override init() {
         
+        // Código para teste (REMOVER DEPOIS)
+        WordsList = []
+        
+        var newWord:Word
+        var newFlexion:Flexion
+        var newCategory:Category
+        var flexions:[String]
+        var categories:[String]
+        
+        // pode modificar aqui (inicio) =========
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "abacalhoar"
+        newWord.father_id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // pode modificar aqui (fim) =========
+    }
+    
+    // Método para teste (REMOVER DEPOIS)
+    func test_classify(phrase:String) -> [Word]{
+        var separatedWords:[String]
+        separatedWords = phrase.componentsSeparatedByString(" ")
+        
+        var words:[Word]
+        words = []
+        
+        for separatedWord in separatedWords{
+            for word in WordsList{
+                if word.text == separatedWord{
+                    words.append(word)
+                }
+            }
+        }
+        
+        return words
     }
     
     func classify(var phrase:String) -> [Word]{
