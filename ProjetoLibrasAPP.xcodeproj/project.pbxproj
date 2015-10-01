@@ -11,6 +11,11 @@
 		41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902C1BBC9B7200F8C56B /* Word.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA90301BBC9B7200F8C56B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902D1BBC9B7200F8C56B /* Category.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902E1BBC9B7200F8C56B /* Flexion.swift */; settings = {ASSET_TAGS = (); }; };
+		41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA443B1BBDD6600076C6C2 /* Artigo.swift */; settings = {ASSET_TAGS = (); }; };
+		41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA443D1BBDD6760076C6C2 /* Substantivo.swift */; settings = {ASSET_TAGS = (); }; };
+		41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA443F1BBDD6850076C6C2 /* Pronome.swift */; settings = {ASSET_TAGS = (); }; };
+		41EA44421BBDD6900076C6C2 /* Verbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA44411BBDD6900076C6C2 /* Verbo.swift */; settings = {ASSET_TAGS = (); }; };
+		41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EA44431BBDD6E40076C6C2 /* Preposicao.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
@@ -43,6 +48,11 @@
 		41DA902C1BBC9B7200F8C56B /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		41DA902D1BBC9B7200F8C56B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		41DA902E1BBC9B7200F8C56B /* Flexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flexion.swift; sourceTree = "<group>"; };
+		41EA443B1BBDD6600076C6C2 /* Artigo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artigo.swift; sourceTree = "<group>"; };
+		41EA443D1BBDD6760076C6C2 /* Substantivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Substantivo.swift; sourceTree = "<group>"; };
+		41EA443F1BBDD6850076C6C2 /* Pronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pronome.swift; sourceTree = "<group>"; };
+		41EA44411BBDD6900076C6C2 /* Verbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbo.swift; sourceTree = "<group>"; };
+		41EA44431BBDD6E40076C6C2 /* Preposicao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preposicao.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +104,18 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		41EA443A1BBDD63C0076C6C2 /* Classes Gramáticais */ = {
+			isa = PBXGroup;
+			children = (
+				41EA443B1BBDD6600076C6C2 /* Artigo.swift */,
+				41EA443D1BBDD6760076C6C2 /* Substantivo.swift */,
+				41EA443F1BBDD6850076C6C2 /* Pronome.swift */,
+				41EA44411BBDD6900076C6C2 /* Verbo.swift */,
+				41EA44431BBDD6E40076C6C2 /* Preposicao.swift */,
+			);
+			name = "Classes Gramáticais";
+			sourceTree = "<group>";
+		};
 		C3CBBE611BBC94050035A1D4 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +146,7 @@
 				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
 				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
 				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
+				41EA443A1BBDD63C0076C6C2 /* Classes Gramáticais */,
 				41DA90321BBC9B8300F8C56B /* Models */,
 				41DA902A1BBC9B6100F8C56B /* Translator.swift */,
 			);
@@ -278,11 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EA44421BBDD6900076C6C2 /* Verbo.swift in Sources */,
+				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
+				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */,
+				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
+				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
 			);

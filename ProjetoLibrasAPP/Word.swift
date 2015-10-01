@@ -17,7 +17,8 @@ class Word: NSObject {
     var flexions:[Flexion]!
     
     override init() {
-        
+        categories = []
+        flexions = []
     }
     
 }
