@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class Substantivo: NSObject {
+    
+    override init(){
+        super.init()
+    }
+    
+}

@@ -9,17 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let classifica = Translator()
+    let artigo = Artigo()
+    var fraseClassificada : [Word] = []
+    var arrayArtigos : [String] = []
+    var novaFrase: [String] = []
+    var juntaPalavras : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Aonde colocamos a frase
+        let frase = "bola ir"
+        
+        //chama os metodos de classificar e colocar artigos.
+        self.fraseClassificada = classifica.test_classify(frase)
+        self.arrayArtigos = artigo.colocarArtigoDefinido(fraseClassificada)
+        
+        //feito para juntar as palavras em uma String e colocar na tela.
+        metodoJuntaPalavra()
+    }
+    
+    func metodoJuntaPalavra(){
+        for i in 0...self.fraseClassificada.count - 1{
+            if arrayArtigos[i] != ""{
+                juntaPalavras += arrayArtigos[i] + " "
+            }
+            if (i != fraseClassificada.count - 1){
+                juntaPalavras += fraseClassificada[i].text + " "
+            }
+            else{
+                juntaPalavras += fraseClassificada[i].text
+            }
+        }
+        
+        juntaPalavras += "."
+        
+        print(juntaPalavras)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
