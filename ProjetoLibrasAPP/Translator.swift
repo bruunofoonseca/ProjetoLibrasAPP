@@ -132,7 +132,7 @@ class Translator: NSObject {
         newWord.motto = "nós"
         newWord.id = 3
         
-        flexions = ["Não flexionado"]
+        flexions = ["Feminino plural", "Masculino plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -140,7 +140,32 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Pronome"]
+        categories = ["Pronome pessoal"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "você"
+        newWord.motto = "você"
+        newWord.id = 3
+        
+        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["Pronome pessoal"]
         
         for category in categories{
             newCategory = Category.init()

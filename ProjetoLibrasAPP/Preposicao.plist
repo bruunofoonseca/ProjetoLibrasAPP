@@ -4,6 +4,17 @@
 <dict>
 	<key>ir</key>
 	<dict>
+		<key>Pronome pessoal</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
 		<key>Verbo</key>
 		<dict>
 			<key>Infinitivo</key>
