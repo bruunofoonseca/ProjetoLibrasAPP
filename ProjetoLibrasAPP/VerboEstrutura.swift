@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class VerboEstrutura : NSObject {
+    
+    let api = Translator()
+    
+    func verboConcordaSujeito(sujeito: Word, verbo: Word)
+    {
+        let conjugVerbo = api.buscaVerbo(verbo.text, flexao: sujeito.flexions[0].text, categoria: verbo.categories[0].text)
+        
+        return conjugVerbo
+    }
+}

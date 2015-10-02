@@ -213,4 +213,9 @@ class Translator: NSObject {
         return words_list
     }
     
+    func buscaVerbo(verbo: String, flexao: String, categoria: String)
+    {
+        
+    }
+    
 }
