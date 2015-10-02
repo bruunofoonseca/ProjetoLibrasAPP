@@ -54,7 +54,7 @@ class Translator: NSObject {
         newWord.text = "bola"
         newWord.father_id = 2
         
-        flexions = ["Singular", "Plural"]
+        flexions = ["singular", "plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -79,7 +79,7 @@ class Translator: NSObject {
         newWord.text = "bolo"
         newWord.father_id = 3
         
-        flexions = ["Singular", "Plural"]
+        flexions = ["singular", "plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
