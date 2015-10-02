@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Aonde colocamos a frase
-        let frase = "bola ir bolo"
+        let frase = "casa ir casas"
         
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

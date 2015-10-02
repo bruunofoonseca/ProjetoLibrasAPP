@@ -22,25 +22,42 @@ class Artigo: NSObject {
     func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
         
         //for para passar por cada palavra que existe na frase.
-        
-        if(frase[posicao].categories[0].text == "nome feminino"){
-            if (posicao == 0){
-                artigos.append("A")
+        if (frase[posicao].categories[0].text == "Substantivo"){
+            if(frase[posicao].flexions[0].text == "Feminino singular"){
+                if (posicao == 0){
+                    artigos.append("A")
+                }
+                else{
+                    artigos.append("a")
+                }
+            }
+            else if(frase[posicao].flexions[0].text == "Feminino plural"){
+                if (posicao == 0){
+                    artigos.append("As")
+                }
+                else{
+                    artigos.append("as")
+                }
+            }
+            else if (frase[posicao].flexions[0].text == "Musculino singular"){
+                if (posicao == 0){
+                    artigos.append("O")
+                }
+                else{
+                    artigos.append("o")
+                }
+            }
+            else if (frase[posicao].flexions[0].text == "Musculino plural"){
+                if (posicao == 0){
+                    artigos.append("Os")
+                }
+                else{
+                    artigos.append("os")
+                }
             }
             else{
-                artigos.append("a")
+                artigos.append("")
             }
-        }
-        else if (frase[posicao].categories[0].text == "nome masculino"){
-            if (posicao == 0){
-                artigos.append("O")
-            }
-            else{
-                artigos.append("o")
-            }
-        }
-        else{
-            artigos.append("")
         }
         
         //retorna array de strings com os artigos(caso tenha) referentes a cada palavra da frase.

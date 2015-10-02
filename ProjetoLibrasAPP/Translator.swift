@@ -28,7 +28,8 @@ class Translator: NSObject {
         // BLOCO ====================
         newWord = Word.init()
         newWord.text = "ir"
-        newWord.father_id = 1
+        newWord.motto = "ir"
+        newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
         
@@ -38,7 +39,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["verbo"]
+        categories = ["Verbo"]
         
         for category in categories{
             newCategory = Category.init()
@@ -51,10 +52,11 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "bola"
-        newWord.father_id = 2
+        newWord.text = "casa"
+        newWord.motto = "casa"
+        newWord.id = 2
         
-        flexions = ["singular", "plural"]
+        flexions = ["Feminino singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -62,7 +64,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["nome feminino"]
+        categories = ["Substantivo"]
         
         for category in categories{
             newCategory = Category.init()
@@ -76,10 +78,11 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "bolo"
-        newWord.father_id = 3
+        newWord.text = "casas"
+        newWord.motto = "casa"
+        newWord.id = 3
         
-        flexions = ["singular", "plural"]
+        flexions = ["Feminino plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -87,7 +90,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["nome masculino"]
+        categories = ["Substantivo"]
         
         for category in categories{
             newCategory = Category.init()
@@ -144,8 +147,8 @@ class Translator: NSObject {
                             new_word.id = id
                         }
                         
-                        if let father_id: Int = word.objectForKey("word_id") as? Int{
-                            new_word.father_id = father_id
+                        if let motto: String = word.objectForKey("motto") as? String{
+                            new_word.motto = motto
                         }
                         
                         if let description: String = word.objectForKey("description") as? String{

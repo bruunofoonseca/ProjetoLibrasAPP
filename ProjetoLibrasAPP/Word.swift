@@ -12,7 +12,7 @@ class Word: NSObject {
     
     var id:Int!
     var text:String!
-    var father_id:Int!
+    var motto:String!
     var categories:[Category]!
     var flexions:[Flexion]!
     
