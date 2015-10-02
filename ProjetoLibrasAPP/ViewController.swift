@@ -18,14 +18,16 @@ class ViewController: UIViewController {
     let complemento = ComplementoEstrutura()
     var verboClassificado: [String] = []
     let verbo = VerboEstrutura()
+    var preposicao : [String] = []
     var fraseClassificada : [Word] = []
     var juntaPalavras : String = ""
+    var verboAcesso = VerboEstrutura()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Aonde colocamos a frase
-        let frase = "casa ir casas"
+        let frase = "nós ir comer"
         
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
@@ -36,12 +38,16 @@ class ViewController: UIViewController {
         // Chama a classe que trata o Verbo.
         self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
         
+        // Chama a classe que trata a preposição
+        self.preposicao = verboAcesso.colocaPreposicao(fraseClassificada)
+        
         // Chama a classe que trata o complemento
-        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada)
+        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: preposicao[1])
         
         // Feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra(sujeitoClassificado)
         metodoJuntaPalavra(verboClassificado)
+        metodoJuntaPalavra(preposicao)
         metodoJuntaPalavra(complementoClassificado)
         
         // Exibe a frase na tela.
@@ -51,11 +57,13 @@ class ViewController: UIViewController {
     func metodoJuntaPalavra(texto : [String]){
         
         for i in 0...texto.count - 1 {
-            if (texto[i] != "."){
-                juntaPalavras += texto[i] + " "
-            }
-            else{
-                juntaPalavras += texto[i]
+            if (texto[i] != "null" && texto[i] != ""){
+                if (texto[i] != "."){
+                    juntaPalavras += texto[i] + " "
+                }
+                else{
+                    juntaPalavras += texto[i]
+                }
             }
         }
     }

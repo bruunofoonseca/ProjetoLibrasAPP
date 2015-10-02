@@ -13,11 +13,18 @@ class VerboEstrutura : NSObject {
     let api = Translator()
     let objVerbo = Verbo()
     var defVerbo: [String] = []
+    let prepo = Preposicao()
+    var arrayPrepo : [String] = []
     
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
         
         return defVerbo
+    }
+    
+    func colocaPreposicao(texto : [Word]) -> [String]{
+        arrayPrepo = prepo.Plistando(texto)
+        return arrayPrepo
     }
 }

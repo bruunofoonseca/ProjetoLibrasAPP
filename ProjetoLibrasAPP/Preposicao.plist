@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ir</key>
+	<dict>
+		<key>Verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>Substantivo</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>à</string>
+			<key>Masculino singular</key>
+			<string>ao</string>
+			<key>Feminino plural</key>
+			<string>às</string>
+			<key>Masculino plural</key>
+			<string>aos</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

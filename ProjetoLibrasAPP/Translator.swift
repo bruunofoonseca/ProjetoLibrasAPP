@@ -52,6 +52,31 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "comer"
+        newWord.motto = "comer"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["Verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "casa"
         newWord.motto = "casa"
         newWord.id = 2
@@ -83,6 +108,56 @@ class Translator: NSObject {
         newWord.id = 3
         
         flexions = ["Feminino plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["Substantivo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "nós"
+        newWord.motto = "nós"
+        newWord.id = 3
+        
+        flexions = ["Não flexionado"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["Pronome"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "jogo"
+        newWord.motto = "jogo"
+        newWord.id = 3
+        
+        flexions = ["Masculino singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
