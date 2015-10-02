@@ -11,11 +11,12 @@ import Foundation
 class VerboEstrutura : NSObject {
     
     let api = Translator()
+    let objVerbo = Verbo()
     
-    func verboConcordaSujeito(sujeito: Word, verbo: Word) -> String
+    func tratarVerbo(frase: [Word]) -> String
     {
-        let conjugVerbo = api.buscaVerbo(verbo.text, flexao: "Presente - 1ª singular", categoria: verbo.categories[0].text)
+        let defVerbo = objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1])
         
-        return conjugVerbo
+        return defVerbo
     }
 }
