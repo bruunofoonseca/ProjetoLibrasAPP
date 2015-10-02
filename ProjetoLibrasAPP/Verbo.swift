@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class Verbo: NSObject {
+    
+    override init(){
+        super.init()
+    }
+    
+}

@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class Preposicao: NSObject {
+    
+    override init(){
+        super.init()
+    }
+    
+}

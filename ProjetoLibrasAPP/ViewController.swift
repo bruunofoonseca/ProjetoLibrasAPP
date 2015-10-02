@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let metodo = Translator()
+    let classifica = Translator()
     let artigo = Artigo()
-    var ab : [Word] = []
-    var ac : [String] = []
+    var fraseClassificada : [Word] = []
+    var arrayArtigos : [String] = []
     var novaFrase: [String] = []
     var juntaPalavras : String = ""
     
@@ -23,19 +23,19 @@ class ViewController: UIViewController {
         let frase = "bolo bola"
         
         //chama os metodos de classificar e colocar artigos.
-        self.ab = metodo.test_classify(frase)
-        self.ac = artigo.colocaArtigoDefinido(ab)
+        self.fraseClassificada = classifica.test_classify(frase)
+        self.arrayArtigos = artigo.colocaArtigoDefinido(fraseClassificada)
         
         //feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra()
     }
     
     func metodoJuntaPalavra(){
-        for i in 0...self.ab.count - 1{
-            if ac[i] != ""{
-                juntaPalavras += ac[i] + " "
+        for i in 0...self.fraseClassificada.count - 1{
+            if arrayArtigos[i] != ""{
+                juntaPalavras += arrayArtigos[i] + " "
             }
-            juntaPalavras += ab[i].text + " "
+            juntaPalavras += fraseClassificada[i].text + " "
         }
         
         print(juntaPalavras)
