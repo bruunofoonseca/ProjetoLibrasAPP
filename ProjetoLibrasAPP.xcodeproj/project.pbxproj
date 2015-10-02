@@ -158,14 +158,14 @@
 				C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */,
 				C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */,
 				C3CBBE711BBC94060035A1D4 /* Main.storyboard */,
-				C3CBBE771BBC94060035A1D4 /* Assets.xcassets */,
-				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
-				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
-				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
 				41FDD8921BBEF4C6005CA9F8 /* EstruturaFrase */,
 				41EA443A1BBDD63C0076C6C2 /* Classes Gramáticais */,
 				41DA90321BBC9B8300F8C56B /* Models */,
 				41DA902A1BBC9B6100F8C56B /* Translator.swift */,
+				C3CBBE771BBC94060035A1D4 /* Assets.xcassets */,
+				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
+				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
+				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
 			);
 			path = ProjetoLibrasAPP;
 			sourceTree = "<group>";

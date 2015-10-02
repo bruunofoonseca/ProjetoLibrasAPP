@@ -14,5 +14,4 @@ class Substantivo: NSObject {
     override init(){
         super.init()
     }
-    
 }
