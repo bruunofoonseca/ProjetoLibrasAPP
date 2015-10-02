@@ -10,42 +10,48 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // Variáveis
     let classifica = Translator()
-    let artigo = Artigo()
+    var sujeitoClassificado : [String] = []
+    let sujeito = SujeitoEstrutura()
+    var complementoClassificado : [String] = []
+    let complemento = ComplementoEstrutura()
     var fraseClassificada : [Word] = []
-    var arrayArtigos : [String] = []
-    var novaFrase: [String] = []
     var juntaPalavras : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Aonde colocamos a frase
-        let frase = "bola ir"
+        let frase = "bola ir bolo"
         
-        //chama os metodos de classificar e colocar artigos.
+        // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
-        self.arrayArtigos = artigo.colocarArtigoDefinido(fraseClassificada)
         
-        //feito para juntar as palavras em uma String e colocar na tela.
-        metodoJuntaPalavra()
+        // Chama a classe que trata o sujeito.
+        self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+        
+        // Chama a classe que trata o complemento
+        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada)
+        
+        // Feito para juntar as palavras em uma String e colocar na tela.
+        metodoJuntaPalavra(sujeitoClassificado)
+        metodoJuntaPalavra(complementoClassificado)
+        
+        // Exibe a frase na tela.
+        print(juntaPalavras)
     }
     
-    func metodoJuntaPalavra(){
-        for i in 0...self.fraseClassificada.count - 1{
-            if arrayArtigos[i] != ""{
-                juntaPalavras += arrayArtigos[i] + " "
-            }
-            if (i != fraseClassificada.count - 1){
-                juntaPalavras += fraseClassificada[i].text + " "
+    func metodoJuntaPalavra(texto : [String]){
+        
+        for i in 0...texto.count - 1 {
+            if (texto[i] != "."){
+                juntaPalavras += texto[i] + " "
             }
             else{
-                juntaPalavras += fraseClassificada[i].text
+                juntaPalavras += texto[i]
             }
         }
-        
-        juntaPalavras += "."
-        
-        print(juntaPalavras)
     }
 
     override func didReceiveMemoryWarning() {
