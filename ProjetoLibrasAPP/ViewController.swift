@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     let sujeito = SujeitoEstrutura()
     var complementoClassificado : [String] = []
     let complemento = ComplementoEstrutura()
+    var verboClassificado: [String] = []
+    let verbo = VerboEstrutura()
     var fraseClassificada : [Word] = []
     var juntaPalavras : String = ""
     
@@ -31,11 +33,15 @@ class ViewController: UIViewController {
         // Chama a classe que trata o sujeito.
         self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
         
+        // Chama a classe que trata o Verbo.
+        self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
+        
         // Chama a classe que trata o complemento
         self.complementoClassificado = complemento.tratarComplemento(fraseClassificada)
         
         // Feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra(sujeitoClassificado)
+        metodoJuntaPalavra(verboClassificado)
         metodoJuntaPalavra(complementoClassificado)
         
         // Exibe a frase na tela.

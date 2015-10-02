@@ -12,10 +12,11 @@ class VerboEstrutura : NSObject {
     
     let api = Translator()
     let objVerbo = Verbo()
+    var defVerbo: [String] = []
     
-    func tratarVerbo(frase: [Word]) -> String
+    func tratarVerbo(frase: [Word]) -> [String]
     {
-        let defVerbo = objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1])
+        defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
         
         return defVerbo
     }
