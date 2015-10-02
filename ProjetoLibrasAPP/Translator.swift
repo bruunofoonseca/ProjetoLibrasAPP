@@ -216,9 +216,11 @@ class Translator: NSObject {
         return words_list
     }
     
-    func buscaVerbo(verbo: String, flexao: String, categoria: String)
+    func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
     {
+        let ab = "vamos"
         
+        return ab
     }
     
 }

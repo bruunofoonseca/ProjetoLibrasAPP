@@ -12,9 +12,9 @@ class VerboEstrutura : NSObject {
     
     let api = Translator()
     
-    func verboConcordaSujeito(sujeito: Word, verbo: Word)
+    func verboConcordaSujeito(sujeito: Word, verbo: Word) -> String
     {
-        let conjugVerbo = api.buscaVerbo(verbo.text, flexao: sujeito.flexions[0].text, categoria: verbo.categories[0].text)
+        let conjugVerbo = api.buscaVerbo(verbo.text, flexao: "Presente - 1ª singular", categoria: verbo.categories[0].text)
         
         return conjugVerbo
     }
