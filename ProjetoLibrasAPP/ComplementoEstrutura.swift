@@ -7,7 +7,23 @@
 //
 
 import Foundation
+<<<<<<< HEAD
 
 class ComplementoEstrutura: NSObject {
     
+=======
+import UIKit
+
+class ComplementoEstrutura : NSObject {
+    
+    let artigo = Artigo()
+    var arrayArtigos : [String] = []
+    var fraseClassificada : [Word] = []
+    
+    func tratarComplemento(frase : [Word]) -> [String]{
+        arrayArtigos = artigo.colocarArtigoDefinido(frase, posicao: 2)
+        arrayArtigos.append(frase[2].text + ".")
+        return arrayArtigos
+    }
+>>>>>>> origin/master
 }
