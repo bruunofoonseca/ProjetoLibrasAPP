@@ -6,9 +6,6 @@
 //  Copyright © 2015 BEPiD. All rights reserved.
 //
 
-<<<<<<< HEAD
-import Foundation
-=======
 import Foundation
 import UIKit
 
@@ -52,4 +49,3 @@ class Artigo: NSObject {
         return artigos
     }
 }
->>>>>>> origin/master
