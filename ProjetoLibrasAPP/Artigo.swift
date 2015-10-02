@@ -19,7 +19,7 @@ class Artigo: NSObject {
     }
     
     //método para colocar artigo definido na frase.
-    func colocaArtigoDefinido(frase : [Word]) -> [String] {
+    func colocarArtigoDefinido(frase : [Word]) -> [String] {
         
         //for para passar por cada palavra que existe na frase.
         for i in 0...frase.count - 1{

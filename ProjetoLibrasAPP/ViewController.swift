@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Aonde colocamos a frase
-        let frase = "bolo bola"
+        let frase = "bola ir"
         
         //chama os metodos de classificar e colocar artigos.
         self.fraseClassificada = classifica.test_classify(frase)
-        self.arrayArtigos = artigo.colocaArtigoDefinido(fraseClassificada)
+        self.arrayArtigos = artigo.colocarArtigoDefinido(fraseClassificada)
         
         //feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra()
@@ -35,8 +35,15 @@ class ViewController: UIViewController {
             if arrayArtigos[i] != ""{
                 juntaPalavras += arrayArtigos[i] + " "
             }
-            juntaPalavras += fraseClassificada[i].text + " "
+            if (i != fraseClassificada.count - 1){
+                juntaPalavras += fraseClassificada[i].text + " "
+            }
+            else{
+                juntaPalavras += fraseClassificada[i].text
+            }
         }
+        
+        juntaPalavras += "."
         
         print(juntaPalavras)
     }
