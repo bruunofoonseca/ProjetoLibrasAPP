@@ -318,7 +318,7 @@ class Translator: NSObject {
     
     func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
     {
-        let ab = "gostamos"
+        let ab = "gosta"
         
         return ab
     }
