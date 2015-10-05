@@ -11,12 +11,14 @@ import UIKit
 
 class Verbo: NSObject {
     
+    // Variáveis
     let api = Translator()
     
     override init(){
         super.init()
     }
     
+    // Conjuga o verbo
     func conjugVerboSujeito(sujeito: Word, verbo: Word) -> String
     {
         let conjugVerbo = api.buscaVerbo(verbo.text, flexao: sujeito.flexions[0].text, categoria: verbo.text)

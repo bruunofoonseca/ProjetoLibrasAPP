@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Aonde colocamos a frase
-        let frase = "senhor ir casas"
+        let frase = "nós gostar casas"
         
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
