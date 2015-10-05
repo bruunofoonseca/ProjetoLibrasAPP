@@ -27,8 +27,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "ir"
-        newWord.motto = "ir"
+        newWord.text = "gostar"
+        newWord.motto = "gostar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -318,7 +318,7 @@ class Translator: NSObject {
     
     func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
     {
-        let ab = "vamos"
+        let ab = "gostamos"
         
         return ab
     }

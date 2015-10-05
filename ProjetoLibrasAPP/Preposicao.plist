@@ -2,6 +2,43 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>gostar</key>
+	<dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>de</string>
+			<key>Feminino plural</key>
+			<string>de</string>
+			<key>Masculino singular</key>
+			<string>de</string>
+			<key>Masculino plural</key>
+			<string>de</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>de</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>de</string>
+			<key>sing</key>
+			<string>de</string>
+			<key>plural</key>
+			<string>de</string>
+		</dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>de</string>
+			<key>sing</key>
+			<string>de</string>
+			<key>plural</key>
+			<string>de</string>
+		</dict>
+	</dict>
 	<key>ir</key>
 	<dict>
 		<key>nome masculino</key>
