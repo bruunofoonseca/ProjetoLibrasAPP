@@ -17,15 +17,15 @@ class Preposicao: NSObject {
     var count = 0
     var palavra: [String] = []
     var validando : String!
-    var fraseOrganizada : [String] = [""]
+    var fraseOrganizada : String = ""
     var plist = "Verbo.plist"
     var temPreposicao  = false
     
-    func Plistando(texto : [Word]) -> [String] {
+    func Plistando(texto : [Word]) -> String {
         let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
-        fraseOrganizada.append(test)
+        fraseOrganizada = test
         return fraseOrganizada
     }
 }

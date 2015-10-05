@@ -4,6 +4,15 @@
 <dict>
 	<key>ir</key>
 	<dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>plural</key>
+			<string>aos</string>
+			<key>sing</key>
+			<string>ao</string>
+			<key>singular</key>
+			<string>ao</string>
+		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>

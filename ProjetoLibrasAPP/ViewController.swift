@@ -38,16 +38,12 @@ class ViewController: UIViewController {
         // Chama a classe que trata o Verbo.
         self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
         
-        // Chama a classe que trata a preposição
-        self.preposicao = verboAcesso.colocaPreposicao(fraseClassificada)
-        
         // Chama a classe que trata o complemento
-        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: preposicao[1])
+        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
         
         // Feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra(sujeitoClassificado)
         metodoJuntaPalavra(verboClassificado)
-        metodoJuntaPalavra(preposicao)
         metodoJuntaPalavra(complementoClassificado)
         
         // Exibe a frase na tela.
