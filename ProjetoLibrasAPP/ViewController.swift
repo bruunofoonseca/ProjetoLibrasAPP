@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Aonde colocamos a frase
-        var frase = "Senhor Gostar Casa"
+        var frase = "você poder casa"
+        print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
         
         // Chama a API para classificar as frases.
@@ -48,7 +49,7 @@ class ViewController: UIViewController {
         metodoJuntaPalavra(complementoClassificado)
         
         // Exibe a frase na tela.
-        print(juntaPalavras)
+        print("Frase em Português: " + juntaPalavras)
     }
     
     func metodoJuntaPalavra(texto : [String]){

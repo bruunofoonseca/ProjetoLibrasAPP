@@ -27,6 +27,31 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "poder"
+        newWord.motto = "poder"
+        newWord.id = 6
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "gostar"
         newWord.motto = "gostar"
         newWord.id = 1
@@ -318,7 +343,7 @@ class Translator: NSObject {
     
     func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
     {
-        let ab = "gosta"
+        let ab = "pode"
         
         return ab
     }
