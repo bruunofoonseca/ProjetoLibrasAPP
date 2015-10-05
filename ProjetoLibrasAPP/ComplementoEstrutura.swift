@@ -14,6 +14,7 @@ class ComplementoEstrutura : NSObject {
     // Variáveis
     let objSubstantivo = Substantivo()
     let objPronome = Pronome()
+    let translator = Translator()
     var arrayArtigos : [String] = [""]
     var fraseClassificada : [Word] = []
     
@@ -30,6 +31,10 @@ class ComplementoEstrutura : NSObject {
             if (preposicao == "null"){
                 arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2)
             }
+        }
+        else if (frase[2].categories[0].text == "verbo")
+        {
+            arrayArtigos.append(translator.buscaVerbo(frase[2].text, flexao: "infinitivo", categoria: "verbo"))
         }
         arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
