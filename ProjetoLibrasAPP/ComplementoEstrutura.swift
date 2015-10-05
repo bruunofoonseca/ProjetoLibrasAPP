@@ -11,14 +11,13 @@ import UIKit
 
 class ComplementoEstrutura : NSObject {
     
-    let artigo = Artigo()
+    let objArtigo = Artigo()
     var arrayArtigos : [String] = [""]
     var fraseClassificada : [Word] = []
-    var prepo = Preposicao()
     
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
         if (preposicao == "null"){
-            arrayArtigos = artigo.colocarArtigoDefinido(frase, posicao: 2)
+            arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2)
         }
         arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos

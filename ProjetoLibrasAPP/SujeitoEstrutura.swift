@@ -12,8 +12,8 @@ import UIKit
 class SujeitoEstrutura : NSObject {
     
     // Variaveis
-    let artigo = Artigo()
-    let pronome = Pronome()
+    let objArtigo = Artigo()
+    let objPronome = Pronome()
     var arrayArtigos : [String] = []
     var arrayPronome : [String] = []
     var fraseClassificada : [Word] = []
@@ -21,10 +21,10 @@ class SujeitoEstrutura : NSObject {
     // Função que irá tratar os sujeitos.
     func tratarSujeito(frase : [Word]) -> [String]{
         if (frase[0].categories[0].text == "nome feminino") || (frase[0].categories[0].text == "nome masculino") {
-            arrayArtigos = artigo.colocarArtigoDefinido(frase, posicao: 0)
+            arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 0)
         }
         else {
-            arrayArtigos = pronome.categorizarPronome(frase, posicao: 0)
+            arrayArtigos = objPronome.categorizarPronome(frase, posicao: 0)
         }
         arrayArtigos.append(frase[0].text)
         return arrayArtigos

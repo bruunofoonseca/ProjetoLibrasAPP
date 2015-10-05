@@ -14,12 +14,8 @@ class Preposicao: NSObject {
     override init(){
         super.init()
     }
-    var count = 0
     var palavra: [String] = []
-    var validando : String!
     var fraseOrganizada : String = ""
-    var plist = "Verbo.plist"
-    var temPreposicao  = false
     
     func Plistando(texto : [Word]) -> String {
         let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
