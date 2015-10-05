@@ -4,7 +4,7 @@
 <dict>
 	<key>ir</key>
 	<dict>
-		<key>Pronome pessoal</key>
+		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
 			<string>com</string>
@@ -15,21 +15,19 @@
 			<key>Masculino plural</key>
 			<string>com</string>
 		</dict>
-		<key>Verbo</key>
+		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
 		</dict>
-		<key>Substantivo</key>
+		<key>nome feminino</key>
 		<dict>
-			<key>Feminino singular</key>
+			<key>singular</key>
 			<string>à</string>
-			<key>Masculino singular</key>
-			<string>ao</string>
-			<key>Feminino plural</key>
+			<key>sing</key>
+			<string>à</string>
+			<key>plural</key>
 			<string>às</string>
-			<key>Masculino plural</key>
-			<string>aos</string>
 		</dict>
 	</dict>
 </dict>

@@ -39,7 +39,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Verbo"]
+        categories = ["verbo"]
         
         for category in categories{
             newCategory = Category.init()
@@ -64,7 +64,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Verbo"]
+        categories = ["verbo"]
         
         for category in categories{
             newCategory = Category.init()
@@ -81,7 +81,7 @@ class Translator: NSObject {
         newWord.motto = "casa"
         newWord.id = 2
         
-        flexions = ["Feminino singular"]
+        flexions = ["singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -89,7 +89,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Substantivo"]
+        categories = ["nome feminino"]
         
         for category in categories{
             newCategory = Category.init()
@@ -107,7 +107,7 @@ class Translator: NSObject {
         newWord.motto = "casa"
         newWord.id = 3
         
-        flexions = ["Feminino plural"]
+        flexions = ["plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -115,7 +115,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Substantivo"]
+        categories = ["nome feminino"]
         
         for category in categories{
             newCategory = Category.init()
@@ -140,7 +140,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Pronome pessoal"]
+        categories = ["pronome"]
         
         for category in categories{
             newCategory = Category.init()
@@ -165,7 +165,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Pronome pessoal"]
+        categories = ["pronome"]
         
         for category in categories{
             newCategory = Category.init()
@@ -182,7 +182,7 @@ class Translator: NSObject {
         newWord.motto = "jogo"
         newWord.id = 3
         
-        flexions = ["Masculino singular"]
+        flexions = ["singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -190,7 +190,7 @@ class Translator: NSObject {
             newWord.flexions.append(newFlexion)
         }
         
-        categories = ["Substantivo"]
+        categories = ["nome masculino"]
         
         for category in categories{
             newCategory = Category.init()
