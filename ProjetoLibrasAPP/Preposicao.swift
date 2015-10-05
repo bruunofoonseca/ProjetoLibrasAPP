@@ -11,12 +11,15 @@ import UIKit
 
 class Preposicao: NSObject {
     
-    override init(){
-        super.init()
-    }
+    // Variáveis
     var palavra: [String] = []
     var fraseOrganizada : String = ""
     
+    override init(){
+        super.init()
+    }
+    
+    // Verifica se o verbo tem preposição consultando a Plist Preposicao.
     func Plistando(texto : [Word]) -> String {
         let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
