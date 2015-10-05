@@ -21,7 +21,6 @@ class Artigo: NSObject {
     //método para colocar artigo definido na frase.
     func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
         
-        //for para passar por cada palavra que existe na frase.
         if (frase[posicao].categories[0].text == "nome feminino"){
             if(frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing"){
                 if (posicao == 0){

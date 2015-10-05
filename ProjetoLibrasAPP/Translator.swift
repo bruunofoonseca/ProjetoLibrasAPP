@@ -128,11 +128,11 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "nós"
-        newWord.motto = "nós"
+        newWord.text = "senhor"
+        newWord.motto = "senhor"
         newWord.id = 3
         
-        flexions = ["Feminino plural", "Masculino plural"]
+        flexions = ["Masculino singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
