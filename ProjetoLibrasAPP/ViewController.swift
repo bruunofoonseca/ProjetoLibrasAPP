@@ -27,7 +27,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Aonde colocamos a frase
-        let frase = "nós ir você"
+        var frase = "você poder casa"
+        print("Frase em Librês: " + frase)
+        frase = (frase.lowercaseString)
         
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
@@ -38,20 +40,16 @@ class ViewController: UIViewController {
         // Chama a classe que trata o Verbo.
         self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
         
-        // Chama a classe que trata a preposição
-        self.preposicao = verboAcesso.colocaPreposicao(fraseClassificada)
-        
         // Chama a classe que trata o complemento
-        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: preposicao[1])
+        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
         
         // Feito para juntar as palavras em uma String e colocar na tela.
         metodoJuntaPalavra(sujeitoClassificado)
         metodoJuntaPalavra(verboClassificado)
-        metodoJuntaPalavra(preposicao)
         metodoJuntaPalavra(complementoClassificado)
         
         // Exibe a frase na tela.
-        print(juntaPalavras)
+        print("Frase em Português: " + juntaPalavras)
     }
     
     func metodoJuntaPalavra(texto : [String]){
