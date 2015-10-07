@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 067EB5E41BBF2AF40081F935 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
+		41B20B7C1BC44D4300B75936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B20B7A1BC44D4300B75936 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		41B20B7D1BC44D4300B75936 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902A1BBC9B6100F8C56B /* Translator.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902C1BBC9B7200F8C56B /* Word.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA90301BBC9B7200F8C56B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902D1BBC9B7200F8C56B /* Category.swift */; settings = {ASSET_TAGS = (); }; };
@@ -49,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		067EB5E41BBF2AF40081F935 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
+		416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TecladoCustomizado.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B20B7A1BC44D4300B75936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TecladoCustomizado/Info.plist; sourceTree = "<group>"; };
+		41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = TecladoCustomizado/KeyboardViewController.swift; sourceTree = "<group>"; };
 		41DA902A1BBC9B6100F8C56B /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		41DA902C1BBC9B7200F8C56B /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		41DA902D1BBC9B7200F8C56B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -78,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		416851AA1BC44BAE0045826D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3CBBE671BBC94050035A1D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B20B7E1BC44D5E00B75936 /* TecladoCustomizado */ = {
+			isa = PBXGroup;
+			children = (
+				41B20B7A1BC44D4300B75936 /* Info.plist */,
+				41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */,
+			);
+			name = TecladoCustomizado;
+			sourceTree = "<group>";
+		};
 		41DA90321BBC9B8300F8C56B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +162,7 @@
 				C3CBBE6C1BBC94050035A1D4 /* ProjetoLibrasAPP */,
 				C3CBBE841BBC94060035A1D4 /* ProjetoLibrasAPPTests */,
 				C3CBBE8F1BBC94060035A1D4 /* ProjetoLibrasAPPUITests */,
+				41B20B7E1BC44D5E00B75936 /* TecladoCustomizado */,
 				C3CBBE6B1BBC94050035A1D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +173,7 @@
 				C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */,
 				C3CBBE811BBC94060035A1D4 /* ProjetoLibrasAPPTests.xctest */,
 				C3CBBE8C1BBC94060035A1D4 /* ProjetoLibrasAPPUITests.xctest */,
+				416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +217,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		416851AC1BC44BAE0045826D /* TecladoCustomizado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416851B71BC44BAE0045826D /* Build configuration list for PBXNativeTarget "TecladoCustomizado" */;
+			buildPhases = (
+				416851A91BC44BAE0045826D /* Sources */,
+				416851AA1BC44BAE0045826D /* Frameworks */,
+				416851AB1BC44BAE0045826D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TecladoCustomizado;
+			productName = TecladoCustomizado;
+			productReference = 416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C3CBBE691BBC94050035A1D4 /* ProjetoLibrasAPP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3CBBE951BBC94060035A1D4 /* Build configuration list for PBXNativeTarget "ProjetoLibrasAPP" */;
@@ -256,6 +296,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BEPiD;
 				TargetAttributes = {
+					416851AC1BC44BAE0045826D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -285,11 +328,19 @@
 				C3CBBE691BBC94050035A1D4 /* ProjetoLibrasAPP */,
 				C3CBBE801BBC94060035A1D4 /* ProjetoLibrasAPPTests */,
 				C3CBBE8B1BBC94060035A1D4 /* ProjetoLibrasAPPUITests */,
+				416851AC1BC44BAE0045826D /* TecladoCustomizado */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		416851AB1BC44BAE0045826D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3CBBE681BBC94050035A1D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,12 +363,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B20B7C1BC44D4300B75936 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		416851A91BC44BAE0045826D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3CBBE661BBC94050035A1D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */,
+				41B20B7D1BC44D4300B75936 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +451,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		416851B51BC44BAE0045826D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TecladoCustomizado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP.TecladoCustomizado;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		416851B61BC44BAE0045826D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TecladoCustomizado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP.TecladoCustomizado;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		C3CBBE931BBC94060035A1D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +631,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		416851B71BC44BAE0045826D /* Build configuration list for PBXNativeTarget "TecladoCustomizado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416851B51BC44BAE0045826D /* Debug */,
+				416851B61BC44BAE0045826D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C3CBBE651BBC94050035A1D4 /* Build configuration list for PBXProject "ProjetoLibrasAPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
