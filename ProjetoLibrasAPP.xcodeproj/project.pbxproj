@@ -159,10 +159,10 @@
 		C3CBBE611BBC94050035A1D4 = {
 			isa = PBXGroup;
 			children = (
-				41B20B7E1BC44D5E00B75936 /* TecladoCustomizado */,
 				C3CBBE6C1BBC94050035A1D4 /* ProjetoLibrasAPP */,
 				C3CBBE841BBC94060035A1D4 /* ProjetoLibrasAPPTests */,
 				C3CBBE8F1BBC94060035A1D4 /* ProjetoLibrasAPPUITests */,
+				41B20B7E1BC44D5E00B75936 /* TecladoCustomizado */,
 				C3CBBE6B1BBC94050035A1D4 /* Products */,
 			);
 			sourceTree = "<group>";
