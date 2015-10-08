@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
     // Variáveis
     let classifica = Translator()
     var sujeitoClassificado : [String] = []

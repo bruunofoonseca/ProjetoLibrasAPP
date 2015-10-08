@@ -22,6 +22,7 @@
 		41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8951BBEF52F005CA9F8 /* VerboEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
+		B044FD7F1BC5C81600435397 /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* Front.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		41FDD8951BBEF52F005CA9F8 /* VerboEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerboEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplementoEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SujeitoEstrutura.swift; sourceTree = "<group>"; };
+		B044FD7E1BC5C81600435397 /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 			name = EstruturaFrase;
 			sourceTree = "<group>";
 		};
+		B044FD7B1BC5C4C300435397 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				B044FD7E1BC5C81600435397 /* Front.swift */,
+			);
+			name = Front;
+			sourceTree = "<group>";
+		};
 		C3CBBE611BBC94050035A1D4 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 				C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */,
 				C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */,
 				C3CBBE711BBC94060035A1D4 /* Main.storyboard */,
+				B044FD7B1BC5C4C300435397 /* Front */,
 				41FDD8921BBEF4C6005CA9F8 /* EstruturaFrase */,
 				41EA443A1BBDD63C0076C6C2 /* Classes Gramáticais */,
 				41DA90321BBC9B8300F8C56B /* Models */,
@@ -396,6 +407,7 @@
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
+				B044FD7F1BC5C81600435397 /* Front.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
