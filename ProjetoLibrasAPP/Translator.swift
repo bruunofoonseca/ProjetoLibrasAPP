@@ -256,7 +256,7 @@ class Translator: NSObject {
         
         phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/classify/" + phrase + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/classify/" + phrase + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -272,8 +272,287 @@ class Translator: NSObject {
                             new_word.id = id
                         }
                         
-                        if let motto: String = word.objectForKey("motto") as? String{
-                            new_word.motto = motto
+                        if let motto: AnyObject = word.objectForKey("motto"){
+                            new_word.motto = motto.objectForKey("description") as? String
+                        }
+                        
+                        if let description: String = word.objectForKey("description") as? String{
+                            new_word.text = description
+                        }
+                        
+                        var categories_list:[Category]
+                        categories_list = []
+                        
+                        if let categories: NSArray = word.objectForKey("categories") as? NSArray {
+                            for category in categories{
+                                
+                                var new_category:Category
+                                new_category = Category.init()
+                                
+                                if let id: Int = category.objectForKey("id") as? Int{
+                                    new_category.id = id
+                                }
+                                
+                                if let description: String = category.objectForKey("description") as? String{
+                                    new_category.text = description
+                                }
+                                
+                                categories_list.append(new_category)
+                                
+                            }
+                        }
+                        
+                        new_word.categories = categories_list
+                        
+                        var flexion_list:[Flexion]
+                        flexion_list = []
+                        
+                        if let flexions: NSArray = word.objectForKey("flexions") as? NSArray {
+                            for flaxion in flexions{
+                                
+                                var new_flexion:Flexion
+                                new_flexion = Flexion.init()
+                                
+                                if let id: Int = flaxion.objectForKey("id") as? Int{
+                                    new_flexion.id = id
+                                }
+                                
+                                if let description: String = flaxion.objectForKey("description") as? String{
+                                    new_flexion.text = description
+                                }
+                                
+                                flexion_list.append(new_flexion)
+                            }
+                        }
+                        
+                        new_word.flexions = flexion_list
+                        
+                        words_list.append(new_word)
+                        
+                    }
+                }
+            }
+            
+        } catch let error as NSError {
+            
+            print(error)
+        }
+        
+        return words_list
+    }
+    
+    func get_verbs(motto:String, flexion:String) -> [Word]{
+        
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/verbs/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
+        do {
+            
+            if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
+                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
+                    for word in words{
+                        
+                        var new_word:Word
+                        new_word = Word.init()
+                        
+                        if let id: Int = word.objectForKey("id") as? Int{
+                            new_word.id = id
+                        }
+                        
+                        if let motto: AnyObject = word.objectForKey("motto"){
+                            new_word.motto = motto.objectForKey("description") as? String
+                        }
+                        
+                        if let description: String = word.objectForKey("description") as? String{
+                            new_word.text = description
+                        }
+                        
+                        var categories_list:[Category]
+                        categories_list = []
+                        
+                        if let categories: NSArray = word.objectForKey("categories") as? NSArray {
+                            for category in categories{
+                                
+                                var new_category:Category
+                                new_category = Category.init()
+                                
+                                if let id: Int = category.objectForKey("id") as? Int{
+                                    new_category.id = id
+                                }
+                                
+                                if let description: String = category.objectForKey("description") as? String{
+                                    new_category.text = description
+                                }
+                                
+                                categories_list.append(new_category)
+                                
+                            }
+                        }
+                        
+                        new_word.categories = categories_list
+                        
+                        var flexion_list:[Flexion]
+                        flexion_list = []
+                        
+                        if let flexions: NSArray = word.objectForKey("flexions") as? NSArray {
+                            for flaxion in flexions{
+                                
+                                var new_flexion:Flexion
+                                new_flexion = Flexion.init()
+                                
+                                if let id: Int = flaxion.objectForKey("id") as? Int{
+                                    new_flexion.id = id
+                                }
+                                
+                                if let description: String = flaxion.objectForKey("description") as? String{
+                                    new_flexion.text = description
+                                }
+                                
+                                flexion_list.append(new_flexion)
+                            }
+                        }
+                        
+                        new_word.flexions = flexion_list
+                        
+                        words_list.append(new_word)
+                        
+                    }
+                }
+            }
+            
+        } catch let error as NSError {
+            
+            print(error)
+        }
+        
+        return words_list
+    }
+    
+    func get_nouns(motto:String, flexion:String) -> [Word]{
+        
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
+        do {
+            
+            if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
+                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
+                    for word in words{
+                        
+                        var new_word:Word
+                        new_word = Word.init()
+                        
+                        if let id: Int = word.objectForKey("id") as? Int{
+                            new_word.id = id
+                        }
+                        
+                        if let motto: AnyObject = word.objectForKey("motto"){
+                            new_word.motto = motto.objectForKey("description") as? String
+                        }
+                        
+                        if let description: String = word.objectForKey("description") as? String{
+                            new_word.text = description
+                        }
+                        
+                        var categories_list:[Category]
+                        categories_list = []
+                        
+                        if let categories: NSArray = word.objectForKey("categories") as? NSArray {
+                            for category in categories{
+                                
+                                var new_category:Category
+                                new_category = Category.init()
+                                
+                                if let id: Int = category.objectForKey("id") as? Int{
+                                    new_category.id = id
+                                }
+                                
+                                if let description: String = category.objectForKey("description") as? String{
+                                    new_category.text = description
+                                }
+                                
+                                categories_list.append(new_category)
+                                
+                            }
+                        }
+                        
+                        new_word.categories = categories_list
+                        
+                        var flexion_list:[Flexion]
+                        flexion_list = []
+                        
+                        if let flexions: NSArray = word.objectForKey("flexions") as? NSArray {
+                            for flaxion in flexions{
+                                
+                                var new_flexion:Flexion
+                                new_flexion = Flexion.init()
+                                
+                                if let id: Int = flaxion.objectForKey("id") as? Int{
+                                    new_flexion.id = id
+                                }
+                                
+                                if let description: String = flaxion.objectForKey("description") as? String{
+                                    new_flexion.text = description
+                                }
+                                
+                                flexion_list.append(new_flexion)
+                            }
+                        }
+                        
+                        new_word.flexions = flexion_list
+                        
+                        words_list.append(new_word)
+                        
+                    }
+                }
+            }
+            
+        } catch let error as NSError {
+            
+            print(error)
+        }
+        
+        return words_list
+    }
+    
+    func get_adjectives(motto:String, flexion:String) -> [Word]{
+        
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/adjectives/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
+        do {
+            
+            if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
+                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
+                    for word in words{
+                        
+                        var new_word:Word
+                        new_word = Word.init()
+                        
+                        if let id: Int = word.objectForKey("id") as? Int{
+                            new_word.id = id
+                        }
+                        
+                        if let motto: AnyObject = word.objectForKey("motto"){
+                            new_word.motto = motto.objectForKey("description") as? String
                         }
                         
                         if let description: String = word.objectForKey("description") as? String{
