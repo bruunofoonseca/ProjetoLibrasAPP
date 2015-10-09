@@ -15,13 +15,11 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var frameView: UIView!
-    @IBOutlet weak var vwSujeito: UIView!
-    @IBOutlet weak var vwVerbo: UIView!
-    @IBOutlet weak var vwComplemento: UIView!
     @IBOutlet weak var lblSujeito: UILabel!
     @IBOutlet weak var lblVerbo: UILabel!
     @IBOutlet weak var lblComplemento: UILabel!
     @IBOutlet weak var txtTexto: UITextField!
+    @IBOutlet weak var txtTraducao: UILabel!
     var currentPage:CGFloat = 0.0
     var texto:String = ""
     
@@ -29,7 +27,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
@@ -102,9 +99,17 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         frame.origin.x = frame.size.width * CGFloat(page);
         frame.origin.y = 0;
         print(page)
-        if page == 1 {
+        
+        if page == 0 {
+            lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
+            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            txtTexto.text = ""
+            txtTexto.placeholder = "Digite o Sujeito"
             
-            //frase.text = "Digite o Verbo"
+        }
+        else if page == 1 {
+            
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -115,7 +120,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         }
         else if page == 2 {
-            //frase.text = "Digite o Verbo"
+
             lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -125,23 +130,29 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             
         }
-        
         self.scrollView.scrollRectToVisible(frame, animated: animated)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == txtTexto {
             print("Current page textField \(currentPage)")
+            
             if self.currentPage == 0 {
+                txtTraducao.text = ""
                self.scrollToPage(1, animated: true)
+                self.currentPage++
             }
             else if self.currentPage == 1 {
                 self.scrollToPage(2, animated: true)
+                self.currentPage++
             }
             else if self.currentPage == 2 {
-                
+                texto = txtTexto.text!
+                frase.text! += " \(texto)"
+                txtTraducao.text = frase.text
+                self.scrollToPage(0, animated: true)
+                self.currentPage = 0
             }
-            self.currentPage++
         }
         
         return true
