@@ -21,6 +21,7 @@ class Pronome: NSObject {
     
     // Trata o pronome de acordo com a sua particularidade (Pronome pessoal, pronome de tratamento).
     func categorizarPronome(frase : [Word], posicao : Int) -> [String]{
+        recebeArtigo.removeAll()
         if (frase[posicao].categories[0].text == "pronome"){
             if (frase[posicao].text == "eu") || (frase[posicao].text == "tu") || (frase[posicao].text == "ele") || (frase[posicao].text == "nós") || (frase[posicao].text == "vós") || (frase[posicao].text == "eles") || (frase[posicao].text == "ela") || (frase[posicao].text == "elas"){
                 recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao)

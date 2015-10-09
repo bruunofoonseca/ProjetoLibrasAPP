@@ -18,6 +18,7 @@ class VerboEstrutura : NSObject {
     // funcao que trata o verbo de acordo com o sujeito e coloca preposição.
     func tratarVerbo(frase: [Word]) -> [String]
     {
+        defVerbo.removeAll()
         defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
         defVerbo.append(objPreposicao.Plistando(frase))
         

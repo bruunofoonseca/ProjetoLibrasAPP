@@ -34,6 +34,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     var fraseClassificada : [Word] = []
     var juntaPalavras : String = ""
     var verboAcesso = VerboEstrutura()
+    var temTexto = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +72,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        
         let pageWidth:CGFloat = CGRectGetWidth(scrollView.frame)
         self.currentPage = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1
         print("Current page Scroll \(currentPage)")
@@ -87,6 +87,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             
         }
         else if Int(currentPage) == 1{
+            
             //frase.text = "Digite o Verbo"
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -148,6 +149,13 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             print("Current page textField \(currentPage)")
             
             if self.currentPage == 0 {
+                if temTexto{
+                    frase.text.removeAll()
+                    texto.removeAll()
+                    juntaPalavras.removeAll()
+                    txtTraducao.text?.removeAll()
+                    temTexto = false
+                }
                 txtTraducao.text = ""
                 frase.text! += " " + txtTexto.text!
                 txtTexto.text = ""
@@ -168,6 +176,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 txtTexto.placeholder = "Digite o Sujeito"
                 txtTraducao.text = traducaoTexto(frase.text)
                 self.scrollToPage(0, animated: true)
+                temTexto = true
                 self.currentPage = 0
             }
         }

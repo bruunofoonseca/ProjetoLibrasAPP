@@ -20,6 +20,7 @@ class ComplementoEstrutura : NSObject {
     
     // Função para tratar o complemento de acordo com a frase.
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
+        arrayArtigos.removeAll()
         if (frase[2].categories[0].text == "nome feminino") || (frase[2].categories[0].text == "nome masculino"){
             // irá colocar artigo caso não tenha preposição quando for substantivo.
             if (preposicao == "null"){

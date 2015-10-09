@@ -152,6 +152,31 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "ter"
+        newWord.motto = "ter"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "trabalho"
         newWord.motto = "trabalho"
         newWord.id = 2
@@ -253,11 +278,61 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "casas"
+        newWord.text = "casa"
         newWord.motto = "casa"
         newWord.id = 3
         
+        flexions = ["singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["nome feminino"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "casas"
+        newWord.motto = "casas"
+        newWord.id = 3
+        
         flexions = ["plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["nome feminino"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "festa"
+        newWord.motto = "festa"
+        newWord.id = 3
+        
+        flexions = ["singular"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -864,6 +939,20 @@ class Translator: NSObject {
             }
             else if (sujeito == "eles") || (flexao == "plural") {
                 ab = "vão"
+            }
+        }
+        else if (verbo == "ter"){
+            if (sujeito == "eu"){
+                ab = "tenho"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "tem"
+            }
+            else if (sujeito == "nós"){
+                ab = "temos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "têm"
             }
         }
         

@@ -21,6 +21,7 @@ class Preposicao: NSObject {
     
     // Verifica se o verbo tem preposição consultando a Plist Preposicao.
     func Plistando(texto : [Word]) -> String {
+        fraseOrganizada.removeAll()
         let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
