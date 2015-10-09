@@ -34,7 +34,7 @@ class ComplementoEstrutura : NSObject {
         }
         else if (frase[2].categories[0].text == "verbo")
         {
-            arrayArtigos.append(translator.buscaVerbo(frase[2].text, flexao: "infinitivo", categoria: "verbo"))
+            arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: "infinitivo", categoria: "verbo"))
         }
         arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
