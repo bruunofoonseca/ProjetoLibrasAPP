@@ -178,8 +178,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "você"
-        newWord.motto = "você"
+        newWord.text = "eu"
+        newWord.motto = "eu"
         newWord.id = 3
         
         flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
@@ -343,7 +343,7 @@ class Translator: NSObject {
     
     func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
     {
-        let ab = "pode"
+        let ab = "posso"
         
         return ab
     }

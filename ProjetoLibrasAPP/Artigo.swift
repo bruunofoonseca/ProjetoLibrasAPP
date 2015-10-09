@@ -58,37 +58,8 @@ class Artigo: NSObject {
                 }
         }
         else if (frase[posicao].categories[0].text == "pronome"){
-            if (frase[posicao].flexions[0].text == "Feminino singular") {
-                if (posicao == 0){
-                    artigos.append("A")
-                }
-                else{
-                    artigos.append("a")
-                }
-            }
-            else if (frase[posicao].flexions[0].text == "Feminino plural") {
-                if (posicao == 0){
-                    artigos.append("As")
-                }
-                else{
-                    artigos.append("as")
-                }
-            }
-            else if (frase[posicao].flexions[0].text == "Masculino singular") {
-                if (posicao == 0){
-                    artigos.append("O")
-                }
-                else{
-                    artigos.append("o")
-                }
-            }
-            else if (frase[posicao].flexions[0].text == "Masculino plural") {
-                if (posicao == 0){
-                    artigos.append("Os")
-                }
-                else{
-                    artigos.append("os")
-                }
+            if (frase[posicao].text == "eu") || (frase[posicao].text == "você"){
+                artigos.append("")
             }
         }
         else{

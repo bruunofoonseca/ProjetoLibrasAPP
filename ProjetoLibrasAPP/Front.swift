@@ -22,8 +22,18 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var txtTraducao: UILabel!
     var currentPage:CGFloat = 0.0
     var texto:String = ""
-    
-    
+    // Variáveis
+    let classifica = Translator()
+    var sujeitoClassificado : [String] = []
+    let sujeito = SujeitoEstrutura()
+    var complementoClassificado : [String] = []
+    let complemento = ComplementoEstrutura()
+    var verboClassificado: [String] = []
+    let verbo = VerboEstrutura()
+    var preposicao : [String] = []
+    var fraseClassificada : [Word] = []
+    var juntaPalavras : String = ""
+    var verboAcesso = VerboEstrutura()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,8 +114,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            txtTexto.text = ""
-            txtTexto.placeholder = "Digite o Sujeito"
+//            txtTexto.text = ""
+//            txtTexto.placeholder = "Digite o Sujeito"
             
         }
         else if page == 1 {
@@ -113,10 +123,10 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            texto = txtTexto.text!
-            frase.text = texto
-            txtTexto.placeholder = "Digite o Verbo"
-            txtTexto.text = ""
+//            texto = txtTexto.text!
+//            frase.text = texto
+//            txtTexto.placeholder = "Digite o Verbo"
+//            txtTexto.text = ""
         
         }
         else if page == 2 {
@@ -124,10 +134,10 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            texto = txtTexto.text!
-            frase.text! += " \(texto)"
-            txtTexto.placeholder = "Digite o Complemento"
-            txtTexto.text = ""
+//            texto = txtTexto.text!
+//            frase.text! += " \(texto)"
+//            txtTexto.placeholder = "Digite o Complemento"
+//            txtTexto.text = ""
             
         }
         self.scrollView.scrollRectToVisible(frame, animated: animated)
@@ -139,23 +149,71 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             
             if self.currentPage == 0 {
                 txtTraducao.text = ""
-               self.scrollToPage(1, animated: true)
+                frase.text! += " " + txtTexto.text!
+                txtTexto.text = ""
+                txtTexto.placeholder = "Digite o Sujeito"
+                self.scrollToPage(1, animated: true)
                 self.currentPage++
             }
             else if self.currentPage == 1 {
+                frase.text! += " " + txtTexto.text!
+                txtTexto.text = ""
+                txtTexto.placeholder = "Digite o Verbo"
                 self.scrollToPage(2, animated: true)
                 self.currentPage++
             }
             else if self.currentPage == 2 {
-                texto = txtTexto.text!
-                frase.text! += " \(texto)"
-                txtTraducao.text = frase.text
+                frase.text! += " " + txtTexto.text!
+                txtTexto.text = ""
+                txtTexto.placeholder = "Digite o Sujeito"
+                txtTraducao.text = traducaoTexto(frase.text)
                 self.scrollToPage(0, animated: true)
                 self.currentPage = 0
             }
         }
         
         return true
+    }
+    
+    func traducaoTexto(text : String) -> String {
+        
+        // Aonde colocamos a frase
+        var frase = text
+        print("Frase em Librês: " + frase)
+        frase = (frase.lowercaseString)
+        
+        // Chama a API para classificar as frases.
+        self.fraseClassificada = classifica.test_classify(frase)
+        
+        // Chama a classe que trata o sujeito.
+        self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+        
+        // Chama a classe que trata o Verbo.
+        self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
+        
+        // Chama a classe que trata o complemento
+        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+        
+        // Feito para juntar as palavras em uma String e colocar na tela.
+        metodoJuntaPalavra(sujeitoClassificado)
+        metodoJuntaPalavra(verboClassificado)
+        metodoJuntaPalavra(complementoClassificado)
+        
+        return juntaPalavras
+    }
+    
+    func metodoJuntaPalavra(texto : [String]){
+        
+        for i in 0...texto.count - 1 {
+            if (texto[i] != "null" && texto[i] != ""){
+                if (texto[i] != "."){
+                    juntaPalavras += texto[i] + " "
+                }
+                else{
+                    juntaPalavras += texto[i]
+                }
+            }
+        }
     }
     
 }
