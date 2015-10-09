@@ -169,7 +169,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sujeito" id="6T6-lv-7kI"/>
+                                    <navigationItem title="Libi" id="6T6-lv-7kI"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-6a-o5D" userLabel="View Sujeito">
@@ -232,23 +232,34 @@
                                     <constraint firstItem="6qS-tE-cdC" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" constant="-10" id="O4z-Vo-bWb"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Digite aqui" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-oM-Bk2" userLabel="Exibe o Texto">
-                                <rect key="frame" x="0.0" y="150" width="600" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-oM-Bk2" userLabel="Exibe o Texto">
+                                <rect key="frame" x="0.0" y="150" width="600" height="50"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.78075678660000003" green="0.78075678660000003" blue="0.78075678660000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="LcM-Mj-vQz"/>
+                                    <constraint firstAttribute="height" constant="50" id="LcM-Mj-vQz"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o Sujeito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-mW-EGK">
+                                <rect key="frame" x="0.0" y="325" width="600" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WEM-mW-EGK" secondAttribute="trailing" id="1dV-hs-h10"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="width" secondItem="brM-1A-con" secondAttribute="width" id="24h-RP-ayL"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="leading" id="3UZ-VH-pDA"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="7KE-6F-Vnt"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="BA0-ch-Xcc"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.05" constant="24.5" id="FRb-hs-yE5"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" id="Fui-30-TBy"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="leading" secondItem="ieT-xs-7LS" secondAttribute="trailing" id="GFV-2T-pbl"/>
                             <constraint firstAttribute="trailing" secondItem="Uwe-Wz-mCM" secondAttribute="trailing" id="GOx-7o-djq"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="height" secondItem="ieT-xs-7LS" secondAttribute="height" id="GRQ-sb-w7M"/>
@@ -259,6 +270,7 @@
                             <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="Uwe-Wz-mCM" secondAttribute="bottom" id="XvZ-Ct-ySc"/>
                             <constraint firstItem="Uwe-Wz-mCM" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="aEC-1z-xQN"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="centerX" secondItem="PcF-aV-hLT" secondAttribute="centerX" id="akN-4J-HG1"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.08" id="cYW-mH-F6p"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="height" secondItem="i72-8T-1cI" secondAttribute="height" id="hSG-OG-ejQ"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="hYD-hj-e2L"/>
                             <constraint firstItem="Uwe-Wz-mCM" firstAttribute="top" secondItem="7mC-Rw-tc7" secondAttribute="bottom" id="lRG-d2-Xpq"/>
@@ -267,8 +279,9 @@
                             <constraint firstItem="Uwe-Wz-mCM" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="sW0-Ey-t66"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="ugo-KD-IFu"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="top" secondItem="Uwe-Wz-mCM" secondAttribute="bottom" id="vgm-Jl-909"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" constant="125" id="xdj-Ze-5l1"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" id="xk5-M6-3Xk"/>
-                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerY" secondItem="PcF-aV-hLT" secondAttribute="centerY" constant="-86" id="yAZ-r5-2Gz"/>
+                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerY" secondItem="PcF-aV-hLT" secondAttribute="centerY" constant="-125" id="yAZ-r5-2Gz"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="trailing" id="zCY-Zb-BQN"/>
                         </constraints>
                     </view>
@@ -281,6 +294,10 @@
                         <outlet property="navigationBar" destination="Uwe-Wz-mCM" id="vCK-yq-ImH"/>
                         <outlet property="scrollView" destination="PcF-aV-hLT" id="c1H-VP-bxt"/>
                         <outlet property="searchDisplayController" destination="DfS-FD-P6J" id="tTD-2e-OTp"/>
+                        <outlet property="txtTexto" destination="WEM-mW-EGK" id="PyJ-et-Bfh"/>
+                        <outlet property="vwComplemento" destination="i72-8T-1cI" id="17G-vR-JXH"/>
+                        <outlet property="vwSujeito" destination="Z08-6a-o5D" id="8cW-fV-55t"/>
+                        <outlet property="vwVerbo" destination="ieT-xs-7LS" id="lBc-8R-7SC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCW-Kk-iwV" userLabel="First Responder" sceneMemberID="firstResponder"/>

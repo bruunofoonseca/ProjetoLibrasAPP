@@ -9,37 +9,46 @@
 import Foundation
 import UIKit
 
-class Front:UIViewController,UIScrollViewDelegate {
+class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var frameView: UIView!
+    @IBOutlet weak var vwSujeito: UIView!
+    @IBOutlet weak var vwVerbo: UIView!
+    @IBOutlet weak var vwComplemento: UIView!
     @IBOutlet weak var lblSujeito: UILabel!
     @IBOutlet weak var lblVerbo: UILabel!
     @IBOutlet weak var lblComplemento: UILabel!
+    @IBOutlet weak var txtTexto: UITextField!
+    var currentPage:CGFloat = 0.0
+    var texto:String = ""
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        frase.becomeFirstResponder()
+        
+        txtTexto.becomeFirstResponder()
+        txtTexto.returnKeyType = UIReturnKeyType.Next
+    
+        
+        lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
+        
+        /**********     SCROLLVIEW      **********/
         
         self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         
-        frase.text = "Digite o Sujeito"
-        lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-        
-        
         let viewSujeito = UIView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
-        viewSujeito.backgroundColor = UIColor.blackColor()
+        //viewSujeito.backgroundColor = UIColor.blackColor()
         let viewVerbo = UIView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
-        viewVerbo.backgroundColor = UIColor.redColor()
+        //viewVerbo.backgroundColor = UIColor.redColor()
         let viewComplemento = UIView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
-        viewComplemento.backgroundColor = UIColor.greenColor()
+        //viewComplemento.backgroundColor = UIColor.greenColor()
         
         self.scrollView.addSubview(viewSujeito)
         self.scrollView.addSubview(viewVerbo)
@@ -47,33 +56,95 @@ class Front:UIViewController,UIScrollViewDelegate {
         
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*3, self.scrollView.frame.height)
         self.scrollView.delegate = self
+        
+        /**********     BOTÃO RETURN DO TECLADO     **********/
+        
+        self.txtTexto.delegate = self
                 
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
         let pageWidth:CGFloat = CGRectGetWidth(scrollView.frame)
-        let currentPage:CGFloat = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1
-        
+        self.currentPage = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1
+        print("Current page Scroll \(currentPage)")
         if Int(currentPage) == 0{
             
-            frase.text = "Digite o Sujeito"
+            //frase.text = "Digite o Sujeito"
             lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            txtTexto.placeholder = "Digite o Sujeito"
+            
+            
             
         }
         else if Int(currentPage) == 1{
-            frase.text = "Digite o Verbo"
+            //frase.text = "Digite o Verbo"
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            txtTexto.placeholder = "Digite o Verbo"
+            
         }
         else if Int(currentPage) == 2{
-            frase.text = "Digite o Complemento"
+            //frase.text = "Digite o Complemento"
             lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            txtTexto.placeholder = "Digite o Complemento"
+            
         }
     }
+    
+    func scrollToPage(page: Int,animated:Bool){
+        var frame: CGRect = self.scrollView.frame
+        frame.origin.x = frame.size.width * CGFloat(page);
+        frame.origin.y = 0;
+        print(page)
+        if page == 1 {
+            
+            //frase.text = "Digite o Verbo"
+            lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
+            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            texto = txtTexto.text!
+            frase.text = texto
+            txtTexto.placeholder = "Digite o Verbo"
+            txtTexto.text = ""
+        
+        }
+        else if page == 2 {
+            //frase.text = "Digite o Verbo"
+            lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
+            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            texto = txtTexto.text!
+            frase.text! += " \(texto)"
+            txtTexto.placeholder = "Digite o Complemento"
+            txtTexto.text = ""
+            
+        }
+        
+        self.scrollView.scrollRectToVisible(frame, animated: animated)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == txtTexto {
+            print("Current page textField \(currentPage)")
+            if self.currentPage == 0 {
+               self.scrollToPage(1, animated: true)
+            }
+            else if self.currentPage == 1 {
+                self.scrollToPage(2, animated: true)
+            }
+            else if self.currentPage == 2 {
+                
+            }
+            self.currentPage++
+        }
+        
+        return true
+    }
+    
 }
