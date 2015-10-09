@@ -21,7 +21,7 @@ class Verbo: NSObject {
     // Conjuga o verbo
     func conjugVerboSujeito(sujeito: Word, verbo: Word) -> String
     {
-        let conjugVerbo = api.buscaVerbo(verbo.text, flexao: sujeito.flexions[0].text, categoria: verbo.text)
+        let conjugVerbo = api.buscaVerbo(verbo.text, sujeito: sujeito.text,flexao: sujeito.flexions[0].text, categoria: verbo.text)
         
         return conjugVerbo
     }

@@ -77,6 +77,56 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "estudar"
+        newWord.motto = "estudar"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "ir"
+        newWord.motto = "ir"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "comer"
         newWord.motto = "comer"
         newWord.id = 1
@@ -102,8 +152,58 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "casa"
-        newWord.motto = "casa"
+        newWord.text = "trabalho"
+        newWord.motto = "trabalho"
+        newWord.id = 2
+        
+        flexions = ["singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["nome masculino"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "menino"
+        newWord.motto = "menino"
+        newWord.id = 2
+        
+        flexions = ["singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["nome masculino"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "menina"
+        newWord.motto = "menina"
         newWord.id = 2
         
         flexions = ["singular"]
@@ -115,6 +215,31 @@ class Translator: NSObject {
         }
         
         categories = ["nome feminino"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "mercado"
+        newWord.motto = "mercado"
+        newWord.id = 2
+        
+        flexions = ["singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["nome masculino"]
         
         for category in categories{
             newCategory = Category.init()
@@ -180,6 +305,81 @@ class Translator: NSObject {
         newWord = Word.init()
         newWord.text = "eu"
         newWord.motto = "eu"
+        newWord.id = 3
+        
+        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["pronome"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "você"
+        newWord.motto = "você"
+        newWord.id = 3
+        
+        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["pronome"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "ele"
+        newWord.motto = "ele"
+        newWord.id = 3
+        
+        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["pronome"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "nós"
+        newWord.motto = "nós"
         newWord.id = 3
         
         flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
@@ -620,9 +820,52 @@ class Translator: NSObject {
         return words_list
     }
     
-    func buscaVerbo(verbo: String, flexao: String, categoria: String) -> String
+    func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
     {
-        let ab = "posso"
+        var ab : String!
+        
+        if (verbo == "poder"){
+            if (sujeito == "eu"){
+                ab = "posso"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "pode"
+            }
+            else if (sujeito == "nós"){
+                ab = "podemos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural"){
+                ab = "podem"
+            }
+        }
+        else if (verbo == "gostar"){
+            if (sujeito == "eu"){
+                ab = "gosto"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "gosta"
+            }
+            else if (sujeito == "nós"){
+                ab = "gostamos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "gostam"
+            }
+        }
+        else if (verbo == "ir"){
+            if (sujeito == "eu"){
+                ab = "vou"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "vai"
+            }
+            else if (sujeito == "nós"){
+                ab = "vamos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "vão"
+            }
+        }
         
         return ab
     }
