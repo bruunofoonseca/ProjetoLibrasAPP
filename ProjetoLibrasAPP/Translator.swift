@@ -587,9 +587,6 @@ class Translator: NSObject {
                 ab = "vão"
             }
         }
-        else{
-            ab = ""
-        }
         
         return ab
     }
