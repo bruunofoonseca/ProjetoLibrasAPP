@@ -20,7 +20,7 @@ class VerboEstrutura : NSObject {
     {
         defVerbo.removeAll()
         defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
-        defVerbo.append(objPreposicao.Plistando(frase))
+        defVerbo.append(objPreposicao.inserePreposicao(frase))
         
         return defVerbo
     }
