@@ -19,8 +19,13 @@ class VerboEstrutura : NSObject {
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.removeAll()
-        defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
-        defVerbo.append(objPreposicao.Plistando(frase))
+        if (frase[0].categories[0].text != "verbo"){
+            defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
+        }
+        else{
+            defVerbo.append(frase[1].text)
+        }
+        defVerbo.append(objPreposicao.inserePreposicao(frase))
         
         return defVerbo
     }

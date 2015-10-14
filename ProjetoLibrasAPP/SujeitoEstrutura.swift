@@ -24,7 +24,7 @@ class SujeitoEstrutura : NSObject {
         if (frase[0].categories[0].text == "nome feminino") || (frase[0].categories[0].text == "nome masculino") {
             arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 0)
         }
-        else {
+        else if (frase[0].categories[0].text == "pronome"){
             arrayArtigos = objPronome.categorizarPronome(frase, posicao: 0)
         }
         arrayArtigos.append(frase[0].text)

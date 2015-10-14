@@ -202,11 +202,11 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "menino"
-        newWord.motto = "menino"
+        newWord.text = "meninos"
+        newWord.motto = "meninos"
         newWord.id = 2
         
-        flexions = ["singular"]
+        flexions = ["plural"]
         
         for flexion in flexions{
             newFlexion = Flexion.init()
@@ -898,7 +898,6 @@ class Translator: NSObject {
     func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
     {
         var ab : String!
-        
         if (verbo == "poder"){
             if (sujeito == "eu"){
                 ab = "posso"
@@ -955,8 +954,9 @@ class Translator: NSObject {
                 ab = "têm"
             }
         }
-        
+        else{
+            ab = verbo
+        }
         return ab
     }
-    
 }

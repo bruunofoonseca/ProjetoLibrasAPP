@@ -90,8 +90,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         self.currentPage = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1
         print("Current page Scroll \(currentPage)")
         if Int(currentPage) == 0{
-            
-            //frase.text = "Digite o Sujeito"
+
             lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -102,7 +101,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         }
         else if Int(currentPage) == 1{
             
-            //frase.text = "Digite o Verbo"
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -110,7 +108,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             
         }
         else if Int(currentPage) == 2{
-            //frase.text = "Digite o Complemento"
+
             lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
@@ -129,19 +127,12 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            txtTexto.text = ""
-//            txtTexto.placeholder = "Digite o Sujeito"
-            
         }
         else if page == 1 {
             
             lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            texto = txtTexto.text!
-//            frase.text = texto
-//            txtTexto.placeholder = "Digite o Verbo"
-//            txtTexto.text = ""
         
         }
         else if page == 2 {
@@ -149,11 +140,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
             lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
             lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            texto = txtTexto.text!
-//            frase.text! += " \(texto)"
-//            txtTexto.placeholder = "Digite o Complemento"
-//            txtTexto.text = ""
-            
         }
         self.scrollView.scrollRectToVisible(frame, animated: animated)
     }
@@ -194,7 +180,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 self.currentPage = 0
             }
         }
-        
         return true
     }
     
@@ -217,6 +202,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
         
         // Chama a classe que trata o complemento
+        print(verboClassificado[0])
+        print(verboClassificado[1])
         self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
         
         // Feito para juntar as palavras em uma String e colocar na tela.
@@ -240,5 +227,4 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             }
         }
     }
-    
 }
