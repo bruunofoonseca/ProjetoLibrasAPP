@@ -11,6 +11,8 @@ import UIKit
 
 class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
+    /********** VARIÁVEIS DA INTERFACE  **********/
+    
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -22,7 +24,9 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var txtTraducao: UILabel!
     var currentPage:CGFloat = 0.0
     var texto:String = ""
-    // Variáveis
+    
+    /********** VARIÁVEIS DO ALGORITMO  **********/
+    
     let classifica = Translator()
     var sujeitoClassificado : [String] = []
     let sujeito = SujeitoEstrutura()
@@ -35,6 +39,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     var juntaPalavras : String = ""
     var verboAcesso = VerboEstrutura()
     var temTexto = false
+    
+    /********** MÉTODO INICIAL  **********/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +57,18 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         
-        let viewSujeito = UIView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
+        let viewSujeito = UIImageView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
         //viewSujeito.backgroundColor = UIColor.blackColor()
-        let viewVerbo = UIView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
+        viewSujeito.image = UIImage(named: "Fundo1")
+        //viewSujeito.alpha = 0.5
+        let viewVerbo = UIImageView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
         //viewVerbo.backgroundColor = UIColor.redColor()
-        let viewComplemento = UIView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
+        viewVerbo.image = UIImage(named: "Fundo2")
+        //viewVerbo.alpha = 0.5
+        let viewComplemento = UIImageView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
         //viewComplemento.backgroundColor = UIColor.greenColor()
+        viewComplemento.image = UIImage(named: "Fundo3")
+        //viewComplemento.alpha = 0.5
         
         self.scrollView.addSubview(viewSujeito)
         self.scrollView.addSubview(viewVerbo)
@@ -70,6 +82,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         self.txtTexto.delegate = self
                 
     }
+    
+    /********** MÉTODOS DA INTERFACE  **********/
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let pageWidth:CGFloat = CGRectGetWidth(scrollView.frame)
@@ -183,6 +197,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         return true
     }
+    
+    /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
     
     func traducaoTexto(text : String) -> String {
         

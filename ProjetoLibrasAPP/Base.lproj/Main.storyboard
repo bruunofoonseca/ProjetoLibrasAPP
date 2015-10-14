@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -31,21 +32,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-eS-SYF">
-                                <rect key="frame" x="40" y="299" width="520" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="qNs-Wu-YQv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-eS-SYF">
+                                <rect key="frame" x="20" y="299" width="560" height="55"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.6588235294117647" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="I0z-oS-zhN"/>
+                                    <constraint firstAttribute="height" constant="55" id="I0z-oS-zhN"/>
                                     <constraint firstAttribute="height" constant="65" id="Lbf-yM-jYw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="22"/>
                                 <state key="normal" title="Tradução">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -64,20 +69,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlE-Ka-tnF">
-                                <rect key="frame" x="40" y="391" width="520" height="50"/>
+                                <rect key="frame" x="20" y="391" width="560" height="55"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.6588235294117647" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Y8N-rZ-PYX"/>
+                                    <constraint firstAttribute="height" constant="55" id="Y8N-rZ-PYX"/>
                                     <constraint firstAttribute="height" constant="65" id="lLf-ce-sfI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="22"/>
                                 <state key="normal" title="Pesquisar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -93,20 +98,20 @@
                                 </variation>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24p-t0-2Tf">
-                                <rect key="frame" x="40" y="481" width="520" height="50"/>
+                                <rect key="frame" x="20" y="481" width="560" height="55"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.6588235294117647" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="eRa-tP-AcR"/>
-                                    <constraint firstAttribute="height" constant="50" id="sPe-BC-Bfp"/>
+                                    <constraint firstAttribute="height" constant="55" id="sPe-BC-Bfp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="22"/>
                                 <state key="normal" title="Explicação">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -134,17 +139,21 @@
                         <constraints>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="top" secondItem="nj5-zD-QTU" secondAttribute="bottom" constant="91" id="0gE-Ek-sdN"/>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="top" secondItem="nj5-zD-QTU" secondAttribute="bottom" constant="30" id="11a-8h-w9o"/>
+                            <constraint firstItem="qNs-Wu-YQv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7lp-Df-rBE"/>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="trailing" secondItem="SlE-Ka-tnF" secondAttribute="trailing" id="Egd-8T-SsJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6wU-eS-SYF" secondAttribute="trailing" constant="20" id="J5H-YJ-5VZ"/>
+                            <constraint firstItem="qNs-Wu-YQv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FKM-6A-q86"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6wU-eS-SYF" secondAttribute="trailing" id="J5H-YJ-5VZ"/>
                             <constraint firstItem="nj5-zD-QTU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="JMe-rW-KHw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24p-t0-2Tf" secondAttribute="bottom" constant="150" id="Oog-UF-dmz"/>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="leading" secondItem="24p-t0-2Tf" secondAttribute="leading" id="RT7-Oo-2qT"/>
-                            <constraint firstItem="SlE-Ka-tnF" firstAttribute="top" secondItem="6wU-eS-SYF" secondAttribute="bottom" constant="42" id="T1e-oY-kzo"/>
-                            <constraint firstItem="6wU-eS-SYF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ZRY-cJ-lwA"/>
+                            <constraint firstItem="SlE-Ka-tnF" firstAttribute="top" secondItem="6wU-eS-SYF" secondAttribute="bottom" constant="37" id="T1e-oY-kzo"/>
+                            <constraint firstItem="6wU-eS-SYF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZRY-cJ-lwA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qNs-Wu-YQv" secondAttribute="bottom" id="b1q-Rb-Xsk"/>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="leading" secondItem="SlE-Ka-tnF" secondAttribute="leading" id="ezD-sQ-h4I"/>
-                            <constraint firstItem="24p-t0-2Tf" firstAttribute="top" secondItem="SlE-Ka-tnF" secondAttribute="bottom" constant="40" id="gmf-0K-zYt"/>
+                            <constraint firstItem="24p-t0-2Tf" firstAttribute="top" secondItem="SlE-Ka-tnF" secondAttribute="bottom" constant="35" id="gmf-0K-zYt"/>
                             <constraint firstItem="6wU-eS-SYF" firstAttribute="trailing" secondItem="24p-t0-2Tf" secondAttribute="trailing" id="rIL-aL-okj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24p-t0-2Tf" secondAttribute="bottom" constant="69" id="t38-CN-w9H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24p-t0-2Tf" secondAttribute="bottom" constant="64" id="t38-CN-w9H"/>
+                            <constraint firstAttribute="trailing" secondItem="qNs-Wu-YQv" secondAttribute="trailing" id="v4k-tE-dGG"/>
                             <constraint firstItem="nj5-zD-QTU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yvb-2J-6hl"/>
                         </constraints>
                         <variation key="default">
@@ -186,19 +195,19 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwe-Wz-mCM">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <animations/>
-                                <color key="barTintColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.18823529411764706" green="0.6588235294117647" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Libi" id="6T6-lv-7kI"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-6a-o5D" userLabel="View Sujeito">
-                                <rect key="frame" x="0.0" y="64" width="200" height="48.5"/>
+                                <rect key="frame" x="0.0" y="64" width="200" height="49"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sujeito" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-FG-Mpd">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -215,10 +224,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieT-xs-7LS" userLabel="View Verbo">
-                                <rect key="frame" x="200" y="64" width="200" height="48.5"/>
+                                <rect key="frame" x="200" y="64" width="200" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verbo" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEd-cz-O2h">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -235,10 +244,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i72-8T-1cI" userLabel="View Complemento">
-                                <rect key="frame" x="400" y="64" width="210" height="48.5"/>
+                                <rect key="frame" x="400" y="64" width="210" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complemento" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-tE-cdC">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -345,6 +354,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fundo" width="375" height="667"/>
         <image name="LogoInicial" width="174" height="174"/>
     </resources>
 </document>
