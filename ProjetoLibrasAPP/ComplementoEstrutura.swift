@@ -23,6 +23,7 @@ class ComplementoEstrutura : NSObject {
     
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
         arrayArtigos.removeAll()
+        print(frase[2].categories[0].text)
         if (frase[2].categories[0].text == "nome feminino") || (frase[2].categories[0].text == "nome masculino"){
             // irá colocar artigo caso não tenha preposição quando for substantivo.
             if (preposicao == "null"){
@@ -31,9 +32,13 @@ class ComplementoEstrutura : NSObject {
         }
         else if (frase[2].categories[0].text == "pronome"){
             // irá colocar artigo caso não tenha preposição quando for pronome.
+            
             if (preposicao == "null"){
                 arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2)
             }
+            
+            arrayArtigos.append(objPronome.transformaEmPronomeObliquosTonico(frase) + ".")
+            return arrayArtigos
         }
         else if (frase[2].categories[0].text == "verbo")
         {
@@ -41,6 +46,7 @@ class ComplementoEstrutura : NSObject {
                 arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: "infinitivo", categoria: "verbo"))
             }
         }
+        
         arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
     }

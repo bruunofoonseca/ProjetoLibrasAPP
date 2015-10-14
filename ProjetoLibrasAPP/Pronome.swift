@@ -25,6 +25,7 @@ class Pronome: NSObject {
 
     func categorizarPronome(frase : [Word], posicao : Int) -> [String]{
         recebeArtigo.removeAll()
+        print(frase[posicao].text)
         if (frase[posicao].categories[0].text == "pronome"){
             if (frase[posicao].text == "eu") || (frase[posicao].text == "tu") || (frase[posicao].text == "ele") || (frase[posicao].text == "nós") || (frase[posicao].text == "vós") || (frase[posicao].text == "eles") || (frase[posicao].text == "ela") || (frase[posicao].text == "elas"){
                 recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao)
@@ -40,6 +41,22 @@ class Pronome: NSObject {
         }
         
         return recebeArtigo
+    }
+    
+    func transformaEmPronomeObliquosTonico (frase : [Word]) -> String{
+        
+        var pronomeTransformado = frase[2].text
+        
+        if (frase[2].text == "eu"){
+            if(frase[1].text == "gostar"){
+                pronomeTransformado = "mim"
+            }
+            if(frase[1].text == "ir"){
+                pronomeTransformado = "comigo"
+            }
+        }
+        
+        return pronomeTransformado
     }
     
 }

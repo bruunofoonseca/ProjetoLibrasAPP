@@ -30,6 +30,7 @@ class SujeitoEstrutura : NSObject {
         else if (frase[0].categories[0].text == "pronome"){
             arrayArtigos = objPronome.categorizarPronome(frase, posicao: 0)
         }
+        
         arrayArtigos.append(frase[0].text)
         return arrayArtigos
     }

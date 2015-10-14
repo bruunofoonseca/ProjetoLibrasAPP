@@ -927,6 +927,7 @@ class Translator: NSObject {
     func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
     {
         var ab : String!
+        let sujeito = sujeito.lowercaseString
         if (verbo == "poder"){
             if (sujeito == "eu"){
                 ab = "posso"

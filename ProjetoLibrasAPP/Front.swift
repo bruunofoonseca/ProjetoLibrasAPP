@@ -192,6 +192,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
         
+        print(frase)
+        
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
         
@@ -209,13 +211,17 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         metodoJuntaPalavra(verboClassificado)
         metodoJuntaPalavra(complementoClassificado)
         
+        /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+        
+        juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+        
         return juntaPalavras
     }
     
     func metodoJuntaPalavra(texto : [String]){
         
         for i in 0...texto.count - 1 {
-            if (texto[i] != "null" && texto[i] != ""){
+            if (texto[i] != "null" && texto[i] != "" && texto[i] != " "){
                 if (texto[i] != "."){
                     juntaPalavras += texto[i] + " "
                 }
