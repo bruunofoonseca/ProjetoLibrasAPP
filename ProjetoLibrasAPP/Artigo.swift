@@ -18,7 +18,8 @@ class Artigo: NSObject {
         super.init()
     }
     
-    //método para colocar artigo definido na frase.
+    /**********     MÉTODO QUE COLOCA ARTIGOS DEFINIDOS NA FRASE   **********/
+    
     func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
         artigos.removeAll()
         if (frase[posicao].categories[0].text == "nome feminino") {
@@ -60,6 +61,9 @@ class Artigo: NSObject {
         else if (frase[posicao].categories[0].text == "pronome"){
             if (frase[posicao].text == "eu") || (frase[posicao].text == "você"){
                 artigos.append("")
+            }
+            else if(frase[posicao].text == "senhor"){
+                artigos.append("o")
             }
         }
         else{

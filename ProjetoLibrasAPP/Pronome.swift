@@ -11,7 +11,8 @@ import UIKit
 
 class Pronome: NSObject {
     
-    // Variáveis
+    /**********     VARIÁVEIS    **********/
+
     var recebeArtigo : [String] = []
     var objArtigo = Artigo()
     
@@ -19,7 +20,9 @@ class Pronome: NSObject {
         super.init()
     }
     
-    // Trata o pronome de acordo com a sua particularidade (Pronome pessoal, pronome de tratamento).
+    
+    /**********     FUNÇÃO QUE TRATA O PRONOME DE ACORDO COM SUA PARTICULARIDADE   **********/
+
     func categorizarPronome(frase : [Word], posicao : Int) -> [String]{
         recebeArtigo.removeAll()
         if (frase[posicao].categories[0].text == "pronome"){

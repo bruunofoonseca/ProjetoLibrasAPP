@@ -11,14 +11,16 @@ import UIKit
 
 class ComplementoEstrutura : NSObject {
     
-    // Variáveis
+    /**********     VARIÁVEIS   **********/
+    
     let objSubstantivo = Substantivo()
     let objPronome = Pronome()
     let translator = Translator()
     var arrayArtigos : [String] = [""]
     var fraseClassificada : [Word] = []
     
-    // Função para tratar o complemento de acordo com a frase.
+    /**********     FUNÇÃO QUE TRATA O COMPLEMENTO DE ACORDO COM A FRASE   **********/
+    
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
         arrayArtigos.removeAll()
         if (frase[2].categories[0].text == "nome feminino") || (frase[2].categories[0].text == "nome masculino"){

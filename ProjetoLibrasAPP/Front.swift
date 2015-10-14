@@ -202,8 +202,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
         
         // Chama a classe que trata o complemento
-        print(verboClassificado[0])
-        print(verboClassificado[1])
         self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
         
         // Feito para juntar as palavras em uma String e colocar na tela.

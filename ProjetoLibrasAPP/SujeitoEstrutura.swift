@@ -11,14 +11,17 @@ import UIKit
 
 class SujeitoEstrutura : NSObject {
     
-    // Variaveis
+    /**********     VARIÁVEIS     **********/
+
     let objSubstantivo = Substantivo()
     let objPronome = Pronome()
     var arrayArtigos : [String] = []
     var arrayPronome : [String] = []
     var fraseClassificada : [Word] = []
+    
 
-    // Função que irá tratar os sujeitos.
+    /**********     FUNÇÃO QUE TRATA O SUJEITO    **********/
+
     func tratarSujeito(frase : [Word]) -> [String]{
         arrayArtigos.removeAll()
         if (frase[0].categories[0].text == "nome feminino") || (frase[0].categories[0].text == "nome masculino") {

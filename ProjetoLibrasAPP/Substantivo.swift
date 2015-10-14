@@ -11,7 +11,8 @@ import UIKit
 
 class Substantivo: NSObject {
     
-    // Variáveis
+    /**********     VARIÁVEIS   **********/
+    
     var recebeArtigo : [String] = []
     var objArtigo = Artigo()
     

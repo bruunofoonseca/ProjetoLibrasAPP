@@ -930,7 +930,7 @@ class Translator: NSObject {
             if (sujeito == "eu"){
                 ab = "vou"
             }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular") || (flexao == "Masculino singular")) {
                 ab = "vai"
             }
             else if (sujeito == "nós"){

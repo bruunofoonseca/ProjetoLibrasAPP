@@ -10,12 +10,16 @@ import Foundation
 
 class VerboEstrutura : NSObject {
     
+    /**********     VARIÁVEIS   **********/
+
     let api = Translator()
     let objVerbo = Verbo()
     var defVerbo: [String] = []
     let objPreposicao = Preposicao()
     
-    // funcao que trata o verbo de acordo com o sujeito e coloca preposição.
+    
+    /**********     FUNÇÃO QUE TRATA O VERBO DE ACORDO COM O SUJEITO E INSERE PREPOSIÇÃO   **********/
+
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.removeAll()
