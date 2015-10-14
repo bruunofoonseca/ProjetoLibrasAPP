@@ -510,6 +510,14 @@ class Translator: NSObject {
         var separatedWords:[String]
         separatedWords = phrase.componentsSeparatedByString(" ")
         
+//        print(phrase)
+        
+//        for teste in separatedWords
+//        {
+//            print(teste)
+//        }
+        
+        
         var words:[Word]
         words = []
         
@@ -521,6 +529,47 @@ class Translator: NSObject {
             }
         }
         
+        var i = 0
+        for separatedWord in separatedWords{
+//            for word in words{
+            let test = words[i].text.containsString(separatedWord)
+            
+            if test == false
+            {
+                let aux: Word = Word()
+                aux.text = separatedWord
+                
+                aux.categories = [Category()]
+                aux.categories[0].text = ""
+                
+                aux.flexions = [Flexion()]
+                aux.flexions[0].text = ""
+                                    
+                words.insert(aux, atIndex: i)
+            }
+                
+//                if word.text == separatedWord{
+//                }
+//                else
+//                {
+//                    let aux: Word = Word()
+//                    aux.text = separatedWord
+//                    
+//                    aux.categories = [Category()]
+//                    aux.categories[0].text = ""
+//                    
+//                    aux.flexions = [Flexion()]
+//                    aux.flexions[0].text = ""
+//                    
+//                    words.append(aux)
+//                }
+//            }
+            i++
+        }
+//        for word in words
+//        {
+//            print(word.text)
+//        }
         return words
     }
     
