@@ -36,7 +36,6 @@ class Preposicao: NSObject {
         colocaPreposicao.removeAll()
         pronomeTonico.removeAll()
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto))
-        print(pronomeTonico[0])
         
     /**********     CHAMA FUNÇÃO QUE VERIFICA SE JÁ ESTA TRATADO    **********/
         

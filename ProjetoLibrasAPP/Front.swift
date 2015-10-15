@@ -191,9 +191,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         var frase = text
         print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
-        
-        print(frase)
-        
+                
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
         

@@ -24,7 +24,7 @@ class ComplementoEstrutura : NSObject {
     
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
         arrayArtigos.removeAll()
-        print(frase[2].categories[0].text)
+
         if (frase[2].categories[0].text == "nome feminino") || (frase[2].categories[0].text == "nome masculino"){
             
      /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
