@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 067EB5E41BBF2AF40081F935 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
 		06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BA88421BCEED730051D01F /* PronomesPessoais.plist */; settings = {ASSET_TAGS = (); }; };
+		410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E74801BD01CD000512F18 /* Adjetivo.swift */; settings = {ASSET_TAGS = (); }; };
 		41B20B7C1BC44D4300B75936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B20B7A1BC44D4300B75936 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		41B20B7D1BC44D4300B75936 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902A1BBC9B6100F8C56B /* Translator.swift */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		067EB5E41BBF2AF40081F935 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		06BA88421BCEED730051D01F /* PronomesPessoais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomesPessoais.plist; sourceTree = "<group>"; };
+		410E74801BD01CD000512F18 /* Adjetivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adjetivo.swift; sourceTree = "<group>"; };
 		416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TecladoCustomizado.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B20B7A1BC44D4300B75936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TecladoCustomizado/Info.plist; sourceTree = "<group>"; };
 		41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = TecladoCustomizado/KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -145,10 +147,11 @@
 				41EA443B1BBDD6600076C6C2 /* Artigo.swift */,
 				41EA443D1BBDD6760076C6C2 /* Substantivo.swift */,
 				41EA443F1BBDD6850076C6C2 /* Pronome.swift */,
+				06BA88421BCEED730051D01F /* PronomesPessoais.plist */,
 				41EA44411BBDD6900076C6C2 /* Verbo.swift */,
+				410E74801BD01CD000512F18 /* Adjetivo.swift */,
 				41EA44431BBDD6E40076C6C2 /* Preposicao.swift */,
 				067EB5E41BBF2AF40081F935 /* Preposicao.plist */,
-				06BA88421BCEED730051D01F /* PronomesPessoais.plist */,
 			);
 			name = "Classes Gramáticais";
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
+				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,

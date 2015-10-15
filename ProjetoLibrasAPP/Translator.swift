@@ -518,33 +518,9 @@ class Translator: NSObject {
                 if word.text == separatedWord{
                     words.append(word)
                 }
-//                else
-//                {
-//                    let aux: Word = Word()
-//                    aux.text = separatedWord
-//                    
-//                    aux.categories = [Category()]
-//                    aux.categories[0].text = ""
-//                    
-//                    aux.flexions = [Flexion()]
-//                    aux.flexions[0].text = ""
-//                                        
-//                    words.append(aux)
-//                }
             }
         }
-        
-//        while(words.count > 3)
-//        {
-//            for(var i = 0; i < words.count - 1; i++)
-//            {
-//                if words[i].text == words[i+1].text || words[i].text == ""
-//                {
-//                    words.removeAtIndex(i)
-//                }
-//            }
-//        }
-        
+                
         for word in words
         {
             print(word.text)
@@ -645,7 +621,7 @@ class Translator: NSObject {
         return words_list
     }
     
-    func get_verbs(motto:String, flexion:String) -> [Word]{
+    func get_verbs(motto:String, flexion:String) -> String{
         
         var words_list:[Word]
         words_list = []
@@ -735,10 +711,10 @@ class Translator: NSObject {
             print(error)
         }
         
-        return words_list
+        return words_list[0].text
     }
     
-    func get_nouns(motto:String, flexion:String) -> [Word]{
+    func get_nouns(motto:String, flexion:String) -> String{
         
         var words_list:[Word]
         words_list = []
@@ -828,10 +804,10 @@ class Translator: NSObject {
             print(error)
         }
         
-        return words_list
+        return words_list[0].text
     }
     
-    func get_adjectives(motto:String, flexion:String) -> [Word]{
+    func get_adjectives(motto:String, flexion:String) -> String{
         
         var words_list:[Word]
         words_list = []
@@ -921,7 +897,7 @@ class Translator: NSObject {
             print(error)
         }
         
-        return words_list
+        return words_list[0].text
     }
     
     func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
@@ -987,6 +963,12 @@ class Translator: NSObject {
         else{
             ab = verbo
         }
+        return ab
+    }
+    
+    func buscaAdjetivo(adjetivo: String, flexao: String) -> String
+    {
+        let ab = "Lindu"
         return ab
     }
 }
