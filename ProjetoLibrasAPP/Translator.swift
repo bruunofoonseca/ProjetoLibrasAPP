@@ -518,32 +518,32 @@ class Translator: NSObject {
                 if word.text == separatedWord{
                     words.append(word)
                 }
-                else
-                {
-                    let aux: Word = Word()
-                    aux.text = separatedWord
-                    
-                    aux.categories = [Category()]
-                    aux.categories[0].text = ""
-                    
-                    aux.flexions = [Flexion()]
-                    aux.flexions[0].text = ""
-                                        
-                    words.append(aux)
-                }
+//                else
+//                {
+//                    let aux: Word = Word()
+//                    aux.text = separatedWord
+//                    
+//                    aux.categories = [Category()]
+//                    aux.categories[0].text = ""
+//                    
+//                    aux.flexions = [Flexion()]
+//                    aux.flexions[0].text = ""
+//                                        
+//                    words.append(aux)
+//                }
             }
         }
         
-        while(words.count > 3)
-        {
-            for(var i = 0; i < words.count - 1; i++)
-            {
-                if words[i].text == words[i+1].text || words[i].text == ""
-                {
-                    words.removeAtIndex(i)
-                }
-            }
-        }
+//        while(words.count > 3)
+//        {
+//            for(var i = 0; i < words.count - 1; i++)
+//            {
+//                if words[i].text == words[i+1].text || words[i].text == ""
+//                {
+//                    words.removeAtIndex(i)
+//                }
+//            }
+//        }
         
         for word in words
         {
