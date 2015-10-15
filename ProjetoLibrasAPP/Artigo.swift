@@ -51,7 +51,7 @@ class Artigo: NSObject {
         }
         
         
-        /**********     RETORNA ARTIGO CORRESPONDENTE   **********/
+    /**********     RETORNA ARTIGO CORRESPONDENTE   **********/
         return artigos
     }
 }

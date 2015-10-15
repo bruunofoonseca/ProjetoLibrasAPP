@@ -2,7 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>eu</key>
+	<key>gostar</key>
+	<dict/>
+	<key>pensar</key>
+	<dict/>
+	<key>ter</key>
+	<dict/>
+	<key>dizer</key>
+	<dict/>
+	<key>dar</key>
+	<dict/>
+	<key>saber</key>
 	<dict/>
 </dict>
 </plist>

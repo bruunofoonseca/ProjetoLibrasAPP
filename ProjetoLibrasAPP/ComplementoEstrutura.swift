@@ -17,6 +17,7 @@ class ComplementoEstrutura : NSObject {
     let objPronome = Pronome()
     let translator = Translator()
     var arrayArtigos : [String] = [""]
+    var pronomeTonico : [String] = []
     var fraseClassificada : [Word] = []
     
     /**********     FUNÇÃO QUE TRATA O COMPLEMENTO DE ACORDO COM A FRASE   **********/
@@ -25,19 +26,25 @@ class ComplementoEstrutura : NSObject {
         arrayArtigos.removeAll()
         print(frase[2].categories[0].text)
         if (frase[2].categories[0].text == "nome feminino") || (frase[2].categories[0].text == "nome masculino"){
-            // irá colocar artigo caso não tenha preposição quando for substantivo.
+            
+     /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
+
             if (preposicao == "null"){
                 arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 2)
             }
         }
-        else if (frase[2].categories[0].text == "pronome"){
-            // irá colocar artigo caso não tenha preposição quando for pronome.
             
+        else if (frase[2].categories[0].text == "pronome"){
+            
+     /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
+            
+            pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase))
             if (preposicao == "null"){
                 arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2)
             }
             
-            arrayArtigos.append(objPronome.transformaEmPronomeObliquosTonico(frase) + ".")
+            arrayArtigos.append(pronomeTonico[0] + ".")
+            pronomeTonico.removeAll()
             return arrayArtigos
         }
         else if (frase[2].categories[0].text == "verbo")

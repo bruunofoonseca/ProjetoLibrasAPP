@@ -104,13 +104,13 @@
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string>null</string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string>null</string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string>null</string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string>null</string>
+			<string>a</string>
 		</dict>
 	</dict>
 	<key>estar</key>

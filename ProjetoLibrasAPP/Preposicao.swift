@@ -15,6 +15,8 @@ class Preposicao: NSObject {
 
     var palavra: [String] = []
     var objArtigo = Artigo()
+    var objPronome = Pronome()
+    var pronomeTonico : [String] = []
     var colocaArtigo : [String] = []
     var colocaPreposicao : String = ""
     let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
@@ -32,13 +34,32 @@ class Preposicao: NSObject {
     
     func inserePreposicao(texto : [Word]) -> String {
         colocaPreposicao.removeAll()
+        pronomeTonico.removeAll()
+        pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto))
+        print(pronomeTonico[0])
         
     /**********     CHAMA FUNÇÃO QUE VERIFICA SE JÁ ESTA TRATADO    **********/
         
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
             colocaPreposicao = ""
         }
-        
+        else if (texto[2].categories[0].text == "pronome") && (pronomeTonico[0] != texto[2].text){
+            
+            let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
+            
+            colocaPreposicao = test
+            
+            if (verificaVerboNaLista(texto, dict: dictPronome, posicao: 1)){
+                if (pronomeTonico[0] == "dele") || (pronomeTonico[0] == "dela" || (pronomeTonico[0] == "deles") || (pronomeTonico[0] == "delas")){
+                    colocaPreposicao = ""
+                }
+            }
+            else if(!verificaVerboNaLista(texto, dict: dictPronome, posicao: 1)){
+                if (texto[2].text != pronomeTonico[0]){
+                    colocaPreposicao = ""
+                }
+            }
+        }
         else {
             
             let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
@@ -46,27 +67,8 @@ class Preposicao: NSObject {
             if (texto[1].text == "estar") || (texto[1].text == "poder") && (texto[2].text == "casa"){
                 colocaPreposicao = "em"
             }
-            
-    /**********     ALTERAR PARA TRATAMENTO DE PRONOMES OBLIQUOS/ FUNCIONA SÓ COM O VERBO IR    **********/
-                
-            else if (texto[1].text == "ir") {
-                if (!verificaVerboNaLista(texto, dict : self.dictPronome, posicao : 2)) && (texto[2].categories[0].text == "pronome"){
-                    colocaArtigo = objArtigo.colocarArtigoDefinido(texto, posicao: 2)
-                    if(colocaArtigo[0] != ""){
-                        colocaPreposicao = test + " " + colocaArtigo[0]
-                    }
-                    else{
-                        colocaPreposicao = test + colocaArtigo[0]
-                    }
-                }
-                else if (verificaVerboNaLista(texto, dict : self.dictPronome, posicao : 2)) {
-                    colocaPreposicao = ""
-                }
-                else{
-                    colocaPreposicao = test
-                }
-            }
             else{
+                
                 colocaPreposicao = test
             }
         }
