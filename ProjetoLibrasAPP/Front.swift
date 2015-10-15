@@ -197,25 +197,32 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.test_classify(frase)
         
-        // Chama a classe que trata o sujeito.
-        self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
-        
-        // Chama a classe que trata o Verbo.
-        self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
-        
-        // Chama a classe que trata o complemento
-        self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
-        
-        // Feito para juntar as palavras em uma String e colocar na tela.
-        metodoJuntaPalavra(sujeitoClassificado)
-        metodoJuntaPalavra(verboClassificado)
-        metodoJuntaPalavra(complementoClassificado)
-        
-        /**********    COLOCA EM LETRA MAÍUSCULA   **********/
-        
-        juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
-        
-        return juntaPalavras
+        if self.fraseClassificada.count == 3
+        {
+            // Chama a classe que trata o sujeito.
+            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+            
+            // Chama a classe que trata o Verbo.
+            self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
+            
+            // Chama a classe que trata o complemento
+            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+            
+            // Feito para juntar as palavras em uma String e colocar na tela.
+            metodoJuntaPalavra(sujeitoClassificado)
+            metodoJuntaPalavra(verboClassificado)
+            metodoJuntaPalavra(complementoClassificado)
+            
+            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+            
+            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+            
+            return juntaPalavras
+        }
+        else
+        {
+            return text
+        }
     }
     
     func metodoJuntaPalavra(texto : [String]){
