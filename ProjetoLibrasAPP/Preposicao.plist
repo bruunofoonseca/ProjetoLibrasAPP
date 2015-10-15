@@ -317,6 +317,191 @@
 			<string>null</string>
 		</dict>
 	</dict>
+	<key>ser</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>plural</key>
+			<string>null</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>plural</key>
+			<string>null</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+		</dict>
+	</dict>
+	<key>querer</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>à</string>
+			<key>sing</key>
+			<string>à</string>
+			<key>plural</key>
+			<string>às</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>o</string>
+			<key>sing</key>
+			<string>o</string>
+			<key>plural</key>
+			<string>os</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+		</dict>
+	</dict>
+	<key>ficar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>com</string>
+			<key>sing</key>
+			<string>com</string>
+			<key>plural</key>
+			<string>com</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>com</string>
+			<key>sing</key>
+			<string>com</string>
+			<key>plural</key>
+			<string>com</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
+	</dict>
+	<key>dever</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>plural</key>
+			<string>null</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>plural</key>
+			<string>null</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>à</string>
+			<key>Feminino plural</key>
+			<string>à</string>
+			<key>Masculino singular</key>
+			<string>à</string>
+			<key>Masculino plural</key>
+			<string>à</string>
+		</dict>
+	</dict>
+	<key>passar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>singular</key>
+			<string>à</string>
+			<key>sing</key>
+			<string>à</string>
+			<key>plural</key>
+			<string>às</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>singular</key>
+			<string>o</string>
+			<key>sing</key>
+			<string>o</string>
+			<key>plural</key>
+			<string>os</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>a</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>à</string>
+			<key>Feminino plural</key>
+			<string>à</string>
+			<key>Masculino singular</key>
+			<string>a</string>
+			<key>Masculino plural</key>
+			<string>a</string>
+		</dict>
+	</dict>
 	<key>saber</key>
 	<dict>
 		<key>nome feminino</key>
