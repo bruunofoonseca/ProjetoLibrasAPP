@@ -13,7 +13,7 @@ class ComplementoEstrutura : NSObject {
     
     /**********     VARIÁVEIS   **********/
     
-    let objSubstantivo = Substantivo()
+    let objArtigo = Artigo()
     let objPronome = Pronome()
     let translator = Translator()
     var arrayArtigos : [String] = [""]
@@ -30,7 +30,7 @@ class ComplementoEstrutura : NSObject {
      /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
 
             if (preposicao == "null"){
-                arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 2)
+                arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2)
             }
         }
             
@@ -51,6 +51,10 @@ class ComplementoEstrutura : NSObject {
         {
             if (preposicao != "null") && (preposicao == "gerundio"){
                 arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: "infinitivo", categoria: "verbo"))
+            }
+            else if (preposicao == "e"){
+                arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: frase[0].categories[0].text, categoria: "verbo") + ".")
+                return arrayArtigos
             }
         }
         

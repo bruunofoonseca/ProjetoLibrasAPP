@@ -77,8 +77,58 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "estacionar"
+        newWord.motto = "estacionar"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "estudar"
         newWord.motto = "estudar"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
+        newWord.text = "coçar"
+        newWord.motto = "coçar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -127,8 +177,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "comer"
-        newWord.motto = "comer"
+        newWord.text = "imprimir"
+        newWord.motto = "imprimir"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -958,6 +1008,48 @@ class Translator: NSObject {
             }
             else if (sujeito == "eles") || (flexao == "plural") {
                 ab = "têm"
+            }
+        }
+        else if (verbo == "estudar"){
+            if (sujeito == "eu"){
+                ab = "estudo"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "estuda"
+            }
+            else if (sujeito == "nós"){
+                ab = "estudamos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "estudam"
+            }
+        }
+        else if (verbo == "coçar"){
+            if (sujeito == "eu"){
+                ab = "coço"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "coça"
+            }
+            else if (sujeito == "nós"){
+                ab = "coçamos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "coçam"
+            }
+        }
+        else if (verbo == "estacionar"){
+            if (sujeito == "eu"){
+                ab = "estaciono"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "estaciona"
+            }
+            else if (sujeito == "nós"){
+                ab = "estaciomamos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "estacionam"
             }
         }
         else{

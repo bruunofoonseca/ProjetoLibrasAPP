@@ -59,7 +59,7 @@ class Pronome: NSObject {
                 else if (frase[2].text == "tu"){
                     pronomeTransformado = "ti"
                 }
-                else if (frase[2].text == "ele")&&(frase[1].text != "ter"){
+                else if (frase[2].text == "ele")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar")&&(frase[1].text != "estacionar"){
                     if(frase[1].text == "pensar"){
                         pronomeTransformado = "nele"
                     }
@@ -67,7 +67,7 @@ class Pronome: NSObject {
                         pronomeTransformado = "dele"
                     }
                 }
-                else if (frase[2].text == "ela")&&(frase[1].text != "ter")&&(frase[1].text != "dar"){
+                else if (frase[2].text == "ela")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar"){
                     if(frase[1].text == "pensar"){
                         pronomeTransformado = "nela"
                     }
@@ -75,7 +75,7 @@ class Pronome: NSObject {
                         pronomeTransformado = "dela"
                     }
                 }
-                else if (frase[2].text == "eles")&&(frase[1].text != "ter")&&(frase[1].text != "dar"){
+                else if (frase[2].text == "eles")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar"){
                     if(frase[1].text == "pensar"){
                         pronomeTransformado = "neles"
                     }
@@ -83,7 +83,7 @@ class Pronome: NSObject {
                         pronomeTransformado = "deles"
                     }
                 }
-                else if (frase[2].text == "elas")&&(frase[1].text != "ter")&&(frase[1].text != "dar"){
+                else if (frase[2].text == "elas")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar"){
                     if(frase[1].text == "pensar"){
                         pronomeTransformado = "nelas"
                     }
