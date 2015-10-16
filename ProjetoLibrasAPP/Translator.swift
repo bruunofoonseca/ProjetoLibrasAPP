@@ -177,8 +177,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "imprimir"
-        newWord.motto = "imprimir"
+        newWord.text = "pensar"
+        newWord.motto = "pensar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -1024,18 +1024,18 @@ class Translator: NSObject {
                 ab = "estudam"
             }
         }
-        else if (verbo == "coçar"){
+        else if (verbo == "pensar"){
             if (sujeito == "eu"){
-                ab = "coço"
+                ab = "penso"
             }
             else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "coça"
+                ab = "pensa"
             }
             else if (sujeito == "nós"){
-                ab = "coçamos"
+                ab = "pensamos"
             }
             else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "coçam"
+                ab = "pensam"
             }
         }
         else if (verbo == "estacionar"){

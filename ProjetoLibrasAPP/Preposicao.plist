@@ -744,5 +744,46 @@
 			<string>e</string>
 		</dict>
 	</dict>
+	<key>pensar</key>
+	<dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>no</string>
+			<key>singular</key>
+			<string>no</string>
+			<key>plur</key>
+			<string>nos</string>
+			<key>plural</key>
+			<string>nos</string>
+		</dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>na</string>
+			<key>singular</key>
+			<string>na</string>
+			<key>plur</key>
+			<string>nas</string>
+			<key>plural</key>
+			<string>nas</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>em</string>
+			<key>Feminino plural</key>
+			<string>em</string>
+			<key>Masculino singular</key>
+			<string>em</string>
+			<key>Masculino plural</key>
+			<string>em</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>em</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

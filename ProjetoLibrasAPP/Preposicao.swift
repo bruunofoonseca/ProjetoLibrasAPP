@@ -49,7 +49,7 @@ class Preposicao: NSObject {
             colocaPreposicao = test
             
             if (verificaVerboNaLista(texto, dict: dictPronome, posicao: 1)){
-                if (pronomeTonico[0] == "dele") || (pronomeTonico[0] == "dela" || (pronomeTonico[0] == "deles") || (pronomeTonico[0] == "delas")){
+                if (pronomeTonico[0] == "dele") || (pronomeTonico[0] == "dela" || (pronomeTonico[0] == "deles") || (pronomeTonico[0] == "delas") || (pronomeTonico[0] == "nele") || (pronomeTonico[0] == "nela") || (pronomeTonico[0] == "neles") || (pronomeTonico[0] == "nelas")){
                     colocaPreposicao = ""
                 }
             }

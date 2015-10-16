@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gostar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>pensar</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
+</dict>
+</plist>

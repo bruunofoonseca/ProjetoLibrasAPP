@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gostar</key>
+	<dict/>
+	<key>pensar</key>
+	<dict/>
+	<key>ter</key>
+	<dict/>
+	<key>dizer</key>
+	<dict/>
+	<key>dar</key>
+	<dict/>
+	<key>saber</key>
+	<dict/>
+	<key>imprimir</key>
+	<dict/>
+	<key>disponibilizar</key>
+	<dict/>
+	<key>estacionar</key>
+	<dict/>
+</dict>
+</plist>

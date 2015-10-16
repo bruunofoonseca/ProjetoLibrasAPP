@@ -15,11 +15,14 @@ class Pronome: NSObject {
 
     var recebeArtigo : [String] = []
     var objArtigo = Artigo()
-    let path = NSBundle.mainBundle().pathForResource("PronomesPessoais", ofType: "plist")
-    var dict = NSDictionary!()
+    let pathPronomeEu = NSBundle.mainBundle().pathForResource("PronomeObliquosEu", ofType: "plist")
+    var dictPronomeEu = NSDictionary!()
+    let pathPronomeEle = NSBundle.mainBundle().pathForResource("PronomeObliquosEle", ofType: "plist")
+    var dictPronomeEle = NSDictionary!()
     
     override init(){
-        dict = NSDictionary(contentsOfFile: path!)
+        dictPronomeEu = NSDictionary(contentsOfFile: pathPronomeEu!)
+        dictPronomeEle = NSDictionary(contentsOfFile: pathPronomeEle!)
         super.init()
     }
     
@@ -52,57 +55,37 @@ class Pronome: NSObject {
         var pronomeTransformado = frase[2].text
         
         if(frase[1].categories[0].text == "verbo"){
-            if(verificaVerboNaLista(frase, dict: self.dict, posicao: 1)){
-                if(frase[2].text == "eu"){
+            
+            if(frase[2].text == "eu") && (frase[1].text != "ser"){
+                if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "mim"
                 }
-                else if (frase[2].text == "tu"){
-                    pronomeTransformado = "ti"
-                }
-                else if (frase[2].text == "ele")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar")&&(frase[1].text != "estacionar"){
-                    if(frase[1].text == "pensar"){
-                        pronomeTransformado = "nele"
-                    }
-                    else{
-                        pronomeTransformado = "dele"
-                    }
-                }
-                else if (frase[2].text == "ela")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar"){
-                    if(frase[1].text == "pensar"){
-                        pronomeTransformado = "nela"
-                    }
-                    else{
-                        pronomeTransformado = "dela"
-                    }
-                }
-                else if (frase[2].text == "eles")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar")&&(frase[1].text != "coçar"){
-                    if(frase[1].text == "pensar"){
-                        pronomeTransformado = "neles"
-                    }
-                    else{
-                        pronomeTransformado = "deles"
-                    }
-                }
-                else if (frase[2].text == "elas")&&(frase[1].text != "ter")&&(frase[1].text != "imprimir")&&(frase[1].text != "disponibilizar"){
-                    if(frase[1].text == "pensar"){
-                        pronomeTransformado = "nelas"
-                    }
-                    else{
-                        pronomeTransformado = "delas"
-                    }
-                }
-            }
-            else if (!verificaVerboNaLista(frase, dict: self.dict, posicao: 1)) && (frase[1].text != "ser") {
-                if(frase[2].text == "eu"){
+                else{
                     pronomeTransformado = "comigo"
                 }
-                if(frase[2].text == "nós"){
-                    pronomeTransformado = "conosco"
+            }
+            else if (frase[2].text == "tu"){
+                if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
+                    pronomeTransformado = "ti"
                 }
-                if(frase[2].text == "tu"){
+                else{
                     pronomeTransformado = "contigo"
                 }
-                if(frase[2].text == "vós"){
+            }
+            else if (frase[2].text == "ele") || (frase[2].text == "ela") || (frase[2].text == "eles") || (frase[2].text == "elas") {
+                
+                if(verificaVerboNaLista(frase, dict: dictPronomeEle, posicao: 1)){
+                    
+                    pronomeTransformado = dictPronomeEle!.objectForKey(frase[1].text)?.valueForKey(frase[2].text) as AnyObject? as! String
+                }
+            }
+            else if (frase[2].text == "nós"){
+                if(!verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
+                    pronomeTransformado = "conosco"
+                }
+            }
+            else if (frase[2].text == "vós"){
+                if(!verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "convosco"
                 }
             }
