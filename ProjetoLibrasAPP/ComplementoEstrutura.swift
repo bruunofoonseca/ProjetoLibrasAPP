@@ -29,7 +29,7 @@ class ComplementoEstrutura : NSObject {
             
      /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
 
-            if (preposicao == "null"){
+            if (preposicao == "null") || (preposicao == ""){
                 arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2)
             }
         }

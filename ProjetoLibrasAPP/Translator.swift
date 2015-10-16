@@ -77,8 +77,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "prevalecer"
-        newWord.motto = "prevalecer"
+        newWord.text = "derramar"
+        newWord.motto = "derramar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -1077,18 +1077,18 @@ class Translator: NSObject {
                 ab = "estacionam"
             }
         }
-        else if (verbo == "prevalecer"){
+        else if (verbo == "derramar"){
             if (sujeito == "eu"){
-                ab = "prevaleço"
+                ab = "derramo"
             }
             else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "prevalece"
+                ab = "derrama"
             }
             else if (sujeito == "nós"){
-                ab = "prevalecemos"
+                ab = "derramamos"
             }
             else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "prevalecem"
+                ab = "derramam"
             }
         }
         else{

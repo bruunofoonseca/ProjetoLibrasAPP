@@ -24,5 +24,16 @@
 		<key>elas</key>
 		<string>nelas</string>
 	</dict>
+	<key>derramar</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
 </dict>
 </plist>

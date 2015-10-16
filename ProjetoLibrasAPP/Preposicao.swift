@@ -40,7 +40,12 @@ class Preposicao: NSObject {
     /**********     CHAMA FUNÇÃO QUE VERIFICA SE JÁ ESTA TRATADO    **********/
         
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
-            colocaPreposicao = ""
+            if(texto[2].categories[0].text == "verbo") && (texto[1].categories[0].text == "verbo"){
+                colocaPreposicao = "e"
+            }
+            else{
+                colocaPreposicao = ""
+            }
         }
         else if (texto[2].categories[0].text == "pronome") && (pronomeTonico[0] != texto[2].text){
             
