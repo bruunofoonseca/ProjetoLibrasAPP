@@ -77,6 +77,31 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
+        newWord.text = "prevalecer"
+        newWord.motto = "prevalecer"
+        newWord.id = 1
+        
+        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+        
+        for flexion in flexions{
+            newFlexion = Flexion.init()
+            newFlexion.text = flexion
+            newWord.flexions.append(newFlexion)
+        }
+        
+        categories = ["verbo"]
+        
+        for category in categories{
+            newCategory = Category.init()
+            newCategory.text = category
+            newWord.categories.append(newCategory)
+        }
+        
+        WordsList.append(newWord)
+        // BLOCO FIM ====================
+        
+        // BLOCO ====================
+        newWord = Word.init()
         newWord.text = "estacionar"
         newWord.motto = "estacionar"
         newWord.id = 1
@@ -1050,6 +1075,20 @@ class Translator: NSObject {
             }
             else if (sujeito == "eles") || (flexao == "plural") {
                 ab = "estacionam"
+            }
+        }
+        else if (verbo == "prevalecer"){
+            if (sujeito == "eu"){
+                ab = "prevaleço"
+            }
+            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+                ab = "prevalece"
+            }
+            else if (sujeito == "nós"){
+                ab = "prevalecemos"
+            }
+            else if (sujeito == "eles") || (flexao == "plural") {
+                ab = "prevalecem"
             }
         }
         else{

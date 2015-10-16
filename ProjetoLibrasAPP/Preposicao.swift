@@ -21,7 +21,7 @@ class Preposicao: NSObject {
     var colocaPreposicao : String = ""
     let path = NSBundle.mainBundle().pathForResource("Preposicao", ofType: "plist")
     var dict = NSDictionary!()
-    let pathPronome = NSBundle.mainBundle().pathForResource("PronomesPessoais", ofType: "plist")
+    let pathPronome = NSBundle.mainBundle().pathForResource("PronomeObliquosEu", ofType: "plist")
     var dictPronome = NSDictionary!()
     
     override init(){
