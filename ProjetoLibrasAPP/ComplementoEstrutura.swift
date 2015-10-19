@@ -50,10 +50,10 @@ class ComplementoEstrutura : NSObject {
         else if (frase[2].categories[0].text == "verbo")
         {
             if (preposicao != "null") && (preposicao == "gerundio"){
-                arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: "infinitivo", categoria: "verbo"))
+                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
             }
             else if (preposicao == "e"){
-                arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: frase[0].categories[0].text, categoria: "verbo") + ".")
+                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
                 return arrayArtigos
             }
         }
