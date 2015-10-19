@@ -26,10 +26,11 @@
 		41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8951BBEF52F005CA9F8 /* VerboEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
+		B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CC1BD56BB00056186E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CE1BD56C370056186E /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B044FD7F1BC5C81600435397 /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* Front.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
-		C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
 		C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE771BBC94060035A1D4 /* Assets.xcassets */; };
@@ -76,11 +77,12 @@
 		41FDD8951BBEF52F005CA9F8 /* VerboEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerboEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplementoEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SujeitoEstrutura.swift; sourceTree = "<group>"; };
+		B00350CC1BD56BB00056186E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B00350CE1BD56C370056186E /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
 		B044FD7E1BC5C81600435397 /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3CBBE751BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjetoLibrasAPP.xcdatamodel; sourceTree = "<group>"; };
 		C3CBBE771BBC94060035A1D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				B044FD7E1BC5C81600435397 /* Front.swift */,
+				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
+				B00350CE1BD56C370056186E /* TradutorViewController.swift */,
 			);
 			name = Front;
 			sourceTree = "<group>";
@@ -223,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */,
-				C3CBBE6F1BBC94060035A1D4 /* ViewController.swift */,
 				C3CBBE711BBC94060035A1D4 /* Main.storyboard */,
 				B01727E81BC7F72C00B82361 /* Font */,
 				B044FD7B1BC5C4C300435397 /* Front */,
@@ -344,7 +347,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 58T32WR338;
+						DevelopmentTeam = 7S84RQ3NGE;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -432,12 +435,13 @@
 				41EA44421BBDD6900076C6C2 /* Verbo.swift in Sources */,
 				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
+				B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */,
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
+				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
-				C3CBBE701BBC94060035A1D4 /* ViewController.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
