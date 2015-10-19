@@ -183,6 +183,17 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         return true
     }
     
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if string == " "
+        {
+            return false
+        }
+        else
+        {
+            return true
+        }
+    }
+    
     func keyboardWasShown(notification:NSNotification) {
         
     }
