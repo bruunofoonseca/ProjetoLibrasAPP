@@ -44,6 +44,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
     
@@ -180,6 +181,13 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             }
         }
         return true
+    }
+    
+    func keyboardWasShown(notification:NSNotification) {
+        
+    }
+    
+    @IBAction func voltaTradutor(segue:UIStoryboardSegue){
     }
     
     /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
