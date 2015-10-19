@@ -68,6 +68,9 @@ class Preposicao: NSObject {
                 }
             }
         }
+        else if(texto[2].categories[0].text == "adjetivo"){
+            colocaPreposicao = ""
+        }
         else {
             
             let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
