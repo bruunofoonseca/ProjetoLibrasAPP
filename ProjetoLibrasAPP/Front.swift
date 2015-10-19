@@ -213,6 +213,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             i++
         }
         
+        print(fraseClassificada[0].categories[0].text)
+        
         if self.fraseClassificada.count == 3
         {
             // Chama a classe que trata o sujeito.
