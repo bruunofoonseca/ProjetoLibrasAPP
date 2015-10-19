@@ -22,7 +22,7 @@ class VerboEstrutura : NSObject {
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.removeAll()
-        if (frase[0].categories[0].text != "verbo"){
+        if (frase[0].categories[0].text == "verbo"){
             defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
         }
         else{
