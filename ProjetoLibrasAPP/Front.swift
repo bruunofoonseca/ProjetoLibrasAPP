@@ -13,6 +13,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /********** VARIÁVEIS DA INTERFACE  **********/
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var frameView: UIView!
