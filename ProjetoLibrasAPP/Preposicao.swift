@@ -39,6 +39,10 @@ class Preposicao: NSObject {
         
     /**********     CHAMA FUNÇÃO QUE VERIFICA SE JÁ ESTA TRATADO    **********/
         
+        if(texto[2].text == "gostar")&&(texto[1].text == "nadar"){
+            colocaPreposicao = "por"
+        }
+        
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
             if(texto[2].categories[0].text == "verbo") && (texto[1].categories[0].text == "verbo"){
                 colocaPreposicao = "e"
@@ -68,7 +72,7 @@ class Preposicao: NSObject {
             
             let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
             
-            if (texto[1].text == "estar") || (texto[1].text == "poder") || (texto[1].text == "estudar") && (texto[2].text == "casa"){
+            if (texto[1].text == "nadar") || (texto[1].text == "estar") || (texto[1].text == "poder") || (texto[1].text == "estudar") && (texto[2].text == "casa"){
                 colocaPreposicao = "em"
             }
             else{

@@ -77,8 +77,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "derramar"
-        newWord.motto = "derramar"
+        newWord.text = "jogar"
+        newWord.motto = "jogar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -1077,18 +1077,18 @@ class Translator: NSObject {
                 ab = "estacionam"
             }
         }
-        else if (verbo == "derramar"){
+        else if (verbo == "jogar"){
             if (sujeito == "eu"){
-                ab = "derramo"
+                ab = "jogo"
             }
             else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "derrama"
+                ab = "joga"
             }
             else if (sujeito == "nós"){
-                ab = "derramamos"
+                ab = "jogamos"
             }
             else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "derramam"
+                ab = "jogam"
             }
         }
         else{
