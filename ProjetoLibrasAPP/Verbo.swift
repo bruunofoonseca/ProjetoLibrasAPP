@@ -23,7 +23,7 @@ class Verbo: NSObject {
 
     func conjugVerboSujeito(sujeito: Word, verbo: Word) -> String
     {
-        let conjugVerbo = api.get_verbs(verbo.text, flexion: "Infinitivo Flexionado - 1ª singular")
+        let conjugVerbo = api.get_verbs(verbo.text, flexion: "Futuro de Conjuntivo - 2ª plural")
         
         return conjugVerbo
     }

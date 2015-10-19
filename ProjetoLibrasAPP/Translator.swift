@@ -611,7 +611,7 @@ class Translator: NSObject {
         
         phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "http://localhost:3000/word/classify/" + phrase + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/classify/true/" + phrase + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -704,7 +704,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "http://localhost:3000/word/verbs/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/verbs/true/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -797,7 +797,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "http://localhost:3000/word/nouns/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/nouns/true/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -890,7 +890,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "http://localhost:3000/word/adjectives/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/adjectives/true/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
