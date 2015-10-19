@@ -77,8 +77,8 @@ class Translator: NSObject {
         
         // BLOCO ====================
         newWord = Word.init()
-        newWord.text = "derramar"
-        newWord.motto = "derramar"
+        newWord.text = "jogar"
+        newWord.motto = "jogar"
         newWord.id = 1
         
         flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
@@ -704,7 +704,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/verbs/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/verbs/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -797,7 +797,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/nouns/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -890,7 +890,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/adjectives/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/adjectives/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -1077,18 +1077,18 @@ class Translator: NSObject {
                 ab = "estacionam"
             }
         }
-        else if (verbo == "derramar"){
+        else if (verbo == "jogar"){
             if (sujeito == "eu"){
-                ab = "derramo"
+                ab = "jogo"
             }
             else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "derrama"
+                ab = "joga"
             }
             else if (sujeito == "nós"){
-                ab = "derramamos"
+                ab = "jogamos"
             }
             else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "derramam"
+                ab = "jogam"
             }
         }
         else{

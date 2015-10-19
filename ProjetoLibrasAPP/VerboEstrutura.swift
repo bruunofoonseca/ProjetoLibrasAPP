@@ -17,7 +17,6 @@ class VerboEstrutura : NSObject {
     var defVerbo: [String] = []
     let objPreposicao = Preposicao()
     
-    
     /**********     FUNÇÃO QUE TRATA O VERBO DE ACORDO COM O SUJEITO E INSERE PREPOSIÇÃO   **********/
 
     func tratarVerbo(frase: [Word]) -> [String]

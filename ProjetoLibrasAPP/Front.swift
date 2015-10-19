@@ -156,7 +156,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                     temTexto = false
                 }
                 txtTraducao.text = ""
-                frase.text! += " " + txtTexto.text!
+                frase.text! += txtTexto.text!
                 txtTexto.text = ""
                 txtTexto.placeholder = "Digite o Sujeito"
                 self.scrollToPage(1, animated: true)
@@ -192,7 +192,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         frase = (frase.lowercaseString)
                 
         // Chama a API para classificar as frases.
-        self.fraseClassificada = classifica.test_classify(frase)
+        self.fraseClassificada = classifica.classify(frase)
         
         if self.fraseClassificada.count == 3
         {
