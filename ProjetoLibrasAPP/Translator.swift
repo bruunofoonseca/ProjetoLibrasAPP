@@ -704,7 +704,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/verbs/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/verbs/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -797,7 +797,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/nouns/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
@@ -890,7 +890,7 @@ class Translator: NSObject {
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/adjectives/" + params + "/")
+        let endpoint = NSURL(string: "http://localhost:3000/word/adjectives/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {

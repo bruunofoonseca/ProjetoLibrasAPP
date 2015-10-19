@@ -157,7 +157,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                     temTexto = false
                 }
                 txtTraducao.text = ""
-                frase.text! += " " + txtTexto.text!
+                frase.text! += txtTexto.text!
                 txtTexto.text = ""
                 txtTexto.placeholder = "Digite o Sujeito"
                 self.scrollToPage(1, animated: true)
