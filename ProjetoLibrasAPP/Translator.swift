@@ -703,7 +703,6 @@ class Translator: NSObject {
         
         var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-        
 
         let endpoint = NSURL(string: "http://localhost:3000/word/verbs/true/" + params + "/")
         let data:NSData = NSData(contentsOfURL: endpoint!)!

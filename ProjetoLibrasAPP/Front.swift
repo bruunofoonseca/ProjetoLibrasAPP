@@ -157,7 +157,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                     temTexto = false
                 }
                 txtTraducao.text = ""
-                frase.text! += " " + txtTexto.text!
+                frase.text! += txtTexto.text!
                 txtTexto.text = ""
                 txtTexto.placeholder = "Digite o Sujeito"
                 self.scrollToPage(1, animated: true)
@@ -195,12 +195,33 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     func traducaoTexto(text : String) -> String {
         
         // Aonde colocamos a frase
+        let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
         var frase = text
+        var fraseOrganizada : [String] = []
+        fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
                 
         // Chama a API para classificar as frases.
-        self.fraseClassificada = classifica.test_classify(frase)
+        self.fraseClassificada = classifica.classify(frase)
+        
+        var i = 0
+        var aux : Word
+        
+        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
+        
+        while(i != fraseClassificada.count){
+            for(var j = 0; j < fraseClassificada.count; j++){
+                if(fraseClassificada[j].text == fraseOrganizada[i]){
+                    aux = fraseClassificada[i]
+                    fraseClassificada[i] = fraseClassificada[j]
+                    fraseClassificada[j] = aux
+                }
+            }
+            i++
+        }
+        
+        print(fraseClassificada[0].categories[0].text)
         
         if self.fraseClassificada.count == 3
         {
