@@ -13,7 +13,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /********** VARIÁVEIS DA INTERFACE  **********/
     
-    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var frameView: UIView!
@@ -157,7 +156,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                     temTexto = false
                 }
                 txtTraducao.text = ""
-                frase.text! += txtTexto.text!
+                frase.text! += " " + txtTexto.text!
                 txtTexto.text = ""
                 txtTexto.placeholder = "Digite o Sujeito"
                 self.scrollToPage(1, animated: true)
@@ -196,7 +195,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         frase = (frase.lowercaseString)
                 
         // Chama a API para classificar as frases.
-        self.fraseClassificada = classifica.classify(frase)
+        self.fraseClassificada = classifica.test_classify(frase)
         
         var i = 0
         var aux : Word

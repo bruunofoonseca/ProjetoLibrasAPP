@@ -22,7 +22,6 @@ class Artigo: NSObject {
     
     func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
         artigos.removeAll()
-        print(frase[posicao].categories[0].text)
         if (frase[posicao].categories[0].text == "nome feminino") {
             if(frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing") || (frase[posicao].flexions[0].text == "Feminino singular"){
                 artigos.append("a")
