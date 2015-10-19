@@ -193,7 +193,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         frase = (frase.lowercaseString)
                 
         // Chama a API para classificar as frases.
-        self.fraseClassificada = classifica.test_classify(frase)
+        self.fraseClassificada = classifica.classify(frase)
         
         if self.fraseClassificada.count == 3
         {
