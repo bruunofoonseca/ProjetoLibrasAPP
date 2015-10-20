@@ -183,10 +183,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         return true
     }
     
-    func keyboardWasShown(notification:NSNotification) {
-        
-    }
-    
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
     }
     
