@@ -23,7 +23,8 @@ class Preposicao: NSObject {
     var dict = NSDictionary!()
     let pathPronome = NSBundle.mainBundle().pathForResource("PronomeObliquosEu", ofType: "plist")
     var dictPronome = NSDictionary!()
-    
+    var posPronomeFlexion : Int!
+
     override init(){
         super.init()
         dict = NSDictionary(contentsOfFile: path!)
@@ -32,15 +33,45 @@ class Preposicao: NSObject {
     
     /**********     FUNÇÃO QUE VERIFICA SE O VERBO TEM PREPOSIÇÃO    **********/
     
-    func inserePreposicao(texto : [Word]) -> String {
+    func inserePreposicao(texto : [Word], var posicao: Int) -> String {
         colocaPreposicao.removeAll()
         pronomeTonico.removeAll()
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto))
         
+        var posPronome = -1
+        var posVerbo = -1
+        var posSubstantivo = -1
+        posPronomeFlexion = posPronome
+        
+        for (var i = 0; i < texto[2].categories.count; i++){
+            if (texto[2].categories[i].text == "pronome"){
+                posPronome = i
+                posPronomeFlexion = i
+            }
+            if (texto[2].categories[i].text == "verbo") && (texto[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
+                posVerbo = i
+            }
+            else if (texto[2].categories[i].text == "nome feminino" || texto[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
+                posSubstantivo = i
+            }
+        }
+        
     /**********     CHAMA FUNÇÃO QUE VERIFICA SE JÁ ESTA TRATADO    **********/
         
+        if(posicao == -1){
+            posicao = 0
+        }
+        
+        if (posPronome == -1){
+            posPronome = 0
+        }
+        
+        if (posVerbo == -1){
+            posVerbo = 0
+        }
+        
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
-            if(texto[2].categories[0].text == "verbo") && (texto[1].categories[0].text == "verbo"){
+            if(texto[2].categories[posVerbo].text == "verbo") && (texto[1].categories[posicao].text == "verbo") && (texto[1].flexions[posicao].text == "Infinitivo Flexionado - 1ª singular") && (texto[2].flexions[posVerbo].text == "Infinitivo Flexionado - 1ª singular"){
                 colocaPreposicao = "e"
             }
             else{
