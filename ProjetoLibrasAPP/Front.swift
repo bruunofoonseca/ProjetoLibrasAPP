@@ -250,7 +250,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         var aux : Word
         
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-        print(fraseClassificada.count)
+        
         while(i != fraseClassificada.count){
             for(var j = 0; j < fraseClassificada.count; j++){
                 if(fraseClassificada[j].text == fraseOrganizada[i]){
@@ -261,7 +261,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             }
             i++
         }
-                
+        
         if self.fraseClassificada.count == 3
         {
             // Chama a classe que trata o sujeito.

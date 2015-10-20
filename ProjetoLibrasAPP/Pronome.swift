@@ -29,15 +29,15 @@ class Pronome: NSObject {
     
     /**********     FUNÇÃO QUE TRATA O PRONOME DE ACORDO COM SUA PARTICULARIDADE   **********/
 
-    func categorizarPronome(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
+    func categorizarPronome(frase : [Word], posicao : Int) -> [String]{
         recebeArtigo.removeAll()
-        if (frase[posicao].categories[posCategoria].text == "pronome"){
+        if (frase[posicao].categories[0].text == "pronome"){
             if (frase[posicao].text == "eu") || (frase[posicao].text == "tu") || (frase[posicao].text == "ele") || (frase[posicao].text == "nós") || (frase[posicao].text == "vós") || (frase[posicao].text == "eles") || (frase[posicao].text == "ela") || (frase[posicao].text == "elas"){
-                recebeArtigo.append("")
+                recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao)
             }
             else if (frase[posicao].text == "senhor" || frase[posicao].text == "senhora" || frase[posicao].text == "senhorita")
             {
-                recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao, posCategoria: posCategoria, posFlexion : posFlexion)
+                recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao)
             }
             else
             {

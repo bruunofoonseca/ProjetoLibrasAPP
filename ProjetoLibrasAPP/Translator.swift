@@ -17,591 +17,591 @@ class Translator: NSObject {
         // Código para teste (REMOVER DEPOIS)
         WordsList = []
         
-        var newWord:Word
-        var newFlexion:Flexion
-        var newCategory:Category
-        var flexions:[String]
-        var categories:[String]
+//        var newWord:Word
+//        var newFlexion:Flexion
+//        var newCategory:Category
+//        var flexions:[String]
+//        var categories:[String]
         
         // pode modificar aqui (inicio) =========
         
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "poder"
-        newWord.motto = "poder"
-        newWord.id = 6
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "gostar"
-        newWord.motto = "gostar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "derramar"
-        newWord.motto = "derramar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "estacionar"
-        newWord.motto = "estacionar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "estudar"
-        newWord.motto = "estudar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "coçar"
-        newWord.motto = "coçar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "ir"
-        newWord.motto = "ir"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "pensar"
-        newWord.motto = "pensar"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "ter"
-        newWord.motto = "ter"
-        newWord.id = 1
-        
-        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["verbo"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "trabalho"
-        newWord.motto = "trabalho"
-        newWord.id = 2
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome masculino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "meninos"
-        newWord.motto = "meninos"
-        newWord.id = 2
-        
-        flexions = ["plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome masculino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "menina"
-        newWord.motto = "menina"
-        newWord.id = 2
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome feminino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "mercado"
-        newWord.motto = "mercado"
-        newWord.id = 2
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome masculino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "casa"
-        newWord.motto = "casa"
-        newWord.id = 3
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome feminino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "casas"
-        newWord.motto = "casas"
-        newWord.id = 3
-        
-        flexions = ["plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome feminino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "festa"
-        newWord.motto = "festa"
-        newWord.id = 3
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome feminino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "senhor"
-        newWord.motto = "senhor"
-        newWord.id = 3
-        
-        flexions = ["Masculino singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["pronome"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "eu"
-        newWord.motto = "eu"
-        newWord.id = 3
-        
-        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["pronome"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "você"
-        newWord.motto = "você"
-        newWord.id = 3
-        
-        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["pronome"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "ele"
-        newWord.motto = "ele"
-        newWord.id = 3
-        
-        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["pronome"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "nós"
-        newWord.motto = "nós"
-        newWord.id = 3
-        
-        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["pronome"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        // BLOCO ====================
-        newWord = Word.init()
-        newWord.text = "jogo"
-        newWord.motto = "jogo"
-        newWord.id = 3
-        
-        flexions = ["singular"]
-        
-        for flexion in flexions{
-            newFlexion = Flexion.init()
-            newFlexion.text = flexion
-            newWord.flexions.append(newFlexion)
-        }
-        
-        categories = ["nome masculino"]
-        
-        for category in categories{
-            newCategory = Category.init()
-            newCategory.text = category
-            newWord.categories.append(newCategory)
-        }
-        
-        WordsList.append(newWord)
-        // BLOCO FIM ====================
-        
-        
-        // pode modificar aqui (fim) =========
-    }
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "poder"
+//        newWord.motto = "poder"
+//        newWord.id = 6
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "gostar"
+//        newWord.motto = "gostar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "derramar"
+//        newWord.motto = "derramar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "estacionar"
+//        newWord.motto = "estacionar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "estudar"
+//        newWord.motto = "estudar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "coçar"
+//        newWord.motto = "coçar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "ir"
+//        newWord.motto = "ir"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "pensar"
+//        newWord.motto = "pensar"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "ter"
+//        newWord.motto = "ter"
+//        newWord.id = 1
+//        
+//        flexions = ["Infinitivo", "Infinitivo Flexionado - 1ª singular", "Futuro de Conjuntivo - 1ª singular", "Futuro de Conjuntivo - 3ª singular", "Infinitivo Flexionado - 3ª singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["verbo"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "trabalho"
+//        newWord.motto = "trabalho"
+//        newWord.id = 2
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome masculino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "meninos"
+//        newWord.motto = "meninos"
+//        newWord.id = 2
+//        
+//        flexions = ["plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome masculino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "menina"
+//        newWord.motto = "menina"
+//        newWord.id = 2
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome feminino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "mercado"
+//        newWord.motto = "mercado"
+//        newWord.id = 2
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome masculino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "casa"
+//        newWord.motto = "casa"
+//        newWord.id = 3
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome feminino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "casas"
+//        newWord.motto = "casas"
+//        newWord.id = 3
+//        
+//        flexions = ["plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome feminino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "festa"
+//        newWord.motto = "festa"
+//        newWord.id = 3
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome feminino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "senhor"
+//        newWord.motto = "senhor"
+//        newWord.id = 3
+//        
+//        flexions = ["Masculino singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["pronome"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "eu"
+//        newWord.motto = "eu"
+//        newWord.id = 3
+//        
+//        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["pronome"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "você"
+//        newWord.motto = "você"
+//        newWord.id = 3
+//        
+//        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["pronome"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "ele"
+//        newWord.motto = "ele"
+//        newWord.id = 3
+//        
+//        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["pronome"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "nós"
+//        newWord.motto = "nós"
+//        newWord.id = 3
+//        
+//        flexions = ["Feminino singular", "Masculino singular","Feminino plural", "Masculino plural"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["pronome"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        // BLOCO ====================
+//        newWord = Word.init()
+//        newWord.text = "jogo"
+//        newWord.motto = "jogo"
+//        newWord.id = 3
+//        
+//        flexions = ["singular"]
+//        
+//        for flexion in flexions{
+//            newFlexion = Flexion.init()
+//            newFlexion.text = flexion
+//            newWord.flexions.append(newFlexion)
+//        }
+//        
+//        categories = ["nome masculino"]
+//        
+//        for category in categories{
+//            newCategory = Category.init()
+//            newCategory.text = category
+//            newWord.categories.append(newCategory)
+//        }
+//        
+//        WordsList.append(newWord)
+//        // BLOCO FIM ====================
+//        
+//        
+//        // pode modificar aqui (fim) =========
+//    }
     
     // Método para teste (REMOVER DEPOIS)
-    func test_classify(phrase:String) -> [Word]{
-        var separatedWords:[String]
-        separatedWords = phrase.componentsSeparatedByString(" ")
-        
-        var words:[Word]
-        words = []
-        
-        for separatedWord in separatedWords{
-            for word in WordsList{
-                if word.text == separatedWord{
-                    words.append(word)
-                }
-            }
-        }
-                
-        for word in words
-        {
-            print(word.text)
-        }
-
-        return words
+//    func test_classify(phrase:String) -> [Word]{
+//        var separatedWords:[String]
+//        separatedWords = phrase.componentsSeparatedByString(" ")
+//        
+//        var words:[Word]
+//        words = []
+//        
+//        for separatedWord in separatedWords{
+//            for word in WordsList{
+//                if word.text == separatedWord{
+//                    words.append(word)
+//                }
+//            }
+//        }
+//                
+//        for word in words
+//        {
+//            print(word.text)
+//        }
+//
+//        return words
     }
     
     func classify(var phrase:String) -> [Word]{
@@ -977,131 +977,131 @@ class Translator: NSObject {
         return words_list[0].text
     }
     
-    func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
-    {
-        var ab : String!
-        let sujeito = sujeito.lowercaseString
-        if (verbo == "poder"){
-            if (sujeito == "eu"){
-                ab = "posso"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "pode"
-            }
-            else if (sujeito == "nós"){
-                ab = "podemos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural"){
-                ab = "podem"
-            }
-        }
-        else if (verbo == "gostar"){
-            if (sujeito == "eu"){
-                ab = "gosto"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "gosta"
-            }
-            else if (sujeito == "nós"){
-                ab = "gostamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "gostam"
-            }
-        }
-        else if (verbo == "ir"){
-            if (sujeito == "eu"){
-                ab = "vou"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular") || (flexao == "Masculino singular")) {
-                ab = "vai"
-            }
-            else if (sujeito == "nós"){
-                ab = "vamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "vão"
-            }
-        }
-        else if (verbo == "ter"){
-            if (sujeito == "eu"){
-                ab = "tenho"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "tem"
-            }
-            else if (sujeito == "nós"){
-                ab = "temos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "têm"
-            }
-        }
-        else if (verbo == "estudar"){
-            if (sujeito == "eu"){
-                ab = "estudo"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "estuda"
-            }
-            else if (sujeito == "nós"){
-                ab = "estudamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "estudam"
-            }
-        }
-        else if (verbo == "pensar"){
-            if (sujeito == "eu"){
-                ab = "penso"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "pensa"
-            }
-            else if (sujeito == "nós"){
-                ab = "pensamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "pensam"
-            }
-        }
-        else if (verbo == "estacionar"){
-            if (sujeito == "eu"){
-                ab = "estaciono"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "estaciona"
-            }
-            else if (sujeito == "nós"){
-                ab = "estaciomamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "estacionam"
-            }
-        }
-        else if (verbo == "derramar"){
-            if (sujeito == "eu"){
-                ab = "derramo"
-            }
-            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
-                ab = "derrama"
-            }
-            else if (sujeito == "nós"){
-                ab = "derramamos"
-            }
-            else if (sujeito == "eles") || (flexao == "plural") {
-                ab = "derramam"
-            }
-        }
-        else{
-            ab = verbo
-        }
-        return ab
-    }
-    
-    func buscaAdjetivo(adjetivo: String, flexao: String) -> String
-    {
-        let ab = "Lindu"
-        return ab
-    }
+//    func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String
+//    {
+//        var ab : String!
+//        let sujeito = sujeito.lowercaseString
+//        if (verbo == "poder"){
+//            if (sujeito == "eu"){
+//                ab = "posso"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "pode"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "podemos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural"){
+//                ab = "podem"
+//            }
+//        }
+//        else if (verbo == "gostar"){
+//            if (sujeito == "eu"){
+//                ab = "gosto"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "gosta"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "gostamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "gostam"
+//            }
+//        }
+//        else if (verbo == "ir"){
+//            if (sujeito == "eu"){
+//                ab = "vou"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular") || (flexao == "Masculino singular")) {
+//                ab = "vai"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "vamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "vão"
+//            }
+//        }
+//        else if (verbo == "ter"){
+//            if (sujeito == "eu"){
+//                ab = "tenho"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "tem"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "temos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "têm"
+//            }
+//        }
+//        else if (verbo == "estudar"){
+//            if (sujeito == "eu"){
+//                ab = "estudo"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "estuda"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "estudamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "estudam"
+//            }
+//        }
+//        else if (verbo == "pensar"){
+//            if (sujeito == "eu"){
+//                ab = "penso"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "pensa"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "pensamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "pensam"
+//            }
+//        }
+//        else if (verbo == "estacionar"){
+//            if (sujeito == "eu"){
+//                ab = "estaciono"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "estaciona"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "estaciomamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "estacionam"
+//            }
+//        }
+//        else if (verbo == "derramar"){
+//            if (sujeito == "eu"){
+//                ab = "derramo"
+//            }
+//            else if ((sujeito == "você") || (sujeito == "ele") || (sujeito == "ela") || (flexao == "singular")) {
+//                ab = "derrama"
+//            }
+//            else if (sujeito == "nós"){
+//                ab = "derramamos"
+//            }
+//            else if (sujeito == "eles") || (flexao == "plural") {
+//                ab = "derramam"
+//            }
+//        }
+//        else{
+//            ab = verbo
+//        }
+//        return ab
+//    }
+//    
+//    func buscaAdjetivo(adjetivo: String, flexao: String) -> String
+//    {
+//        let ab = "Lindu"
+//        return ab
+//    }
 }
