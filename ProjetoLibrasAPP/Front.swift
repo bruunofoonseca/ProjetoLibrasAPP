@@ -20,7 +20,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var lblVerbo: UILabel!
     @IBOutlet weak var lblComplemento: UILabel!
     @IBOutlet weak var txtTexto: UITextField!
-    @IBOutlet weak var txtTraducao: UILabel!
+    @IBOutlet weak var lblTraducao: UILabel!
+    @IBOutlet weak var constraint: NSLayoutConstraint!
     var currentPage:CGFloat = 0.0
     var texto:String = ""
     
@@ -47,6 +48,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
     
         
         lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
@@ -153,20 +156,20 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                     frase.text.removeAll()
                     texto.removeAll()
                     juntaPalavras.removeAll()
-                    txtTraducao.text?.removeAll()
+                    lblTraducao.text?.removeAll()
                     temTexto = false
                 }
-                txtTraducao.text = ""
+                lblTraducao.text = ""
                 frase.text! += txtTexto.text!
                 txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Sujeito"
+                txtTexto.placeholder = "Digite o Verbo"
                 self.scrollToPage(1, animated: true)
                 self.currentPage++
             }
             else if self.currentPage == 1 {
                 frase.text! += " " + txtTexto.text!
                 txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Verbo"
+                txtTexto.placeholder = "Digite o Complemento"
                 self.scrollToPage(2, animated: true)
                 self.currentPage++
             }
@@ -174,13 +177,33 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 frase.text! += " " + txtTexto.text!
                 txtTexto.text = ""
                 txtTexto.placeholder = "Digite o Sujeito"
-                txtTraducao.text = traducaoTexto(frase.text)
+                lblTraducao.text = traducaoTexto(frase.text)
                 self.scrollToPage(0, animated: true)
                 temTexto = true
                 self.currentPage = 0
             }
         }
         return true
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.constraint.constant = keyboardFrame.size.height
+        })
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
+        })
+        
+        txtTexto.resignFirstResponder()
     }
     
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){

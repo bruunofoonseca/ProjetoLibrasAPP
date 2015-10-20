@@ -351,15 +351,16 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="constraint" destination="y5M-MC-UYP" id="K54-kt-psE"/>
                         <outlet property="frameView" destination="brM-1A-con" id="PX6-ea-RjY"/>
                         <outlet property="frase" destination="uLl-oM-Bk2" id="av1-0i-73f"/>
                         <outlet property="lblComplemento" destination="6qS-tE-cdC" id="Itk-eR-juK"/>
                         <outlet property="lblSujeito" destination="g3j-FG-Mpd" id="vJC-kk-CN7"/>
+                        <outlet property="lblTraducao" destination="lNq-4B-Qgg" id="A3v-YF-XmV"/>
                         <outlet property="lblVerbo" destination="KEd-cz-O2h" id="gUq-e0-KUq"/>
                         <outlet property="scrollView" destination="PcF-aV-hLT" id="c1H-VP-bxt"/>
                         <outlet property="searchDisplayController" destination="DfS-FD-P6J" id="tTD-2e-OTp"/>
                         <outlet property="txtTexto" destination="WEM-mW-EGK" id="PyJ-et-Bfh"/>
-                        <outlet property="txtTraducao" destination="lNq-4B-Qgg" id="z9h-FS-jHa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCW-Kk-iwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
