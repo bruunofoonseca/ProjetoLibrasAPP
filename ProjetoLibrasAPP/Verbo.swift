@@ -31,7 +31,7 @@ class Verbo: NSObject {
             {
                conjugVerbo = api.get_verbs(verbo.text, flexion: "Presente - 3ª singular")
             }
-            else if sujFlexion.text == "plur" || sujFlexion.text == "Feminino singular" || sujFlexion.text == "Masculino singular"
+            else if sujFlexion.text == "plur" || sujFlexion.text == "Feminino plural" || sujFlexion.text == "Masculino plural"
             {
                conjugVerbo = api.get_verbs(verbo.text, flexion: "Presente - 3ª plural") 
             }
