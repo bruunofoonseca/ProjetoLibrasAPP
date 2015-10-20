@@ -209,13 +209,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-Mz-AJ4" userLabel="View Pesquisa">
-                                <rect key="frame" x="0.0" y="64" width="600" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.6588235294" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-6a-o5D" userLabel="View Sujeito">
-                                <rect key="frame" x="0.0" y="95" width="200" height="49"/>
+                                <rect key="frame" x="0.0" y="35" width="200" height="49"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sujeito" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-FG-Mpd">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
@@ -235,7 +230,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieT-xs-7LS" userLabel="View Verbo">
-                                <rect key="frame" x="200" y="95" width="200" height="49"/>
+                                <rect key="frame" x="200" y="35" width="200" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verbo" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEd-cz-O2h">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
@@ -255,7 +250,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i72-8T-1cI" userLabel="View Complemento">
-                                <rect key="frame" x="400" y="95" width="210" height="49"/>
+                                <rect key="frame" x="400" y="35" width="210" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complemento" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-tE-cdC">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="49"/>
@@ -309,28 +304,21 @@
                             <constraint firstItem="i72-8T-1cI" firstAttribute="leading" secondItem="ieT-xs-7LS" secondAttribute="trailing" id="GFV-2T-pbl"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="height" secondItem="ieT-xs-7LS" secondAttribute="height" id="GRQ-sb-w7M"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" constant="-10" id="HhJ-mq-QMV"/>
-                            <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="Iv5-S6-3MN"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="top" secondItem="brM-1A-con" secondAttribute="topMargin" id="LYE-XL-ra8"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" multiplier="0.3333" constant="10.012500000000003" id="RKf-ZD-vdU"/>
-                            <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.5" constant="-270" id="UOF-ER-2Ey"/>
                             <constraint firstItem="Bfg-N4-ZJj" firstAttribute="top" secondItem="WEM-mW-EGK" secondAttribute="bottom" constant="1" id="Wjd-wJ-eVw"/>
-                            <constraint firstAttribute="trailing" secondItem="Bnu-Mz-AJ4" secondAttribute="trailing" id="Ww1-uo-sQE"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" constant="4" id="YHh-Yl-hWw"/>
                             <constraint firstItem="WEM-mW-EGK" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" multiplier="0.08" id="Zdd-3B-bj5"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="a6x-03-Gh7"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="centerX" secondItem="PcF-aV-hLT" secondAttribute="centerX" id="akN-4J-HG1"/>
                             <constraint firstAttribute="trailing" secondItem="lNq-4B-Qgg" secondAttribute="trailing" id="e5v-tg-CbB"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="h1N-a2-2gB"/>
-                            <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="top" secondItem="7mC-Rw-tc7" secondAttribute="bottom" id="hIe-vY-VgK"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="height" secondItem="i72-8T-1cI" secondAttribute="height" id="hSG-OG-ejQ"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="hYD-hj-e2L"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.08" constant="2" id="i9z-Bt-5eh"/>
-                            <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="Bnu-Mz-AJ4" secondAttribute="bottom" constant="1" id="ikR-ne-Ye1"/>
-                            <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="j6c-HQ-rnl"/>
                             <constraint firstAttribute="trailing" secondItem="PcF-aV-hLT" secondAttribute="trailing" id="nzV-sU-Oj7"/>
-                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="56" id="pMK-SI-hLr"/>
+                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="116" id="pMK-SI-hLr"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="width" secondItem="ieT-xs-7LS" secondAttribute="width" id="r5K-HN-AUX"/>
-                            <constraint firstAttribute="trailing" secondItem="Bnu-Mz-AJ4" secondAttribute="trailing" id="sLZ-Jc-494"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="ugo-KD-IFu"/>
                             <constraint firstAttribute="trailing" secondItem="WEM-mW-EGK" secondAttribute="trailing" id="weo-5P-Pq4"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" id="xk5-M6-3Xk"/>
@@ -342,11 +330,6 @@
                         <barButtonItem key="leftBarButtonItem" title="Home" id="sP9-1V-wW5">
                             <connections>
                                 <segue destination="CJW-Jy-V13" kind="unwind" unwindAction="voltarHome:" id="aeq-w0-JQA"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Frases" id="nyq-aK-uEM">
-                            <connections>
-                                <segue destination="MXZ-eU-qSa" kind="presentation" id="SEr-WB-WGG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
