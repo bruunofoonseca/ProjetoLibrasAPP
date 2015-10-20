@@ -23,13 +23,23 @@ class VerboEstrutura : NSObject {
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.removeAll()
-        if (frase[1].categories[0].text == "verbo"){
+        
+        var posVerbo = -1
+        
+        for (var i = 0; i < frase[1].categories.count; i++){
+            
+            if (frase[1].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
+                posVerbo = i
+            }
+        }
+        
+        if (frase[0].categories[0].text == "verbo"){
             defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
         }
         else{
             defVerbo.append(frase[1].text)
         }
-        defVerbo.append(objPreposicao.inserePreposicao(frase))
+        defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
         
         return defVerbo
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -126,7 +126,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nj5-zD-QTU" userLabel="Logo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoInicial" translatesAutoresizingMaskIntoConstraints="NO" id="nj5-zD-QTU" userLabel="Logo">
                                 <rect key="frame" x="225" y="58" width="150" height="150"/>
                                 <animations/>
                                 <constraints>
@@ -186,12 +186,12 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="0Uh-f8-Ckr" kind="relationship" relationship="rootViewController" id="DJF-IT-3JI"/>
+                        <segue destination="0Uh-f8-Ckr" kind="relationship" relationship="rootViewController" id="aVg-VV-9by"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjd-do-gB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571" y="291"/>
+            <point key="canvasLocation" x="593" y="291"/>
         </scene>
         <!--Tradutor-->
         <scene sceneID="Wzd-I2-XjA">
@@ -413,11 +413,7 @@
                                 <segue destination="WNN-TK-iBH" kind="unwind" unwindAction="voltarHome:" id="fNh-3r-3A5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Tradutor" id="uK4-0I-zzA">
-                            <connections>
-                                <segue destination="WNN-TK-iBH" kind="unwind" unwindAction="voltaTradutor:" id="F0b-Dh-8ST"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tradutor" id="uK4-0I-zzA"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0QN-Sx-K5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -447,6 +443,6 @@
     </scenes>
     <resources>
         <image name="Fundo" width="375" height="667"/>
-        <image name="Logo" width="198" height="198"/>
+        <image name="LogoInicial" width="174" height="174"/>
     </resources>
 </document>
