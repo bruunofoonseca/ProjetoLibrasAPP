@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -275,7 +275,7 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-oM-Bk2" userLabel="Exibe o Texto">
-                                <rect key="frame" x="0.0" y="200" width="600" height="36"/>
+                                <rect key="frame" x="0.0" y="150" width="600" height="36"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,7 +283,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o Sujeito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-mW-EGK">
-                                <rect key="frame" x="0.0" y="551" width="600" height="48"/>
+                                <rect key="frame" x="0.0" y="550" width="600" height="27"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -299,26 +299,29 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WEM-mW-EGK" secondAttribute="trailing" id="1dV-hs-h10"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="width" secondItem="brM-1A-con" secondAttribute="width" id="24h-RP-ayL"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="leading" id="3UZ-VH-pDA"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="ieT-xs-7LS" secondAttribute="top" id="5Wy-NY-7SP"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="7KE-6F-Vnt"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="top" secondItem="ieT-xs-7LS" secondAttribute="top" id="8Oj-1x-BMX"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.06" id="Acw-39-1cn"/>
-                            <constraint firstItem="WEM-mW-EGK" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="Doj-ab-teE"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="BA0-ch-Xcc"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.04" constant="24.5" id="FRb-hs-yE5"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" id="Fui-30-TBy"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="leading" secondItem="ieT-xs-7LS" secondAttribute="trailing" id="GFV-2T-pbl"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="height" secondItem="ieT-xs-7LS" secondAttribute="height" id="GRQ-sb-w7M"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" constant="-10" id="HhJ-mq-QMV"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="top" secondItem="lNq-4B-Qgg" secondAttribute="bottom" constant="260" id="IfK-vv-c8D"/>
                             <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="Iv5-S6-3MN"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="top" secondItem="brM-1A-con" secondAttribute="topMargin" id="LYE-XL-ra8"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" multiplier="0.3333" constant="10.012500000000003" id="RKf-ZD-vdU"/>
                             <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.5" constant="-270" id="UOF-ER-2Ey"/>
-                            <constraint firstItem="Bfg-N4-ZJj" firstAttribute="top" secondItem="WEM-mW-EGK" secondAttribute="bottom" constant="1" id="Wjd-wJ-eVw"/>
                             <constraint firstAttribute="trailing" secondItem="Bnu-Mz-AJ4" secondAttribute="trailing" id="Ww1-uo-sQE"/>
-                            <constraint firstItem="lNq-4B-Qgg" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" constant="4" id="YHh-Yl-hWw"/>
-                            <constraint firstItem="WEM-mW-EGK" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" multiplier="0.08" id="Zdd-3B-bj5"/>
+                            <constraint firstItem="lNq-4B-Qgg" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" constant="54" id="YHh-Yl-hWw"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="a6x-03-Gh7"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="centerX" secondItem="PcF-aV-hLT" secondAttribute="centerX" id="akN-4J-HG1"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.08" constant="-21" id="cYW-mH-F6p"/>
                             <constraint firstAttribute="trailing" secondItem="lNq-4B-Qgg" secondAttribute="trailing" id="e5v-tg-CbB"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="h1N-a2-2gB"/>
                             <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="top" secondItem="7mC-Rw-tc7" secondAttribute="bottom" id="hIe-vY-VgK"/>
@@ -328,13 +331,13 @@
                             <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="Bnu-Mz-AJ4" secondAttribute="bottom" constant="1" id="ikR-ne-Ye1"/>
                             <constraint firstItem="Bnu-Mz-AJ4" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="j6c-HQ-rnl"/>
                             <constraint firstAttribute="trailing" secondItem="PcF-aV-hLT" secondAttribute="trailing" id="nzV-sU-Oj7"/>
-                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="56" id="pMK-SI-hLr"/>
+                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="6" id="pMK-SI-hLr"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="width" secondItem="ieT-xs-7LS" secondAttribute="width" id="r5K-HN-AUX"/>
                             <constraint firstAttribute="trailing" secondItem="Bnu-Mz-AJ4" secondAttribute="trailing" id="sLZ-Jc-494"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="ugo-KD-IFu"/>
-                            <constraint firstAttribute="trailing" secondItem="WEM-mW-EGK" secondAttribute="trailing" id="weo-5P-Pq4"/>
+                            <constraint firstItem="WEM-mW-EGK" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" multiplier="0.8" constant="401.19999999999999" id="xdj-Ze-5l1"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" id="xk5-M6-3Xk"/>
-                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerY" secondItem="PcF-aV-hLT" secondAttribute="centerY" constant="-82" id="yAZ-r5-2Gz"/>
+                            <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerY" secondItem="PcF-aV-hLT" secondAttribute="centerY" constant="-132" id="yAZ-r5-2Gz"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="trailing" id="zCY-Zb-BQN"/>
                         </constraints>
                     </view>
@@ -351,7 +354,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="constraint" destination="Wjd-wJ-eVw" id="2Xb-6U-HQX"/>
                         <outlet property="frameView" destination="brM-1A-con" id="PX6-ea-RjY"/>
                         <outlet property="frase" destination="uLl-oM-Bk2" id="av1-0i-73f"/>
                         <outlet property="lblComplemento" destination="6qS-tE-cdC" id="Itk-eR-juK"/>
