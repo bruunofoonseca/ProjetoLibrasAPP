@@ -700,16 +700,16 @@ class Translator: NSObject {
     
     func get_verbs(motto:String, flexion:String) -> String{
         
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+
+        let endpoint = NSURL(string: "http://172.16.1.41:3000/word/verbs/true/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
         do {
-            
-            var words_list:[Word]
-            words_list = []
-            
-            var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            
-            let endpoint = NSURL(string: "http://localhost:3000/word/verbs/true/" + params + "/")
-            let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let word: NSDictionary = jsonResult.objectForKey("words") as? NSDictionary {
@@ -783,28 +783,26 @@ class Translator: NSObject {
                 }
             }
             
-            return words_list[0].text
-            
         } catch let error as NSError {
             
             print(error)
-            
-            return motto
         }
+        
+        return words_list[0].text
     }
     
     func get_nouns(motto:String, flexion:String) -> String{
         
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        let endpoint = NSURL(string: "http://172.16.1.41:3000/word/nouns/true/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
         do {
-            
-            var words_list:[Word]
-            words_list = []
-            
-            var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            
-            let endpoint = NSURL(string: "http://localhost:3000/word/nouns/true/" + params + "/")
-            let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
@@ -878,28 +876,26 @@ class Translator: NSObject {
                 }
             }
             
-            return words_list[0].text
-            
         } catch let error as NSError {
             
             print(error)
-            
-            return motto
         }
+        
+        return words_list[0].text
     }
     
     func get_adjectives(motto:String, flexion:String) -> String{
         
+        var words_list:[Word]
+        words_list = []
+        
+        var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        let endpoint = NSURL(string: "http://172.16.1.41:3000/word/adjectives/true/" + params + "/")
+        let data:NSData = NSData(contentsOfURL: endpoint!)!
+        
         do {
-            
-            var words_list:[Word]
-            words_list = []
-            
-            var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            
-            let endpoint = NSURL(string: "http://localhost:3000/word/adjectives/true/" + params + "/")
-            let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
@@ -973,14 +969,12 @@ class Translator: NSObject {
                 }
             }
             
-            return words_list[0].text
-            
         } catch let error as NSError {
             
             print(error)
-            
-            return motto
         }
+        
+        return words_list[0].text
     }
     
 //    func buscaVerbo(verbo: String, sujeito: String, flexao: String, categoria: String) -> String

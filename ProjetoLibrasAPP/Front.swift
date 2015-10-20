@@ -23,6 +23,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var txtTraducao: UILabel!
     var currentPage:CGFloat = 0.0
     var texto:String = ""
+    @IBOutlet weak var constraint: NSLayoutConstraint!
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -44,18 +45,27 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /**********     TECLADO      **********/
         
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
+        
+        self.txtTexto.delegate = self
     
         
-        lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
+        lblSujeito.textColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
+        lblSujeito.font = lblSujeito.font.fontWithSize(18)
         
         /**********     SCROLLVIEW      **********/
         
         self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
+        
+        print(scrollView.frame)
+        print(frameView.frame)
         
         let viewSujeito = UIImageView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
         //viewSujeito.backgroundColor = UIColor.blackColor()
@@ -76,10 +86,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*3, self.scrollView.frame.height)
         self.scrollView.delegate = self
-        
-        /**********     BOTÃO RETURN DO TECLADO     **********/
-        
-        self.txtTexto.delegate = self
                 
     }
     
@@ -91,27 +97,34 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         print("Current page Scroll \(currentPage)")
         if Int(currentPage) == 0{
 
-            lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblSujeito.textColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
+            lblVerbo.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblComplemento.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(18)
+            lblVerbo.font = lblVerbo.font.fontWithSize(16)
+            lblComplemento.font = lblComplemento.font.fontWithSize(16)
             txtTexto.placeholder = "Digite o Sujeito"
-            
-            
             
         }
         else if Int(currentPage) == 1{
             
-            lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblVerbo.textColor = UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0)
+            lblSujeito.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblComplemento.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(16)
+            lblVerbo.font = lblVerbo.font.fontWithSize(18)
+            lblComplemento.font = lblComplemento.font.fontWithSize(16)
             txtTexto.placeholder = "Digite o Verbo"
             
         }
         else if Int(currentPage) == 2{
 
-            lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblComplemento.textColor = UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0)
+            lblSujeito.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblVerbo.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(16)
+            lblVerbo.font = lblVerbo.font.fontWithSize(16)
+            lblComplemento.font = lblComplemento.font.fontWithSize(18)
             txtTexto.placeholder = "Digite o Complemento"
             
         }
@@ -124,22 +137,29 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         print(page)
         
         if page == 0 {
-            lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblSujeito.textColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
+            lblVerbo.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblComplemento.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(18)
+            lblVerbo.font = lblVerbo.font.fontWithSize(16)
+            lblComplemento.font = lblComplemento.font.fontWithSize(16)
         }
         else if page == 1 {
-            
-            lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-        
+            lblVerbo.textColor = UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0)
+            lblSujeito.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblComplemento.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(16)
+            lblVerbo.font = lblVerbo.font.fontWithSize(18)
+            lblComplemento.font = lblComplemento.font.fontWithSize(16)
+
         }
         else if page == 2 {
-
-            lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
+            lblComplemento.textColor = UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0)
+            lblSujeito.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblVerbo.textColor = UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0)
+            lblSujeito.font = lblSujeito.font.fontWithSize(16)
+            lblVerbo.font = lblVerbo.font.fontWithSize(16)
+            lblComplemento.font = lblComplemento.font.fontWithSize(18)
         }
         self.scrollView.scrollRectToVisible(frame, animated: animated)
     }
@@ -159,14 +179,14 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 txtTraducao.text = ""
                 frase.text! += txtTexto.text!
                 txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Sujeito"
+                txtTexto.placeholder = "Digite o Verbo"
                 self.scrollToPage(1, animated: true)
                 self.currentPage++
             }
             else if self.currentPage == 1 {
                 frase.text! += " " + txtTexto.text!
                 txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Verbo"
+                txtTexto.placeholder = "Digite o Complemento"
                 self.scrollToPage(2, animated: true)
                 self.currentPage++
             }
@@ -183,11 +203,32 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         return true
     }
     
-    func keyboardWasShown(notification:NSNotification) {
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self);
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.constraint.constant = keyboardFrame.size.height
+        })
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        UIView.animateWithDuration(0.1, animations: { () -> Void in
+            self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
+        })
+        
+        txtTexto.resignFirstResponder()
     }
     
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
+        
     }
     
     /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
