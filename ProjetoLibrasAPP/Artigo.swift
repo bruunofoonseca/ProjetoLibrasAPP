@@ -25,7 +25,7 @@ class Artigo: NSObject {
         artigos.removeAll()
     
         if (frase[posicao].categories[posCategoria].text == "nome feminino") {
-            if(frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Feminino singular"){
+            if(frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Feminino singular") || (frase[posicao].flexions[posFlexion].text == "Masculino singular"){
                 artigos.append("a")
             }
             else {

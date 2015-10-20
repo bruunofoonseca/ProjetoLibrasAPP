@@ -53,9 +53,6 @@ class SujeitoEstrutura : NSObject {
                     posSubstantivoFlexion =  posSubstantivoFlexion - 1
                 }
                 
-                print(frase[0].flexions.count)
-                print(posSubstantivoFlexion)
-                print(frase[0].flexions[posSubstantivoFlexion].text)
                 arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 0, posCategoria: posSubstantivo, posFlexion: posSubstantivoFlexion)
             }
         }
