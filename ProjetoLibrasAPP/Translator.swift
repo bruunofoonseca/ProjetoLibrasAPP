@@ -605,16 +605,16 @@ class Translator: NSObject {
     }
     
     func classify(var phrase:String) -> [Word]{
-    
-        var words_list:[Word]
-        words_list = []
-        
-        phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-        
-        let endpoint = NSURL(string: "http://172.16.1.41:3000/word/classify/true/" + phrase + "/")
-        let data:NSData = NSData(contentsOfURL: endpoint!)!
         
         do {
+            
+            var words_list:[Word]
+            words_list = []
+            
+            phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            
+            let endpoint = NSURL(string: "http://localhost:3000/word/classify/true/" + phrase + "/")
+            let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
@@ -688,12 +688,14 @@ class Translator: NSObject {
                 }
             }
             
+            return words_list
+            
         } catch let error as NSError {
             
             print(error)
+            
+            return []
         }
-        
-        return words_list
     }
     
     func get_verbs(motto:String, flexion:String) -> String{
