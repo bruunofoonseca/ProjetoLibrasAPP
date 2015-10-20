@@ -30,7 +30,7 @@ class ComplementoEstrutura : NSObject {
      /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
 
             if (preposicao == "null") || (preposicao == ""){
-                arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2)
+                arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : 0, posFlexion :0)
             }
         }
             
@@ -40,7 +40,7 @@ class ComplementoEstrutura : NSObject {
             
             pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase))
             if (preposicao == "null"){
-                arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2)
+                arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
             }
             
             arrayArtigos.append(pronomeTonico[0] + ".")
@@ -50,10 +50,10 @@ class ComplementoEstrutura : NSObject {
         else if (frase[2].categories[0].text == "verbo")
         {
             if (preposicao != "null") && (preposicao == "gerundio"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: "infinitivo", categoria: "verbo"))
             }
             else if (preposicao == "e"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                arrayArtigos.append(translator.buscaVerbo(frase[2].text, sujeito: frase[0].text, flexao: frase[0].categories[0].text, categoria: "verbo") + ".")
                 return arrayArtigos
             }
         }

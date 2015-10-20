@@ -20,26 +20,26 @@ class Artigo: NSObject {
     
     /**********     MÉTODO QUE COLOCA ARTIGOS DEFINIDOS NA FRASE   **********/
     
-    func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
+    func colocarArtigoDefinido(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String] {
         artigos.removeAll()
-        if (frase[posicao].categories[0].text == "nome feminino") {
-            if(frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing") || (frase[posicao].flexions[0].text == "Feminino singular"){
+        if (frase[posicao].categories[posCategoria].text == "nome feminino") {
+            if(frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Feminino singular"){
                 artigos.append("a")
             }
             else {
                 artigos.append("as")
             }
         }
-        else if(frase[posicao].categories[0].text == "nome masculino"){
-                if (frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing"){
+        else if(frase[posicao].categories[posCategoria].text == "nome masculino") {
+                if (frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Masculino singular") || (frase[posicao].flexions[posFlexion].text == "Feminino singular"){
                     artigos.append("o")
                 }
-                else if (frase[posicao].flexions[0].text == "plural") {
+                else {
                     artigos.append("os")
                 }
         }
-        else if (frase[posicao].categories[0].text == "pronome"){
-            if(frase[posicao].flexions[0].text == "Masculino singular"){
+        else if (frase[posicao].categories[posCategoria].text == "pronome"){
+            if(frase[posicao].flexions[posFlexion].text == "Masculino singular"){
                 artigos.append("o")
             }
             else{

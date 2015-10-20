@@ -20,10 +20,10 @@ class Substantivo: NSObject {
         super.init()
     }
     
-    func classificaSubstantivo(frase: [Word], posicao : Int) -> [String]{
+    func classificaSubstantivo(frase: [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
         recebeArtigo.removeAll()
-        if (frase[0].categories[0].text == "nome feminino") || (frase[0].categories[0].text == "nome masculino"){
-            recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao)
+        if (frase[0].categories[posCategoria].text == "nome feminino") || (frase[0].categories[posCategoria].text == "nome masculino") || (frase[0].categories[posCategoria].text == "adjetivo"){
+            recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao, posCategoria: posCategoria, posFlexion: posFlexion)
         }
         
         return recebeArtigo

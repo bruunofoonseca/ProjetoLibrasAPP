@@ -44,7 +44,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
     
@@ -183,24 +182,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         return true
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        if string == " "
-        {
-            return false
-        }
-        else
-        {
-            return true
-        }
-    }
-    
-    func keyboardWasShown(notification:NSNotification) {
-        
-    }
-    
-    @IBAction func voltaTradutor(segue:UIStoryboardSegue){
-    }
-    
     /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
     
     func traducaoTexto(text : String) -> String {
@@ -220,7 +201,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         var aux : Word
         
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-        
+        print(fraseClassificada.count)
         while(i != fraseClassificada.count){
             for(var j = 0; j < fraseClassificada.count; j++){
                 if(fraseClassificada[j].text == fraseOrganizada[i]){
@@ -231,7 +212,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             }
             i++
         }
-        
+                
         if self.fraseClassificada.count == 3
         {
             // Chama a classe que trata o sujeito.

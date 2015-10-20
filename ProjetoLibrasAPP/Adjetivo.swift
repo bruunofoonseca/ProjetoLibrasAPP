@@ -23,23 +23,23 @@ class Adjetivo : NSObject {
         
         if sujeito.categories[0].text == "nome feminino" && sujeito.flexions[0].text == "sing"
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino singular")
+            adjetivoTratado = translator.buscaAdjetivo(adjetivo.text, flexao: "Feminino singular")
         }
         else if sujeito.categories[0].text == "nome feminino" && sujeito.flexions[0].text == "plur"
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino plural")
+            adjetivoTratado = translator.buscaAdjetivo(adjetivo.text, flexao: "Feminino plural")
         }
         else if sujeito.categories[0].text == "nome masculino" && sujeito.flexions[0].text == "sing"
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino singular")
+            adjetivoTratado = translator.buscaAdjetivo(adjetivo.text, flexao: "Masculino singular")
         }
         else if sujeito.categories[0].text == "nome masculino" && sujeito.flexions[0].text == "plur"
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino plural")
+            adjetivoTratado = translator.buscaAdjetivo(adjetivo.text, flexao: "Masculino plural")
         }
         else if sujeito.categories[0].text == "pronome"
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujeito.flexions[0].text)
+            adjetivoTratado = translator.buscaAdjetivo(adjetivo.text, flexao: sujeito.flexions[0].text)
         }
         else
         {
