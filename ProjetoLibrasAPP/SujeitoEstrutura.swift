@@ -64,4 +64,3 @@ class SujeitoEstrutura : NSObject {
         return arrayArtigos
     }
 }
-
