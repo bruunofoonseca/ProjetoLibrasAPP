@@ -44,6 +44,7 @@ class ComplementoEstrutura : NSObject {
             posSubstantivoFlexion = posSubstantivo
         }
         else{
+            posSubstantivo = 0
             posSubstantivoFlexion = 0
         }
         
@@ -82,7 +83,7 @@ class ComplementoEstrutura : NSObject {
                 arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
             }
             else if (preposicao == "e"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo"))
                 return arrayArtigos
             }
         }
