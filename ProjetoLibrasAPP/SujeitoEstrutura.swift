@@ -24,7 +24,6 @@ class SujeitoEstrutura : NSObject {
 
     func tratarSujeito(frase : [Word]) -> [String]{
         arrayArtigos.removeAll()
-        print(frase[0].text)
         if (frase[0].categories[0].text == "nome feminino") || (frase[0].categories[0].text == "nome masculino") {
             arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 0)
         }
