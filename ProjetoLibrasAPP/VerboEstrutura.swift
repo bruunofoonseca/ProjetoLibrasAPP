@@ -23,13 +23,21 @@ class VerboEstrutura : NSObject {
     func tratarVerbo(frase: [Word]) -> [String]
     {
         defVerbo.removeAll()
-        if (frase[1].categories[0].text == "verbo"){
-            defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
+        
+        for category in frase[1].categories
+        {
+            if (category.text == "verbo")
+            {
+                defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
+                defVerbo.append(objPreposicao.inserePreposicao(frase))
+            }
         }
-        else{
+        
+        if defVerbo.count == 0
+        {
             defVerbo.append(frase[1].text)
+            defVerbo.append(objPreposicao.inserePreposicao(frase))
         }
-        defVerbo.append(objPreposicao.inserePreposicao(frase))
         
         return defVerbo
     }

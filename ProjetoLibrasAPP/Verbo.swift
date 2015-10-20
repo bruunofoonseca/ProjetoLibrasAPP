@@ -25,8 +25,16 @@ class Verbo: NSObject {
     {
         var conjugVerbo = verbo.text
         
-        if(verbo.categories[0].text == "verbo"){
-            conjugVerbo = api.get_verbs(verbo.text, flexion: "Infinitivo")
+        for sujFlexion in sujeito.flexions
+        {
+            if sujFlexion.text == "sing" || sujFlexion.text == "Feminino singular" || sujFlexion.text == "Masculino singular"
+            {
+               conjugVerbo = api.get_verbs(verbo.text, flexion: "Presente - 3ª singular")
+            }
+            else if sujFlexion.text == "plur" || sujFlexion.text == "Feminino singular" || sujFlexion.text == "Masculino singular"
+            {
+               conjugVerbo = api.get_verbs(verbo.text, flexion: "Presente - 3ª plural") 
+            }
         }
         
         return conjugVerbo

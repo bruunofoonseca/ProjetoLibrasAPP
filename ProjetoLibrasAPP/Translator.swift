@@ -708,8 +708,9 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
-            let endpoint = NSURL(string: "http://localhost:3000/word/verbs/true/" + params + "/")
-            let data:NSData = NSData(contentsOfURL: endpoint!)!
+            let endpoint = "http://localhost:3000/word/verbs/true/" + params + "/"
+            let url = endpoint.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+            let data:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let word: NSDictionary = jsonResult.objectForKey("words") as? NSDictionary {
