@@ -282,16 +282,17 @@
                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o Sujeito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-mW-EGK">
-                                <rect key="frame" x="0.0" y="550" width="600" height="48"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Digite o Sujeito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-mW-EGK">
+                                <rect key="frame" x="0.0" y="551" width="600" height="48"/>
                                 <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Exibe Traducao">
                                 <rect key="frame" x="0.0" y="245" width="600" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.18823529410000001" green="0.6588235294" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="24"/>
                                 <color key="textColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -311,7 +312,6 @@
                             <constraint firstAttribute="trailing" secondItem="P2C-1p-Sch" secondAttribute="trailing" id="BQq-9k-A3W"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="P2C-1p-Sch" secondAttribute="bottom" id="DS6-wF-R0L"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.04" constant="16" id="FRb-hs-yE5"/>
-                            <constraint firstItem="WEM-mW-EGK" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" id="Fui-30-TBy"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="leading" secondItem="ieT-xs-7LS" secondAttribute="trailing" id="GFV-2T-pbl"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="height" secondItem="ieT-xs-7LS" secondAttribute="height" id="GRQ-sb-w7M"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" constant="-10" id="HhJ-mq-QMV"/>
@@ -328,24 +328,15 @@
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="h1N-a2-2gB"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="height" secondItem="i72-8T-1cI" secondAttribute="height" id="hSG-OG-ejQ"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="hYD-hj-e2L"/>
-                            <constraint firstItem="lNq-4B-Qgg" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.08" constant="2" id="i9z-Bt-5eh"/>
                             <constraint firstItem="P2C-1p-Sch" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="mKy-n8-PsN"/>
                             <constraint firstAttribute="trailing" secondItem="PcF-aV-hLT" secondAttribute="trailing" id="nzV-sU-Oj7"/>
                             <constraint firstItem="uLl-oM-Bk2" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="28" id="pMK-SI-hLr"/>
                             <constraint firstItem="P2C-1p-Sch" firstAttribute="top" secondItem="7mC-Rw-tc7" secondAttribute="bottom" id="qAV-po-eBp"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="width" secondItem="ieT-xs-7LS" secondAttribute="width" id="r5K-HN-AUX"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="ugo-KD-IFu"/>
-                            <constraint firstItem="WEM-mW-EGK" firstAttribute="top" secondItem="uLl-oM-Bk2" secondAttribute="bottom" multiplier="0.8" constant="401.19999999999999" id="xdj-Ze-5l1"/>
-                            <constraint firstItem="Bfg-N4-ZJj" firstAttribute="top" secondItem="WEM-mW-EGK" secondAttribute="bottom" constant="2" id="y5M-MC-UYP"/>
+                            <constraint firstItem="Bfg-N4-ZJj" firstAttribute="top" secondItem="WEM-mW-EGK" secondAttribute="bottom" constant="1" id="y5M-MC-UYP"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="trailing" id="zCY-Zb-BQN"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="i9z-Bt-5eh"/>
-                                <exclude reference="Fui-30-TBy"/>
-                                <exclude reference="xdj-Ze-5l1"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="LIBI" id="RXV-En-7Al">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="sP9-1V-wW5">
