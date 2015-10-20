@@ -26,7 +26,7 @@ class Verbo: NSObject {
         var conjugVerbo = verbo.text
         
         if(verbo.categories[0].text == "verbo"){
-            conjugVerbo = api.get_verbs(verbo.text, flexion: "Infinitivo Flexionado - 1ª singular")
+            conjugVerbo = api.get_verbs(verbo.text, flexion: "Infinitivo")
         }
         
         return conjugVerbo

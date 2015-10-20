@@ -712,8 +712,8 @@ class Translator: NSObject {
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
-                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
-                    for word in words{
+                if let word: NSDictionary = jsonResult.objectForKey("words") as? NSDictionary {
+
                         
                         var new_word:Word
                         new_word = Word.init()
@@ -779,7 +779,7 @@ class Translator: NSObject {
                         
                         words_list.append(new_word)
                         
-                    }
+                    
                 }
             }
             
