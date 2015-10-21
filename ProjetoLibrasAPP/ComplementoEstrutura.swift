@@ -16,6 +16,7 @@ class ComplementoEstrutura : NSObject {
     let objArtigo = Artigo()
     let objPronome = Pronome()
     let objVerbo = Verbo()
+    let objAdjetivo = Adjetivo()
     let translator = Translator()
     var arrayArtigos : [String] = [""]
     var pronomeTonico : [String] = []
@@ -29,6 +30,7 @@ class ComplementoEstrutura : NSObject {
         var posVerbo = -1
         var posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
+        var posAdjetivo = -1
         
         for (var i = 0; i < frase[2].categories.count; i++){
             if (frase[2].categories[i].text == "pronome"){
@@ -39,6 +41,10 @@ class ComplementoEstrutura : NSObject {
             }
             else if (frase[2].categories[i].text == "nome feminino" || frase[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
+            }
+            else if frase[2].categories[i].text == "adjetivo"
+            {
+                posAdjetivo = i
             }
         }
         
@@ -60,53 +66,54 @@ class ComplementoEstrutura : NSObject {
         
         
         arrayArtigos.removeAll()
- 
-        if (frase[2].categories[posPronome].text == "pronome"){
+        
+        for compCategory in frase[2].categories{
+            if (compCategory.text == "pronome"){
+                
+                /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
+                
+                pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase, posicao: posVerboCategoria1))
+                if (preposicao == "null"){
+                    arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
+                }
+                
+                arrayArtigos.append(pronomeTonico[0] + ".")
+                pronomeTonico.removeAll()
+                
+                return arrayArtigos
+            }
             
-     /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
-            
-            for (var i = 0; i < frase[1].categories.count; i++){
-                if (frase[2].categories[i].text == "verbo") && (frase[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
-                    
-                    posVerboCategoria1 = i
+            else if (compCategory.text == "verbo")
+            {
+                if (preposicao != "null") && (preposicao == "gerundio"){
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                }
+                else if (preposicao == "e"){
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Presente - 3ª singular") + ".")
+                    return arrayArtigos
                 }
             }
             
-            pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase, posicao: posVerboCategoria1))
-            
-            if (preposicao == "null"){
-                arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
+            else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino"){
+                
+                /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
+                
+                while (frase[2].flexions.count <= posSubstantivoFlexion) {
+                    posSubstantivoFlexion =  posSubstantivoFlexion - 1
+                }
+                
+                if (preposicao == "null") || (preposicao == "") && (frase[2].text != "ele"){
+                    arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
+                }
             }
             
-            arrayArtigos.append(pronomeTonico[0] + ".")
-            pronomeTonico.removeAll()
-            return arrayArtigos
-        }
-        else if (frase[2].categories[posVerbo].text == "verbo")
-        {
-            if (preposicao != "null") && (preposicao == "gerundio"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
-            }
-            else if (preposicao == "e"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Presente - 3ª singular"))
-                return arrayArtigos
-            }
-        }
-        else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino"){
-            
-            /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
-            
-            while (frase[2].flexions.count <= posSubstantivoFlexion) {
-                posSubstantivoFlexion =  posSubstantivoFlexion - 1
+            else if compCategory.text == "adjetivo"
+            {
+                arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
             }
             
-            if (preposicao == "null") || (preposicao == "") && (frase[2].text != "ele"){
-                arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
-            }
         }
         
-        
-        arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
     }
 }

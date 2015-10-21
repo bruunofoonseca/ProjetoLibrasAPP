@@ -19,32 +19,53 @@ class Adjetivo : NSObject {
     
     func tratarAdjetivo(adjetivo: Word, sujeito: Word) -> String
     {
-        let adjetivoTratado: String!
+        var adjetivoTratado: String!
         
-        if sujeito.categories[0].text == "nome feminino" && sujeito.flexions[0].text == "sing"
+        for sujCategory in sujeito.categories
         {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino singular")
+            for sujFlexion in sujeito.flexions
+            {
+                if sujCategory.text == "nome feminino" && sujFlexion.text == "sing"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino singular")
+                }
+                else if sujCategory.text == "nome feminino" && sujFlexion.text == "plur"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino plural")
+                }
+                else if sujCategory.text == "nome masculino" && sujFlexion.text == "sing"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino singular")
+                }
+                else if sujCategory.text == "nome masculino" && sujFlexion.text == "plur"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino plural")
+                }
+                else if sujCategory.text == "pronome" && sujFlexion.text == "Feminino singular"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujFlexion.text)
+                }
+                else if sujCategory.text == "pronome" && sujFlexion.text == "Masculino singular"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujFlexion.text)
+                }
+                else if sujCategory.text == "pronome" && sujFlexion.text == "Feminino plural"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujFlexion.text)
+                }
+                else if sujCategory.text == "pronome" && sujFlexion.text == "Masculino plural"
+                {
+                    adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujFlexion.text)
+                }
+            }
         }
-        else if sujeito.categories[0].text == "nome feminino" && sujeito.flexions[0].text == "plur"
-        {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino plural")
-        }
-        else if sujeito.categories[0].text == "nome masculino" && sujeito.flexions[0].text == "sing"
-        {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino singular")
-        }
-        else if sujeito.categories[0].text == "nome masculino" && sujeito.flexions[0].text == "plur"
-        {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Masculino plural")
-        }
-        else if sujeito.categories[0].text == "pronome"
-        {
-            adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: sujeito.flexions[0].text)
-        }
-        else
+        
+        if adjetivoTratado == ""
         {
             adjetivoTratado = adjetivo.text
         }
+        
+        print(adjetivoTratado)
         
         return adjetivoTratado
     }

@@ -893,8 +893,7 @@ class Translator: NSObject {
         
         do {
             
-            var words_list:[Word]
-            words_list = []
+            let new_word:Word = Word.init()
             
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
@@ -903,11 +902,10 @@ class Translator: NSObject {
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
-                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
-                    for word in words{
+                if let word: NSDictionary = jsonResult.objectForKey("words") as? NSDictionary {
+                    
                         
-                        var new_word:Word
-                        new_word = Word.init()
+                       
                         
                         if let id: Int = word.objectForKey("id") as? Int{
                             new_word.id = id
@@ -968,13 +966,11 @@ class Translator: NSObject {
                         
                         new_word.flexions = flexion_list
                         
-                        words_list.append(new_word)
-                        
-                    }
+                    
                 }
             }
             
-            return words_list[0].text
+            return new_word.text
             
         } catch let error as NSError {
             
