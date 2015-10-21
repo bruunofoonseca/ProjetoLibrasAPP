@@ -102,8 +102,10 @@ class ComplementoEstrutura : NSObject {
                     posSubstantivoFlexion =  posSubstantivoFlexion - 1
                 }
                 
-                if (preposicao == "null") || (preposicao == "") && (frase[2].text != "ele"){
-                    arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
+                if (preposicao == "null") || (preposicao == "") {
+                    arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria: posSubstantivo, posFlexion: posSubstantivoFlexion)
+                        
+                    arrayArtigos.append(frase[2].text + ".")
                 }
             }
             
