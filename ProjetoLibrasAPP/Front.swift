@@ -48,8 +48,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
     
         
         lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
@@ -186,25 +186,25 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         return true
     }
     
-    func keyboardWillShow(notification: NSNotification) {
-        var info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.constraint.constant = keyboardFrame.size.height
-        })
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        var info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        
-        UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
-        })
-        
-        txtTexto.resignFirstResponder()
-    }
+//    func keyboardWillShow(notification: NSNotification) {
+//        var info = notification.userInfo!
+//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+//        
+//        UIView.animateWithDuration(0.1, animations: { () -> Void in
+//            self.constraint.constant = keyboardFrame.size.height
+//        })
+//    }
+//    
+//    func keyboardWillHide(notification: NSNotification) {
+//        var info = notification.userInfo!
+//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+//        
+//        UIView.animateWithDuration(0.1, animations: { () -> Void in
+//            self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
+//        })
+//        
+//        txtTexto.resignFirstResponder()
+//    }
     
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
     }
