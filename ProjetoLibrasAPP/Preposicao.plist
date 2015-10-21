@@ -22,20 +22,24 @@
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>de</string>
 			<key>sing</key>
 			<string>de</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>de</string>
+			<key>plur</key>
 			<string>de</string>
 		</dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>de</string>
 			<key>sing</key>
 			<string>de</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>de</string>
+			<key>plur</key>
 			<string>de</string>
 		</dict>
 	</dict>
@@ -43,11 +47,13 @@
 	<dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>aos</string>
+			<key>plur</key>
 			<string>aos</string>
 			<key>sing</key>
 			<string>ao</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>ao</string>
 		</dict>
 		<key>pronome</key>
@@ -68,11 +74,13 @@
 		</dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>à</string>
 			<key>sing</key>
 			<string>à</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>às</string>
+			<key>plur</key>
 			<string>às</string>
 		</dict>
 	</dict>
@@ -80,20 +88,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>uma</string>
 			<key>sing</key>
 			<string>uma</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>algumas</string>
+			<key>plur</key>
 			<string>algumas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>um</string>
 			<key>sing</key>
 			<string>um</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>alguns</string>
+			<key>plur</key>
 			<string>alguns</string>
 		</dict>
 		<key>verbo</key>
@@ -117,20 +129,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>na</string>
 			<key>sing</key>
 			<string>na</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>nas</string>
+			<key>plur</key>
 			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>no</string>
 			<key>sing</key>
 			<string>no</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>nos</string>
+			<key>plur</key>
 			<string>nos</string>
 		</dict>
 		<key>verbo</key>
@@ -154,20 +170,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>na</string>
 			<key>sing</key>
 			<string>na</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>nas</string>
+			<key>plur</key>
 			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>no</string>
 			<key>sing</key>
 			<string>no</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>nos</string>
+			<key>plur</key>
 			<string>nos</string>
 		</dict>
 		<key>verbo</key>
@@ -175,36 +195,29 @@
 			<key>Infinitivo</key>
 			<string>null</string>
 		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string>com</string>
-			<key>Feminino plural</key>
-			<string>com</string>
-			<key>Masculino singular</key>
-			<string>com</string>
-			<key>Masculino plural</key>
-			<string>com</string>
-		</dict>
 	</dict>
 	<key>fazer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -219,20 +232,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>uma</string>
 			<key>sing</key>
 			<string>uma</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>algumas</string>
+			<key>plur</key>
 			<string>algumas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>um</string>
 			<key>sing</key>
 			<string>um</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>alguns</string>
+			<key>plur</key>
 			<string>alguns</string>
 		</dict>
 		<key>verbo</key>
@@ -247,20 +264,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>na</string>
 			<key>sing</key>
 			<string>na</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>nas</string>
+			<key>plur</key>
 			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>no</string>
 			<key>sing</key>
 			<string>no</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>nos</string>
+			<key>plur</key>
 			<string>nos</string>
 		</dict>
 		<key>verbo</key>
@@ -284,20 +305,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -321,20 +346,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -358,20 +387,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>à</string>
 			<key>sing</key>
 			<string>à</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>às</string>
+			<key>plur</key>
 			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>o</string>
 			<key>sing</key>
 			<string>o</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>os</string>
+			<key>plur</key>
 			<string>os</string>
 		</dict>
 		<key>verbo</key>
@@ -395,20 +428,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>com</string>
 			<key>sing</key>
 			<string>com</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>plur</key>
 			<string>com</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>com</string>
 			<key>sing</key>
 			<string>com</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>com</string>
+			<key>plur</key>
 			<string>com</string>
 		</dict>
 		<key>verbo</key>
@@ -432,20 +469,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -469,20 +510,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>à</string>
 			<key>sing</key>
 			<string>à</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>às</string>
+			<key>plur</key>
 			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>o</string>
 			<key>sing</key>
 			<string>o</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>os</string>
+			<key>plur</key>
 			<string>os</string>
 		</dict>
 		<key>verbo</key>
@@ -506,20 +551,24 @@
 	<dict>
 		<key>nome feminino</key>
 		<dict>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>sing</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -539,24 +588,24 @@
 			<string>por</string>
 		</dict>
 	</dict>
-	<key>amar</key>
+	<key>imprimir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string>para</string>
+			<string>null</string>
 			<key>Feminino singular</key>
-			<string>para</string>
+			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string>para</string>
-			<key>singular</key>
+			<string>null</string>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
@@ -566,13 +615,13 @@
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string>zoi</string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string>zoias</string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string>zoi</string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string>zoios</string>
+			<string>null</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
@@ -586,22 +635,22 @@
 		<dict>
 			<key>sing</key>
 			<string>na</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>na</string>
 			<key>plur</key>
 			<string>nas</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>no</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>no</string>
 			<key>plur</key>
 			<string>no</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string></string>
 		</dict>
 		<key>verbo</key>
@@ -627,22 +676,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -668,22 +717,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -709,22 +758,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -750,22 +799,22 @@
 		<dict>
 			<key>sing</key>
 			<string>no</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>no</string>
 			<key>plur</key>
 			<string>nos</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>nos</string>
 		</dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
 			<string>na</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>na</string>
 			<key>plur</key>
 			<string>nas</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>nas</string>
 		</dict>
 		<key>pronome</key>
@@ -791,22 +840,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -832,22 +881,22 @@
 		<dict>
 			<key>sing</key>
 			<string>para a</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>para a</string>
 			<key>plur</key>
 			<string>para as</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>para as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>para o</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>para o</string>
 			<key>plur</key>
 			<string>para os</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>para os</string>
 		</dict>
 		<key>pronome</key>
@@ -873,22 +922,22 @@
 		<dict>
 			<key>sing</key>
 			<string>com a</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>com a</string>
 			<key>plur</key>
 			<string>com as</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>com o</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>com o</string>
 			<key>plur</key>
 			<string>com os</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>com os</string>
 		</dict>
 		<key>pronome</key>
@@ -914,22 +963,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -955,22 +1004,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>verbo</key>
@@ -996,22 +1045,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -1037,22 +1086,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -1078,9 +1127,9 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
@@ -1089,9 +1138,9 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
@@ -1119,22 +1168,22 @@
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Feminino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Feminino plural</key>
 			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
 			<string>null</string>
-			<key>singular</key>
+			<key>Masculino singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
