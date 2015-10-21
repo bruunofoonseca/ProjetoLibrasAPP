@@ -8,27 +8,22 @@
 
 import UIKit
 
-class TradutorViewController: UIViewController {
-
+class TradutorViewController: UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
+    
+    var frase = [String?](count: 3, repeatedValue: nil)
+    var atual = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        frase[0] = ""
+        frase[1] = ""
+        frase[2] = ""
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     
 }
