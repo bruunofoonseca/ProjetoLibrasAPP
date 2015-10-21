@@ -15,6 +15,7 @@ class ComplementoEstrutura : NSObject {
     
     let objArtigo = Artigo()
     let objPronome = Pronome()
+    let objAdjetivo = Adjetivo()
     let translator = Translator()
     var arrayArtigos : [String] = [""]
     var pronomeTonico : [String] = []
@@ -27,16 +28,21 @@ class ComplementoEstrutura : NSObject {
         var posSubstantivo = -1
         var posVerbo = -1
         var posSubstantivoFlexion = -1
+        var posAdjetivo = -1
         
         for (var i = 0; i < frase[2].categories.count; i++){
             if (frase[2].categories[i].text == "pronome"){
                 posPronome = i
             }
-            if (frase[2].categories[i].text == "verbo") && (frase[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
+            else if (frase[2].categories[i].text == "verbo"){
                 posVerbo = i
             }
             else if (frase[2].categories[i].text == "nome feminino" || frase[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
+            }
+            else if frase[2].categories[i].text == "adjetivo"
+            {
+                posAdjetivo = i
             }
         }
         
@@ -64,31 +70,38 @@ class ComplementoEstrutura : NSObject {
             }
         }
             
-        else if (frase[2].categories[0].text == "pronome"){
-            
-     /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
-            
-            pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase))
-            if (preposicao == "null"){
-                arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
-            }
-            
-            arrayArtigos.append(pronomeTonico[0] + ".")
-            pronomeTonico.removeAll()
-            return arrayArtigos
-        }
-        else if (frase[2].categories[0].text == "verbo")
+        for compCategory in frase[2].categories
         {
-            if (preposicao != "null") && (preposicao == "gerundio"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
-            }
-            else if (preposicao == "e"){
-                arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo"))
+            if (compCategory.text == "pronome"){
+                
+                /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
+                
+                pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase))
+                if (preposicao == "null"){
+                    arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
+                }
+                
+                arrayArtigos.append(pronomeTonico[0] + ".")
+                pronomeTonico.removeAll()
                 return arrayArtigos
+            }
+            else if (compCategory.text == "verbo")
+            {
+                if (preposicao != "null") && (preposicao == "gerundio"){
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                }
+                else if (preposicao == "e"){
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo") + ".")
+                    return arrayArtigos
+                }
+            }
+            else if compCategory.text == "adjetivo"
+            {
+                arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
             }
         }
         
-        arrayArtigos.append(frase[2].text + ".")
+//        arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
     }
 }
