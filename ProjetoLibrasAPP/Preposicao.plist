@@ -1203,5 +1203,89 @@
 			<string>e</string>
 		</dict>
 	</dict>
+	<key>amar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>null</string>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>plur</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>null</string>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>plur</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
+		</dict>
+	</dict>
+	<key>abrir</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>plur</key>
+			<string>null</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>sing</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+			<key>plur</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>para</string>
+			<key>Feminino plural</key>
+			<string>para</string>
+			<key>Masculino singular</key>
+			<string>para</string>
+			<key>Masculino plural</key>
+			<string>para</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>e</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

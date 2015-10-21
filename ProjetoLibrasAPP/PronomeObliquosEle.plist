@@ -35,5 +35,16 @@
 		<key>elas</key>
 		<string>nelas</string>
 	</dict>
+	<key>amar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
 </dict>
 </plist>
