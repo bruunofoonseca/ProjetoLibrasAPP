@@ -82,7 +82,7 @@ class ComplementoEstrutura : NSObject {
                 
                 return arrayArtigos
             }
-            
+                
             else if (compCategory.text == "verbo")
             {
                 if (preposicao != "null") && (preposicao == "gerundio"){
@@ -93,7 +93,7 @@ class ComplementoEstrutura : NSObject {
                     return arrayArtigos
                 }
             }
-            
+                
             else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino"){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
@@ -102,13 +102,11 @@ class ComplementoEstrutura : NSObject {
                     posSubstantivoFlexion =  posSubstantivoFlexion - 1
                 }
                 
-                if (preposicao == "null") || (preposicao == "") {
-                    arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria: posSubstantivo, posFlexion: posSubstantivoFlexion)
-                        
-                    arrayArtigos.append(frase[2].text + ".")
+                if (preposicao == "null") || (preposicao == "") && (frase[2].text != "ele"){
+                    arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
                 }
             }
-            
+                
             else if compCategory.text == "adjetivo"
             {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
