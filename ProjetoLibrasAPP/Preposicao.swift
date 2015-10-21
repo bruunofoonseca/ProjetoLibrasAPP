@@ -40,6 +40,7 @@ class Preposicao: NSObject {
         
         var posPronome = -1
         var posVerbo = -1
+        var posVerboConfere = -1
         var posSubstantivo = -1
         posPronomeFlexion = posPronome
         
@@ -67,7 +68,11 @@ class Preposicao: NSObject {
         }
         
         if (posVerbo == -1){
+            posVerboConfere = posVerbo
             posVerbo = 0
+        }
+        else{
+            posVerboConfere = posVerbo
         }
         
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
@@ -95,16 +100,56 @@ class Preposicao: NSObject {
                 }
             }
         }
+        else if(texto[2].categories[posPronome].text == "pronome") && (pronomeTonico[0] == texto[2].text){
+            var posPronomeFlexion = (texto[2].flexions.count - 1)
+            
+            while(texto[2].flexions[posPronomeFlexion].text != "Feminino singular" && texto[2].flexions[posPronomeFlexion].text != "Masculino singular" && texto[2].flexions[posPronomeFlexion].text != "Masculino plural" && texto[2].flexions[posPronomeFlexion].text != "Feminino plural"){
+                posPronomeFlexion = posPronomeFlexion - 1
+            }
+            
+            let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[posPronome].text)?.valueForKey(texto[2].flexions[posPronomeFlexion].text) as AnyObject? as! String
+            
+            colocaPreposicao = test
+            
+        }
         else {
             
-            let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[0].text)?.valueForKey(texto[2].flexions[0].text) as AnyObject? as! String
+            var posSubstantivoFlexion = (texto[2].flexions.count - 1)
+            var posVerboFlexion = (texto[2].flexions.count - 1)
+
+            if (posVerboConfere != -1){
+                
+                while(texto[2].flexions[posVerboFlexion].text != "Infinitivo"){
+                    posVerboFlexion = posVerboFlexion - 1
+                }
+                
+                let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
+                
+                colocaPreposicao = test
+            }
+            else if (posSubstantivo != -1){
+                if (texto[2].categories[posSubstantivo].text == "nome feminino"){
+                    while (texto[2].flexions[posSubstantivoFlexion].text != "Feminino singular" && texto[2].flexions[posSubstantivoFlexion].text != "sing" && texto[2].flexions[posSubstantivoFlexion].text != "plur" && texto[2].flexions[posSubstantivoFlexion].text != "Feminino plural"){
+                        posSubstantivoFlexion = posSubstantivoFlexion - 1
+                    }
+                }
+                else if (texto[2].categories[posSubstantivo].text == "nome masculino"){
+                    
+                    while (texto[2].flexions[posSubstantivoFlexion].text != "sing" && texto[2].flexions[posSubstantivoFlexion].text != "plur" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino plural" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino singular"){
+                        posSubstantivoFlexion = posSubstantivoFlexion - 1
+                    
+                    }
+            
+                }
+                
+                let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].categories[posSubstantivo].text)?.valueForKey(texto[2].flexions[posSubstantivoFlexion].text) as AnyObject? as! String
+                
+                colocaPreposicao = test
+            }
+            
             
             if (texto[1].text == "estar") || (texto[1].text == "poder") || (texto[1].text == "estudar") && (texto[2].text == "casa"){
                 colocaPreposicao = "em"
-            }
-            else{
-                
-                colocaPreposicao = test
             }
         }
     

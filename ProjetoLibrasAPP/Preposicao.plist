@@ -539,14 +539,14 @@
 			<string>por</string>
 		</dict>
 	</dict>
-	<key>imprimir</key>
+	<key>amar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string>null</string>
-			<key>singular</key>
-			<string>null</string>
+			<string>para</string>
+			<key>Feminino singular</key>
+			<string>para</string>
 			<key>plur</key>
 			<string>null</string>
 			<key>plural</key>
@@ -555,24 +555,24 @@
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string>null</string>
+			<string>para</string>
 			<key>singular</key>
 			<string>null</string>
 			<key>plur</key>
 			<string>null</string>
-			<key>plural</key>
+			<key>Masculino plural</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string>para</string>
+			<string>zoi</string>
 			<key>Feminino plural</key>
-			<string>para</string>
+			<string>zoias</string>
 			<key>Masculino singular</key>
-			<string>para</string>
+			<string>zoi</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>zoios</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
