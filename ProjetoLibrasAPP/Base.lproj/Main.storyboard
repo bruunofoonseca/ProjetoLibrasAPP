@@ -175,7 +175,7 @@
         <!--Navigation Controller-->
         <scene sceneID="EP5-XS-6DP">
             <objects>
-                <navigationController id="9ps-df-Il7" sceneMemberID="viewController">
+                <navigationController hidesBarsWhenKeyboardAppears="YES" hidesBarsWhenVerticallyCompact="YES" id="9ps-df-Il7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MvJ-ct-qKn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -271,11 +271,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-mg-bnv" userLabel="Label Texto Digitado">
-                                <rect key="frame" x="0.0" y="150" width="600" height="48"/>
+                                <rect key="frame" x="0.0" y="180" width="600" height="48"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Label Traducao">
+                                <rect key="frame" x="0.0" y="240" width="600" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="24"/>
+                                <color key="textColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite o Sujeito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEM-mW-EGK" userLabel="TextField Texto">
@@ -285,14 +293,6 @@
                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Label Traducao">
-                                <rect key="frame" x="0.0" y="245" width="600" height="50"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="24"/>
-                                <color key="textColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -313,6 +313,7 @@
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="height" secondItem="ieT-xs-7LS" secondAttribute="height" id="GRQ-sb-w7M"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" constant="-10" id="HhJ-mq-QMV"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" multiplier="0.09" constant="-4" id="MI5-fT-8Ke"/>
+                            <constraint firstItem="lNq-4B-Qgg" firstAttribute="top" secondItem="9xI-mg-bnv" secondAttribute="bottom" constant="12" id="Pkd-H6-qis"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="width" secondItem="PcF-aV-hLT" secondAttribute="width" multiplier="0.3333" constant="10.012500000000003" id="RKf-ZD-vdU"/>
                             <constraint firstItem="9xI-mg-bnv" firstAttribute="width" secondItem="brM-1A-con" secondAttribute="width" id="URT-vZ-ZbV"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="bottom" secondItem="Bfg-N4-ZJj" secondAttribute="top" id="XGg-fv-lZa"/>
@@ -321,10 +322,8 @@
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="centerX" secondItem="PcF-aV-hLT" secondAttribute="centerX" id="akN-4J-HG1"/>
                             <constraint firstItem="WEM-mW-EGK" firstAttribute="height" secondItem="PcF-aV-hLT" secondAttribute="height" multiplier="0.08" id="cYW-mH-F6p"/>
                             <constraint firstAttribute="trailing" secondItem="lNq-4B-Qgg" secondAttribute="trailing" id="e5v-tg-CbB"/>
-                            <constraint firstItem="lNq-4B-Qgg" firstAttribute="top" secondItem="9xI-mg-bnv" secondAttribute="bottom" constant="47" id="gcY-kX-mpn"/>
                             <constraint firstItem="lNq-4B-Qgg" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="h1N-a2-2gB"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="height" secondItem="i72-8T-1cI" secondAttribute="height" id="hSG-OG-ejQ"/>
-                            <constraint firstItem="9xI-mg-bnv" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="bottom" constant="28" id="iFs-qm-HfM"/>
                             <constraint firstItem="9xI-mg-bnv" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="jVf-3I-lrO"/>
                             <constraint firstItem="P2C-1p-Sch" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="mKy-n8-PsN"/>
                             <constraint firstItem="9xI-mg-bnv" firstAttribute="centerX" secondItem="brM-1A-con" secondAttribute="centerX" id="mxF-iK-53M"/>
@@ -332,6 +331,7 @@
                             <constraint firstItem="P2C-1p-Sch" firstAttribute="top" secondItem="7mC-Rw-tc7" secondAttribute="bottom" id="qAV-po-eBp"/>
                             <constraint firstItem="Z08-6a-o5D" firstAttribute="width" secondItem="ieT-xs-7LS" secondAttribute="width" id="r5K-HN-AUX"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="leading" secondItem="brM-1A-con" secondAttribute="leading" id="ugo-KD-IFu"/>
+                            <constraint firstItem="9xI-mg-bnv" firstAttribute="top" secondItem="ksw-ow-PBs" secondAttribute="bottom" constant="58" id="xU3-I5-ZLB"/>
                             <constraint firstItem="Bfg-N4-ZJj" firstAttribute="top" secondItem="WEM-mW-EGK" secondAttribute="bottom" constant="1" id="y5M-MC-UYP"/>
                             <constraint firstItem="ieT-xs-7LS" firstAttribute="leading" secondItem="Z08-6a-o5D" secondAttribute="trailing" id="zCY-Zb-BQN"/>
                         </constraints>
@@ -356,7 +356,7 @@
                         <outlet property="frameView" destination="brM-1A-con" id="PX6-ea-RjY"/>
                         <outlet property="lblTextoDigitado" destination="9xI-mg-bnv" id="HkQ-Bs-6hd"/>
                         <outlet property="lblTraducao" destination="lNq-4B-Qgg" id="A3v-YF-XmV"/>
-                        <outlet property="scrollView" destination="PcF-aV-hLT" id="c1H-VP-bxt"/>
+                        <outlet property="scrollView" destination="PcF-aV-hLT" id="v2s-zl-hVp"/>
                         <outlet property="searchDisplayController" destination="DfS-FD-P6J" id="tTD-2e-OTp"/>
                         <outlet property="txtTexto" destination="WEM-mW-EGK" id="PyJ-et-Bfh"/>
                     </connections>

@@ -13,7 +13,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /********** VARIÁVEIS DA INTERFACE  **********/
     
-    @IBOutlet weak var frase: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var frameView: UIView!
     
@@ -29,6 +28,11 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBOutlet weak var btnSujeito: UIButton!
     @IBOutlet weak var btnVerbo: UIButton!
     @IBOutlet weak var btnComplemento: UIButton!
+    
+    var frase = [String?](count: 3, repeatedValue: nil)
+    var atual = 0
+    
+    var kbHeight: CGFloat!
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -50,22 +54,30 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        frase[0] = ""
+        frase[1] = ""
+        frase[2] = ""
         
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
         self.txtTexto.delegate = self
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
-    
-        scrollCriacao()
-        
-        
-                
+        initializeScroll()
     }
     
     /********** MÉTODOS DA INTERFACE  **********/
     
-    func scrollCriacao() {
+    /* Função da segue(Voltar da View Frases para View Tradutor) */
+    
+    @IBAction func voltaTradutor(segue:UIStoryboardSegue){
+    }
+    
+    /* Funções do Button */
+    
+    
+
+    /* Funções do Scroll */
+    
+    func initializeScroll() {
         
         self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
@@ -89,126 +101,154 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         self.scrollView.delegate = self
     }
     
-    @IBAction func voltaTradutor(segue:UIStoryboardSegue){
+    func moveToNextPage() {
+        
+        // Move to next page
+        let pageWidth:CGFloat = CGRectGetWidth(self.scrollView.frame)
+        let maxWidth:CGFloat = pageWidth * 3
+        let contentOffset:CGFloat = self.scrollView.contentOffset.x
+        
+        var slideToX = contentOffset + pageWidth
+        
+        if (contentOffset + pageWidth == maxWidth){
+            slideToX = 0
+        }
+        self.scrollView.scrollRectToVisible(CGRectMake(slideToX, 0, pageWidth, CGRectGetHeight(self.scrollView.frame)), animated: true)
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        let pageWidth:CGFloat = CGRectGetWidth(scrollView.frame)
-        self.currentPage = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1
-        print("Current page Scroll \(currentPage)")
-        if Int(currentPage) == 0{
-
-//            lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            txtTexto.placeholder = "Digite o Sujeito"
-            
-            
-            
-        }
-        else if Int(currentPage) == 1{
-            
-//            lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            txtTexto.placeholder = "Digite o Verbo"
-            
-        }
-        else if Int(currentPage) == 2{
-
-//            lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-            txtTexto.placeholder = "Digite o Complemento"
-            
-        }
+    
+    /* Funções do TextField */
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        animateViewMoving(true, moveValue: 250)
     }
     
-    func scrollToPage(page: Int,animated:Bool){
-        var frame: CGRect = self.scrollView.frame
-        frame.origin.x = frame.size.width * CGFloat(page);
-        frame.origin.y = 0;
-        print(page)
-        
-        if page == 0 {
-//            lblSujeito.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-        }
-        else if page == 1 {
-            
-//            lblVerbo.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblComplemento.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-        
-        }
-        else if page == 2 {
-
-//            lblComplemento.textColor = UIColor(red: (8/255), green: (191/255), blue: (134/255), alpha: 1)
-//            lblSujeito.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-//            lblVerbo.textColor = UIColor(red: (111/255), green: (113/255), blue: (121/255), alpha: 1)
-        }
-        self.scrollView.scrollRectToVisible(frame, animated: animated)
+    func textFieldDidEndEditing(textField: UITextField) {
+        animateViewMoving(false, moveValue: 250)
+    }
+    
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        let movementDuration:NSTimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations("animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
+        UIView.commitAnimations()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField == txtTexto {
-            print("Current page textField \(currentPage)")
-            
-            if self.currentPage == 0 {
-                if temTexto{
-                    frase.text.removeAll()
-                    texto.removeAll()
-                    juntaPalavras.removeAll()
-                    lblTraducao.text?.removeAll()
-                    temTexto = false
-                }
-                lblTraducao.text = ""
-                frase.text! += txtTexto.text!
-                txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Verbo"
-                self.scrollToPage(1, animated: true)
-                self.currentPage++
-            }
-            else if self.currentPage == 1 {
-                frase.text! += " " + txtTexto.text!
-                txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Complemento"
-                self.scrollToPage(2, animated: true)
-                self.currentPage++
-            }
-            else if self.currentPage == 2 {
-                frase.text! += " " + txtTexto.text!
-                txtTexto.text = ""
-                txtTexto.placeholder = "Digite o Sujeito"
-                lblTraducao.text = traducaoTexto(frase.text)
-                self.scrollToPage(0, animated: true)
-                temTexto = true
-                self.currentPage = 0
-            }
-        }
+        
+        colocaNaFrase()
+        avancaTitulo()
+        //marcaTitulo()
+        mostraNaTela()
+        txtTexto.text = ""
+        moveToNextPage()
+        
         return true
     }
     
-//    func keyboardWillShow(notification: NSNotification) {
-//        var info = notification.userInfo!
-//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        if (string == " "){
+            
+            
+            
+            colocaNaFrase()
+            avancaTitulo()
+            //marcaTitulo()
+            mostraNaTela()
+            txtTexto.text = ""
+            moveToNextPage()
+            
+            
+            return false
+        }
+        else {
+            
+            return true
+        }
+    }
+    
+    /* Funções de Texto */
+    
+    func colocaNaFrase(){
+        frase[atual] = txtTexto.text!
+    }
+    
+    func mostraNaTela(){
+        let texto = frase[0]! + " " + frase[1]! + " " + frase[2]!
+        
+        lblTextoDigitado.text = texto
+    }
+    
+    func avancaTitulo(){
+        if atual == 2{
+            
+            atual = 0
+            mostraNaTela()
+            lblTraducao.text = lblTextoDigitado.text
+            
+            
+        }else if atual == 0{
+            
+            if lblTextoDigitado.text != ""{
+                
+                //frase[0] = ""
+                frase[1] = ""
+                frase[2] = ""
+                
+                lblTraducao.text = ""
+            }
+            
+            atual += 1
+        }else{
+            atual += 1
+        }
+    }
+    
+//    func marcaTitulo(){
 //        
-//        UIView.animateWithDuration(0.1, animations: { () -> Void in
-//            self.constraint.constant = keyboardFrame.size.height
-//        })
+//        if (self.atual == 0){
+//            btnSujeito.titleLabel?.text = btnSujeito.titleLabel?.text
+//            
+//            self.btnSujeito.ti = self.sublinha(self.btnSujeito.attributedText as! NSMutableAttributedString)
+//            btnVerbo.titleLabel?.text = btnVerbo.titleLabel?.text
+//            self.verbo.attributedText = self.desSublinha(self.verbo.attributedText as! NSMutableAttributedString)
+//            btnComplemento.titleLabel?.text = btnComplemento.titleLabel?.text
+//            self.complemento.attributedText = self.desSublinha(self.complemento.attributedText as! NSMutableAttributedString)
+//        }else if (self.atual == 1){
+//            btnVerbo.titleLabel?.text = btnVerbo.titleLabel?.text
+//            
+//            self.verbo.attributedText = self.sublinha(self.verbo.attributedText as! NSMutableAttributedString)
+//            btnSujeito.titleLabel?.text = btnSujeito.titleLabel?.text
+//            self.sujeito.attributedText = self.desSublinha(self.sujeito.attributedText as! NSMutableAttributedString)
+//            btnComplemento.titleLabel?.text = btnComplemento.titleLabel?.text
+//            self.complemento.attributedText = self.desSublinha(self.complemento.attributedText as! NSMutableAttributedString)
+//        }else if (self.atual == 2){
+//            btnComplemento.titleLabel?.text = btnComplemento.titleLabel?.text
+//            
+//            btnSujeito.titleLabel?.text = btnSujeito.titleLabel?.text
+//            self.sujeito.attributedText = self.desSublinha(self.sujeito.attributedText as! NSMutableAttributedString)
+//            btnVerbo.titleLabel?.text = btnVerbo.titleLabel?.text
+//            self.verbo.attributedText = self.desSublinha(self.verbo.attributedText as! NSMutableAttributedString)
+//            btnComplemento.titleLabel?.text = btnComplemento.titleLabel?.text
+//            self.complemento.attributedText = self.sublinha(self.complemento.attributedText as! NSMutableAttributedString)
+//        }
 //    }
-//    
-//    func keyboardWillHide(notification: NSNotification) {
-//        var info = notification.userInfo!
-//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-//        
-//        UIView.animateWithDuration(0.1, animations: { () -> Void in
-//            self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
-//        })
-//        
-//        txtTexto.resignFirstResponder()
-//    }
+    
+    func sublinha(string:NSMutableAttributedString) -> NSMutableAttributedString{
+        string.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSRange(location:0,length:string.length))
+        
+        return string
+    }
+    
+    func desSublinha(string:NSMutableAttributedString) -> NSMutableAttributedString{
+        string.addAttribute(NSUnderlineStyleAttributeName, value: 0, range: NSRange(location:0,length:string.length))
+        
+        return string
+    }
     
     /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
     
