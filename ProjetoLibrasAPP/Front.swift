@@ -63,7 +63,9 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         txtTexto.returnKeyType = UIReturnKeyType.Next
         self.txtTexto.delegate = self
         
+        initializeButtonTitleColors(atualButton)
         initializeScroll()
+        
     }
     
     /********** MÉTODOS DA INTERFACE  **********/
@@ -81,6 +83,32 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /* Funções do Button */
     
+    func initializeButtonTitleColors(atualButton: Int){
+        
+        switch(atualButton){
+            
+            case 0:
+                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                break
+            case 1:
+                btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                break
+            case 2:
+                btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                break
+            default:
+                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+        }
+        
+    }
     
     @IBAction func btnSujeitoPressed(sender: AnyObject) {
         if (btnSujeito.enabled == true && atualButton == 0)  {
@@ -91,6 +119,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             moveToNextPage()
             atualButton++
+            initializeButtonTitleColors(atualButton)
             print("atualButton \(atualButton)")
             print("atual \(atual)")
         }
@@ -104,6 +133,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             moveToNextPage()
             atualButton++
+            initializeButtonTitleColors(atualButton)
             print("atualButton \(atualButton)")
             print("atual \(atual)")
         }
@@ -117,10 +147,12 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             moveToNextPage()
             atualButton = 0
+            initializeButtonTitleColors(atualButton)
             print("atualButton \(atualButton)")
             print("atual \(atual)")
         }
     }
+    
     
 
     /* Funções do Scroll */
