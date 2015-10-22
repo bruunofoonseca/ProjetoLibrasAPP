@@ -73,6 +73,36 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /* Funções do Button */
     
+    @IBAction func btnSujeitoPressed(sender: AnyObject) {
+        if btnSujeito.enabled == true {
+            colocaNaFrase()
+            avancaTitulo()
+            //marcaTitulo()
+            mostraNaTela()
+            txtTexto.text = ""
+            moveToNextPage()
+        }
+    }
+    @IBAction func btnVerboPressed(sender: AnyObject) {
+        if btnVerbo.enabled == true {
+            colocaNaFrase()
+            avancaTitulo()
+            //marcaTitulo()
+            mostraNaTela()
+            txtTexto.text = ""
+            moveToNextPage()
+        }
+    }
+    @IBAction func btnComplementoPressed(sender: AnyObject) {
+        if btnComplemento.enabled == true {
+            colocaNaFrase()
+            avancaTitulo()
+            //marcaTitulo()
+            mostraNaTela()
+            txtTexto.text = ""
+            moveToNextPage()
+        }
+    }
     
 
     /* Funções do Scroll */

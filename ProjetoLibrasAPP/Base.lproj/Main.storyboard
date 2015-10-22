@@ -217,6 +217,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <animations/>
                                         <state key="normal" title="Sujeito"/>
+                                        <connections>
+                                            <action selector="btnSujeitoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="Ade-YY-uBm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -237,6 +240,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <animations/>
                                         <state key="normal" title="Verbo"/>
+                                        <connections>
+                                            <action selector="btnVerboPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="YcX-5K-fL2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -257,6 +263,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="40"/>
                                         <animations/>
                                         <state key="normal" title="Complemento"/>
+                                        <connections>
+                                            <action selector="btnComplementoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="xwh-9g-hEA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
