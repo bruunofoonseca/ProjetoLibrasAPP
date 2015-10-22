@@ -780,11 +780,17 @@ class Translator: NSObject {
                         
                         words_list.append(new_word)
                         
-                    
+                    return words_list[0].text
+                }
+                else
+                {
+                    return motto
                 }
             }
-            
-         return words_list[0].text
+            else
+            {
+                return motto
+            }
             
         } catch let error as NSError {
             
@@ -874,12 +880,18 @@ class Translator: NSObject {
                         new_word.flexions = flexion_list
                         
                         words_list.append(new_word)
-                        
                     }
+                    return words_list[0].text
+                }
+                else
+                {
+                    return motto
                 }
             }
-            
-            return words_list[0].text
+            else
+            {
+                return motto
+            }
             
         } catch let error as NSError {
             
@@ -966,11 +978,18 @@ class Translator: NSObject {
                         
                         new_word.flexions = flexion_list
                         
-                    
+                    return new_word.text
+                }
+                else
+                {
+                    return motto
                 }
             }
+            else
+            {
+                return motto
+            }
             
-            return new_word.text
             
         } catch let error as NSError {
             
