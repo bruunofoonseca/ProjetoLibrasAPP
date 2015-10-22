@@ -352,13 +352,13 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
-                
+        juntaPalavras.removeAll()
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.classify(frase)
         
         var i = 0
         var aux : Word
-        
+
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
         while(i != fraseClassificada.count){
