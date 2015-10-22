@@ -233,15 +233,12 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         if (string == " "){
             
-            
-            
             colocaNaFrase()
             avancaTitulo()
             //marcaTitulo()
             mostraNaTela()
             txtTexto.text = ""
             moveToNextPage()
-            
             
             return false
         }
@@ -268,7 +265,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             
             atual = 0
             mostraNaTela()
-            lblTraducao.text = lblTextoDigitado.text
+            lblTraducao.text = traducaoTexto(lblTextoDigitado.text!)
             
             
         }else if atual == 0{

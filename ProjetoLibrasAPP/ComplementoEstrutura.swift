@@ -31,7 +31,7 @@ class ComplementoEstrutura : NSObject {
         var posVerbo = -1
         var posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
-        var posAdjetivo = -1
+//        var posAdjetivo = -1
         
         for (var i = 0; i < frase[2].categories.count; i++){
             if (frase[2].categories[i].text == "pronome"){
@@ -44,10 +44,10 @@ class ComplementoEstrutura : NSObject {
             else if (frase[2].categories[i].text == "nome feminino" || frase[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
-            else if frase[2].categories[i].text == "adjetivo"
-            {
-                posAdjetivo = i
-            }
+//            else if frase[2].categories[i].text == "adjetivo"
+//            {
+//                posAdjetivo = i
+//            }
         }
         
         if (posPronome == -1){
@@ -88,7 +88,8 @@ class ComplementoEstrutura : NSObject {
             else if (compCategory.text == "verbo") && (posPronomeConfere == -1)
             {
                 if (preposicao != "null") && (preposicao == "gerundio"){
-                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular") + ".")
+                    return arrayArtigos
                 }
                 else if (preposicao == "e"){
                     arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Presente - 3ª singular") + ".")
@@ -113,6 +114,7 @@ class ComplementoEstrutura : NSObject {
             else if (compCategory.text == "adjetivo")
             {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
+                return arrayArtigos
             }
             
         }

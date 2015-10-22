@@ -51,7 +51,7 @@ class Preposicao: NSObject {
                 posPronome = i
                 posPronomeFlexion = i
             }
-            if (texto[2].categories[i].text == "verbo") && (texto[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
+            if (texto[2].categories[i].text == "verbo"){
                 posVerbo = i
             }
             else if (texto[2].categories[i].text == "nome feminino" || texto[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
@@ -79,7 +79,7 @@ class Preposicao: NSObject {
         }
     
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
-            if(texto[2].categories[posVerbo].text == "verbo") && (texto[1].categories[posicao].text == "verbo") && (texto[1].flexions[posicao].text == "Infinitivo Flexionado - 1ª singular") && (texto[2].flexions[posVerbo].text == "Infinitivo Flexionado - 1ª singular"){
+            if(texto[2].categories[posVerbo].text == "verbo") && (texto[1].categories[posicao].text == "verbo"){
                 colocaPreposicao = "e"
             }
             else{
