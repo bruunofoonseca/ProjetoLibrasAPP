@@ -10,16 +10,9 @@ import UIKit
 
 class TradutorViewController: UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
-    var frase = [String?](count: 3, repeatedValue: nil)
-    var atual = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        frase[0] = ""
-        frase[1] = ""
-        frase[2] = ""
-
     }
     
     

@@ -16,6 +16,7 @@
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -229,7 +230,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ksw-ow-PBs" secondAttribute="trailing" id="64n-dT-ana"/>
                                     <constraint firstItem="ksw-ow-PBs" firstAttribute="top" secondItem="Z08-6a-o5D" secondAttribute="top" id="9pp-LM-9n9"/>
@@ -255,7 +256,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="7Dq-6P-McC" secondAttribute="bottom" id="OtU-ij-ePT"/>
                                     <constraint firstAttribute="trailing" secondItem="7Dq-6P-McC" secondAttribute="trailing" id="Unt-bt-jkh"/>
@@ -281,7 +282,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="kvf-5S-n88" firstAttribute="width" secondItem="i72-8T-1cI" secondAttribute="width" id="FfT-qZ-uhc"/>
                                     <constraint firstItem="kvf-5S-n88" firstAttribute="top" secondItem="i72-8T-1cI" secondAttribute="top" id="L5V-wo-32B"/>
@@ -294,16 +295,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-mg-bnv" userLabel="Label Texto Digitado">
                                 <rect key="frame" x="0.0" y="180" width="600" height="48"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="20"/>
+                                <color key="textColor" red="0.87058823529999996" green="0.20784313730000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Label Traducao">
                                 <rect key="frame" x="0.0" y="240" width="600" height="50"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="22"/>
                                 <color key="textColor" red="0.031372549020000001" green="0.74901960779999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

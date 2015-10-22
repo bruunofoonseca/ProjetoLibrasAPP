@@ -67,8 +67,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
 //        initializeButtonTitleColors()
         initializeScroll()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
         
     }
     
@@ -77,12 +77,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     /* Função da segue(Voltar da View Frases para View Tradutor) */
     
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
-    }
-    
-    /* Função que move todos elementos de acordo com a interação com o usuário */
-    
-    func moveThings() {
-        
+        txtTexto.becomeFirstResponder()
     }
     
     /* Funções do Button */
@@ -203,26 +198,26 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /* Funções do TextField */
     
-    func keyboardWillShow(notification: NSNotification) {
-        var info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        
-        self.constraint.constant = keyboardFrame.size.height
-        UIView.animateWithDuration(1, animations: { () -> Void in
-            self.view.layoutIfNeeded()
-        })
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        var info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        
-        self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
-        UIView.animateWithDuration(1, animations: { () -> Void in
-            self.view.layoutIfNeeded()
-        })
-        
-    }
+//    func keyboardWillShow(notification: NSNotification) {
+//        var info = notification.userInfo!
+//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+//        
+//        self.constraint.constant = keyboardFrame.size.height
+//        UIView.animateWithDuration(0.3, animations: { () -> Void in
+//            self.view.layoutIfNeeded()
+//        })
+//    }
+//    
+//    func keyboardWillHide(notification: NSNotification) {
+//        var info = notification.userInfo!
+//        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+//        
+//        self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
+//        UIView.animateWithDuration(0.3, animations: { () -> Void in
+//            self.view.layoutIfNeeded()
+//        })
+//        
+//    }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        txtTexto.resignFirstResponder()
