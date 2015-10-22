@@ -34,7 +34,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     var atualButton = 0
     var atualScrollView = 0
-    var kbHeight: CGFloat!
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -62,7 +61,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         txtTexto.delegate = self
         
-        //txtTexto.becomeFirstResponder()
+        txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
         
 //        initializeButtonTitleColors()
@@ -225,8 +224,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+       txtTexto.resignFirstResponder()
     }
 
     
