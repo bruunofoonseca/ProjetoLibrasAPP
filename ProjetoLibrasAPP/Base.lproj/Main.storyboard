@@ -178,7 +178,7 @@
         <!--Navigation Controller-->
         <scene sceneID="EP5-XS-6DP">
             <objects>
-                <navigationController hidesBarsWhenKeyboardAppears="YES" hidesBarsWhenVerticallyCompact="YES" id="9ps-df-Il7" sceneMemberID="viewController">
+                <navigationController id="9ps-df-Il7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MvJ-ct-qKn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -221,7 +221,7 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
                                         <state key="normal" title="Sujeito">
-                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="1" green="0.61960784310000006" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="btnSujeitoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="Ade-YY-uBm"/>
@@ -247,7 +247,7 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
                                         <state key="normal" title="Verbo">
-                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.38431372549019605" green="0.054901960784313725" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="btnVerboPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="YcX-5K-fL2"/>
@@ -273,7 +273,7 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
                                         <state key="normal" title="Complemento">
-                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.054901960780000002" green="0.2470588235" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="btnComplementoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="xwh-9g-hEA"/>
@@ -373,7 +373,7 @@
                         <outlet property="btnComplemento" destination="kvf-5S-n88" id="L2S-XN-9lx"/>
                         <outlet property="btnSujeito" destination="ksw-ow-PBs" id="MHa-wJ-ZdS"/>
                         <outlet property="btnVerbo" destination="7Dq-6P-McC" id="zZx-m0-P7B"/>
-                        <outlet property="constraint" destination="y5M-MC-UYP" id="K54-kt-psE"/>
+                        <outlet property="constraint" destination="y5M-MC-UYP" id="nzh-PZ-15G"/>
                         <outlet property="frameView" destination="brM-1A-con" id="PX6-ea-RjY"/>
                         <outlet property="lblTextoDigitado" destination="9xI-mg-bnv" id="HkQ-Bs-6hd"/>
                         <outlet property="lblTraducao" destination="lNq-4B-Qgg" id="A3v-YF-XmV"/>

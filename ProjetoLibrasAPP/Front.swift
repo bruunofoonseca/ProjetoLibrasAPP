@@ -34,6 +34,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     var atualButton = 0
     var atualScrollView = 0
+    var kbHeight: CGFloat!
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -59,12 +60,16 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         frase[1] = ""
         frase[2] = ""
         
-        txtTexto.becomeFirstResponder()
-        txtTexto.returnKeyType = UIReturnKeyType.Next
-        self.txtTexto.delegate = self
+        txtTexto.delegate = self
         
-        initializeButtonTitleColors(atualButton)
+        //txtTexto.becomeFirstResponder()
+        txtTexto.returnKeyType = UIReturnKeyType.Next
+        
+//        initializeButtonTitleColors()
         initializeScroll()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil)
         
     }
     
@@ -83,7 +88,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /* Funções do Button */
     
-    func initializeButtonTitleColors(atualButton: Int){
+    func initializeButtonTitleColors(){
         
         switch(atualButton){
             
@@ -103,54 +108,54 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 break
             default:
-                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
-                btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
-                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
         }
         
     }
     
     @IBAction func btnSujeitoPressed(sender: AnyObject) {
-        if (btnSujeito.enabled == true && atualButton == 0)  {
-            colocaNaFrase()
-            avancaTitulo()
-            //marcaTitulo()
-            mostraNaTela()
-            txtTexto.text = ""
-            moveToNextPage()
-            atualButton++
-            initializeButtonTitleColors(atualButton)
-            print("atualButton \(atualButton)")
-            print("atual \(atual)")
-        }
+//        if (btnSujeito.enabled == true && atualButton == 0)  {
+//            colocaNaFrase()
+//            avancaTitulo()
+//            //marcaTitulo()
+//            mostraNaTela()
+//            txtTexto.text = ""
+//            moveToNextPage()
+//            atualButton++
+//            initializeButtonTitleColors()
+//            print("atualButton \(atualButton)")
+//            print("atual \(atual)")
+//        }
     }
     @IBAction func btnVerboPressed(sender: AnyObject) {
-        if (btnVerbo.enabled == true && atualButton == 1) {
-            colocaNaFrase()
-            avancaTitulo()
-            //marcaTitulo()
-            mostraNaTela()
-            txtTexto.text = ""
-            moveToNextPage()
-            atualButton++
-            initializeButtonTitleColors(atualButton)
-            print("atualButton \(atualButton)")
-            print("atual \(atual)")
-        }
+//        if (btnVerbo.enabled == true && atualButton == 1) {
+//            colocaNaFrase()
+//            avancaTitulo()
+//            //marcaTitulo()
+//            mostraNaTela()
+//            txtTexto.text = ""
+//            moveToNextPage()
+//            atualButton++
+//            initializeButtonTitleColors(atualButton)
+//            print("atualButton \(atualButton)")
+//            print("atual \(atual)")
+//        }
     }
     @IBAction func btnComplementoPressed(sender: AnyObject) {
-        if (btnComplemento.enabled == true && atualButton == 2) {
-            colocaNaFrase()
-            avancaTitulo()
-            //marcaTitulo()
-            mostraNaTela()
-            txtTexto.text = ""
-            moveToNextPage()
-            atualButton = 0
-            initializeButtonTitleColors(atualButton)
-            print("atualButton \(atualButton)")
-            print("atual \(atual)")
-        }
+//        if (btnComplemento.enabled == true && atualButton == 2) {
+//            colocaNaFrase()
+//            avancaTitulo()
+//            //marcaTitulo()
+//            mostraNaTela()
+//            txtTexto.text = ""
+//            moveToNextPage()
+//            atualButton = 0
+//            initializeButtonTitleColors(atualButton)
+//            print("atualButton \(atualButton)")
+//            print("atual \(atual)")
+//        }
     }
     
     
@@ -199,23 +204,31 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     /* Funções do TextField */
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        animateViewMoving(true, moveValue: 250)
+    func keyboardWillShow(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        self.constraint.constant = keyboardFrame.size.height
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        animateViewMoving(false, moveValue: 250)
+    func keyboardWillHide(notification: NSNotification) {
+        var info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
+        UIView.animateWithDuration(1, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+        
     }
     
-    func animateViewMoving (up:Bool, moveValue :CGFloat){
-        let movementDuration:NSTimeInterval = 0.3
-        let movement:CGFloat = ( up ? -moveValue : moveValue)
-        UIView.beginAnimations("animateView", context: nil)
-        UIView.setAnimationBeginsFromCurrentState(true)
-        UIView.setAnimationDuration(movementDuration )
-        self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
-        UIView.commitAnimations()
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
     }
+
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
