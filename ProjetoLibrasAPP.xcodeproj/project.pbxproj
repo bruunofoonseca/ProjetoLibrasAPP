@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06082F251BD988240029B5A8 /* FraseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 067EB5E41BBF2AF40081F935 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
 		06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BA88421BCEED730051D01F /* PronomesPessoais.plist */; settings = {ASSET_TAGS = (); }; };
 		06D96AEA1BD09E0200679110 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06D96AE91BD09E0200679110 /* PronomeObliquosEu.plist */; settings = {ASSET_TAGS = (); }; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06082F251BD988240029B5A8 /* FraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FraseViewController.swift; path = ../FraseViewController.swift; sourceTree = "<group>"; };
 		067EB5E41BBF2AF40081F935 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Preposicao.plist; path = ProjetoLibrasAPP/Preposicao.plist; sourceTree = "<group>"; };
 		06BA88421BCEED730051D01F /* PronomesPessoais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PronomesPessoais.plist; path = ProjetoLibrasAPP/PronomesPessoais.plist; sourceTree = "<group>"; };
 		06D96AE91BD09E0200679110 /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PronomeObliquosEu.plist; path = ProjetoLibrasAPP/PronomeObliquosEu.plist; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				B044FD7E1BC5C81600435397 /* Front.swift */,
 				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
 				B00350CE1BD56C370056186E /* TradutorViewController.swift */,
+				06082F251BD988240029B5A8 /* FraseViewController.swift */,
 			);
 			name = Front;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				41EA44421BBDD6900076C6C2 /* Verbo.swift in Sources */,
 				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
+				06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */,
 				B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */,
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
