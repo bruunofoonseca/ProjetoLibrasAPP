@@ -31,7 +31,6 @@ class ComplementoEstrutura : NSObject {
         var posVerbo = -1
         var posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
-//        var posAdjetivo = -1
         
         for (var i = 0; i < frase[2].categories.count; i++){
             if (frase[2].categories[i].text == "pronome"){
@@ -44,10 +43,6 @@ class ComplementoEstrutura : NSObject {
             else if (frase[2].categories[i].text == "nome feminino" || frase[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
-//            else if frase[2].categories[i].text == "adjetivo"
-//            {
-//                posAdjetivo = i
-//            }
         }
         
         if (posPronome == -1){
