@@ -32,9 +32,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     var frase = [String?](count: 3, repeatedValue: nil)
     var atual = 0
     
-    var kbHeight: CGFloat!
-    
     var atualButton = 0
+    var atualScrollView = 0
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -73,6 +72,12 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
     }
     
+    /* Função que move todos elementos de acordo com a interação com o usuário */
+    
+    func moveThings() {
+        
+    }
+    
     /* Funções do Button */
     
     @IBAction func btnSujeitoPressed(sender: AnyObject) {
@@ -84,7 +89,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             moveToNextPage()
             atualButton++
-            print(atualButton)
+            print("atualButton \(atualButton)")
+            print("atual \(atual)")
         }
     }
     @IBAction func btnVerboPressed(sender: AnyObject) {
@@ -96,7 +102,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             txtTexto.text = ""
             moveToNextPage()
             atualButton++
-            print(atualButton)
+            print("atualButton \(atualButton)")
+            print("atual \(atual)")
         }
     }
     @IBAction func btnComplementoPressed(sender: AnyObject) {
@@ -105,10 +112,11 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             avancaTitulo()
             //marcaTitulo()
             mostraNaTela()
-            //txtTexto.text = ""
+            txtTexto.text = ""
             moveToNextPage()
             atualButton = 0
-            print(atualButton)
+            print("atualButton \(atualButton)")
+            print("atual \(atual)")
         }
     }
     
