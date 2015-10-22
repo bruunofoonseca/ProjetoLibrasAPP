@@ -34,6 +34,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     var kbHeight: CGFloat!
     
+    var atualButton = 0
+    
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
     let classifica = Translator()
@@ -74,33 +76,39 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     /* Funções do Button */
     
     @IBAction func btnSujeitoPressed(sender: AnyObject) {
-        if btnSujeito.enabled == true {
+        if (btnSujeito.enabled == true && atualButton == 0)  {
             colocaNaFrase()
             avancaTitulo()
             //marcaTitulo()
             mostraNaTela()
             txtTexto.text = ""
             moveToNextPage()
+            atualButton++
+            print(atualButton)
         }
     }
     @IBAction func btnVerboPressed(sender: AnyObject) {
-        if btnVerbo.enabled == true {
+        if (btnVerbo.enabled == true && atualButton == 1) {
             colocaNaFrase()
             avancaTitulo()
             //marcaTitulo()
             mostraNaTela()
             txtTexto.text = ""
             moveToNextPage()
+            atualButton++
+            print(atualButton)
         }
     }
     @IBAction func btnComplementoPressed(sender: AnyObject) {
-        if btnComplemento.enabled == true {
+        if (btnComplemento.enabled == true && atualButton == 2) {
             colocaNaFrase()
             avancaTitulo()
             //marcaTitulo()
             mostraNaTela()
-            txtTexto.text = ""
+            //txtTexto.text = ""
             moveToNextPage()
+            atualButton = 0
+            print(atualButton)
         }
     }
     
