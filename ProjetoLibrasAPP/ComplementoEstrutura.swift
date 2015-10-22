@@ -26,6 +26,7 @@ class ComplementoEstrutura : NSObject {
     
     func tratarComplemento(frase : [Word], preposicao : String) -> [String]{
         var posPronome = -1
+        var posPronomeConfere = -1
         var posSubstantivo = -1
         var posVerbo = -1
         var posVerboCategoria1 = -1
@@ -35,6 +36,7 @@ class ComplementoEstrutura : NSObject {
         for (var i = 0; i < frase[2].categories.count; i++){
             if (frase[2].categories[i].text == "pronome"){
                 posPronome = i
+                posPronomeConfere = i
             }
             else if (frase[2].categories[i].text == "verbo") && (frase[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
                 posVerbo = i
@@ -83,7 +85,7 @@ class ComplementoEstrutura : NSObject {
                 return arrayArtigos
             }
                 
-            else if (compCategory.text == "verbo")
+            else if (compCategory.text == "verbo") && (posPronomeConfere == -1)
             {
                 if (preposicao != "null") && (preposicao == "gerundio"){
                     arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular"))
@@ -94,7 +96,7 @@ class ComplementoEstrutura : NSObject {
                 }
             }
                 
-            else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino"){
+            else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
                 
@@ -102,12 +104,13 @@ class ComplementoEstrutura : NSObject {
                     posSubstantivoFlexion =  posSubstantivoFlexion - 1
                 }
                 
-                if (preposicao == "null") || (preposicao == "") && (frase[2].text != "ele"){
+                if (preposicao == "null") || (preposicao == "") {
                     arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
+                    arrayArtigos.append(frase[2].text + ".")
                 }
             }
                 
-            else if compCategory.text == "adjetivo"
+            else if (compCategory.text == "adjetivo")
             {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
             }
