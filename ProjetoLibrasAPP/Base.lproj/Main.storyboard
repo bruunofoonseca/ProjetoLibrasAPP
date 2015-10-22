@@ -13,6 +13,9 @@
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -216,7 +219,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksw-ow-PBs" userLabel="Button Sujeito">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <animations/>
-                                        <state key="normal" title="Sujeito"/>
+                                        <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
+                                        <state key="normal" title="Sujeito">
+                                            <color key="titleColor" red="1" green="0.61960784313725492" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnSujeitoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="Ade-YY-uBm"/>
                                         </connections>
@@ -239,7 +245,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-6P-McC" userLabel="Button Verbo">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <animations/>
-                                        <state key="normal" title="Verbo"/>
+                                        <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
+                                        <state key="normal" title="Verbo">
+                                            <color key="titleColor" red="0.38431372549019605" green="0.054901960784313725" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnVerboPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="YcX-5K-fL2"/>
                                         </connections>
@@ -262,7 +271,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-5S-n88" userLabel="Button Complemento">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="40"/>
                                         <animations/>
-                                        <state key="normal" title="Complemento"/>
+                                        <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
+                                        <state key="normal" title="Complemento">
+                                            <color key="titleColor" red="0.054901960784313725" green="0.24705882352941178" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnComplementoPressed:" destination="0Uh-f8-Ckr" eventType="touchUpInside" id="xwh-9g-hEA"/>
                                         </connections>

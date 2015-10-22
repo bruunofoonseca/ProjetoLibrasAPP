@@ -62,6 +62,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
         self.txtTexto.delegate = self
+        
         initializeScroll()
     }
     
@@ -79,6 +80,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     }
     
     /* Funções do Button */
+    
     
     @IBAction func btnSujeitoPressed(sender: AnyObject) {
         if (btnSujeito.enabled == true && atualButton == 0)  {
@@ -253,6 +255,8 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             atual += 1
         }
     }
+    
+    
     
 //    func marcaTitulo(){
 //        
