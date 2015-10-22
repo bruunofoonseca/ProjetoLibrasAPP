@@ -121,7 +121,7 @@ class Preposicao: NSObject {
             colocaPreposicao = test
             
         }
-        else {
+        else if (texto[2].categories[posVerbo].text == "verbo") && (texto[2].flexions[posVerbo].text == "Infinitivo Flexionado - 1ª singular"){
             
             var posSubstantivoFlexion = (texto[2].flexions.count - 1)
             var posVerboFlexion = (texto[2].flexions.count - 1)
