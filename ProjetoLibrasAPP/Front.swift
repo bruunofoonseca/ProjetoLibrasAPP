@@ -31,9 +31,9 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     var frase = [String?](count: 3, repeatedValue: nil)
     var atual = 0
-    
     var atualButton = 0
     var atualScrollView = 0
+    var atualPlaceHolder = 1
     
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
@@ -61,7 +61,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
         txtTexto.delegate = self
         
-        //txtTexto.becomeFirstResponder()
+        txtTexto.becomeFirstResponder()
         txtTexto.returnKeyType = UIReturnKeyType.Next
         
 //        initializeButtonTitleColors()
@@ -77,9 +77,10 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     /* Função da segue(Voltar da View Frases para View Tradutor) */
     
     @IBAction func voltaTradutor(segue:UIStoryboardSegue){
-        //txtTexto.becomeFirstResponder()
+        
     }
-    @IBAction func irFrases(sender: AnyObject) {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         txtTexto.resignFirstResponder()
     }
     
@@ -155,8 +156,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
 //        }
     }
     
-    
-
     /* Funções do Scroll */
     
     func initializeScroll() {
@@ -206,7 +205,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         
         self.constraint.constant = keyboardFrame.size.height
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
+        UIView.animateWithDuration(1, animations: { () -> Void in
             self.view.layoutIfNeeded()
         })
     }
@@ -216,7 +215,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         
         self.constraint.constant = self.constraint.constant - keyboardFrame.size.height
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
+        UIView.animateWithDuration(1, animations: { () -> Void in
             self.view.layoutIfNeeded()
         })
         
@@ -225,37 +224,85 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
        txtTexto.resignFirstResponder()
     }
-
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
-        colocaNaFrase()
-        avancaTitulo()
-        //marcaTitulo()
-        mostraNaTela()
-        txtTexto.text = ""
-        moveToNextPage()
-        
-        return true
+        if txtTexto.text == "" {
+            print(txtTexto.text)
+            alert()
+            
+            return false
+        }
+        else {
+            colocaNaFrase()
+            avancaTitulo()
+            //marcaTitulo()
+            mostraNaTela()
+            textFieldPlaceHolder(atualPlaceHolder)
+            txtTexto.text = ""
+            moveToNextPage()
+            
+            return true
+        }
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
         if (string == " "){
-            
-            colocaNaFrase()
-            avancaTitulo()
-            //marcaTitulo()
-            mostraNaTela()
-            txtTexto.text = ""
-            moveToNextPage()
-            
-            return false
+            if txtTexto.text == "" {
+                
+                alert()
+                return false
+            }
+            else {
+                
+                colocaNaFrase()
+                avancaTitulo()
+                //marcaTitulo()
+                mostraNaTela()
+                textFieldPlaceHolder(atualPlaceHolder)
+                txtTexto.text = ""
+                moveToNextPage()
+                
+                return true
+            }
         }
         else {
             
             return true
         }
+    }
+    
+    func textFieldPlaceHolder(item:Int) {
+        print(item)
+        switch item {
+        case 0:
+            txtTexto.placeholder = btnSujeito.titleLabel?.text
+            atualPlaceHolder++
+            break
+        case 1:
+            txtTexto.placeholder = btnVerbo.titleLabel?.text
+            atualPlaceHolder++
+            break
+        case 2:
+            txtTexto.placeholder = btnComplemento.titleLabel?.text
+            atualPlaceHolder = 0
+        default:
+            txtTexto.placeholder = "Digite a palavra"
+        }
+        
+        
+    }
+    
+    /* Função de alert */
+    
+    func alert() {
+        
+        let alert = UIAlertView()
+        alert.title = "Atenção"
+        alert.message = "Não esqueça da palavra!"
+        alert.addButtonWithTitle("Ok")
+        alert.show()
     }
     
     /* Funções de Texto */

@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func voltarHome(segue:UIStoryboardSegue){
-        
+       
     }
     
 }

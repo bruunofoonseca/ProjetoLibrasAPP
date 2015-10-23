@@ -366,7 +366,6 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Frases" id="iSd-yW-9gz">
                             <connections>
-                                <action selector="irFrases:" destination="0Uh-f8-Ckr" id="esy-46-m74"/>
                                 <segue destination="MXZ-eU-qSa" kind="presentation" id="ZbG-dr-Qbc"/>
                             </connections>
                         </barButtonItem>
