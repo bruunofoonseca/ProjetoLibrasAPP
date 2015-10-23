@@ -51,7 +51,7 @@ class Preposicao: NSObject {
                 posPronome = i
                 posPronomeFlexion = i
             }
-            if (texto[2].categories[i].text == "verbo") && (texto[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
+            if (texto[2].categories[i].text == "verbo") && (texto[2].flexions[i].text == "Infinitivo Flexionado - 1ª singular"){
                 posVerbo = i
             }
             else if (texto[2].categories[i].text == "nome feminino" || texto[2].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
