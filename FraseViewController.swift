@@ -13,6 +13,7 @@ import CoreData
 class FraseViewController : UITableViewController {
     
     var array : [String] = []
+    var arrayTableView: [String] = []
     var i : Int = 0
     
     func atualizarTotalDasFrases() -> Int {
@@ -47,8 +48,10 @@ class FraseViewController : UITableViewController {
     
     override func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        
-        let fraseColoca = array[indexPath.row]
+        for item in array.reverse(){
+            arrayTableView.append(item)
+        }
+        let fraseColoca = arrayTableView[indexPath.row]
         cell.textLabel?.text = fraseColoca
         
         return cell

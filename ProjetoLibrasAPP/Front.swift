@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
@@ -49,6 +50,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     var juntaPalavras : String = ""
     var verboAcesso = VerboEstrutura()
     var temTexto = false
+    var atualiza = FraseViewController()
     
     /********** MÉTODO INICIAL  **********/
     
@@ -323,6 +325,20 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
             atual = 0
             mostraNaTela()
             lblTraducao.text = traducaoTexto(lblTextoDigitado.text!)
+            
+            let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let contexto: NSManagedObjectContext = appDel.managedObjectContext
+            
+            let novaFrase = NSEntityDescription.insertNewObjectForEntityForName("Frase", inManagedObjectContext:contexto)
+            novaFrase.setValue(lblTraducao.text, forKey: "salvaFrase")
+            
+            
+            do{
+                try contexto.save()
+            }catch{
+                print("Erro ao salvar")
+            }
+            atualiza.atualizarTotalDasFrases()
             
             
         }else if atual == 0{
