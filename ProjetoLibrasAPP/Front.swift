@@ -74,6 +74,10 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        txtTexto.becomeFirstResponder()
+    }
+    
     /********** MÉTODOS DA INTERFACE  **********/
     
     /* Função da segue(Voltar da View Frases para View Tradutor) */
