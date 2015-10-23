@@ -1,3 +1,4 @@
+
 //
 //  FraseViewController.swift
 //  ProjetoLibrasAPP
@@ -10,11 +11,24 @@ import UIKit
 import CoreData
 
 
-class FraseViewController : UITableViewController {
+class FraseViewController : UITableViewController, UISearchBarDelegate, UISearchDisplayDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var filteredSentences = [String]()
+    var searchActive : Bool = false
     
     var array : [String] = []
     var arrayTableView: [String] = []
     var i : Int = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        /* Setup delegates */
+        searchBar.delegate = self
+    }
+
     
     func atualizarTotalDasFrases() -> Int {
         
@@ -43,6 +57,10 @@ class FraseViewController : UITableViewController {
     
     override func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
         
+        if(searchActive) {
+            return filteredSentences.count
+        }
+        
         return atualizarTotalDasFrases()
     }
     
@@ -51,10 +69,55 @@ class FraseViewController : UITableViewController {
         for item in array.reverse(){
             arrayTableView.append(item)
         }
-        let fraseColoca = arrayTableView[indexPath.row]
+        var fraseColoca:String
+        
+        if(searchActive){
+            fraseColoca = filteredSentences[indexPath.row]
+        } else {
+            fraseColoca = arrayTableView[indexPath.row]
+        }
+        
         cell.textLabel?.text = fraseColoca
         
         return cell
+    }
+    
+    // Search bar =====================
+    
+//    func filterContentForSearchText(searchText: String) {
+//        // Filter the array using the filter method
+//        
+//        self.filteredSentences = self.array.filter({( sentence: String) -> Bool in
+//            
+//            let stringMatch = sentence.lowercaseString.rangeOfString(searchText.lowercaseString)
+//            return stringMatch != nil ? true : false
+//        })
+//    }
+//    
+//    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
+//        self.filterContentForSearchText(searchString!)
+//        return true
+//    }
+//    
+//    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchScope searchOption: Int) -> Bool {
+//        self.filterContentForSearchText(self.searchDisplayController!.searchBar.text!)
+//        return true
+    //    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        self.filteredSentences = self.array.filter({( sentence: String) -> Bool in
+            let stringMatch = sentence.lowercaseString.rangeOfString(searchText.lowercaseString)
+            return stringMatch != nil ? true : false
+        })
+        
+        if(filteredSentences.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+        
+        self.tableView.reloadData()
     }
 
     
