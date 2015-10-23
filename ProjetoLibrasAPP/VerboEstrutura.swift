@@ -28,7 +28,7 @@ class VerboEstrutura : NSObject {
         
         for (var i = 0; i < frase[1].categories.count; i++)
         {
-            if (frase[1].categories[i].text == "verbo")
+            if (frase[1].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular")
             {
                 posVerbo = i
             }

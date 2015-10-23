@@ -1287,5 +1287,46 @@
 			<string>e</string>
 		</dict>
 	</dict>
+	<key>assistir</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>à</string>
+			<key>Feminino singular</key>
+			<string>à</string>
+			<key>plur</key>
+			<string>às</string>
+			<key>Feminino plural</key>
+			<string>à</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>ao</string>
+			<key>Masculino singular</key>
+			<string>ao</string>
+			<key>plur</key>
+			<string>aos</string>
+			<key>Masculino plural</key>
+			<string>aos</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>e</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

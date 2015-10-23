@@ -29,7 +29,7 @@ class ComplementoEstrutura : NSObject {
         var posPronomeConfere = -1
         var posSubstantivo = -1
         var posVerbo = -1
-        var posVerboCategoria1 = -1
+        let posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
         
         for (var i = 0; i < frase[2].categories.count; i++){
@@ -86,7 +86,7 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular") + ".")
                     return arrayArtigos
                 }
-                else if (preposicao == "e"){
+                else if (preposicao == "e") {
                     arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Presente - 3ª singular") + ".")
                     return arrayArtigos
                 }
@@ -104,6 +104,11 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
                     arrayArtigos.append(frase[2].text + ".")
                 }
+                else{
+                    arrayArtigos.append(frase[2].text + ".")
+                }
+                
+                return arrayArtigos
             }
                 
             else if (compCategory.text == "adjetivo")
