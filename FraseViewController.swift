@@ -10,21 +10,10 @@ import UIKit
 import CoreData
 
 
-class FraseViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FraseViewController : UITableViewController {
     
     var array : [String] = []
     var i : Int = 0
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func atualizarTotalDasFrases() -> Int {
         
@@ -51,12 +40,12 @@ class FraseViewController : UIViewController, UITableViewDelegate, UITableViewDa
         return i
     }
     
-    func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
+    override func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
         
         return atualizarTotalDasFrases()
     }
     
-    func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
         let fraseColoca = array[indexPath.row]
