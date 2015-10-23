@@ -18,47 +18,33 @@ class Artigo: NSObject {
         super.init()
     }
     
-    //método para colocar artigo definido na frase.
-    func colocarArtigoDefinido(frase : [Word], posicao : Int) -> [String] {
+    /**********     MÉTODO QUE COLOCA ARTIGOS DEFINIDOS NA FRASE   **********/
+    
+    func colocarArtigoDefinido(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String] {
+        
         artigos.removeAll()
-        if (frase[posicao].categories[0].text == "nome feminino") {
-            if(frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing") || (frase[posicao].flexions[0].text == "Feminino singular"){
-                if (posicao == 0){
-                    artigos.append("A")
-                }
-                else{
-                    artigos.append("a")
-                }
+    
+        if (frase[posicao].categories[posCategoria].text == "nome feminino") {
+            if(frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Feminino singular") || (frase[posicao].flexions[posFlexion].text == "Masculino singular"){
+                artigos.append("a")
             }
             else {
-                if (posicao == 0){
-                    artigos.append("As")
-                }
-                else{
-                    artigos.append("as")
-                }
+                artigos.append("as")
             }
         }
-        else if(frase[posicao].categories[0].text == "nome masculino"){
-                if (frase[posicao].flexions[0].text == "singular") || (frase[posicao].flexions[0].text == "sing"){
-                    if (posicao == 0){
-                        artigos.append("O")
-                    }
-                    else{
-                        artigos.append("o")
-                    }
-                }
-                else if (frase[posicao].flexions[0].text == "plural") {
-                    if (posicao == 0){
-                        artigos.append("Os")
-                    }
-                    else{
-                        artigos.append("os")
-                    }
-                }
+        else if(frase[posicao].categories[posCategoria].text == "nome masculino") {
+            if (frase[posicao].flexions[posFlexion].text == "singular") || (frase[posicao].flexions[posFlexion].text == "sing") || (frase[posicao].flexions[posFlexion].text == "Masculino singular") || (frase[posicao].flexions[posFlexion].text == "Feminino singular"){
+                artigos.append("o")
+            }
+            else {
+                artigos.append("os")
+            }
         }
-        else if (frase[posicao].categories[0].text == "pronome"){
-            if (frase[posicao].text == "eu") || (frase[posicao].text == "você"){
+        else if (frase[posicao].categories[posCategoria].text == "pronome"){
+            if(frase[posicao].flexions[posFlexion].text == "Masculino singular"){
+                artigos.append("o")
+            }
+            else{
                 artigos.append("")
             }
         }
@@ -66,7 +52,8 @@ class Artigo: NSObject {
             artigos.append("")
         }
         
-        //retorna array de strings com os artigos(caso tenha) referentes a cada palavra da frase.
+        
+    /**********     RETORNA ARTIGO CORRESPONDENTE   **********/
         return artigos
     }
 }
