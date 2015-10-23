@@ -90,6 +90,11 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Presente - 3ª singular") + ".")
                     return arrayArtigos
                 }
+                else{
+                    arrayArtigos.append(frase[2].text)
+                    return arrayArtigos
+                }
+                
             }
                 
             else if (frase[2].categories[posSubstantivo].text == "nome feminino") || (frase[2].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1){

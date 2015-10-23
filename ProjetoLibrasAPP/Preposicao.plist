@@ -1328,5 +1328,87 @@
 			<string>e</string>
 		</dict>
 	</dict>
+	<key>acabar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>com a</string>
+			<key>Feminino singular</key>
+			<string>com a</string>
+			<key>Feminino plural</key>
+			<string>com as</string>
+			<key>plur</key>
+			<string>com as</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>com o</string>
+			<key>plur</key>
+			<string>com os</string>
+			<key>Masculino singular</key>
+			<string>com o</string>
+			<key>Masculino plural</key>
+			<string>com os</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>de</string>
+		</dict>
+	</dict>
+	<key>acreditar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>na</string>
+			<key>Feminino singular</key>
+			<string>na</string>
+			<key>plur</key>
+			<string>nas</string>
+			<key>Feminino plural</key>
+			<string>nas</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>no</string>
+			<key>Masculino singular</key>
+			<string>no</string>
+			<key>plur</key>
+			<string>nos</string>
+			<key>Masculino plural</key>
+			<string>nos</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>null</string>
+			<key>Feminino plural</key>
+			<string>null</string>
+			<key>Masculino singular</key>
+			<string>null</string>
+			<key>Masculino plural</key>
+			<string>null</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>e</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
