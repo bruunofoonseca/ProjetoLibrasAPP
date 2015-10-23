@@ -270,7 +270,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
                 txtTexto.text = ""
                 moveToNextPage()
                 
-                return true
+                return false
             }
         }
         else {
@@ -314,7 +314,7 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     /* Funções de Texto */
     
     func colocaNaFrase(){
-        frase[atual] = txtTexto.text!
+        frase[atual] = txtTexto.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     }
     
     func mostraNaTela(){
