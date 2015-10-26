@@ -296,8 +296,6 @@ class Front:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
         default:
             txtTexto.placeholder = "Digite a palavra"
         }
-        
-        
     }
     
     /* Função de alert */
