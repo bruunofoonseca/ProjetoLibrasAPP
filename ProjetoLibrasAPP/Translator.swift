@@ -710,6 +710,7 @@ class Translator: NSObject {
             
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             let endpoint = "https://projetolibrasapi.herokuapp.com/word/verbs/true/" + params + "/"
 =======
             let endpoint = "http://172.16.1.110:3000/word/verbs/true/" + params + "/"
@@ -717,6 +718,9 @@ class Translator: NSObject {
 =======
             let endpoint = "http://localhost:3000/word/verbs/true/" + params + "/"
 >>>>>>> parent of 0c2fa45... ajustes
+=======
+            let endpoint = "https://projetolibrasapi.herokuapp.com/word/verbs/true/" + params + "/"
+>>>>>>> parent of be56d18... Merge remote-tracking branch 'origin/master'
             let url = endpoint.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
             let data:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
             
@@ -820,6 +824,7 @@ class Translator: NSObject {
             
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/true/" + params + "/")
 =======
             let endpoint = NSURL(string: "http://172.16.1.110:3000/word/nouns/true/" + params + "/")
@@ -827,6 +832,9 @@ class Translator: NSObject {
 =======
             let endpoint = NSURL(string: "http://localhost:3000/word/nouns/true/" + params + "/")
 >>>>>>> parent of 0c2fa45... ajustes
+=======
+            let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/true/" + params + "/")
+>>>>>>> parent of be56d18... Merge remote-tracking branch 'origin/master'
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
