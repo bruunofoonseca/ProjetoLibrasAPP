@@ -109,7 +109,8 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)
                     arrayArtigos.append(frase[2].text + ".")
                 }
-                else{
+                else
+                {
                     arrayArtigos.append(frase[2].text + ".")
                 }
                 
@@ -124,7 +125,6 @@ class ComplementoEstrutura : NSObject {
             else{
                 arrayArtigos.append(frase[2].text + ".")
             }
-            
         }
         
         return arrayArtigos
