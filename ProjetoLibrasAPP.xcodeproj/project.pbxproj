@@ -352,10 +352,14 @@
 						CreatedOnToolsVersion = 7.0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						DevelopmentTeam = ETCP9R5EPN;
 =======
 						DevelopmentTeam = 58T32WR338;
 >>>>>>> origin/master
+=======
+						DevelopmentTeam = 8KR33X63ZD;
+>>>>>>> parent of 0c2fa45... ajustes
 =======
 						DevelopmentTeam = 8KR33X63ZD;
 >>>>>>> parent of 0c2fa45... ajustes
