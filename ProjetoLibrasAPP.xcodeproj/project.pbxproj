@@ -350,7 +350,11 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
+<<<<<<< HEAD
 						DevelopmentTeam = ETCP9R5EPN;
+=======
+						DevelopmentTeam = 58T32WR338;
+>>>>>>> origin/master
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;

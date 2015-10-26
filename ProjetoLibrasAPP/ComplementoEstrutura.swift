@@ -122,6 +122,9 @@ class ComplementoEstrutura : NSObject {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
                 return arrayArtigos
             }
+            else{
+                arrayArtigos.append(frase[2].text + ".")
+            }
         }
         
         return arrayArtigos

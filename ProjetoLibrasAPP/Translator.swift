@@ -708,7 +708,11 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
+<<<<<<< HEAD
             let endpoint = "https://projetolibrasapi.herokuapp.com/word/verbs/true/" + params + "/"
+=======
+            let endpoint = "http://172.16.1.110:3000/word/verbs/true/" + params + "/"
+>>>>>>> origin/master
             let url = endpoint.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
             let data:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
             
@@ -810,7 +814,11 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
+<<<<<<< HEAD
             let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/true/" + params + "/")
+=======
+            let endpoint = NSURL(string: "http://172.16.1.110:3000/word/nouns/true/" + params + "/")
+>>>>>>> origin/master
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
