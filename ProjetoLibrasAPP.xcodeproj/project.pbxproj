@@ -38,6 +38,7 @@
 		C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */; };
 		C3CBBE861BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE851BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift */; };
 		C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */; };
+		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		C3CBBE8C1BBC94060035A1D4 /* ProjetoLibrasAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoLibrasAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoLibrasAPPUITests.swift; sourceTree = "<group>"; };
 		C3CBBE921BBC94060035A1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E641D81BE3945200C645A0 /* New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
 				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
 				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
+				C3E641D81BE3945200C645A0 /* New.storyboard */,
 			);
 			path = ProjetoLibrasAPP;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */,
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
 				06D96AEA1BD09E0200679110 /* PronomeObliquosEu.plist in Resources */,
+				C3E641D91BE3945200C645A0 /* New.storyboard in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
 				06D96AEC1BD0A26A00679110 /* PronomeObliquosEle.plist in Resources */,
 				067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */,
