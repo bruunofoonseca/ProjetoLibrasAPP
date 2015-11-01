@@ -31,6 +31,7 @@
 		B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CE1BD56C370056186E /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B044FD7F1BC5C81600435397 /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* Front.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
+		C337F6121BE6867700B064CD /* NewTradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337F6111BE6867700B064CD /* NewTradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
@@ -86,6 +87,7 @@
 		B00350CE1BD56C370056186E /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
 		B044FD7E1BC5C81600435397 /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
+		C337F6111BE6867700B064CD /* NewTradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTradutorViewController.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
 				B00350CE1BD56C370056186E /* TradutorViewController.swift */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
+				C337F6111BE6867700B064CD /* NewTradutorViewController.swift */,
 			);
 			name = Front;
 			sourceTree = "<group>";
@@ -355,7 +358,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = ETCP9R5EPN;
+						DevelopmentTeam = 8KR33X63ZD;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -453,6 +456,7 @@
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
+				C337F6121BE6867700B064CD /* NewTradutorViewController.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
