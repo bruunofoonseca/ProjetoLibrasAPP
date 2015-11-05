@@ -21,6 +21,7 @@ class TraducaoViewController: UIViewController {
     var textoTraduzido: String!
     var contSalvarFrase = 0
     var copiar:UIPasteboard!
+    var frase = FraseViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +50,21 @@ class TraducaoViewController: UIViewController {
     }
     
     @IBAction func btnSalvarAction(sender: AnyObject) {
+        contSalvarFrase = frase.atualizarTotalDasFrases()
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let contexto: NSManagedObjectContext = appDel.managedObjectContext
         let novaFrase = NSEntityDescription.insertNewObjectForEntityForName("Frase", inManagedObjectContext:contexto)
         novaFrase.setValue(lblTraducaoPassed.text, forKey: "salvaFrase")
-        novaFrase.setValue(contSalvarFrase, forKey: "orderPosition")
-        contSalvarFrase++
+        novaFrase.setValue(contSalvarFrase - 1, forKey: "orderPosition")
+        
+        do{
+            try contexto.save()
+        }catch{
+            print("Erro ao salvar")
+        }
+        
+        frase.atualizarTotalDasFrases()
+        
         alert(2)
     }
     
