@@ -12,7 +12,7 @@ class VerboEstrutura : NSObject {
     
     /**********     VARIÁVEIS   **********/
 
-    let api = Translator()
+    //let api = Translator()
     let objVerbo = Verbo()
     var defVerbo: [String] = []
     let objPreposicao = Preposicao()

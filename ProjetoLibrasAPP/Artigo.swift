@@ -11,7 +11,7 @@ import UIKit
 
 class Artigo: NSObject {
     
-    let metodo = Translator()
+    //let metodo = Translator()
     var artigos : [String] = []
 
     override init(){

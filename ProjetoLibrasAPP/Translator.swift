@@ -613,7 +613,7 @@ class Translator: NSObject {
             
             phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
-            let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/classify/true/" + phrase + "/")
+            let endpoint = NSURL(string: "http://172.16.1.41:3000/word/classify/true/" + phrase + "/")
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
@@ -708,7 +708,7 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
 
-            let endpoint = "https://projetolibrasapi.herokuapp.com/word/verbs/true/" + params + "/"
+            let endpoint = "http://172.16.1.41:3000/word/verbs/true/" + params + "/"
 
             let url = endpoint.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
             let data:NSData = NSData(contentsOfURL: NSURL(string: url)!)!
@@ -811,7 +811,7 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
-            let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/nouns/true/" + params + "/")
+            let endpoint = NSURL(string: "http://172.16.1.41:3000/word/nouns/true/" + params + "/")
 
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
@@ -912,7 +912,7 @@ class Translator: NSObject {
             var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             params = params + "--" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
-            let endpoint = NSURL(string: "https://projetolibrasapi.herokuapp.com/word/adjectives/true/" + params + "/")
+            let endpoint = NSURL(string: "http://172.16.1.41:3000/word/adjectives/true/" + params + "/")
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{

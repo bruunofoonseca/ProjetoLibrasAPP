@@ -28,7 +28,14 @@ class FraseViewController : UITableViewController, UISearchBarDelegate, UISearch
         /* Setup delegates */
         searchBar.delegate = self
     }
-
+    
+    override func viewWillDisappear(animated: Bool) {
+        searchBar.resignFirstResponder()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        searchBar.resignFirstResponder()
+    }
     
     func atualizarTotalDasFrases() -> Int {
         

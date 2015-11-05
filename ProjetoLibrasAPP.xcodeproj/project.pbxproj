@@ -28,8 +28,8 @@
 		41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CC1BD56BB00056186E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CE1BD56C370056186E /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B044FD7F1BC5C81600435397 /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* Front.swift */; settings = {ASSET_TAGS = (); }; };
+		B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
@@ -82,9 +82,9 @@
 		41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplementoEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SujeitoEstrutura.swift; sourceTree = "<group>"; };
 		B00350CC1BD56BB00056186E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B00350CE1BD56C370056186E /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
-		B044FD7E1BC5C81600435397 /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
+		B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraducaoViewController.swift; sourceTree = "<group>"; };
+		B044FD7E1BC5C81600435397 /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,15 +195,39 @@
 			name = Font;
 			sourceTree = "<group>";
 		};
+		B036B83E1BE7464300A56B5F /* Traducao */ = {
+			isa = PBXGroup;
+			children = (
+				B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */,
+			);
+			name = Traducao;
+			sourceTree = "<group>";
+		};
 		B044FD7B1BC5C4C300435397 /* Front */ = {
 			isa = PBXGroup;
 			children = (
-				B044FD7E1BC5C81600435397 /* Front.swift */,
-				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
-				B00350CE1BD56C370056186E /* TradutorViewController.swift */,
+				B05543FD1BE24DA200ADA617 /* Home */,
+				B084CB171BDFFCDB001F8177 /* Tradutor */,
+				B036B83E1BE7464300A56B5F /* Traducao */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
 			);
 			name = Front;
+			sourceTree = "<group>";
+		};
+		B05543FD1BE24DA200ADA617 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B084CB171BDFFCDB001F8177 /* Tradutor */ = {
+			isa = PBXGroup;
+			children = (
+				B044FD7E1BC5C81600435397 /* TradutorViewController.swift */,
+			);
+			name = Tradutor;
 			sourceTree = "<group>";
 		};
 		C3CBBE611BBC94050035A1D4 = {
@@ -352,7 +376,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = ETCP9R5EPN;
+						DevelopmentTeam = 7S84RQ3NGE;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -441,12 +465,12 @@
 				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
 				06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */,
-				B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */,
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
 				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
+				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
@@ -455,7 +479,7 @@
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
-				B044FD7F1BC5C81600435397 /* Front.swift in Sources */,
+				B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
