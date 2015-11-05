@@ -49,6 +49,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     var verboAcesso = VerboEstrutura()
     var temTexto = false
     var atualiza = FraseViewController()
+    var dicty = NSMutableDictionary()
     
     /********** MÉTODO INICIAL  **********/
     
@@ -444,8 +445,18 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 
     func exibeTraducao() {
         if (frase[0] != "" && frase[1] != "" && frase[2] != "") {
-            lblTraducao.text = traducaoTexto(lblTextoDigitado.text!)
- 
+            let index = 1
+            let fraseClas: NSMutableDictionary
+            
+            if index == 0
+            {
+                fraseClas = traducaoTexto(lblTextoDigitado.text!)
+                lblTraducao.text = fraseClas.objectForKey("Presente") as? String
+            }
+            else{
+                fraseClas = traducaoTexto(lblTextoDigitado.text!)
+                lblTraducao.text = fraseClas.objectForKey("Passado") as? String
+            }
         }
     }
     
@@ -464,7 +475,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 
     /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
     
-    func traducaoTexto(text : String) -> String {
+    func traducaoTexto(text : String) -> NSMutableDictionary {
         
         // Aonde colocamos a frase
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
@@ -473,13 +484,12 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         print("Frase em Librês: " + frase)
         frase = (frase.lowercaseString)
-        juntaPalavras.removeAll()
         // Chama a API para classificar as frases.
         self.fraseClassificada = classifica.classify(frase)
         
         var i = 0
         var aux : Word
-
+        
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
         while(i != fraseClassificada.count){
@@ -495,11 +505,15 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         
         if self.fraseClassificada.count == 3
         {
+            //------------------> FRASE NO PRESENTE <-------------------
+            
+            juntaPalavras.removeAll()
+            
             // Chama a classe que trata o sujeito.
             self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
             
             // Chama a classe que trata o Verbo.
-            self.verboClassificado = verbo.tratarVerbo(fraseClassificada)
+            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 0)
             
             // Chama a classe que trata o complemento
             self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
@@ -513,13 +527,44 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
             
             juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
             
-            return juntaPalavras
+            dicty.setValue(self.juntaPalavras, forKey: "Presente")
+            
+            //------------------> FRASE NO PASSADO <-------------------
+            
+            juntaPalavras.removeAll()
+            
+            // Chama a classe que trata o sujeito.
+            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+            
+            // Chama a classe que trata o Verbo.
+            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
+            
+            // Chama a classe que trata o complemento
+            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+            
+            // Feito para juntar as palavras em uma String e colocar na tela.
+            metodoJuntaPalavra(sujeitoClassificado)
+            metodoJuntaPalavra(verboClassificado)
+            metodoJuntaPalavra(complementoClassificado)
+            
+            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+            
+            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+            
+            dicty.setValue(juntaPalavras, forKey: "Passado")
+            
+            //Retorna Dicionário
+            return dicty
         }
         else
         {
-            return text
+            dicty.setValue(text, forKey: "Presente")
+            dicty.setValue(text, forKey: "Passado")
+            
+            return dicty
         }
     }
+
     
     func metodoJuntaPalavra(texto : [String]){
         

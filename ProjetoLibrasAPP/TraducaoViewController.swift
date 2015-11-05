@@ -33,7 +33,6 @@ class TraducaoViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        
     }
     @IBAction func btnCopiarAction(sender: AnyObject) {
         copiar.string = lblTraducaoPassed.text

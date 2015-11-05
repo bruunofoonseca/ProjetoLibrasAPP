@@ -46,5 +46,49 @@
 		<key>elas</key>
 		<string>nelas</string>
 	</dict>
+	<key>ser</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>obter</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>votar</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
+	<key>visitar</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
 </dict>
 </plist>
