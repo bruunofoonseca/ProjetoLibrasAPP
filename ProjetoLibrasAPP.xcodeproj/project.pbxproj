@@ -31,6 +31,7 @@
 		B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
+		C337F6121BE6867700B064CD /* NewTradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337F6111BE6867700B064CD /* NewTradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 		C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */; };
 		C3CBBE861BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE851BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift */; };
 		C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */; };
+		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,7 @@
 		C3CBBE8C1BBC94060035A1D4 /* ProjetoLibrasAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoLibrasAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoLibrasAPPUITests.swift; sourceTree = "<group>"; };
 		C3CBBE921BBC94060035A1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E641D81BE3945200C645A0 /* New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,7 @@
 				B084CB171BDFFCDB001F8177 /* Tradutor */,
 				B036B83E1BE7464300A56B5F /* Traducao */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
+				C337F6111BE6867700B064CD /* NewTradutorViewController.swift */,
 			);
 			name = Front;
 			sourceTree = "<group>";
@@ -267,6 +271,7 @@
 				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
 				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
 				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
+				C3E641D81BE3945200C645A0 /* New.storyboard */,
 			);
 			path = ProjetoLibrasAPP;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */,
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
 				06D96AEA1BD09E0200679110 /* PronomeObliquosEu.plist in Resources */,
+				C3E641D91BE3945200C645A0 /* New.storyboard in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
 				06D96AEC1BD0A26A00679110 /* PronomeObliquosEle.plist in Resources */,
 				067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */,
@@ -473,6 +479,7 @@
 				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
+				C337F6121BE6867700B064CD /* NewTradutorViewController.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
