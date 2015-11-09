@@ -51,6 +51,8 @@ class TraducaoViewController: UIViewController {
     }
     
     @IBAction func btnSalvarAction(sender: AnyObject) {
+        signWritingSalvar.alpha = 1.0
+        
         contSalvarFrase = frase.atualizarTotalDasFrases()
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let contexto: NSManagedObjectContext = appDel.managedObjectContext
@@ -65,7 +67,6 @@ class TraducaoViewController: UIViewController {
         }
         
         frase.atualizarTotalDasFrases()
-        signWritingSalvar.alpha = 1.0
     }
     
     @IBAction func btnSalvarActionDown(sender: AnyObject) {
