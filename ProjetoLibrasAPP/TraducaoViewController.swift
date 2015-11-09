@@ -16,6 +16,7 @@ class TraducaoViewController: UIViewController {
     @IBOutlet weak var lblTraducaoPassed: UILabel!
     @IBOutlet weak var btnCopiar: UIButton!
     @IBOutlet weak var btnCompartilhar: UIButton!
+    @IBOutlet weak var signWritingSalvar: UIImageView!
     
     var textoDigitado: String!
     var textoTraduzido: String!
@@ -35,6 +36,7 @@ class TraducaoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
     @IBAction func btnCopiarAction(sender: AnyObject) {
         copiar.string = lblTraducaoPassed.text
         
@@ -46,7 +48,6 @@ class TraducaoViewController: UIViewController {
         meuCompartilhamento.popoverPresentationController?.sourceView = self.view
         meuCompartilhamento.popoverPresentationController?.sourceRect = sender.frame
         self.presentViewController(meuCompartilhamento, animated: true, completion: nil)
-        alert(1)
     }
     
     @IBAction func btnSalvarAction(sender: AnyObject) {
@@ -64,11 +65,17 @@ class TraducaoViewController: UIViewController {
         }
         
         frase.atualizarTotalDasFrases()
-        
-        alert(2)
+        signWritingSalvar.alpha = 1.0
     }
     
-    func alert(value: Int) {
-        print("Vai ter coisa aqui!")
+    @IBAction func btnSalvarActionDown(sender: AnyObject) {
+        signWritingSalvar.alpha = 0.5
     }
+    
+    @IBAction func btnSalvarActionDrag(sender: AnyObject) {
+        signWritingSalvar.alpha = 1.0
+    }
+    
+    
+    
 }
