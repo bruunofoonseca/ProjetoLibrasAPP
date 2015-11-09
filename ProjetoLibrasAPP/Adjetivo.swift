@@ -21,11 +21,11 @@ class Adjetivo : NSObject {
     {
         var adjetivoTratado: String!
         
-        for sujCategory in sujeito.categories
+        for sujCategory in sujeito.mottos[0].categories
         {
             for sujFlexion in sujeito.flexions
             {
-                if sujCategory.text == "nome feminino" && sujFlexion.text == "sing"
+                if (sujCategory.text == "nome feminino") && (sujFlexion.text == "sing" || sujFlexion.text == "Feminino singular")
                 {
                     adjetivoTratado = translator.get_adjectives(adjetivo.text, flexion: "Feminino singular")
                 }

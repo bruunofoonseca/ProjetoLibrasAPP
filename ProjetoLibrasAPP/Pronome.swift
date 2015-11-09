@@ -12,7 +12,7 @@ import UIKit
 class Pronome: NSObject {
     
     /**********     VARIÁVEIS    **********/
-
+    
     var recebeArtigo : [String] = []
     var objArtigo = Artigo()
     let pathPronomeEu = NSBundle.mainBundle().pathForResource("PronomeObliquosEu", ofType: "plist")
@@ -28,10 +28,10 @@ class Pronome: NSObject {
     
     
     /**********     FUNÇÃO QUE TRATA O PRONOME DE ACORDO COM SUA PARTICULARIDADE   **********/
-
+    
     func categorizarPronome(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
         recebeArtigo.removeAll()
-        if (frase[posicao].categories[0].text == "pronome"){
+        if (frase[posicao].mottos[0].categories[0].text == "pronome"){
             if (frase[posicao].text == "eu") || (frase[posicao].text == "tu") || (frase[posicao].text == "ele") || (frase[posicao].text == "nós") || (frase[posicao].text == "vós") || (frase[posicao].text == "eles") || (frase[posicao].text == "ela") || (frase[posicao].text == "elas"){
                 recebeArtigo.append("")
             }
@@ -58,11 +58,17 @@ class Pronome: NSObject {
             posicao = 0
         }
         
-        if(frase[1].categories[posicao].text == "verbo"){
+        if(frase[1].mottos[0].categories[posicao].text == "verbo"){
             
-            if(frase[2].text == "eu") && (frase[1].text != "ser"){
+            if(frase[2].text == "eu") {
                 if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "mim"
+                }
+                else if (frase[1].text == "ser" && frase[0].text != "eu"){
+                    pronomeTransformado = "meu"
+                }
+                else if(frase[1].text == "ser" && frase[0].text == "eu"){
+                    pronomeTransformado = "eu"
                 }
                 else{
                     pronomeTransformado = "comigo"
@@ -71,6 +77,12 @@ class Pronome: NSObject {
             else if (frase[2].text == "tu"){
                 if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "ti"
+                }
+                else if (frase[1].text == "ser" && frase[0].text != "tu"){
+                    pronomeTransformado = "teu"
+                }
+                else if(frase[1].text == "ser" && frase[0].text == "tu"){
+                    pronomeTransformado = "tu"
                 }
                 else{
                     pronomeTransformado = "contigo"

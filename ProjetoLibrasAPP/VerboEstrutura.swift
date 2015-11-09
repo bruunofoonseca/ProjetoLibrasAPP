@@ -11,7 +11,7 @@ import Foundation
 class VerboEstrutura : NSObject {
     
     /**********     VARIÁVEIS   **********/
-
+    
     let api = Translator()
     let objVerbo = Verbo()
     var defVerbo: [String] = []
@@ -19,35 +19,54 @@ class VerboEstrutura : NSObject {
     
     
     /**********     FUNÇÃO QUE TRATA O VERBO DE ACORDO COM O SUJEITO E INSERE PREPOSIÇÃO   **********/
-
-    func tratarVerbo(frase: [Word]) -> [String]
+    
+    func tratarVerbo(frase: [Word], tempo: Int) -> [String]
     {
         defVerbo.removeAll()
-    
+        
         var posVerbo = -1
         
-        for (var i = 0; i < frase[1].categories.count; i++)
+        for (var i = 0; i < frase[1].mottos[0].categories.count; i++)
         {
-            if (frase[1].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular")
+            if (frase[1].mottos[0].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular")
             {
                 posVerbo = i
             }
         }
         
-        for category in frase[1].categories
-        {
-            if category.text == "verbo"
-            {
-                defVerbo.append(objVerbo.conjugVerboSujeito(frase[0], verbo: frase[1]))
-                defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
-                return defVerbo
-            }
-        }
         
-        if defVerbo.count == 0
-        {
-            defVerbo.append(frase[1].text)
-            defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+        for _ in frase[1].mottos[0].categories{
+            
+            if tempo == 0
+            {
+                for category in frase[1].mottos[0].categories
+                {
+                    if category.text == "verbo"
+                    {
+                        defVerbo.append(objVerbo.conjugVerboSujeitoPresente(frase[0], verbo: frase[1]))
+                        defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+                        return defVerbo
+                    }
+                }
+            }
+            else if tempo == 1
+            {
+                for category in frase[1].mottos[0].categories
+                {
+                    if category.text == "verbo"
+                    {
+                        defVerbo.append(objVerbo.conjugVerboSujeitoPassado(frase[0], verbo: frase[1]))
+                        defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+                        return defVerbo
+                    }
+                }
+            }
+            
+            if defVerbo.count == 0
+            {
+                defVerbo.append(frase[1].text)
+                defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+            }
         }
         
         return defVerbo

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ir</key>
+	<dict>
+		<key>carro</key>
+		<string>de</string>
+		<key>navio</key>
+		<string>de</string>
+		<key>ônibus</key>
+		<string>de</string>
+		<key>trem</key>
+		<string>de</string>
+		<key>metrô</key>
+		<string>de</string>
+		<key>pé</key>
+		<string>a</string>
+	</dict>
+	<key>estar</key>
+	<dict>
+		<key>menina</key>
+		<string>com a</string>
+		<key>menino</key>
+		<string>com o</string>
+		<key>meninas</key>
+		<string>com as</string>
+		<key>meninos</key>
+		<string>com os</string>
+		<key>caneta</key>
+		<string>com a</string>
+		<key>lápis</key>
+		<string>com o</string>
+		<key>mãe</key>
+		<string>com a</string>
+		<key>pai</key>
+		<string>com o</string>
+		<key>faca</key>
+		<string>com a</string>
+		<key>capacete</key>
+		<string>com o</string>
+		<key>fone</key>
+		<string>com o</string>
+		<key>colar</key>
+		<string>com o</string>
+		<key>anel</key>
+		<string>com o</string>
+		<key>perfume</key>
+		<string>com o</string>
+		<key>dinheiro</key>
+		<string>com o</string>
+	</dict>
+	<key>poder</key>
+	<dict>
+		<key>menina</key>
+		<string>com a</string>
+		<key>menino</key>
+		<string>com o</string>
+	</dict>
+	<key>fazer</key>
+	<dict>
+		<key>menina</key>
+		<string>pela</string>
+		<key>menino</key>
+		<string>pelo</string>
+		<key>deus</key>
+		<string>por</string>
+	</dict>
+	<key>saber</key>
+	<dict>
+		<key>menina</key>
+		<string>pela</string>
+		<key>menino</key>
+		<string>pelo</string>
+		<key>meninas</key>
+		<string>pelas</string>
+		<key>meninos</key>
+		<string>pelos</string>
+	</dict>
+	<key>imprimir</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>meninos</key>
+		<string>para os</string>
+	</dict>
+	<key>voltar</key>
+	<dict>
+		<key>menina</key>
+		<string>com a</string>
+		<key>menino</key>
+		<string>com o</string>
+		<key>meninas</key>
+		<string>com as</string>
+		<key>meninos</key>
+		<string>com os</string>
+		<key>hospital</key>
+		<string>do</string>
+		<key>curso</key>
+		<string>do</string>
+		<key>mercado</key>
+		<string>do</string>
+		<key>shopping</key>
+		<string>do</string>
+		<key>escola</key>
+		<string>da</string>
+		<key>faca</key>
+		<string>com a</string>
+		<key>caneta</key>
+		<string>com a</string>
+		<key>doce</key>
+		<string>com o</string>
+	</dict>
+	<key>viver</key>
+	<dict>
+		<key>carro</key>
+		<string>no</string>
+		<key>mercado</key>
+		<string>no</string>
+		<key>escola</key>
+		<string>na</string>
+		<key>shopping</key>
+		<string>no</string>
+		<key>faculdade</key>
+		<string>na</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>ônibus</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>mesa</key>
+		<string>na</string>
+		<key>cadeira</key>
+		<string>na</string>
+		<key>banheiro</key>
+		<string>no</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>médico</key>
+		<string>no</string>
+	</dict>
+	<key>vender</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>meninos</key>
+		<string>para os</string>
+		<key>menino</key>
+		<string>para o</string>
+	</dict>
+</dict>
+</plist>

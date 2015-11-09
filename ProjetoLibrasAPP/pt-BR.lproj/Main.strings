@@ -1,0 +1,48 @@
+
+/* Class = "UINavigationItem"; title = "Frases"; ObjectID = "08n-wW-sqo"; */
+"08n-wW-sqo.title" = "Frases";
+
+/* Class = "UIButton"; normalTitle = "Explicação"; ObjectID = "24p-t0-2Tf"; */
+"24p-t0-2Tf.normalTitle" = "Explicação";
+
+/* Class = "UIButton"; normalTitle = "Tradução"; ObjectID = "6wU-eS-SYF"; */
+"6wU-eS-SYF.normalTitle" = "Tradução";
+
+/* Class = "UIButton"; normalTitle = "Verbo"; ObjectID = "7Dq-6P-McC"; */
+"7Dq-6P-McC.normalTitle" = "Verbo";
+
+/* Class = "UINavigationItem"; title = "LIBI"; ObjectID = "RXV-En-7Al"; */
+"RXV-En-7Al.title" = "LIBI";
+
+/* Class = "UIButton"; normalTitle = "Pesquisar Frases"; ObjectID = "SlE-Ka-tnF"; */
+"SlE-Ka-tnF.normalTitle" = "Pesquisar Frases";
+
+/* Class = "UIBarButtonItem"; title = "Home"; ObjectID = "Var-Ig-juF"; */
+"Var-Ig-juF.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Digite o Sujeito"; ObjectID = "WEM-mW-EGK"; */
+"WEM-mW-EGK.placeholder" = "Digite o Sujeito";
+
+/* Class = "UIBarButtonItem"; title = "Frases"; ObjectID = "iSd-yW-9gz"; */
+"iSd-yW-9gz.title" = "Frases";
+
+/* Class = "UIButton"; normalTitle = "Sujeito"; ObjectID = "ksw-ow-PBs"; */
+"ksw-ow-PBs.normalTitle" = "Sujeito";
+
+/* Class = "UIButton"; normalTitle = "Complemento"; ObjectID = "kvf-5S-n88"; */
+"kvf-5S-n88.normalTitle" = "Complemento";
+
+/* Class = "UISearchBar"; placeholder = "Pesquisar frases"; ObjectID = "q7Z-By-d9y"; */
+"q7Z-By-d9y.placeholder" = "Pesquisar frases";
+
+/* Class = "UISearchBar"; q7Z-By-d9y.scopeButtonTitles[0] = "Title"; ObjectID = "q7Z-By-d9y"; */
+"q7Z-By-d9y.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; q7Z-By-d9y.scopeButtonTitles[1] = "Title"; ObjectID = "q7Z-By-d9y"; */
+"q7Z-By-d9y.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Home"; ObjectID = "sP9-1V-wW5"; */
+"sP9-1V-wW5.title" = "Home";
+
+/* Class = "UIBarButtonItem"; title = "Tradutor"; ObjectID = "uK4-0I-zzA"; */
+"uK4-0I-zzA.title" = "Tradutor";

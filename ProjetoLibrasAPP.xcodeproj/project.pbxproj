@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06082F251BD988240029B5A8 /* FraseViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 067EB5E41BBF2AF40081F935 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
-		06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06BA88421BCEED730051D01F /* PronomesPessoais.plist */; settings = {ASSET_TAGS = (); }; };
-		06D96AEA1BD09E0200679110 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06D96AE91BD09E0200679110 /* PronomeObliquosEu.plist */; settings = {ASSET_TAGS = (); }; };
-		06D96AEC1BD0A26A00679110 /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06D96AEB1BD0A26A00679110 /* PronomeObliquosEle.plist */; settings = {ASSET_TAGS = (); }; };
+		069291931BEBE79300E98F5D /* Motto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069291921BEBE79300E98F5D /* Motto.swift */; settings = {ASSET_TAGS = (); }; };
+		069291961BEBE92B00E98F5D /* excluir.png in Resources */ = {isa = PBXBuildFile; fileRef = 069291941BEBE92B00E98F5D /* excluir.png */; settings = {ASSET_TAGS = (); }; };
+		069291971BEBE92B00E98F5D /* mover.png in Resources */ = {isa = PBXBuildFile; fileRef = 069291951BEBE92B00E98F5D /* mover.png */; settings = {ASSET_TAGS = (); }; };
+		0692919D1BEBE98E00E98F5D /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 069291981BEBE98E00E98F5D /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
+		0692919E1BEBE98E00E98F5D /* PronomesPessoais.plist in Resources */ = {isa = PBXBuildFile; fileRef = 069291991BEBE98E00E98F5D /* PronomesPessoais.plist */; settings = {ASSET_TAGS = (); }; };
+		0692919F1BEBE98E00E98F5D /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */; settings = {ASSET_TAGS = (); }; };
+		069291A01BEBE98E00E98F5D /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */; settings = {ASSET_TAGS = (); }; };
+		069291A11BEBE98E00E98F5D /* PreposicaoExcecao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */; settings = {ASSET_TAGS = (); }; };
 		410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E74801BD01CD000512F18 /* Adjetivo.swift */; settings = {ASSET_TAGS = (); }; };
 		41B20B7C1BC44D4300B75936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B20B7A1BC44D4300B75936 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		41B20B7D1BC44D4300B75936 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -28,9 +32,10 @@
 		41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */; settings = {ASSET_TAGS = (); }; };
 		B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CC1BD56BB00056186E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00350CE1BD56C370056186E /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B044FD7F1BC5C81600435397 /* Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* Front.swift */; settings = {ASSET_TAGS = (); }; };
+		B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
+		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
@@ -38,6 +43,7 @@
 		C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */; };
 		C3CBBE861BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE851BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift */; };
 		C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */; };
+		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +65,17 @@
 
 /* Begin PBXFileReference section */
 		06082F251BD988240029B5A8 /* FraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FraseViewController.swift; path = ../FraseViewController.swift; sourceTree = "<group>"; };
-		067EB5E41BBF2AF40081F935 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Preposicao.plist; path = ProjetoLibrasAPP/Preposicao.plist; sourceTree = "<group>"; };
-		06BA88421BCEED730051D01F /* PronomesPessoais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PronomesPessoais.plist; path = ProjetoLibrasAPP/PronomesPessoais.plist; sourceTree = "<group>"; };
-		06D96AE91BD09E0200679110 /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PronomeObliquosEu.plist; path = ProjetoLibrasAPP/PronomeObliquosEu.plist; sourceTree = "<group>"; };
-		06D96AEB1BD0A26A00679110 /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PronomeObliquosEle.plist; path = ProjetoLibrasAPP/PronomeObliquosEle.plist; sourceTree = "<group>"; };
+		069291921BEBE79300E98F5D /* Motto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motto.swift; sourceTree = "<group>"; };
+		069291941BEBE92B00E98F5D /* excluir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excluir.png; sourceTree = "<group>"; };
+		069291951BEBE92B00E98F5D /* mover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mover.png; sourceTree = "<group>"; };
+		069291981BEBE98E00E98F5D /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
+		069291991BEBE98E00E98F5D /* PronomesPessoais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomesPessoais.plist; sourceTree = "<group>"; };
+		0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEle.plist; sourceTree = "<group>"; };
+		0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEu.plist; sourceTree = "<group>"; };
+		0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PreposicaoExcecao.plist; sourceTree = "<group>"; };
 		410E74801BD01CD000512F18 /* Adjetivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adjetivo.swift; sourceTree = "<group>"; };
+		41549D2A1BDEE22C00A287D2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		41549D2B1BDEE22C00A287D2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TecladoCustomizado.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B20B7A1BC44D4300B75936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TecladoCustomizado/Info.plist; sourceTree = "<group>"; };
 		41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = TecladoCustomizado/KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +92,9 @@
 		41FDD8971BBEF546005CA9F8 /* ComplementoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplementoEstrutura.swift; sourceTree = "<group>"; };
 		41FDD8991BBEF55B005CA9F8 /* SujeitoEstrutura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SujeitoEstrutura.swift; sourceTree = "<group>"; };
 		B00350CC1BD56BB00056186E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B00350CE1BD56C370056186E /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
-		B044FD7E1BC5C81600435397 /* Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Front.swift; sourceTree = "<group>"; };
+		B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraducaoViewController.swift; sourceTree = "<group>"; };
+		B044FD7E1BC5C81600435397 /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +108,7 @@
 		C3CBBE8C1BBC94060035A1D4 /* ProjetoLibrasAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoLibrasAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoLibrasAPPUITests.swift; sourceTree = "<group>"; };
 		C3CBBE921BBC94060035A1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E641D81BE3945200C645A0 /* New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +146,11 @@
 		06D96AED1BD0A81700679110 /* PList */ = {
 			isa = PBXGroup;
 			children = (
-				067EB5E41BBF2AF40081F935 /* Preposicao.plist */,
-				06BA88421BCEED730051D01F /* PronomesPessoais.plist */,
-				06D96AEB1BD0A26A00679110 /* PronomeObliquosEle.plist */,
-				06D96AE91BD09E0200679110 /* PronomeObliquosEu.plist */,
+				069291981BEBE98E00E98F5D /* Preposicao.plist */,
+				069291991BEBE98E00E98F5D /* PronomesPessoais.plist */,
+				0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */,
+				0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */,
+				0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */,
 			);
 			name = PList;
 			path = ..;
@@ -157,6 +171,7 @@
 				41DA902C1BBC9B7200F8C56B /* Word.swift */,
 				41DA902D1BBC9B7200F8C56B /* Category.swift */,
 				41DA902E1BBC9B7200F8C56B /* Flexion.swift */,
+				069291921BEBE79300E98F5D /* Motto.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -170,6 +185,8 @@
 				41EA44411BBDD6900076C6C2 /* Verbo.swift */,
 				410E74801BD01CD000512F18 /* Adjetivo.swift */,
 				41EA44431BBDD6E40076C6C2 /* Preposicao.swift */,
+				069291941BEBE92B00E98F5D /* excluir.png */,
+				069291951BEBE92B00E98F5D /* mover.png */,
 				41DA90321BBC9B8300F8C56B /* Models */,
 			);
 			name = "Classes Gramáticais";
@@ -193,15 +210,39 @@
 			name = Font;
 			sourceTree = "<group>";
 		};
+		B036B83E1BE7464300A56B5F /* Traducao */ = {
+			isa = PBXGroup;
+			children = (
+				B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */,
+			);
+			name = Traducao;
+			sourceTree = "<group>";
+		};
 		B044FD7B1BC5C4C300435397 /* Front */ = {
 			isa = PBXGroup;
 			children = (
-				B044FD7E1BC5C81600435397 /* Front.swift */,
-				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
-				B00350CE1BD56C370056186E /* TradutorViewController.swift */,
+				B05543FD1BE24DA200ADA617 /* Home */,
+				B084CB171BDFFCDB001F8177 /* Tradutor */,
+				B036B83E1BE7464300A56B5F /* Traducao */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
 			);
 			name = Front;
+			sourceTree = "<group>";
+		};
+		B05543FD1BE24DA200ADA617 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B00350CC1BD56BB00056186E /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B084CB171BDFFCDB001F8177 /* Tradutor */ = {
+			isa = PBXGroup;
+			children = (
+				B044FD7E1BC5C81600435397 /* TradutorViewController.swift */,
+			);
+			name = Tradutor;
 			sourceTree = "<group>";
 		};
 		C3CBBE611BBC94050035A1D4 = {
@@ -241,6 +282,7 @@
 				C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */,
 				C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */,
 				C3CBBE7C1BBC94060035A1D4 /* Info.plist */,
+				C3E641D81BE3945200C645A0 /* New.storyboard */,
 			);
 			path = ProjetoLibrasAPP;
 			sourceTree = "<group>";
@@ -350,7 +392,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8KR33X63ZD;
+						DevelopmentTeam = 7S84RQ3NGE;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -395,14 +437,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0692919F1BEBE98E00E98F5D /* PronomeObliquosEle.plist in Resources */,
 				B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */,
+				069291A11BEBE98E00E98F5D /* PreposicaoExcecao.plist in Resources */,
+				069291971BEBE92B00E98F5D /* mover.png in Resources */,
 				C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */,
-				06BA88431BCEED730051D01F /* PronomesPessoais.plist in Resources */,
+				069291A01BEBE98E00E98F5D /* PronomeObliquosEu.plist in Resources */,
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
-				06D96AEA1BD09E0200679110 /* PronomeObliquosEu.plist in Resources */,
+				069291961BEBE92B00E98F5D /* excluir.png in Resources */,
+				C3E641D91BE3945200C645A0 /* New.storyboard in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
-				06D96AEC1BD0A26A00679110 /* PronomeObliquosEle.plist in Resources */,
-				067EB5E51BBF2AF40081F935 /* Preposicao.plist in Resources */,
+				0692919D1BEBE98E00E98F5D /* Preposicao.plist in Resources */,
+				0692919E1BEBE98E00E98F5D /* PronomesPessoais.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,21 +485,23 @@
 				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
 				06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */,
-				B00350CF1BD56C370056186E /* TradutorViewController.swift in Sources */,
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
+				069291931BEBE79300E98F5D /* Motto.swift in Sources */,
 				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
+				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
+				C337F6121BE6867700B064CD /* (null) in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
-				B044FD7F1BC5C81600435397 /* Front.swift in Sources */,
+				B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +542,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C3CBBE721BBC94060035A1D4 /* Base */,
+				41549D2A1BDEE22C00A287D2 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -502,6 +551,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C3CBBE7A1BBC94060035A1D4 /* Base */,
+				41549D2B1BDEE22C00A287D2 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -509,6 +559,97 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41549D2C1BDEE24C00A287D2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "52dbd81e-a356-4c46-99c5-0628150352c5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		41549D2D1BDEE24C00A287D2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ProjetoLibrasAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		41549D2E1BDEE24C00A287D2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProjetoLibrasAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjetoLibrasAPP.app/ProjetoLibrasAPP";
+			};
+			name = Distribution;
+		};
+		41549D2F1BDEE24C00A287D2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProjetoLibrasAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjetoLibrasAPP;
+				USES_XCTRUNNER = YES;
+			};
+			name = Distribution;
+		};
+		41549D301BDEE24C00A287D2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TecladoCustomizado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP.TecladoCustomizado;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
 		416851B51BC44BAE0045826D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,7 +689,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -570,6 +712,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "52dbd81e-a356-4c46-99c5-0628150352c5";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,7 +736,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bruno Fonseca (8PWCZWFCY7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -608,6 +752,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "52dbd81e-a356-4c46-99c5-0628150352c5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -702,6 +847,7 @@
 			buildConfigurations = (
 				416851B51BC44BAE0045826D /* Debug */,
 				416851B61BC44BAE0045826D /* Release */,
+				41549D301BDEE24C00A287D2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -711,6 +857,7 @@
 			buildConfigurations = (
 				C3CBBE931BBC94060035A1D4 /* Debug */,
 				C3CBBE941BBC94060035A1D4 /* Release */,
+				41549D2C1BDEE24C00A287D2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -720,6 +867,7 @@
 			buildConfigurations = (
 				C3CBBE961BBC94060035A1D4 /* Debug */,
 				C3CBBE971BBC94060035A1D4 /* Release */,
+				41549D2D1BDEE24C00A287D2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -729,6 +877,7 @@
 			buildConfigurations = (
 				C3CBBE991BBC94060035A1D4 /* Debug */,
 				C3CBBE9A1BBC94060035A1D4 /* Release */,
+				41549D2E1BDEE24C00A287D2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -738,6 +887,7 @@
 			buildConfigurations = (
 				C3CBBE9C1BBC94060035A1D4 /* Debug */,
 				C3CBBE9D1BBC94060035A1D4 /* Release */,
+				41549D2F1BDEE24C00A287D2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

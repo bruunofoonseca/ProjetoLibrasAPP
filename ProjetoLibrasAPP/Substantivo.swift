@@ -23,7 +23,7 @@ class Substantivo: NSObject {
     func classificaSubstantivo(frase: [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
         recebeArtigo.removeAll()
         recebeArtigo.removeAll()
-        if (frase[0].categories[posCategoria].text == "nome feminino") || (frase[0].categories[posCategoria].text == "nome masculino") || (frase[0].categories[posCategoria].text == "adjetivo"){
+        if (frase[0].mottos[0].categories[posCategoria].text == "nome feminino") || (frase[0].mottos[0].categories[posCategoria].text == "nome masculino") || (frase[0].mottos[0].categories[posCategoria].text == "adjetivo"){
             recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao, posCategoria: posCategoria, posFlexion: posFlexion)
         }
         

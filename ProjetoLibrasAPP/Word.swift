@@ -12,13 +12,12 @@ class Word: NSObject {
     
     var id:Int!
     var text:String!
-    var motto:String!
-    var categories:[Category]!
+    var mottos:[Motto]!
     var flexions:[Flexion]!
     
     override init() {
-        categories = []
         flexions = []
+        mottos = []
     }
     
 }
