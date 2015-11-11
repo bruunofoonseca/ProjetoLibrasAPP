@@ -44,7 +44,7 @@
 		C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */; };
 		C3CBBE861BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE851BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift */; };
 		C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */; };
-		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,12 +223,24 @@
 		B044FD7B1BC5C4C300435397 /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				B04E8BB11BF3B88C00781B51 /* JLToast */,
 				B05543FD1BE24DA200ADA617 /* Home */,
 				B084CB171BDFFCDB001F8177 /* Tradutor */,
 				B036B83E1BE7464300A56B5F /* Traducao */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
 			);
 			name = Front;
+			sourceTree = "<group>";
+		};
+		B04E8BB11BF3B88C00781B51 /* JLToast */ = {
+			isa = PBXGroup;
+			children = (
+				B04E8BAA1BF3B85300781B51 /* JLToast.h */,
+				B04E8BAB1BF3B85300781B51 /* JLToast.swift */,
+				B04E8BAC1BF3B85300781B51 /* JLToastCenter.swift */,
+				B04E8BAD1BF3B85300781B51 /* JLToastView.swift */,
+			);
+			name = JLToast;
 			sourceTree = "<group>";
 		};
 		B05543FD1BE24DA200ADA617 /* Home */ = {
@@ -490,14 +502,17 @@
 				06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */,
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
+				B04E8BAF1BF3B85300781B51 /* JLToastCenter.swift in Sources */,
 				069291931BEBE79300E98F5D /* Motto.swift in Sources */,
 				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
+				B04E8BAE1BF3B85300781B51 /* JLToast.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
 				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				C337F6121BE6867700B064CD /* (null) in Sources */,
+				B04E8BB01BF3B85300781B51 /* JLToastView.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,

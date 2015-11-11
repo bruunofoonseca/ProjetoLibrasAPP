@@ -45,7 +45,9 @@ class FraseViewController : UITableViewController, UISearchBarDelegate, UISearch
         
     }
     
-    
+    override func viewWillDisappear(animated: Bool) {
+        searchBar.resignFirstResponder()
+    }
     
     /********** MÉTODOS ATUALIZA E COLOCA AS FRASES NO ARRAY  **********/
     
