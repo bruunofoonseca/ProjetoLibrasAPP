@@ -36,6 +36,10 @@
 		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
 		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; settings = {ASSET_TAGS = (); }; };
+		C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340559D1BF3BAA40055555D /* CallTranslation.swift */; settings = {ASSET_TAGS = (); }; };
+		C34FDCA71BF3E5B900A82E17 /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34FDCA41BF3E5B900A82E17 /* JLToast.swift */; settings = {ASSET_TAGS = (); }; };
+		C34FDCA81BF3E5B900A82E17 /* JLToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34FDCA51BF3E5B900A82E17 /* JLToastCenter.swift */; settings = {ASSET_TAGS = (); }; };
+		C34FDCA91BF3E5B900A82E17 /* JLToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34FDCA61BF3E5B900A82E17 /* JLToastView.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
@@ -43,7 +47,7 @@
 		C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE791BBC94060035A1D4 /* LaunchScreen.storyboard */; };
 		C3CBBE861BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE851BBC94060035A1D4 /* ProjetoLibrasAPPTests.swift */; };
 		C3CBBE911BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE901BBC94060035A1D4 /* ProjetoLibrasAPPUITests.swift */; };
-		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; settings = {ASSET_TAGS = (); }; };
+		C3E641D91BE3945200C645A0 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E641D81BE3945200C645A0 /* New.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,11 @@
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
 		B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraducaoViewController.swift; sourceTree = "<group>"; };
 		B044FD7E1BC5C81600435397 /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
+		C340559D1BF3BAA40055555D /* CallTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTranslation.swift; sourceTree = "<group>"; };
+		C34FDCA31BF3E5B900A82E17 /* JLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLToast.h; sourceTree = "<group>"; };
+		C34FDCA41BF3E5B900A82E17 /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
+		C34FDCA51BF3E5B900A82E17 /* JLToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastCenter.swift; sourceTree = "<group>"; };
+		C34FDCA61BF3E5B900A82E17 /* JLToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastView.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -221,12 +230,24 @@
 		B044FD7B1BC5C4C300435397 /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				B04E8BB11BF3B88C00781B51 /* JLToast */,
 				B05543FD1BE24DA200ADA617 /* Home */,
 				B084CB171BDFFCDB001F8177 /* Tradutor */,
 				B036B83E1BE7464300A56B5F /* Traducao */,
 				06082F251BD988240029B5A8 /* FraseViewController.swift */,
 			);
 			name = Front;
+			sourceTree = "<group>";
+		};
+		B04E8BB11BF3B88C00781B51 /* JLToast */ = {
+			isa = PBXGroup;
+			children = (
+				C34FDCA31BF3E5B900A82E17 /* JLToast.h */,
+				C34FDCA41BF3E5B900A82E17 /* JLToast.swift */,
+				C34FDCA51BF3E5B900A82E17 /* JLToastCenter.swift */,
+				C34FDCA61BF3E5B900A82E17 /* JLToastView.swift */,
+			);
+			name = JLToast;
 			sourceTree = "<group>";
 		};
 		B05543FD1BE24DA200ADA617 /* Home */ = {
@@ -241,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				B044FD7E1BC5C81600435397 /* TradutorViewController.swift */,
+				C340559D1BF3BAA40055555D /* CallTranslation.swift */,
 			);
 			name = Tradutor;
 			sourceTree = "<group>";
@@ -481,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34FDCA71BF3E5B900A82E17 /* JLToast.swift in Sources */,
 				41EA44421BBDD6900076C6C2 /* Verbo.swift in Sources */,
 				41EA44401BBDD6850076C6C2 /* Pronome.swift in Sources */,
 				C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */,
@@ -488,11 +511,13 @@
 				41FDD8981BBEF546005CA9F8 /* ComplementoEstrutura.swift in Sources */,
 				41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */,
 				069291931BEBE79300E98F5D /* Motto.swift in Sources */,
+				C34FDCA81BF3E5B900A82E17 /* JLToastCenter.swift in Sources */,
 				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
 				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
+				C34FDCA91BF3E5B900A82E17 /* JLToastView.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				C337F6121BE6867700B064CD /* (null) in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
@@ -502,6 +527,7 @@
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
 				B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */,
+				C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

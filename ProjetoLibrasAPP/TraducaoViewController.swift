@@ -40,6 +40,7 @@ class TraducaoViewController: UIViewController {
     @IBAction func btnCopiarAction(sender: AnyObject) {
         copiar.string = lblTraducaoPassed.text
         
+        JLToast.makeText("Frase copiada!").show()
     }
     
     @IBAction func btnCompartilharAction(sender: AnyObject) {
@@ -47,6 +48,10 @@ class TraducaoViewController: UIViewController {
         meuCompartilhamento.excludedActivityTypes = [UIActivityTypeAirDrop]
         meuCompartilhamento.popoverPresentationController?.sourceView = self.view
         meuCompartilhamento.popoverPresentationController?.sourceRect = sender.frame
+        meuCompartilhamento.completionWithItemsHandler = {
+            (activity, sucess, items, error) in
+            JLToast.makeText("Frase compartilhada!").show()
+        }
         self.presentViewController(meuCompartilhamento, animated: true, completion: nil)
     }
     
@@ -67,6 +72,7 @@ class TraducaoViewController: UIViewController {
         }
         
         frase.atualizarTotalDasFrases()
+        JLToast.makeText("Frase salva!").show()
     }
     
     @IBAction func btnSalvarActionDown(sender: AnyObject) {

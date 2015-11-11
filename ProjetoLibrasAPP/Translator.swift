@@ -260,11 +260,12 @@ class Translator: NSObject {
             var words_list:[Word]
             words_list = []
             
-            var params:String = motto.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "/" + flexion.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            var params:String = motto//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            params = params + "/" + flexion//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
             
-            let endpoint = NSURL(string: "https://libiapi.herokuapp.com/word/classify_adjectives/true/" + params + "/")
-            let data:NSData = NSData(contentsOfURL: endpoint!)!
+            let endpoint = "https://libiapi.herokuapp.com/word/classify_adjectives/true/" + params + "/"
+            let url = endpoint.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+            let data:NSData = NSData(contentsOfURL: NSURL(string: url!)!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
                 if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {

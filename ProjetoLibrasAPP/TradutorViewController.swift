@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreData
 
-class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
+class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDelegate,CallTranslationDelegate {
     
     /********** VARIÁVEIS DA INTERFACE  **********/
     
@@ -25,6 +25,8 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     @IBOutlet weak var viewIndicador: UIView!
     @IBOutlet weak var viewIndicadorLeading: NSLayoutConstraint!
     @IBOutlet weak var btnBarButtonVoltar: UIBarButtonItem!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loadingImage: UIImageView!
     
     var currentPage:CGFloat = 0.0
     var texto:String = ""
@@ -37,19 +39,13 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     /********** VARIÁVEIS DO ALGORITMO  **********/
     
     let classifica = Translator()
-    var sujeitoClassificado : [String] = []
-    let sujeito = SujeitoEstrutura()
-    var complementoClassificado : [String] = []
-    let complemento = ComplementoEstrutura()
-    var verboClassificado: [String] = []
-    let verbo = VerboEstrutura()
     var preposicao : [String] = []
-    var fraseClassificada : [Word] = []
-    var juntaPalavras : String = ""
     var verboAcesso = VerboEstrutura()
     var temTexto = false
     var atualiza = FraseViewController()
     var dicty = NSMutableDictionary()
+    // Classe de conexão com o banco
+    var callTranslation:CallTranslation!
     
     /********** MÉTODO INICIAL  **********/
     
@@ -67,6 +63,8 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         initializeScroll()
         initializeNotification()
         
+        callTranslation = CallTranslation.init()
+        callTranslation.translationDelegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -340,8 +338,6 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         itensColors(atualPage)
         exibeTraducao()
         txtTexto.text = ""
-        callNewSegue()
-        //print("Depois antes do if \(atualPage)")
         
         return true
         
@@ -368,7 +364,6 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
                 textFieldPlaceHolder(atualPlaceHolder)
                 itensColors(atualPage)
                 exibeTraducao()
-                callNewSegue()
                 txtTexto.text = ""
                 
                 return false
@@ -445,18 +440,25 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 
     func exibeTraducao() {
         if (frase[0] != "" && frase[1] != "" && frase[2] != "") {
-            let index = 1
-            let fraseClas: NSMutableDictionary
             
-            if index == 0
-            {
-                fraseClas = traducaoTexto(lblTextoDigitado.text!)
-                lblTraducao.text = fraseClas.objectForKey("Presente") as? String
+            self.startLoading()
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                
+                let dispatchGroup = dispatch_group_create()
+                
+                dispatch_group_enter(dispatchGroup)
+                self.callTranslation.traducaoTexto(self.lblTextoDigitado.text!)
+                dispatch_group_leave(dispatchGroup)
+                
+                
+                dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), { () -> Void in
+                    self.stopLoading()
+                    self.callNewSegue()
+                })
             }
-            else{
-                fraseClas = traducaoTexto(lblTextoDigitado.text!)
-                lblTraducao.text = fraseClas.objectForKey("Passado") as? String
-            }
+            
         }
     }
     
@@ -472,111 +474,38 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 //        print(frase[1])
 //        print(frase[2])
     }
-
-    /********** MÉTODOS DE CONEXÃO ENTRE ALGORITMO  E INTERFACE  **********/
     
-    func traducaoTexto(text : String) -> NSMutableDictionary {
+    func traducaoSucesso(traducao : NSMutableDictionary){
+        let index = 1
         
-        // Aonde colocamos a frase
-        let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
-        var frase = text
-        var fraseOrganizada : [String] = []
-        fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
-        print("Frase em Librês: " + frase)
-        frase = (frase.lowercaseString)
-        // Chama a API para classificar as frases.
-        self.fraseClassificada = classifica.classify(frase)
-        
-        var i = 0
-        var aux : Word
-        
-        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-        
-        while(i != fraseClassificada.count){
-            for(var j = 0; j < fraseClassificada.count; j++){
-                if(fraseClassificada[j].text == fraseOrganizada[i]){
-                    aux = fraseClassificada[i]
-                    fraseClassificada[i] = fraseClassificada[j]
-                    fraseClassificada[j] = aux
-                }
-            }
-            i++
-        }
-        
-        if self.fraseClassificada.count == 3
+        if index == 0
         {
-            //------------------> FRASE NO PRESENTE <-------------------
-            
-            juntaPalavras.removeAll()
-            
-            // Chama a classe que trata o sujeito.
-            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
-            
-            // Chama a classe que trata o Verbo.
-            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 0)
-            
-            // Chama a classe que trata o complemento
-            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
-            
-            // Feito para juntar as palavras em uma String e colocar na tela.
-            metodoJuntaPalavra(sujeitoClassificado)
-            metodoJuntaPalavra(verboClassificado)
-            metodoJuntaPalavra(complementoClassificado)
-            
-            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
-            
-            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
-            
-            dicty.setValue(self.juntaPalavras, forKey: "Presente")
-            
-            //------------------> FRASE NO PASSADO <-------------------
-            
-            juntaPalavras.removeAll()
-            
-            // Chama a classe que trata o sujeito.
-            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
-            
-            // Chama a classe que trata o Verbo.
-            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
-            
-            // Chama a classe que trata o complemento
-            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
-            
-            // Feito para juntar as palavras em uma String e colocar na tela.
-            metodoJuntaPalavra(sujeitoClassificado)
-            metodoJuntaPalavra(verboClassificado)
-            metodoJuntaPalavra(complementoClassificado)
-            
-            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
-            
-            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
-            
-            dicty.setValue(juntaPalavras, forKey: "Passado")
-            
-            //Retorna Dicionário
-            return dicty
+            lblTraducao.text = traducao.objectForKey("Presente") as? String
         }
-        else
-        {
-            dicty.setValue(text, forKey: "Presente")
-            dicty.setValue(text, forKey: "Passado")
-            
-            return dicty
+        else{
+            lblTraducao.text = traducao.objectForKey("Passado") as? String
         }
+        
+        
     }
-
     
-    func metodoJuntaPalavra(texto : [String]){
+    func startLoading(){
+        loadingView.backgroundColor = UIColor(white: 0, alpha: 0.8)
+        loadingView.superview!.bringSubviewToFront(loadingView)
         
-        for i in 0...texto.count - 1 {
-            if (texto[i] != "null" && texto[i] != "" && texto[i] != " "){
-                if (texto[i] != "."){
-                    juntaPalavras += texto[i] + " "
-                }
-                else{
-                    juntaPalavras += texto[i]
-                }
-            }
+        loadingImage.animationImages = [UIImage]()
+        
+        for var index = 9; index < 69; index++ {
+            let frameName = String(format: "Sem título-2_%05d", index)
+            loadingImage.animationImages?.append(UIImage(named: frameName)!)
         }
+        
+        loadingImage.animationDuration = 1.5
+        loadingImage.startAnimating()
+    }
+    
+    func stopLoading(){
+        loadingView.superview!.sendSubviewToBack(loadingView)
+        loadingImage.stopAnimating()
     }
 }
