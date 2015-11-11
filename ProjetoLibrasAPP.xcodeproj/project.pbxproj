@@ -36,6 +36,7 @@
 		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; settings = {ASSET_TAGS = (); }; };
 		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; settings = {ASSET_TAGS = (); }; };
+		C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340559D1BF3BAA40055555D /* CallTranslation.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */; };
 		C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CBBE711BBC94060035A1D4 /* Main.storyboard */; };
 		C3CBBE761BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CBBE741BBC94060035A1D4 /* ProjetoLibrasAPP.xcdatamodeld */; };
@@ -95,6 +96,7 @@
 		B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weblysleekuisl.ttf; sourceTree = "<group>"; };
 		B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraducaoViewController.swift; sourceTree = "<group>"; };
 		B044FD7E1BC5C81600435397 /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
+		C340559D1BF3BAA40055555D /* CallTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTranslation.swift; sourceTree = "<group>"; };
 		C3CBBE6A1BBC94050035A1D4 /* ProjetoLibrasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoLibrasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CBBE721BBC94060035A1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				B044FD7E1BC5C81600435397 /* TradutorViewController.swift */,
+				C340559D1BF3BAA40055555D /* CallTranslation.swift */,
 			);
 			name = Tradutor;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
 				B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */,
+				C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
