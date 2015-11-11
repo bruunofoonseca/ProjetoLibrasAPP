@@ -16,8 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="bZf-H4-571">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="BPF-FI-ID9">
+                                <rect key="frame" x="201" y="200.5" width="198" height="198"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BPF-FI-ID9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DFJ-G0-hi2"/>
+                            <constraint firstItem="bZf-H4-571" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="EZy-oV-Uov"/>
+                            <constraint firstAttribute="trailing" secondItem="bZf-H4-571" secondAttribute="trailing" id="NkP-xe-HtY"/>
+                            <constraint firstItem="bZf-H4-571" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="VbB-3u-jl4"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bZf-H4-571" secondAttribute="bottom" id="lbh-2n-eit"/>
+                            <constraint firstItem="BPF-FI-ID9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sbo-Pj-AiJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +43,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fundo" width="375" height="667"/>
+        <image name="Logo" width="198" height="198"/>
+    </resources>
 </document>
