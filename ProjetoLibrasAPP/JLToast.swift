@@ -63,6 +63,17 @@ public struct JLToastDelay {
             self.didChangeValueForKey("isFinished")
         }
     }
+
+    internal var window: UIWindow {
+        let windows = UIApplication.sharedApplication().windows
+        for window in windows.reverse() {
+            let className = NSStringFromClass(window.dynamicType)
+            if className == "UIRemoteKeyboardWindow" || className == "UITextEffectsWindow" {
+                return window
+            }
+        }
+        return windows.first!
+    }
     
     
     public class func makeText(text: String) -> JLToast {
@@ -101,7 +112,7 @@ public struct JLToastDelay {
         dispatch_async(dispatch_get_main_queue(), {
             self.view.updateView()
             self.view.alpha = 0
-            UIApplication.sharedApplication().windows.first?.addSubview(self.view)
+            self.window.addSubview(self.view)
             UIView.animateWithDuration(
                 0.5,
                 delay: self.delay,
@@ -131,4 +142,5 @@ public struct JLToastDelay {
         self.executing = false
         self.finished = true
     }
+
 }
