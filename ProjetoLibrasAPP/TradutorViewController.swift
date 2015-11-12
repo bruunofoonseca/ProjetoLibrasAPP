@@ -58,7 +58,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         
         txtTexto.delegate = self
         txtTexto.returnKeyType = UIReturnKeyType.Next
-        btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+        btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
         
         initializeScroll()
         initializeNotification()
@@ -135,21 +135,21 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         switch(atualPage){
             
             case 0:
-                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.viewIndicador.backgroundColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
+                    self.viewIndicador.backgroundColor = UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0)
                 })
                 break
             case 1:
-                btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
+                btnVerbo.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
                 btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.viewIndicador.backgroundColor = UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0)
+                    self.viewIndicador.backgroundColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
                 })
                 break
             case 2:
@@ -162,7 +162,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
                 })
                 break
             default:
-                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
         }
