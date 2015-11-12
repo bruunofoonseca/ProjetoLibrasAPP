@@ -50,7 +50,9 @@ class TraducaoViewController: UIViewController {
         meuCompartilhamento.popoverPresentationController?.sourceRect = sender.frame
         meuCompartilhamento.completionWithItemsHandler = {
             (activity, sucess, items, error) in
-            JLToast.makeText("Frase compartilhada!").show()
+            if(sucess == true){
+                JLToast.makeText("Frase compartilhada!").show()
+            }
         }
         self.presentViewController(meuCompartilhamento, animated: true, completion: nil)
     }
