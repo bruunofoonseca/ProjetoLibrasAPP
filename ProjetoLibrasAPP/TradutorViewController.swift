@@ -46,6 +46,8 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     var dicty = NSMutableDictionary()
     // Classe de conexão com o banco
     var callTranslation:CallTranslation!
+    var palavrasSeparadas : [String] = []
+    var frases : [[String]] = []
     
     /********** MÉTODO INICIAL  **********/
     
@@ -101,6 +103,8 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 
             svc.textoDigitado = lblTextoDigitado.text!
             svc.textoTraduzido = lblTraducao.text!
+            svc.fraseList = frase
+            svc.frases = self.frases
         }
         lblTextoDigitado.text = ""
     }
@@ -153,16 +157,16 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
                 })
                 break
             case 2:
-                btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), forState: UIControlState.Normal)
                 btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.viewIndicador.backgroundColor = UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0)
+                    self.viewIndicador.backgroundColor = UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0)
                 })
                 break
             default:
-                btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
         }
@@ -435,7 +439,36 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     func mostraNaTela(){
         let texto = frase[0]! + " " + frase[1]! + " " + frase[2]!
         
-        lblTextoDigitado.text = texto
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto)
+        
+        print("tamanho: " + String(texto.characters.count))
+        
+        var initial = 0
+        var final = 0
+        
+        if (frase[0]?.characters.count != 0){
+            initial = 0
+            final = (frase[0]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (frase[1]?.characters.count != 0){
+            initial = (frase[0]?.characters.count)! + 1
+            final = (frase[1]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (frase[2]?.characters.count != 0){
+            initial = (frase[0]?.characters.count)! + (frase[1]?.characters.count)! + 2
+            final = (frase[2]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        lblTextoDigitado.attributedText = myMutableString
     }
 
     func exibeTraducao() {
@@ -475,7 +508,9 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 //        print(frase[2])
     }
     
-    func traducaoSucesso(traducao : NSMutableDictionary){
+    func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]]){
+        self.frases = frases
+        
         let index = 1
         
         if index == 0

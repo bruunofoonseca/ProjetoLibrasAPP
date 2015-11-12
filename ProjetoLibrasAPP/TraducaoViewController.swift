@@ -23,6 +23,9 @@ class TraducaoViewController: UIViewController {
     var contSalvarFrase = 0
     var copiar:UIPasteboard!
     var frase = FraseViewController()
+    var frases : [[String]] = []
+    
+    var fraseList = [String?](count: 3, repeatedValue: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,98 @@ class TraducaoViewController: UIViewController {
         lblTextoDigitadoPassed.text = textoDigitado
         lblTraducaoPassed.text = textoTraduzido
         copiar = UIPasteboard.generalPasteboard()
+        coloreFraseSurdo()
+        coloreFraseTradutor()
+    }
+    
+    func coloreFraseTradutor(){
+        let texto = textoTraduzido
+        
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto)
+        
+        print("tamanho: " + String(texto.characters.count))
+        
+        var initial = 0
+        var final = 0
+        
+        
+        initial = 0
+        
+        for palavra in frases[3]{
+            initial += palavra.characters.count
+        }
+        
+        initial -= frases[3][(frases[3].count - 1)].characters.count
+        initial += 1
+        final = frases[3][(frases[3].count - 1)].characters.count
+            
+        myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        
+        
+        
+        initial = 0
+        
+        for palavra in frases[3]{
+            initial += palavra.characters.count + 1
+        }
+        
+        final = frases[4][0].characters.count
+        
+        myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        
+        
+        
+        initial = 0
+        
+        for palavra in frases[3]{
+            initial += palavra.characters.count + 1
+        }
+        
+        for palavra in frases[4]{
+            initial += palavra.characters.count + 1
+        }
+        
+        final = frases[5][0].characters.count - 1
+        
+        myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        
+        lblTraducaoPassed.attributedText = myMutableString
+    }
+    
+    func coloreFraseSurdo(){
+        let texto = fraseList[0]! + " " + fraseList[1]! + " " + fraseList[2]!
+        
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto)
+        
+        print("tamanho: " + String(texto.characters.count))
+        
+        var initial = 0
+        var final = 0
+        
+        if (fraseList[0]?.characters.count != 0){
+            initial = 0
+            final = (fraseList[0]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[1]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + 1
+            final = (fraseList[1]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[2]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + (fraseList[1]?.characters.count)! + 2
+            final = (fraseList[2]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        lblTextoDigitadoPassed.attributedText = myMutableString
     }
     
     override func didReceiveMemoryWarning() {

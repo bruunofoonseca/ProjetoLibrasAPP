@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CallTranslationDelegate {
-    func traducaoSucesso(traducao : NSMutableDictionary)
+    func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]])
 }
 
 class CallTranslation: NSObject {
@@ -26,6 +26,7 @@ class CallTranslation: NSObject {
     let verbo = VerboEstrutura()
     var juntaPalavras : String = ""
     var translationDelegate: CallTranslationDelegate?
+    var frases : [[String]] = []
     
     override init() {
         
@@ -74,6 +75,10 @@ class CallTranslation: NSObject {
             metodoJuntaPalavra(verboClassificado)
             metodoJuntaPalavra(complementoClassificado)
             
+            frases.append(sujeitoClassificado)
+            frases.append(verboClassificado)
+            frases.append(complementoClassificado)
+            
             /**********    COLOCA EM LETRA MAÍUSCULA   **********/
             
             juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
@@ -98,6 +103,10 @@ class CallTranslation: NSObject {
             metodoJuntaPalavra(verboClassificado)
             metodoJuntaPalavra(complementoClassificado)
             
+            frases.append(sujeitoClassificado)
+            frases.append(verboClassificado)
+            frases.append(complementoClassificado)
+            
             /**********    COLOCA EM LETRA MAÍUSCULA   **********/
             
             juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
@@ -105,14 +114,14 @@ class CallTranslation: NSObject {
             dicty.setValue(juntaPalavras, forKey: "Passado")
             
             //Retorna Dicionário
-            self.translationDelegate?.traducaoSucesso(dicty)
+            self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
         }
         else
         {
             dicty.setValue(text, forKey: "Presente")
             dicty.setValue(text, forKey: "Passado")
             
-            self.translationDelegate?.traducaoSucesso(dicty)
+            self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
         }
     }
     
