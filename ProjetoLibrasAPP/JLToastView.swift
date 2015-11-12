@@ -131,7 +131,7 @@ public let JLToastViewLandscapeOffsetYAttributeName = "JLToastViewLandscapeOffse
         }
 
         x = (width - backgroundViewSize.width) * 0.5
-        y = height - (backgroundViewSize.height + y)
+        y = height / 3
         self.frame = CGRect(x: x, y: y, width: backgroundViewSize.width, height: backgroundViewSize.height);
     }
     

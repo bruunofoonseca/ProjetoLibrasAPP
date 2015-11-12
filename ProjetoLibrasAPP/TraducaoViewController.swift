@@ -17,6 +17,7 @@ class TraducaoViewController: UIViewController {
     @IBOutlet weak var btnCopiar: UIButton!
     @IBOutlet weak var btnCompartilhar: UIButton!
     @IBOutlet weak var signWritingSalvar: UIImageView!
+    var meuCompartilhamento:UIActivityViewController!
     
     var textoDigitado: String!
     var textoTraduzido: String!
@@ -32,28 +33,33 @@ class TraducaoViewController: UIViewController {
         copiar = UIPasteboard.generalPasteboard()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
     @IBAction func btnCopiarAction(sender: AnyObject) {
-        copiar.string = lblTraducaoPassed.text
         
-        JLToast.makeText("Frase copiada!").show()
+        copiar.string = lblTraducaoPassed.text
+        self.view.makeToast(message: "Frase copiada!")
     }
     
     @IBAction func btnCompartilharAction(sender: AnyObject) {
-        let meuCompartilhamento:UIActivityViewController = UIActivityViewController(activityItems: [lblTraducaoPassed.text!], applicationActivities: nil)
+        meuCompartilhamento = UIActivityViewController(activityItems: [lblTraducaoPassed.text!], applicationActivities: nil)
         meuCompartilhamento.excludedActivityTypes = [UIActivityTypeAirDrop]
         meuCompartilhamento.popoverPresentationController?.sourceView = self.view
         meuCompartilhamento.popoverPresentationController?.sourceRect = sender.frame
         meuCompartilhamento.completionWithItemsHandler = {
             (activity, sucess, items, error) in
             if(sucess == true){
-                JLToast.makeText("Frase compartilhada!").show()
+                self.view.makeToast(message: "Frase compartilhada!")
             }
         }
+        
         self.presentViewController(meuCompartilhamento, animated: true, completion: nil)
     }
     
@@ -74,7 +80,7 @@ class TraducaoViewController: UIViewController {
         }
         
         frase.atualizarTotalDasFrases()
-        JLToast.makeText("Frase salva!").show()
+        self.view.makeToast(message: "Frase salva!")
     }
     
     @IBAction func btnSalvarActionDown(sender: AnyObject) {
