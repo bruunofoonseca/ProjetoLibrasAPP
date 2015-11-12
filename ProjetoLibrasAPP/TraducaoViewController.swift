@@ -128,10 +128,6 @@ class TraducaoViewController: UIViewController {
         lblTextoDigitadoPassed.attributedText = myMutableString
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
