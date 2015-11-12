@@ -490,6 +490,8 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     }
     
     func startLoading(){
+        txtTexto.resignFirstResponder()
+        
         loadingView.backgroundColor = UIColor(white: 0, alpha: 0.8)
         loadingView.superview!.bringSubviewToFront(loadingView)
         
