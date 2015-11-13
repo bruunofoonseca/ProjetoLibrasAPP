@@ -108,7 +108,7 @@ class TraducaoViewController: UIViewController {
             if Array(texto.characters)[(texto.characters.count - 2)] == "."{
                 initial -= 1
             }else{
-                initial -= 2
+                initial -= 0
             }
             final = frases[complemento][(frases[complemento].count - 1)].characters.count
             myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
