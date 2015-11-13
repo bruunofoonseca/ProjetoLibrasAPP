@@ -46,6 +46,9 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     var dicty = NSMutableDictionary()
     // Classe de conexão com o banco
     var callTranslation:CallTranslation!
+    var palavrasSeparadas : [String] = []
+    var frases : [[String]] = []
+    var tempoVerbal : Int = 0
     
     /********** MÉTODO INICIAL  **********/
     
@@ -58,7 +61,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         
         txtTexto.delegate = self
         txtTexto.returnKeyType = UIReturnKeyType.Next
-        btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+        btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
         
         initializeScroll()
         initializeNotification()
@@ -101,6 +104,9 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 
             svc.textoDigitado = lblTextoDigitado.text!
             svc.textoTraduzido = lblTraducao.text!
+            svc.fraseList = frase
+            svc.frases = self.frases
+            svc.tempoVerbal = self.tempoVerbal
         }
         lblTextoDigitado.text = ""
     }
@@ -135,34 +141,34 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         switch(atualPage){
             
             case 0:
-                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
-                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
-                
-                UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.viewIndicador.backgroundColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
-                })
-                break
-            case 1:
-                btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
-                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.viewIndicador.backgroundColor = UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0)
                 })
                 break
+            case 1:
+                btnVerbo.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
+                
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.viewIndicador.backgroundColor = UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0)
+                })
+                break
             case 2:
-                btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
+                btnComplemento.setTitleColor(UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), forState: UIControlState.Normal)
                 btnSujeito.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.44, green:0.44, blue:0.47, alpha:1.0), forState: UIControlState.Normal)
                 
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.viewIndicador.backgroundColor = UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0)
+                    self.viewIndicador.backgroundColor = UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0)
                 })
                 break
             default:
-                btnSujeito.setTitleColor(UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), forState: UIControlState.Normal)
+                btnSujeito.setTitleColor(UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), forState: UIControlState.Normal)
                 btnVerbo.setTitleColor(UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), forState: UIControlState.Normal)
                 btnComplemento.setTitleColor(UIColor(red:0.05, green:0.25, blue:0.53, alpha:1.0), forState: UIControlState.Normal)
         }
@@ -225,15 +231,15 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         
         let img1 = UIImageView(frame: CGRect(x: 0, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img1.image = UIImage(named: "Fundo1")
+        img1.image = UIImage(named: "Fundo2")
         
         
         
         let img2 = UIImageView(frame: CGRect(x: scrollViewWidth, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img2.image = UIImage(named: "Fundo2")
+        img2.image = UIImage(named: "Fundo1")
         
         let img3 = UIImageView(frame: CGRect(x: scrollViewWidth * 2, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img3.image = UIImage(named: "Fundo3")
+        img3.image = UIImage(named: "VerdeS-1")
         
         self.scrollView.addSubview(img1)
         self.scrollView.addSubview(img2)
@@ -435,7 +441,36 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     func mostraNaTela(){
         let texto = frase[0]! + " " + frase[1]! + " " + frase[2]!
         
-        lblTextoDigitado.text = texto
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto)
+        
+        print("tamanho: " + String(texto.characters.count))
+        
+        var initial = 0
+        var final = 0
+        
+        if (frase[0]?.characters.count != 0){
+            initial = 0
+            final = (frase[0]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (frase[1]?.characters.count != 0){
+            initial = (frase[0]?.characters.count)! + 1
+            final = (frase[1]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (frase[2]?.characters.count != 0){
+            initial = (frase[0]?.characters.count)! + (frase[1]?.characters.count)! + 2
+            final = (frase[2]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        lblTextoDigitado.attributedText = myMutableString
     }
 
     func exibeTraducao() {
@@ -475,21 +510,27 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
 //        print(frase[2])
     }
     
-    func traducaoSucesso(traducao : NSMutableDictionary){
+    func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]]){
+        self.frases = frases
+        
         let index = 1
         
         if index == 0
         {
             lblTraducao.text = traducao.objectForKey("Presente") as? String
+            tempoVerbal = 0
         }
         else{
             lblTraducao.text = traducao.objectForKey("Passado") as? String
+            tempoVerbal = 1
         }
         
         
     }
     
     func startLoading(){
+        txtTexto.resignFirstResponder()
+        
         loadingView.backgroundColor = UIColor(white: 0, alpha: 0.8)
         loadingView.superview!.bringSubviewToFront(loadingView)
         

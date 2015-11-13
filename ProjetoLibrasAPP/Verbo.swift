@@ -14,6 +14,7 @@ class Verbo: NSObject {
     /**********     VARIÁVEIS    **********/
     
     let api = Translator()
+    var posicaoMotto = 0
     
     override init(){
         super.init()
@@ -25,7 +26,13 @@ class Verbo: NSObject {
     {
         var conjugVerbo = verbo.text
         
-        for sujCategoria in sujeito.mottos[0].categories
+        for(var i = 0; i < sujeito.mottos.count; i++){
+            if (sujeito.text == sujeito.mottos[i].text){
+                posicaoMotto = i
+            }
+        }
+        
+        for sujCategoria in sujeito.mottos[posicaoMotto].categories
         {
             if sujCategoria.text == "nome feminino" || sujCategoria.text == "nome masculino"
             {
@@ -79,7 +86,13 @@ class Verbo: NSObject {
     {
         var conjugVerbo = verbo.text
         
-        for sujCategoria in sujeito.mottos[0].categories
+        for(var i = 0; i < sujeito.mottos.count; i++){
+            if (sujeito.text == sujeito.mottos[i].text){
+                posicaoMotto = i
+            }
+        }
+        
+        for sujCategoria in sujeito.mottos[posicaoMotto].categories
         {
             if sujCategoria.text == "nome feminino" || sujCategoria.text == "nome masculino"
             {

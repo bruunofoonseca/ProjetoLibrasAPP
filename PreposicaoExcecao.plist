@@ -157,5 +157,116 @@
 		<key>menino</key>
 		<string>para o</string>
 	</dict>
+	<key>jogar</key>
+	<dict>
+		<key>gostar</key>
+		<string>por</string>
+		<key>menina</key>
+		<string>com a</string>
+		<key>meninas</key>
+		<string>com as</string>
+		<key>menino</key>
+		<string>com o</string>
+		<key>meninos</key>
+		<string>com os</string>
+		<key>escola</key>
+		<string>na</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>celular</key>
+		<string>pelo</string>
+		<key>computador</key>
+		<string>no</string>
+		<key>hospital</key>
+		<string>no</string>
+	</dict>
+	<key>calcular</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>carro</key>
+		<string>no</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>ônibus</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+	</dict>
+	<key>emprestar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para os</string>
+	</dict>
+	<key>faltar</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>reunião</key>
+		<string>na</string>
+	</dict>
+	<key>beber</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>reunião</key>
+		<string>na</string>
+		<key>bar</key>
+		<string>no</string>
+		<key>restaurante</key>
+		<string>no</string>
+		<key>festa</key>
+		<string>na</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>copo</key>
+		<string>no</string>
+		<key>garrafa</key>
+		<string>na</string>
+		<key>carro</key>
+		<string>no</string>
+	</dict>
+	<key>filmar</key>
+	<dict>
+		<key>gostar</key>
+		<string>por</string>
+		<key>trabalho</key>
+		<string>no</string>
+		<key>reunião</key>
+		<string>na</string>
+		<key>bar</key>
+		<string>no</string>
+		<key>restaurante</key>
+		<string>no</string>
+		<key>festa</key>
+		<string>na</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>copo</key>
+		<string>no</string>
+		<key>garrafa</key>
+		<string>na</string>
+		<key>carro</key>
+		<string>no</string>
+	</dict>
+	<key>perturbar</key>
+	<dict>
+		<key>gostar</key>
+		<string>por</string>
+	</dict>
 </dict>
 </plist>

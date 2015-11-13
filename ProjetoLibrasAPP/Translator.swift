@@ -32,8 +32,8 @@ class Translator: NSObject {
             let data:NSData = NSData(contentsOfURL: endpoint!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
-                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
-                    for word in words{
+                if let words: [NSDictionary] = jsonResult.objectForKey("words") as? [NSDictionary] {
+                    for word:NSDictionary in words{
                         
                         var new_word:Word
                         new_word = Word.init()
@@ -150,8 +150,8 @@ class Translator: NSObject {
             let data:NSData = NSData(contentsOfURL: NSURL(string: url!)!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
-                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
-                    for word in words{
+                if let words: [NSDictionary] = jsonResult.objectForKey("words") as? [NSDictionary] {
+                    for word:NSDictionary in words{
                         
                         var new_word:Word
                         new_word = Word.init()
@@ -268,8 +268,8 @@ class Translator: NSObject {
             let data:NSData = NSData(contentsOfURL: NSURL(string: url!)!)!
             
             if let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
-                if let words: NSArray = jsonResult.objectForKey("words") as? NSArray {
-                    for word in words{
+                if let words: [NSDictionary] = jsonResult.objectForKey("words") as? [NSDictionary] {
+                    for word:NSDictionary in words{
                         
                         var new_word:Word
                         new_word = Word.init()
@@ -361,8 +361,11 @@ class Translator: NSObject {
                 }
             }
             
-            return words_list[0].text
-            
+            if (WordsList.count > 0){
+                return words_list[0].text
+            }else{
+                return ""
+            }
             
         } catch let error as NSError {
             

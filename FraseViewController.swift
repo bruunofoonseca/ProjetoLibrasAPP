@@ -193,7 +193,7 @@ class FraseViewController : UITableViewController, UISearchBarDelegate, UISearch
         
         
         
-        let deleteAction = UITableViewRowAction(style: .Normal, title: "        "){
+        let deleteAction = UITableViewRowAction(style: .Normal, title: "     "){
             
             (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             
@@ -223,7 +223,7 @@ class FraseViewController : UITableViewController, UISearchBarDelegate, UISearch
         
         
         
-        let moverAction = UITableViewRowAction(style: .Normal, title: "        "){
+        let moverAction = UITableViewRowAction(style: .Normal, title: "     "){
             
             (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             

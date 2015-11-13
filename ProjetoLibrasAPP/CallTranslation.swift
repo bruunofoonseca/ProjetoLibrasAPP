@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CallTranslationDelegate {
-    func traducaoSucesso(traducao : NSMutableDictionary)
+    func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]])
 }
 
 class CallTranslation: NSObject {
@@ -26,12 +26,15 @@ class CallTranslation: NSObject {
     let verbo = VerboEstrutura()
     var juntaPalavras : String = ""
     var translationDelegate: CallTranslationDelegate?
+    var frases : [[String]] = []
     
     override init() {
         
     }
     
     func traducaoTexto(text : String) {
+        
+        frases = []
         
         // Aonde colocamos a frase
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
@@ -69,10 +72,20 @@ class CallTranslation: NSObject {
             // Chama a classe que trata o complemento
             self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
             
+            print("Presente ================================")
+            print(sujeitoClassificado)
+            print(verboClassificado)
+            print(complementoClassificado)
+            print("================================")
+            
             // Feito para juntar as palavras em uma String e colocar na tela.
             metodoJuntaPalavra(sujeitoClassificado)
             metodoJuntaPalavra(verboClassificado)
             metodoJuntaPalavra(complementoClassificado)
+            
+            frases.append(sujeitoClassificado)
+            frases.append(verboClassificado)
+            frases.append(complementoClassificado)
             
             /**********    COLOCA EM LETRA MAÍUSCULA   **********/
             
@@ -93,10 +106,21 @@ class CallTranslation: NSObject {
             // Chama a classe que trata o complemento
             self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
             
+            print("Passado ================================")
+            print(sujeitoClassificado)
+            print(verboClassificado)
+            print(complementoClassificado)
+            print("================================")
+            
             // Feito para juntar as palavras em uma String e colocar na tela.
             metodoJuntaPalavra(sujeitoClassificado)
             metodoJuntaPalavra(verboClassificado)
+            print(verboClassificado)
             metodoJuntaPalavra(complementoClassificado)
+            
+            frases.append(sujeitoClassificado)
+            frases.append(verboClassificado)
+            frases.append(complementoClassificado)
             
             /**********    COLOCA EM LETRA MAÍUSCULA   **********/
             
@@ -105,14 +129,14 @@ class CallTranslation: NSObject {
             dicty.setValue(juntaPalavras, forKey: "Passado")
             
             //Retorna Dicionário
-            self.translationDelegate?.traducaoSucesso(dicty)
+            self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
         }
         else
         {
             dicty.setValue(text, forKey: "Presente")
             dicty.setValue(text, forKey: "Passado")
             
-            self.translationDelegate?.traducaoSucesso(dicty)
+            self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
         }
     }
     
