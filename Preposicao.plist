@@ -1948,13 +1948,13 @@
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string> </string>
+			<string></string>
 			<key>Feminino singular</key>
-			<string> </string>
+			<string></string>
 			<key>plur</key>
-			<string> </string>
+			<string></string>
 			<key>Feminino plural</key>
-			<string> </string>
+			<string></string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>

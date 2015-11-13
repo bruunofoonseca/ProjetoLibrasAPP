@@ -48,6 +48,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     var callTranslation:CallTranslation!
     var palavrasSeparadas : [String] = []
     var frases : [[String]] = []
+    var tempoVerbal : Int = 0
     
     /********** MÉTODO INICIAL  **********/
     
@@ -105,6 +106,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
             svc.textoTraduzido = lblTraducao.text!
             svc.fraseList = frase
             svc.frases = self.frases
+            svc.tempoVerbal = self.tempoVerbal
         }
         lblTextoDigitado.text = ""
     }
@@ -516,9 +518,11 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         if index == 0
         {
             lblTraducao.text = traducao.objectForKey("Presente") as? String
+            tempoVerbal = 0
         }
         else{
             lblTraducao.text = traducao.objectForKey("Passado") as? String
+            tempoVerbal = 1
         }
         
         

@@ -72,6 +72,12 @@ class CallTranslation: NSObject {
             // Chama a classe que trata o complemento
             self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
             
+            print("Presente ================================")
+            print(sujeitoClassificado)
+            print(verboClassificado)
+            print(complementoClassificado)
+            print("================================")
+            
             // Feito para juntar as palavras em uma String e colocar na tela.
             metodoJuntaPalavra(sujeitoClassificado)
             metodoJuntaPalavra(verboClassificado)
@@ -99,6 +105,12 @@ class CallTranslation: NSObject {
             
             // Chama a classe que trata o complemento
             self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+            
+            print("Passado ================================")
+            print(sujeitoClassificado)
+            print(verboClassificado)
+            print(complementoClassificado)
+            print("================================")
             
             // Feito para juntar as palavras em uma String e colocar na tela.
             metodoJuntaPalavra(sujeitoClassificado)
