@@ -75,7 +75,7 @@ class Preposicao: NSObject {
                     }
                 }
             }
-            else if (texto[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || texto[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
+            if (texto[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || texto[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
         }

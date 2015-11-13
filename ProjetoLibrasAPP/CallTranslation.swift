@@ -101,6 +101,7 @@ class CallTranslation: NSObject {
             // Feito para juntar as palavras em uma String e colocar na tela.
             metodoJuntaPalavra(sujeitoClassificado)
             metodoJuntaPalavra(verboClassificado)
+            print(verboClassificado)
             metodoJuntaPalavra(complementoClassificado)
             
             frases.append(sujeitoClassificado)

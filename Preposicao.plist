@@ -1948,24 +1948,24 @@
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string>not</string>
+			<string> </string>
 			<key>Feminino singular</key>
-			<string>not</string>
+			<string> </string>
 			<key>plur</key>
-			<string>not</string>
+			<string> </string>
 			<key>Feminino plural</key>
-			<string>not</string>
+			<string> </string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string>not</string>
+			<string> </string>
 			<key>Masculino singular</key>
-			<string>not</string>
+			<string> </string>
 			<key>plur</key>
-			<string>not</string>
+			<string> </string>
 			<key>Masculino plural</key>
-			<string>not</string>
+			<string> </string>
 		</dict>
 		<key>verbo</key>
 		<dict>
