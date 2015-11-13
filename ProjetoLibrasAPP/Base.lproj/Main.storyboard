@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ps-df-Il7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ps-df-Il7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -539,12 +539,12 @@
                                 <animations/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2C-1p-Sch" userLabel="View Pesquisa">
-                                <rect key="frame" x="0.0" y="64" width="600" height="25"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="20"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.6588235294" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z08-6a-o5D" userLabel="View Sujeito">
-                                <rect key="frame" x="0.0" y="89" width="200" height="40"/>
+                                <rect key="frame" x="0.0" y="84" width="200" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksw-ow-PBs" userLabel="Button Sujeito">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -570,7 +570,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieT-xs-7LS" userLabel="View Verbo">
-                                <rect key="frame" x="200" y="89" width="200" height="40"/>
+                                <rect key="frame" x="200" y="84" width="200" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-6P-McC" userLabel="Button Verbo">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -596,7 +596,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i72-8T-1cI" userLabel="View Complemento">
-                                <rect key="frame" x="400" y="89" width="200" height="40"/>
+                                <rect key="frame" x="400" y="84" width="200" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-5S-n88" userLabel="Button Complemento">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -621,7 +621,7 @@
                                     <constraint firstAttribute="bottom" secondItem="kvf-5S-n88" secondAttribute="bottom" id="xmn-4Z-cc6"/>
                                 </constraints>
                             </view>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRC-Vm-UYG" userLabel="View Indicador">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRC-Vm-UYG" userLabel="View Indicador">
                                 <rect key="frame" x="0.0" y="129" width="200" height="4"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.35104087" green="0.053316347299999997" blue="0.65234887600000002" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
@@ -629,7 +629,7 @@
                                     <constraint firstAttribute="height" constant="4" id="Ebj-RX-rCZ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-mg-bnv" userLabel="Label Texto Digitado">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-mg-bnv" userLabel="Label Texto Digitado">
                                 <rect key="frame" x="0.0" y="187" width="600" height="48"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -637,7 +637,7 @@
                                 <color key="textColor" red="0.87058823529999996" green="0.20784313730000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Label Traducao">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-4B-Qgg" userLabel="Label Traducao">
                                 <rect key="frame" x="0.0" y="247" width="600" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -656,7 +656,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P2C-1p-Sch" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" multiplier="0.03" constant="7" id="1KL-eZ-fzI"/>
+                            <constraint firstItem="P2C-1p-Sch" firstAttribute="height" secondItem="brM-1A-con" secondAttribute="height" multiplier="0.03" constant="2" id="1KL-eZ-fzI"/>
                             <constraint firstAttribute="trailing" secondItem="WEM-mW-EGK" secondAttribute="trailing" id="1dV-hs-h10"/>
                             <constraint firstItem="PcF-aV-hLT" firstAttribute="width" secondItem="brM-1A-con" secondAttribute="width" id="24h-RP-ayL"/>
                             <constraint firstItem="i72-8T-1cI" firstAttribute="top" secondItem="ieT-xs-7LS" secondAttribute="top" id="5Wy-NY-7SP"/>
@@ -830,7 +830,7 @@
         <image name="Tradução" width="96" height="68"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="frq-X3-BEc"/>
         <segue reference="GRK-A0-Sca"/>
-        <segue reference="bbN-CW-UCQ"/>
     </inferredMetricsTieBreakers>
 </document>

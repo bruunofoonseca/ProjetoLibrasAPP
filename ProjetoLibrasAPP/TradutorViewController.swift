@@ -74,13 +74,15 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         super.viewWillAppear(animated)
         
         btnBarButtonVoltar.title = "Voltar"
-        txtTexto.becomeFirstResponder()
-        
         self.navigationItem.backBarButtonItem?.title = "voltar"
         self.navigationController?.navigationBarHidden = false
         lblTextoDigitado.text = ""
         lblTraducao.text = ""
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        txtTexto.becomeFirstResponder()
     }
     
     /********** MÉTODOS DA INTERFACE  **********/
