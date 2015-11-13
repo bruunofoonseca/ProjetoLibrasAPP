@@ -90,5 +90,27 @@
 		<key>elas</key>
 		<string>nelas</string>
 	</dict>
+	<key>ganhar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>ignorar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
 </dict>
 </plist>

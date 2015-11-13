@@ -11,12 +11,11 @@
 		069291931BEBE79300E98F5D /* Motto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069291921BEBE79300E98F5D /* Motto.swift */; };
 		069291961BEBE92B00E98F5D /* excluir.png in Resources */ = {isa = PBXBuildFile; fileRef = 069291941BEBE92B00E98F5D /* excluir.png */; };
 		069291971BEBE92B00E98F5D /* mover.png in Resources */ = {isa = PBXBuildFile; fileRef = 069291951BEBE92B00E98F5D /* mover.png */; };
-		0692919D1BEBE98E00E98F5D /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 069291981BEBE98E00E98F5D /* Preposicao.plist */; };
-		0692919E1BEBE98E00E98F5D /* PronomesPessoais.plist in Resources */ = {isa = PBXBuildFile; fileRef = 069291991BEBE98E00E98F5D /* PronomesPessoais.plist */; };
-		0692919F1BEBE98E00E98F5D /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */; };
-		069291A01BEBE98E00E98F5D /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */; };
-		069291A11BEBE98E00E98F5D /* PreposicaoExcecao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */; };
 		410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E74801BD01CD000512F18 /* Adjetivo.swift */; };
+		417F05A31BF565FD004895E5 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417F059F1BF565FD004895E5 /* Preposicao.plist */; };
+		417F05A41BF565FD004895E5 /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417F05A01BF565FD004895E5 /* PronomeObliquosEle.plist */; };
+		417F05A51BF565FD004895E5 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417F05A11BF565FD004895E5 /* PronomeObliquosEu.plist */; };
+		417F05A61BF565FD004895E5 /* PreposicaoExcecao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417F05A21BF565FD004895E5 /* PreposicaoExcecao.plist */; };
 		41B20B7C1BC44D4300B75936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B20B7A1BC44D4300B75936 /* Info.plist */; };
 		41B20B7D1BC44D4300B75936 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */; };
 		41DA902B1BBC9B6100F8C56B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA902A1BBC9B6100F8C56B /* Translator.swift */; };
@@ -73,15 +72,14 @@
 		069291921BEBE79300E98F5D /* Motto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motto.swift; sourceTree = "<group>"; };
 		069291941BEBE92B00E98F5D /* excluir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excluir.png; sourceTree = "<group>"; };
 		069291951BEBE92B00E98F5D /* mover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mover.png; sourceTree = "<group>"; };
-		069291981BEBE98E00E98F5D /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
-		069291991BEBE98E00E98F5D /* PronomesPessoais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomesPessoais.plist; sourceTree = "<group>"; };
-		0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEle.plist; sourceTree = "<group>"; };
-		0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEu.plist; sourceTree = "<group>"; };
-		0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PreposicaoExcecao.plist; sourceTree = "<group>"; };
 		410E74801BD01CD000512F18 /* Adjetivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adjetivo.swift; sourceTree = "<group>"; };
 		41549D2A1BDEE22C00A287D2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		41549D2B1BDEE22C00A287D2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		416851AD1BC44BAE0045826D /* TecladoCustomizado.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TecladoCustomizado.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		417F059F1BF565FD004895E5 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
+		417F05A01BF565FD004895E5 /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEle.plist; sourceTree = "<group>"; };
+		417F05A11BF565FD004895E5 /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEu.plist; sourceTree = "<group>"; };
+		417F05A21BF565FD004895E5 /* PreposicaoExcecao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PreposicaoExcecao.plist; sourceTree = "<group>"; };
 		41B20B7A1BC44D4300B75936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TecladoCustomizado/Info.plist; sourceTree = "<group>"; };
 		41B20B7B1BC44D4300B75936 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = TecladoCustomizado/KeyboardViewController.swift; sourceTree = "<group>"; };
 		41DA902A1BBC9B6100F8C56B /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
@@ -157,11 +155,10 @@
 		06D96AED1BD0A81700679110 /* PList */ = {
 			isa = PBXGroup;
 			children = (
-				069291981BEBE98E00E98F5D /* Preposicao.plist */,
-				069291991BEBE98E00E98F5D /* PronomesPessoais.plist */,
-				0692919A1BEBE98E00E98F5D /* PronomeObliquosEle.plist */,
-				0692919B1BEBE98E00E98F5D /* PronomeObliquosEu.plist */,
-				0692919C1BEBE98E00E98F5D /* PreposicaoExcecao.plist */,
+				417F059F1BF565FD004895E5 /* Preposicao.plist */,
+				417F05A01BF565FD004895E5 /* PronomeObliquosEle.plist */,
+				417F05A11BF565FD004895E5 /* PronomeObliquosEu.plist */,
+				417F05A21BF565FD004895E5 /* PreposicaoExcecao.plist */,
 			);
 			name = PList;
 			path = ..;
@@ -417,7 +414,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8KR33X63ZD;
+						DevelopmentTeam = ETCP9R5EPN;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -462,18 +459,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0692919F1BEBE98E00E98F5D /* PronomeObliquosEle.plist in Resources */,
 				B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */,
-				069291A11BEBE98E00E98F5D /* PreposicaoExcecao.plist in Resources */,
 				069291971BEBE92B00E98F5D /* mover.png in Resources */,
 				C3CBBE7B1BBC94060035A1D4 /* LaunchScreen.storyboard in Resources */,
-				069291A01BEBE98E00E98F5D /* PronomeObliquosEu.plist in Resources */,
+				417F05A61BF565FD004895E5 /* PreposicaoExcecao.plist in Resources */,
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
 				069291961BEBE92B00E98F5D /* excluir.png in Resources */,
+				417F05A41BF565FD004895E5 /* PronomeObliquosEle.plist in Resources */,
 				C3E641D91BE3945200C645A0 /* New.storyboard in Resources */,
+				417F05A51BF565FD004895E5 /* PronomeObliquosEu.plist in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
-				0692919D1BEBE98E00E98F5D /* Preposicao.plist in Resources */,
-				0692919E1BEBE98E00E98F5D /* PronomesPessoais.plist in Resources */,
+				417F05A31BF565FD004895E5 /* Preposicao.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

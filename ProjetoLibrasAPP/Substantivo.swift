@@ -15,6 +15,7 @@ class Substantivo: NSObject {
     
     var recebeArtigo : [String] = []
     var objArtigo = Artigo()
+    var posicaoMotto = 0
     
     override init(){
         super.init()
@@ -23,7 +24,14 @@ class Substantivo: NSObject {
     func classificaSubstantivo(frase: [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
         recebeArtigo.removeAll()
         recebeArtigo.removeAll()
-        if (frase[0].mottos[0].categories[posCategoria].text == "nome feminino") || (frase[0].mottos[0].categories[posCategoria].text == "nome masculino") || (frase[0].mottos[0].categories[posCategoria].text == "adjetivo"){
+        
+        for(var i = 0; i < frase[posicao].mottos.count; i++){
+            if (frase[posicao].text == frase[posicao].mottos[i].text){
+                posicaoMotto = i
+            }
+        }
+        
+        if (frase[0].mottos[posicaoMotto].categories[posCategoria].text == "nome feminino") || (frase[0].mottos[posicaoMotto].categories[posCategoria].text == "nome masculino") || (frase[0].mottos[posicaoMotto].categories[posCategoria].text == "adjetivo"){
             recebeArtigo = objArtigo.colocarArtigoDefinido(frase, posicao: posicao, posCategoria: posCategoria, posFlexion: posFlexion)
         }
         
