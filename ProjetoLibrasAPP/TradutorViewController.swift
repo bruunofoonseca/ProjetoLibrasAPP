@@ -231,15 +231,15 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         
         let img1 = UIImageView(frame: CGRect(x: 0, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img1.image = UIImage(named: "Fundo1")
+        img1.image = UIImage(named: "Fundo2")
         
         
         
         let img2 = UIImageView(frame: CGRect(x: scrollViewWidth, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img2.image = UIImage(named: "Fundo2")
+        img2.image = UIImage(named: "Fundo1")
         
         let img3 = UIImageView(frame: CGRect(x: scrollViewWidth * 2, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img3.image = UIImage(named: "Fundo3")
+        img3.image = UIImage(named: "VerdeS-1")
         
         self.scrollView.addSubview(img1)
         self.scrollView.addSubview(img2)
