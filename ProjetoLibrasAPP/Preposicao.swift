@@ -60,6 +60,7 @@ class Preposicao: NSObject {
         for(var i = 0; i < texto[1].mottos.count; i++){
             if (texto[1].text == texto[1].mottos[i].text){
                 posicaoMottoVerbo = i
+                print(texto[1].mottos[posicaoMottoVerbo].text)
             }
         }
         
@@ -203,8 +204,8 @@ class Preposicao: NSObject {
     /**********     VERIFICA SE EXISTE NA PLIST   **********/
     
     func verificaVerboNaLista(frase : [Word], dict : NSDictionary, posicao : Int) -> Bool {
-        for (var i = 0; i <= (dict.allKeys.count) - 1 ; i++){
-            if ((dict.allKeys[i]) as! String == frase[posicao].mottos[posicaoMotto].text) {
+        for (var i = 0; i < (dict.allKeys.count) ; i++){
+            if ((dict.allKeys[i]) as! String == frase[posicao].mottos[self.posicaoMottoVerbo].text) {
                 return true
             }
         }
@@ -214,9 +215,9 @@ class Preposicao: NSObject {
     func verificaExcecao (frase : [Word], dict : NSDictionary, posicao: Int) -> Bool{
         for (var i = 0; i <= (dict.allKeys.count) - 1 ; i++){
             
-            if ((dict.allKeys[i]) as! String == frase[posicao].mottos[posicaoMotto].text){
-                for (var j = 0; j < dict.objectForKey(frase[posicao].mottos[posicaoMotto].text)?.allKeys.count; j++){
-                    let teste = dict.objectForKey(frase[posicao].mottos[posicaoMotto].text)?.allKeys[j] as! String
+            if ((dict.allKeys[i]) as! String == frase[posicao].mottos[posicaoMottoVerbo].text){
+                for (var j = 0; j < dict.objectForKey(frase[posicao].mottos[posicaoMottoVerbo].text)?.allKeys.count; j++){
+                    let teste = dict.objectForKey(frase[posicao].mottos[posicaoMottoVerbo].text)?.allKeys[j] as! String
                     if (teste == frase[2].mottos[posicaoMotto].text){
                         preposicaoExcecao = teste
                         return true
