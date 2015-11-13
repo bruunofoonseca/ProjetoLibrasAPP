@@ -309,7 +309,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-ZJ-WQs" userLabel="Button Copiar">
-                                <rect key="frame" x="48" y="410" width="32" height="69"/>
+                                <rect key="frame" x="48" y="430" width="32" height="69"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0A9-ZJ-WQs" secondAttribute="height" multiplier="44:97" id="SqZ-6u-V41"/>
@@ -423,7 +423,7 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxW-Y9-GrL" userLabel="Button Compartilhar">
-                                <rect key="frame" x="494" y="412" width="60" height="67"/>
+                                <rect key="frame" x="494" y="432" width="60" height="67"/>
                                 <animations/>
                                 <state key="normal" image="Compartilhar"/>
                                 <connections>
@@ -440,7 +440,7 @@
                             <constraint firstItem="0A9-ZJ-WQs" firstAttribute="height" secondItem="ArY-Rl-iWa" secondAttribute="height" multiplier="0.16" constant="-27" id="Gbz-f7-c2o"/>
                             <constraint firstItem="pyI-ud-Fu2" firstAttribute="top" secondItem="K98-7U-vQm" secondAttribute="bottom" constant="20" id="IoM-uh-JgB"/>
                             <constraint firstAttribute="trailing" secondItem="e19-Yo-eZf" secondAttribute="trailing" id="KUC-LT-g7S"/>
-                            <constraint firstItem="K98-7U-vQm" firstAttribute="top" secondItem="0A9-ZJ-WQs" secondAttribute="bottom" constant="47" id="Lr9-Xx-0Ci"/>
+                            <constraint firstItem="K98-7U-vQm" firstAttribute="top" secondItem="0A9-ZJ-WQs" secondAttribute="bottom" constant="27" id="Lr9-Xx-0Ci"/>
                             <constraint firstAttribute="trailing" secondItem="K98-7U-vQm" secondAttribute="trailing" constant="20" id="NK6-8d-Bjb"/>
                             <constraint firstItem="ApJ-Rq-GHn" firstAttribute="top" secondItem="e19-Yo-eZf" secondAttribute="bottom" constant="91" id="NSt-1L-nI0"/>
                             <constraint firstItem="ApJ-Rq-GHn" firstAttribute="width" secondItem="ArY-Rl-iWa" secondAttribute="width" id="QiF-4b-cRc"/>
@@ -461,7 +461,7 @@
                             <constraint firstAttribute="trailing" secondItem="ApJ-Rq-GHn" secondAttribute="trailing" id="kVg-hG-ERs"/>
                             <constraint firstItem="OcD-9k-o1A" firstAttribute="top" secondItem="ArY-Rl-iWa" secondAttribute="top" id="nIN-h9-gJd"/>
                             <constraint firstAttribute="trailing" secondItem="lxW-Y9-GrL" secondAttribute="trailing" constant="46" id="suy-a6-Ek4"/>
-                            <constraint firstItem="K98-7U-vQm" firstAttribute="top" secondItem="lxW-Y9-GrL" secondAttribute="bottom" constant="47" id="tkH-BY-lCP"/>
+                            <constraint firstItem="K98-7U-vQm" firstAttribute="top" secondItem="lxW-Y9-GrL" secondAttribute="bottom" constant="27" id="tkH-BY-lCP"/>
                             <constraint firstItem="e19-Yo-eZf" firstAttribute="top" secondItem="qv4-jO-F4T" secondAttribute="bottom" constant="-44" id="vZz-fQ-3X6"/>
                             <constraint firstItem="e19-Yo-eZf" firstAttribute="leading" secondItem="ArY-Rl-iWa" secondAttribute="leading" id="yTK-HE-JLN"/>
                         </constraints>
