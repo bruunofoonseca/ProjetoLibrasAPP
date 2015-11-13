@@ -35,7 +35,7 @@ class TraducaoViewController: UIViewController {
         lblTraducaoPassed.text = textoTraduzido
         copiar = UIPasteboard.generalPasteboard()
         coloreFraseSurdo()
-        coloreFraseTradutor()
+        //coloreFraseTradutor()
     }
     
     func coloreFraseTradutor(){
@@ -53,11 +53,10 @@ class TraducaoViewController: UIViewController {
         initial = 0
         
         for palavra in frases[3]{
-            initial += palavra.characters.count
+            initial += palavra.characters.count + 1
         }
         
         initial -= frases[3][(frases[3].count - 1)].characters.count
-        initial += 1
         final = frases[3][(frases[3].count - 1)].characters.count
             
         myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))

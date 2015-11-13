@@ -34,6 +34,8 @@ class CallTranslation: NSObject {
     
     func traducaoTexto(text : String) {
         
+        frases = []
+        
         // Aonde colocamos a frase
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
         var frase = text
