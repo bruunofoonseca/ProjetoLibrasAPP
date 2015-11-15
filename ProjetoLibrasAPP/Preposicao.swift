@@ -50,7 +50,7 @@ class Preposicao: NSObject {
         posPronomeFlexion = posPronome
         
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao))
-        
+        posicaoMotto = 0
         for(var i = 0; i < texto[2].mottos.count; i++){
             if (texto[2].text == texto[2].mottos[i].text){
                 posicaoMotto = i
@@ -63,7 +63,7 @@ class Preposicao: NSObject {
                 print(texto[1].mottos[posicaoMottoVerbo].text)
             }
         }
-        
+    
         for (var i = 0; i < texto[2].mottos[posicaoMotto].categories.count; i++){
             if (texto[2].mottos[posicaoMotto].categories[i].text == "pronome"){
                 posPronome = i
