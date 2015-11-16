@@ -1396,13 +1396,13 @@
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string>null</string>
+			<string>em</string>
 			<key>Feminino plural</key>
-			<string>null</string>
+			<string>em</string>
 			<key>Masculino singular</key>
-			<string>null</string>
+			<string>em</string>
 			<key>Masculino plural</key>
-			<string>null</string>
+			<string>em</string>
 		</dict>
 		<key>verbo</key>
 		<dict>

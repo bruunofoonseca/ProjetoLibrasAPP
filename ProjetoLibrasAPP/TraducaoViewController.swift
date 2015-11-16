@@ -108,11 +108,15 @@ class TraducaoViewController: UIViewController {
             
             
             if Array(texto.characters)[(texto.characters.count - 2)] == "."{
-                if (frases[complemento].count > 1) && (frases[verbo][1] != " "){
+                print(frases[complemento][0].characters.count)
+                if (frases[complemento].count == 1) && (frases[verbo][1] != " ") {
+                    initial -= 1
+                }
+                else if (frases[complemento].count > 1) && (frases[verbo][1] != " ") && (frases[complemento][0].characters.count == 1){
                     initial -= -1
                 }
-                else if (frases[complemento].count == 1) && (frases[verbo][1] != " "){
-                    initial -= 1
+                else if (frases[complemento].count > 1) && (frases[complemento][0].characters.count > 1){
+                    initial += 2
                 }
                 else{
                     initial -= 2
