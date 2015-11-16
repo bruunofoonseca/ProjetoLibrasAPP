@@ -515,7 +515,7 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
     func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]]){
         self.frases = frases
         
-        let index = 1
+        let index = 0
         
         if index == 0
         {
