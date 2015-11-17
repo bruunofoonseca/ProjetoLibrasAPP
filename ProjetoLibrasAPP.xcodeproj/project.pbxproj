@@ -35,6 +35,8 @@
 		B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044FD7E1BC5C81600435397 /* TradutorViewController.swift */; };
 		B05EE3A51BF5204800C9C5AA /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05EE3A41BF5204800C9C5AA /* HRToast+UIView.swift */; };
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; };
+		C30181061BFBA377005003CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181051BFBA377005003CE /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C30181081BFBA3A6005003CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181071BFBA3A6005003CE /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340559D1BF3BAA40055555D /* CallTranslation.swift */; };
 		C34FDCA71BF3E5B900A82E17 /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34FDCA41BF3E5B900A82E17 /* JLToast.swift */; };
@@ -99,6 +101,8 @@
 		B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraducaoViewController.swift; sourceTree = "<group>"; };
 		B044FD7E1BC5C81600435397 /* TradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradutorViewController.swift; sourceTree = "<group>"; };
 		B05EE3A41BF5204800C9C5AA /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		C30181051BFBA377005003CE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C30181071BFBA3A6005003CE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C340559D1BF3BAA40055555D /* CallTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTranslation.swift; sourceTree = "<group>"; };
 		C34FDCA31BF3E5B900A82E17 /* JLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLToast.h; sourceTree = "<group>"; };
 		C34FDCA41BF3E5B900A82E17 /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
@@ -267,6 +271,15 @@
 			name = Tradutor;
 			sourceTree = "<group>";
 		};
+		C30181021BFB9679005003CE /* Novo layout */ = {
+			isa = PBXGroup;
+			children = (
+				C30181051BFBA377005003CE /* MenuViewController.swift */,
+				C30181071BFBA3A6005003CE /* ViewController.swift */,
+			);
+			name = "Novo layout";
+			sourceTree = "<group>";
+		};
 		C3CBBE611BBC94050035A1D4 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +305,7 @@
 		C3CBBE6C1BBC94050035A1D4 /* ProjetoLibrasAPP */ = {
 			isa = PBXGroup;
 			children = (
+				C30181021BFB9679005003CE /* Novo layout */,
 				C3CBBE6D1BBC94060035A1D4 /* AppDelegate.swift */,
 				C3CBBE711BBC94060035A1D4 /* Main.storyboard */,
 				B01727E81BC7F72C00B82361 /* Font */,
@@ -520,10 +534,12 @@
 				C34FDCA91BF3E5B900A82E17 /* JLToastView.swift in Sources */,
 				41EA44441BBDD6E40076C6C2 /* Preposicao.swift in Sources */,
 				C337F6121BE6867700B064CD /* (null) in Sources */,
+				C30181081BFBA3A6005003CE /* ViewController.swift in Sources */,
 				41FDD89A1BBEF55B005CA9F8 /* SujeitoEstrutura.swift in Sources */,
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
+				C30181061BFBA377005003CE /* MenuViewController.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,
 				41DA90301BBC9B7200F8C56B /* Category.swift in Sources */,
 				B044FD7F1BC5C81600435397 /* TradutorViewController.swift in Sources */,
