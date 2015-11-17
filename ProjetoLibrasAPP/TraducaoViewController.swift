@@ -18,6 +18,8 @@ class TraducaoViewController: UIViewController {
     @IBOutlet weak var btnCompartilhar: UIButton!
     @IBOutlet weak var signWritingSalvar: UIImageView!
     var meuCompartilhamento:UIActivityViewController!
+    let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let request = NSFetchRequest(entityName: "Frase")
     
     var textoDigitado: String!
     var textoTraduzido: String!
@@ -229,21 +231,55 @@ class TraducaoViewController: UIViewController {
     @IBAction func btnSalvarAction(sender: AnyObject) {
         signWritingSalvar.alpha = 1.0
         
-        contSalvarFrase = frase.atualizarTotalDasFrases()
-        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        var jaSalvou = false
+        var arrayDeFrases : [String] = []
+        arrayDeFrases.removeAll()
         let contexto: NSManagedObjectContext = appDel.managedObjectContext
-        let novaFrase = NSEntityDescription.insertNewObjectForEntityForName("Frase", inManagedObjectContext:contexto)
-        novaFrase.setValue(lblTraducaoPassed.text, forKey: "salvaFrase")
-        novaFrase.setValue(contSalvarFrase - 1, forKey: "orderPosition")
+
         
         do{
-            try contexto.save()
-        }catch{
-            print("Erro ao salvar")
+            let listaDeFrase = try contexto.executeFetchRequest(request)
+            
+            for item in listaDeFrase as! [NSManagedObject]{
+                let fraseLista = item.valueForKey("salvaFrase")
+                if(fraseLista != nil){
+                    arrayDeFrases.append((fraseLista as? String)!)
+                }
+                
+            }
+        }
+        catch{
+            print("Erro")
+        }
+        
+        for itens in arrayDeFrases{
+            print(itens)
+            print(lblTraducaoPassed.text as String!)
+            if (itens == lblTraducaoPassed.text as String!){
+                jaSalvou = true
+            }
+        }
+        
+        if(!jaSalvou){
+            contSalvarFrase = frase.atualizarTotalDasFrases()
+            let novaFrase = NSEntityDescription.insertNewObjectForEntityForName("Frase", inManagedObjectContext:contexto)
+            novaFrase.setValue(lblTraducaoPassed.text, forKey: "salvaFrase")
+            novaFrase.setValue(contSalvarFrase - 1, forKey: "orderPosition")
+        
+            do{
+                try contexto.save()
+            }
+            catch{
+                print("Erro ao salvar")
+            }
+            
+            self.view.makeToast(message: "Frase salva!")
+        }
+        else{
+            self.view.makeToast(message: "A frase já existe!")
         }
         
         frase.atualizarTotalDasFrases()
-        self.view.makeToast(message: "Frase salva!")
     }
     
     @IBAction func btnSalvarActionDown(sender: AnyObject) {
