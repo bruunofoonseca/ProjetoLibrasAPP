@@ -27,6 +27,7 @@
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -493,7 +494,7 @@
         <scene sceneID="rKd-WU-3VT">
             <objects>
                 <navigationController title="Navigation" id="009-kx-ynk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bO0-vE-zVD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bO0-vE-zVD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -518,10 +519,10 @@
                         <viewControllerLayoutGuide type="bottom" id="EYq-ni-Ysl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2xb-n3-kBa" userLabel="Main">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKN-4o-R0K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SKN-4o-R0K">
                                 <rect key="frame" x="105" y="8" width="110" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -529,7 +530,7 @@
                                     <constraint firstAttribute="height" constant="110" id="xw6-jn-ePZ"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSS-Hl-RcY" userLabel="Container">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSS-Hl-RcY" userLabel="Container">
                                 <rect key="frame" x="0.0" y="30" width="320" height="386"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-ff-k2f" userLabel="Tradução">
@@ -703,8 +704,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="M9E-ee-EoA" kind="show" identifier="ShowTradutor" id="PNj-ya-FsE"/>
-                        <segue destination="Ezl-vg-fhp" kind="show" identifier="ShowFrases" id="SCr-kx-2K1"/>
                         <segue destination="QFC-1a-xaN" kind="show" identifier="ShowVideos" id="hZC-Rf-6Bh"/>
+                        <segue destination="X9I-zk-n7U" kind="show" identifier="ShowFrases" id="rj7-JO-LPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-fX-5Jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -720,7 +721,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wGr-GY-glX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="THv-gW-rLz">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -733,76 +734,59 @@
             <point key="canvasLocation" x="364" y="-2513"/>
         </scene>
         <!--Frases-->
-        <scene sceneID="HIS-Mr-UkV">
+        <scene sceneID="eHU-2Q-cNp">
             <objects>
-                <viewController storyboardIdentifier="Frases" title="Frases" id="Ezl-vg-fhp" customClass="FrasesViewController" customModule="ProjetoLibrasAPP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xU1-55-uZD"/>
-                        <viewControllerLayoutGuide type="bottom" id="koR-Xs-VYz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1ad-8p-IPI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                <tableViewController storyboardIdentifier="Frases" id="X9I-zk-n7U" customClass="FrasesTableViewController" customModule="ProjetoLibrasAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="N82-5a-PcD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-xG-vTz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="55P-yG-cjz"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-Mi-wiH">
-                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="frase" textLabel="nbO-e7-Qpj" rowHeight="60" style="IBUITableViewCellStyleDefault" id="Rh8-MU-a34">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rh8-MU-a34" id="RsV-EX-ifa">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nbO-e7-Qpj">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="59.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Ezl-vg-fhp" id="mou-mT-M9W"/>
-                                    <outlet property="delegate" destination="Ezl-vg-fhp" id="SH7-Pt-aKG"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7hC-xG-vTz" firstAttribute="top" secondItem="xU1-55-uZD" secondAttribute="bottom" id="DnD-HH-wzP"/>
-                            <constraint firstItem="fPQ-Mi-wiH" firstAttribute="top" secondItem="7hC-xG-vTz" secondAttribute="bottom" id="JA2-Eb-anq"/>
-                            <constraint firstAttribute="trailing" secondItem="fPQ-Mi-wiH" secondAttribute="trailing" id="JHs-42-MJN"/>
-                            <constraint firstItem="koR-Xs-VYz" firstAttribute="top" secondItem="fPQ-Mi-wiH" secondAttribute="bottom" id="PXE-aj-Ql4"/>
-                            <constraint firstItem="fPQ-Mi-wiH" firstAttribute="leading" secondItem="1ad-8p-IPI" secondAttribute="leading" id="YHp-Ub-YfN"/>
-                            <constraint firstItem="7hC-xG-vTz" firstAttribute="leading" secondItem="1ad-8p-IPI" secondAttribute="leading" id="prg-1R-8fw"/>
-                            <constraint firstAttribute="trailing" secondItem="7hC-xG-vTz" secondAttribute="trailing" id="r31-li-X1U"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Frases" id="dWV-PD-iQz">
-                        <barButtonItem key="rightBarButtonItem" title="Menu" id="ZS0-QP-Qbw">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="piu-m3-XHd">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <action selector="showMenu:" destination="Ezl-vg-fhp" id="jlI-iP-7uN"/>
+                                <outlet property="delegate" destination="X9I-zk-n7U" id="lbe-Dr-7t3"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="frase" textLabel="5xj-WI-pzQ" rowHeight="60" style="IBUITableViewCellStyleDefault" id="37I-4z-Fgs">
+                                <rect key="frame" x="0.0" y="136" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37I-4z-Fgs" id="Y2d-Yj-C5F">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5xj-WI-pzQ">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="X9I-zk-n7U" id="RtF-pZ-gt7"/>
+                            <outlet property="delegate" destination="X9I-zk-n7U" id="LWn-zd-f3q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Frases" id="bOp-rM-Cpr">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="L3c-Po-xnR">
+                            <connections>
+                                <action selector="showMenu:" destination="X9I-zk-n7U" id="5nk-rH-DlN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="fPQ-Mi-wiH" id="lui-Ds-44I"/>
-                        <segue destination="QFQ-HM-MoI" kind="show" identifier="ShowFullScreenFrases" id="AnI-8E-fkm"/>
+                        <outlet property="searchBar" destination="piu-m3-XHd" id="TVA-Cf-6ln"/>
+                        <segue destination="QFQ-HM-MoI" kind="show" identifier="ShowFrase" id="4Vi-nY-uJr"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qb8-wF-GXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93B-kG-ktU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="364" y="-1760"/>
         </scene>
@@ -815,7 +799,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qUj-nf-a7y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gjI-F5-WSJ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -836,7 +820,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qh7-xT-Ed8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cEC-Wg-wXo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -848,16 +832,42 @@
         <!--Full Screen Frases-->
         <scene sceneID="uYQ-l5-Zgd">
             <objects>
-                <viewController title="Full Screen Frases" id="QFQ-HM-MoI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Frase" title="Full Screen Frases" id="QFQ-HM-MoI" customClass="ShowFraseViewController" customModule="ProjetoLibrasAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KZ3-pT-YoB"/>
                         <viewControllerLayoutGuide type="bottom" id="1tU-sC-wwo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qox-5U-SeB">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55t-nk-orP">
+                                <rect key="frame" x="20" y="214" width="280" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="eyP-t6-24v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="55t-nk-orP" secondAttribute="trailing" constant="20" id="98B-Qt-aXq"/>
+                            <constraint firstItem="55t-nk-orP" firstAttribute="centerY" secondItem="Qox-5U-SeB" secondAttribute="centerY" id="FCj-gF-Byt"/>
+                            <constraint firstItem="55t-nk-orP" firstAttribute="leading" secondItem="Qox-5U-SeB" secondAttribute="leading" constant="20" id="KCq-YS-D5u"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Frase" id="lCp-eg-3qg">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="CK6-ml-Rgu">
+                            <connections>
+                                <action selector="showMenu:" destination="QFQ-HM-MoI" id="k4M-aA-nw3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fraseLabel" destination="55t-nk-orP" id="Sm0-zE-Nue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bw7-XZ-6hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -872,7 +882,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PTS-gp-0PC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N5U-FK-EFp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -893,7 +903,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xln-c5-P87"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B1K-tS-6MM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

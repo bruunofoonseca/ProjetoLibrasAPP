@@ -5,7 +5,7 @@
 //  Created by Bruno Pereira dos Santos on 17/11/15.
 //  Copyright © 2015 BEPiD. All rights reserved.
 //  
-//  ESTA É A VIEW DE BASE APAR CRIAR AS OUTRAS VIEWS (CEM EXCEÇÃO DA VIEW DO MENU)
+//  ESTA É A VIEW DE BASE APAR CRIAR AS OUTRAS VIEWS (COM EXCEÇÃO DA VIEW DO MENU)
 
 import UIKit
 
