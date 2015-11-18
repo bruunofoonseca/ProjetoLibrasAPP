@@ -496,6 +496,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bO0-vE-zVD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="0.0"/>
+                            <color key="textColor" red="0.0" green="0.66468852759999997" blue="0.71753251549999997" alpha="1" colorSpace="deviceRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="vjr-Xv-fM6" kind="relationship" relationship="rootViewController" id="V7q-7y-gFK"/>
@@ -575,7 +579,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHQ-zu-NQ6" userLabel="Pesquisar">
                                         <rect key="frame" x="78" y="173" width="165" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pesquisar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-AA-O5w">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-AA-O5w">
                                                 <rect key="frame" x="0.0" y="0.0" width="102" height="40"/>
                                                 <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="21"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -731,7 +735,7 @@
         <!--Frases-->
         <scene sceneID="HIS-Mr-UkV">
             <objects>
-                <viewController title="Frases" id="Ezl-vg-fhp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Frases" title="Frases" id="Ezl-vg-fhp" customClass="FrasesViewController" customModule="ProjetoLibrasAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xU1-55-uZD"/>
                         <viewControllerLayoutGuide type="bottom" id="koR-Xs-VYz"/>
@@ -739,9 +743,62 @@
                     <view key="view" contentMode="scaleToFill" id="1ad-8p-IPI">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-xG-vTz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="55P-yG-cjz"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-Mi-wiH">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="frase" textLabel="nbO-e7-Qpj" rowHeight="60" style="IBUITableViewCellStyleDefault" id="Rh8-MU-a34">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rh8-MU-a34" id="RsV-EX-ifa">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nbO-e7-Qpj">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="59.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ezl-vg-fhp" id="mou-mT-M9W"/>
+                                    <outlet property="delegate" destination="Ezl-vg-fhp" id="SH7-Pt-aKG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7hC-xG-vTz" firstAttribute="top" secondItem="xU1-55-uZD" secondAttribute="bottom" id="DnD-HH-wzP"/>
+                            <constraint firstItem="fPQ-Mi-wiH" firstAttribute="top" secondItem="7hC-xG-vTz" secondAttribute="bottom" id="JA2-Eb-anq"/>
+                            <constraint firstAttribute="trailing" secondItem="fPQ-Mi-wiH" secondAttribute="trailing" id="JHs-42-MJN"/>
+                            <constraint firstItem="koR-Xs-VYz" firstAttribute="top" secondItem="fPQ-Mi-wiH" secondAttribute="bottom" id="PXE-aj-Ql4"/>
+                            <constraint firstItem="fPQ-Mi-wiH" firstAttribute="leading" secondItem="1ad-8p-IPI" secondAttribute="leading" id="YHp-Ub-YfN"/>
+                            <constraint firstItem="7hC-xG-vTz" firstAttribute="leading" secondItem="1ad-8p-IPI" secondAttribute="leading" id="prg-1R-8fw"/>
+                            <constraint firstAttribute="trailing" secondItem="7hC-xG-vTz" secondAttribute="trailing" id="r31-li-X1U"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Frases" id="dWV-PD-iQz">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="ZS0-QP-Qbw">
+                            <connections>
+                                <action selector="showMenu:" destination="Ezl-vg-fhp" id="jlI-iP-7uN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="fPQ-Mi-wiH" id="lui-Ds-44I"/>
                         <segue destination="QFQ-HM-MoI" kind="show" identifier="ShowFullScreenFrases" id="AnI-8E-fkm"/>
                     </connections>
                 </viewController>
@@ -1189,7 +1246,7 @@
         <image name="Tradução" width="96" height="68"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="frq-X3-BEc"/>
         <segue reference="GRK-A0-Sca"/>
+        <segue reference="A4p-k0-7s2"/>
     </inferredMetricsTieBreakers>
 </document>

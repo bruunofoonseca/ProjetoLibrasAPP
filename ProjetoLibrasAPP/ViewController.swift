@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     }
     
     func showMenu(){
-        let menuViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Menu")
-        UIApplication.sharedApplication().keyWindow?.rootViewController = menuViewController
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func hideBackButton(){
+        self.navigationItem.hidesBackButton = true
     }
 }

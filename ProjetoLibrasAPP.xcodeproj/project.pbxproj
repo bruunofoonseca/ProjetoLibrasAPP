@@ -37,6 +37,7 @@
 		B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01727E71BC7F70F00B82361 /* weblysleekuisl.ttf */; };
 		C30181061BFBA377005003CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181051BFBA377005003CE /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C30181081BFBA3A6005003CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181071BFBA3A6005003CE /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C301810A1BFBC1F5005003CE /* FrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181091BFBC1F5005003CE /* FrasesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340559D1BF3BAA40055555D /* CallTranslation.swift */; };
 		C34FDCA71BF3E5B900A82E17 /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34FDCA41BF3E5B900A82E17 /* JLToast.swift */; };
@@ -103,6 +104,7 @@
 		B05EE3A41BF5204800C9C5AA /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
 		C30181051BFBA377005003CE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C30181071BFBA3A6005003CE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30181091BFBC1F5005003CE /* FrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesViewController.swift; sourceTree = "<group>"; };
 		C340559D1BF3BAA40055555D /* CallTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTranslation.swift; sourceTree = "<group>"; };
 		C34FDCA31BF3E5B900A82E17 /* JLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLToast.h; sourceTree = "<group>"; };
 		C34FDCA41BF3E5B900A82E17 /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			children = (
 				C30181051BFBA377005003CE /* MenuViewController.swift */,
 				C30181071BFBA3A6005003CE /* ViewController.swift */,
+				C30181091BFBC1F5005003CE /* FrasesViewController.swift */,
 			);
 			name = "Novo layout";
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				B00350CD1BD56BB00056186E /* HomeViewController.swift in Sources */,
 				41DA90311BBC9B7200F8C56B /* Flexion.swift in Sources */,
 				41EA443E1BBDD6760076C6C2 /* Substantivo.swift in Sources */,
+				C301810A1BFBC1F5005003CE /* FrasesViewController.swift in Sources */,
 				B036B8401BE74ABC00A56B5F /* TraducaoViewController.swift in Sources */,
 				41DA902F1BBC9B7200F8C56B /* Word.swift in Sources */,
 				C34FDCA91BF3E5B900A82E17 /* JLToastView.swift in Sources */,
