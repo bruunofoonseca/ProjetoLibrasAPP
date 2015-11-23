@@ -20,6 +20,10 @@ class MenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        hideNavigation()
+    }
+    
     @IBAction func showTraducao(sender: AnyObject) {
         performSegueWithIdentifier("ShowTradutor", sender: self)
     }
