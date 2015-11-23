@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FullScreenTraducaoViewController: ViewController {
 
@@ -17,6 +18,9 @@ class FullScreenTraducaoViewController: ViewController {
         super.viewDidLoad()
         
         fraseLabel.text = frase
+        falarFrase()
+        
+        super.showNavigation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,4 +30,14 @@ class FullScreenTraducaoViewController: ViewController {
     @IBAction func showMenu(sender: AnyObject) {
         super.showMenu()
     }
+    
+    func falarFrase(){
+        let synt: AVSpeechSynthesizer = AVSpeechSynthesizer()
+        
+        let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: frase)
+        nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
+        nextSpeach.rate = AVSpeechUtteranceMinimumSpeechRate
+        synt.speakUtterance(nextSpeach)
+    }
+
 }

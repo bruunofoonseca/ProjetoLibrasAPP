@@ -51,6 +51,8 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         
         callTranslation = CallTranslation.init()
         callTranslation.translationDelegate = self
+        
+        super.showNavigation()
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,8 +13,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationTranparente()
+        hideNavigation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +32,8 @@ class MenuViewController: UIViewController {
         performSegueWithIdentifier("ShowVideos", sender: self)
     }
     
-    func navigationTranparente(){
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.translucent = true
+    func hideNavigation(){
+        self.navigationController?.navigationBar.hidden = true
     }
+
 }

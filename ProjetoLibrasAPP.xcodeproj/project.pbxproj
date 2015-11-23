@@ -236,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				B036B83F1BE74ABC00A56B5F /* TraducaoViewController.swift */,
-				B05EE3A41BF5204800C9C5AA /* HRToast+UIView.swift */,
 			);
 			name = Traducao;
 			sourceTree = "<group>";
@@ -307,6 +306,7 @@
 				C34E5B6E1BFD2B97001AE2DE /* NewTradutorViewController.swift */,
 				C39A5E7A1C033DDC00856277 /* TraduzidoViewController.swift */,
 				C3B8E9601C03509800708327 /* FullScreenTraducaoViewController.swift */,
+				B05EE3A41BF5204800C9C5AA /* HRToast+UIView.swift */,
 			);
 			name = Tradutor;
 			sourceTree = "<group>";

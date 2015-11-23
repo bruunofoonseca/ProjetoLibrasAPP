@@ -16,6 +16,8 @@ class ShowFraseViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fraseLabel.text = frase
+        
+        super.showNavigation()
     }
 
     override func didReceiveMemoryWarning() {

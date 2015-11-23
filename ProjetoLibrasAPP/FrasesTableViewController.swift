@@ -31,6 +31,11 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
         super.viewDidLoad()
         hideBackButton()
         searchBar.delegate = self
+        showNavigation()
+    }
+    
+    func showNavigation(){
+        self.navigationController?.navigationBar.hidden = false
     }
 
     override func didReceiveMemoryWarning() {

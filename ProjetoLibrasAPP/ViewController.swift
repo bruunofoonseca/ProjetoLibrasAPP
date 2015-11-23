@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIBarPositioningDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,5 +27,17 @@ class ViewController: UIViewController {
     
     func hideBackButton(){
         self.navigationItem.hidesBackButton = true
+    }
+    
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return .TopAttached
+    }
+    
+    func showNavigation(){
+        self.navigationController?.navigationBar.hidden = false
+    }
+    
+    func hideNavigation(){
+        self.navigationController?.navigationBar.hidden = true
     }
 }
