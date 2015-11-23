@@ -72,11 +72,11 @@ class TraduzidoViewController: ViewController {
     
     func customizaViews(){
         viewFraseTraduzida.layer.borderWidth = 1
-        viewFraseTraduzida.layer.borderColor = UIColor.blackColor().CGColor
+        viewFraseTraduzida.layer.borderColor = UIColor(red:0.123, green:0.123, blue:0.123, alpha:1.0).CGColor
         viewFraseTraduzida.layer.cornerRadius = 5
         
         viewFraseusuario.layer.borderWidth = 1
-        viewFraseusuario.layer.borderColor = UIColor.blackColor().CGColor
+        viewFraseusuario.layer.borderColor = UIColor(red:0.123, green:0.123, blue:0.123, alpha:1.0).CGColor
         viewFraseusuario.layer.cornerRadius = 5
     }
     
