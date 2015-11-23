@@ -26,7 +26,6 @@ class Pronome: NSObject {
         super.init()
     }
     
-    
     /**********     FUNÇÃO QUE TRATA O PRONOME DE ACORDO COM SUA PARTICULARIDADE   **********/
     
     func categorizarPronome(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
@@ -120,5 +119,4 @@ class Pronome: NSObject {
         }
         return false
     }
-    
 }

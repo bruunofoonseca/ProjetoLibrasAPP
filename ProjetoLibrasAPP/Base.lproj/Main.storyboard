@@ -1240,8 +1240,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="FYa-M3-NeT"/>
                                                 <exclude reference="eez-6j-eCI"/>
+                                                <exclude reference="FYa-M3-NeT"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -1634,7 +1634,7 @@
                                 <rect key="frame" x="0.0" y="136" width="600" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CoM-qM-3Z6" id="myf-te-NcY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>

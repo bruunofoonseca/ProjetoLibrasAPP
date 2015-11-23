@@ -522,12 +522,15 @@ class TradutorViewController:UIViewController,UIScrollViewDelegate,UITextFieldDe
             lblTraducao.text = traducao.objectForKey("Presente") as? String
             tempoVerbal = 0
         }
-        else{
+        else if index == 1{
             lblTraducao.text = traducao.objectForKey("Passado") as? String
             tempoVerbal = 1
         }
-        
-        
+        else if index == 2
+        {
+            lblTraducao.text = traducao.objectForKey("Futuro") as? String
+            tempoVerbal = 2
+        }
     }
     
     func startLoading(){

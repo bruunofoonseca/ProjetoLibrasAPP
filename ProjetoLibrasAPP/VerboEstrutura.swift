@@ -34,7 +34,6 @@ class VerboEstrutura : NSObject {
             }
         }
         
-        
         for _ in frase[1].mottos[0].categories{
             
             if tempo == 0
@@ -56,6 +55,18 @@ class VerboEstrutura : NSObject {
                     if category.text == "verbo"
                     {
                         defVerbo.append(objVerbo.conjugVerboSujeitoPassado(frase[0], verbo: frase[1]))
+                        defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+                        return defVerbo
+                    }
+                }
+            }
+            else if tempo == 2
+            {
+                for category in frase[1].mottos[0].categories
+                {
+                    if category.text == "verbo"
+                    {
+                        defVerbo.append(objVerbo.conjugVerboSujeitoFuturo(frase[0], verbo: frase[1]))
                         defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
                         return defVerbo
                     }

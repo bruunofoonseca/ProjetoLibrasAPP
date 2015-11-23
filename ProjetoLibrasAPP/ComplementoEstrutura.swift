@@ -69,11 +69,15 @@ class ComplementoEstrutura : NSObject {
             posSubstantivoFlexion = 0
         }
         
-        
         arrayArtigos.removeAll()
         
         for compCategory in frase[2].mottos[0].categories{
-            if (compCategory.text == "pronome"){
+            if (compCategory.text == "adjetivo")
+            {
+                arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
+                return arrayArtigos
+            }
+            else if (compCategory.text == "pronome"){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
                 
@@ -87,11 +91,10 @@ class ComplementoEstrutura : NSObject {
                 
                 return arrayArtigos
             }
-                
             else if (compCategory.text == "verbo") && (posPronomeConfere == -1)
             {
                 if (preposicao != "null") && (preposicao == "gerundio"){
-                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Infinitivo Flexionado - 1ª singular") + ".")
+                    arrayArtigos.append(translator.get_verbs(frase[2].text, flexion: "Gerundio") + ".")
                     return arrayArtigos
                 }
                 else if (preposicao == "e") {
@@ -102,12 +105,10 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(translator.get_verbs(frase[2].mottos[0].text, flexion: "Pretérito Imperfeito - 1ª singular") + ".")
                 }
                 else{
-                    arrayArtigos.append(frase[2].text + ".")
+                    arrayArtigos.append(frase[2].text)
                     return arrayArtigos
                 }
-                
             }
-                
             else if (frase[2].mottos[0].categories[posSubstantivo].text == "nome feminino") || (frase[2].mottos[0].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1) && (posVerboConfere == -1){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
@@ -123,12 +124,6 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(frase[2].text + ".")
                 }
                 
-                return arrayArtigos
-            }
-                
-            else if (compCategory.text == "adjetivo")
-            {
-                arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
                 return arrayArtigos
             }
             else if(compCategory.text == "advérbio")&&(posPronomeConfere == -1){

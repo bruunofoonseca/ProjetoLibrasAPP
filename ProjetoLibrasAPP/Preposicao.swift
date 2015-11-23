@@ -42,7 +42,6 @@ class Preposicao: NSObject {
     func inserePreposicao(texto : [Word], var posicao: Int) -> String {
         colocaPreposicao.removeAll()
         pronomeTonico.removeAll()
-        print(posicao)
         var posPronome = -1
         var posVerbo = -1
         var posVerboConfere = -1
@@ -50,7 +49,7 @@ class Preposicao: NSObject {
         posPronomeFlexion = posPronome
         
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao))
-        posicaoMotto = 0
+        
         for(var i = 0; i < texto[2].mottos.count; i++){
             if (texto[2].text == texto[2].mottos[i].text){
                 posicaoMotto = i
@@ -60,10 +59,9 @@ class Preposicao: NSObject {
         for(var i = 0; i < texto[1].mottos.count; i++){
             if (texto[1].text == texto[1].mottos[i].text){
                 posicaoMottoVerbo = i
-                print(texto[1].mottos[posicaoMottoVerbo].text)
             }
         }
-    
+        
         for (var i = 0; i < texto[2].mottos[posicaoMotto].categories.count; i++){
             if (texto[2].mottos[posicaoMotto].categories[i].text == "pronome"){
                 posPronome = i
@@ -76,7 +74,7 @@ class Preposicao: NSObject {
                     }
                 }
             }
-            if (texto[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || texto[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
+            else if (texto[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || texto[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
         }
@@ -99,6 +97,8 @@ class Preposicao: NSObject {
         else{
             posVerboConfere = posVerbo
         }
+        
+        print(texto[1].mottos[posicaoMottoVerbo].text)
         
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
             if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "verbo"){
@@ -204,7 +204,7 @@ class Preposicao: NSObject {
     /**********     VERIFICA SE EXISTE NA PLIST   **********/
     
     func verificaVerboNaLista(frase : [Word], dict : NSDictionary, posicao : Int) -> Bool {
-        for (var i = 0; i < (dict.allKeys.count) ; i++){
+        for (var i = 0; i <= (dict.allKeys.count) - 1 ; i++){
             if ((dict.allKeys[i]) as! String == frase[posicao].mottos[self.posicaoMottoVerbo].text) {
                 return true
             }
@@ -225,7 +225,7 @@ class Preposicao: NSObject {
                 }
             }
         }
+        
         return false
     }
-    
 }

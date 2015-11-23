@@ -94,8 +94,11 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     func traducaoSucesso(traducao : NSMutableDictionary, frases : [[String]]){
         self.frases = frases
         
+        fraseTraduzida = []
+        
         fraseTraduzida.append((traducao.objectForKey("Passado") as? String)!)
         fraseTraduzida.append((traducao.objectForKey("Presente") as? String)!)
+        fraseTraduzida.append((traducao.objectForKey("Futuro") as? String)!)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {

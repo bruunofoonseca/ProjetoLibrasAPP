@@ -268,5 +268,241 @@
 		<key>gostar</key>
 		<string>por</string>
 	</dict>
+	<key>varrer</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>dormir</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>casa</key>
+		<string>em</string>
+		<key>colégio</key>
+		<string>no</string>
+		<key>carro</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+		<key>aula</key>
+		<string>na</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>sofá</key>
+		<string>no</string>
+		<key>faculdade</key>
+		<string>na</string>
+		<key>computador</key>
+		<string>no</string>
+		<key>hospital</key>
+		<string>no</string>
+	</dict>
+	<key>comer</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>casa</key>
+		<string>em</string>
+		<key>colégio</key>
+		<string>no</string>
+		<key>carro</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+		<key>aula</key>
+		<string>na</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>sofá</key>
+		<string>no</string>
+		<key>faculdade</key>
+		<string>na</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>computador</key>
+		<string>no</string>
+	</dict>
+	<key>pegar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>administrar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>mentir</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>correr</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>fumar</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>casa</key>
+		<string>em</string>
+		<key>colégio</key>
+		<string>no</string>
+		<key>carro</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+		<key>aula</key>
+		<string>na</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>sofá</key>
+		<string>no</string>
+		<key>faculdade</key>
+		<string>na</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>computador</key>
+		<string>no</string>
+	</dict>
+	<key>acender</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>acentuar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>arrumar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
+	<key>almoçar</key>
+	<dict>
+		<key>escola</key>
+		<string>na</string>
+		<key>casa</key>
+		<string>em</string>
+		<key>colégio</key>
+		<string>no</string>
+		<key>carro</key>
+		<string>no</string>
+		<key>trem</key>
+		<string>no</string>
+		<key>aula</key>
+		<string>na</string>
+		<key>cama</key>
+		<string>na</string>
+		<key>sofá</key>
+		<string>no</string>
+		<key>faculdade</key>
+		<string>na</string>
+		<key>hospital</key>
+		<string>no</string>
+		<key>computador</key>
+		<string>no</string>
+		<key>menina</key>
+		<string>com a</string>
+		<key>meninas</key>
+		<string>com as</string>
+		<key>menino</key>
+		<string>com o</string>
+		<key>meninos</key>
+		<string>com os</string>
+		<key>família</key>
+		<string>com a</string>
+	</dict>
+	<key>alugar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+		<key>família</key>
+		<string>para a</string>
+	</dict>
+	<key>caminhar</key>
+	<dict>
+		<key>casa</key>
+		<string>até em</string>
+	</dict>
+	<key>matar</key>
+	<dict>
+		<key>arma</key>
+		<string>com a</string>
+		<key>faca</key>
+		<string>com a</string>
+		<key>gostar</key>
+		<string>por</string>
+	</dict>
+	<key>limpar</key>
+	<dict>
+		<key>menina</key>
+		<string>para a</string>
+		<key>meninas</key>
+		<string>para as</string>
+		<key>menino</key>
+		<string>para o</string>
+		<key>meninos</key>
+		<string>para o</string>
+	</dict>
 </dict>
 </plist>

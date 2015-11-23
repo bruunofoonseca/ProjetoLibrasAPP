@@ -59,7 +59,6 @@ class Artigo: NSObject {
             artigos.append("")
         }
         
-        
         /**********     RETORNA ARTIGO CORRESPONDENTE   **********/
         return artigos
     }
