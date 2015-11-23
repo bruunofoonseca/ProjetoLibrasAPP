@@ -22,7 +22,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func showTraducao(sender: AnyObject) {
-        performSegueWithIdentifier("ShowVideos", sender: self)
+        performSegueWithIdentifier("ShowTradutor", sender: self)
     }
     
     @IBAction func showPesquisa(sender: AnyObject) {
@@ -30,7 +30,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func showExplicacao(sender: AnyObject) {
-        performSegueWithIdentifier("ShowTradutor", sender: self)
+        performSegueWithIdentifier("ShowVideos", sender: self)
     }
     
     func navigationTranparente(){
