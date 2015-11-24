@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062BF6341C039DF500273C81 /* Adverbio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BF6331C039DF500273C81 /* Adverbio.swift */; };
-		062BF6361C039E4700273C81 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6351C039E4700273C81 /* Preposicao.plist */; };
 		062BF6381C039E7D00273C81 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */; };
-		062BF63A1C039E8B00273C81 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6391C039E8B00273C81 /* Preposicao.plist */; };
 		062BF63C1C039E9600273C81 /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */; };
 		062BF63E1C039EA100273C81 /* PreposicaoExcecao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF63D1C039EA100273C81 /* PreposicaoExcecao.plist */; };
 		069291931BEBE79300E98F5D /* Motto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069291921BEBE79300E98F5D /* Motto.swift */; };
@@ -416,7 +414,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 7S84RQ3NGE;
+						DevelopmentTeam = 8KR33X63ZD;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -470,7 +468,6 @@
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
 				06B8CAB01BF667C500B70EE3 /* excluir.png in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
-				068E9D181C04F38C00886DC2 /* Preposicao.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

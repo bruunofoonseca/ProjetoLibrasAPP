@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 class TraduzidoViewController: ViewController {
 
@@ -160,4 +161,14 @@ class TraduzidoViewController: ViewController {
         
         self.presentViewController(meuCompartilhamento, animated: true, completion: nil)
     }
+    
+    @IBAction func Falar(sender: AnyObject) {
+        let synt: AVSpeechSynthesizer = AVSpeechSynthesizer()
+        
+        let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: fraseTraduzidaLabel.text!)
+        nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
+        nextSpeach.rate = 0.42
+        synt.speakUtterance(nextSpeach)
+    }
+    
 }
