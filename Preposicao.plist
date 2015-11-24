@@ -19,6 +19,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>de</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
@@ -71,6 +73,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>nome feminino</key>
 		<dict>
@@ -111,6 +115,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>que</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>que</string>
 		</dict>
 		<key>pronome</key>
@@ -153,6 +159,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -194,6 +202,19 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
 		</dict>
 	</dict>
 	<key>fazer</key>
@@ -223,6 +244,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -254,7 +277,9 @@
 		</dict>
 		<key>verbo</key>
 		<dict>
-			<key>New item</key>
+			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -287,6 +312,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -329,6 +356,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -369,6 +398,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -411,6 +442,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -451,6 +484,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -493,6 +528,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -534,6 +571,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>a</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -574,6 +613,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>null</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -627,6 +668,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 	</dict>
 	<key>estudar</key>
@@ -656,7 +699,9 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
+			<string>depois de</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -709,6 +754,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>coçar</key>
@@ -749,6 +796,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 	</dict>
@@ -791,6 +840,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>pensar</key>
@@ -831,6 +882,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>em</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>em</string>
 		</dict>
 	</dict>
@@ -873,6 +926,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>ditar</key>
@@ -914,6 +969,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>ditar</string>
 		</dict>
 	</dict>
 	<key>empatar</key>
@@ -955,6 +1012,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>prevalecer</key>
@@ -984,6 +1043,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -1026,6 +1087,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -1078,6 +1141,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 	</dict>
 	<key>caminhar</key>
@@ -1119,6 +1184,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 	</dict>
 	<key>derramar</key>
@@ -1160,6 +1227,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 	</dict>
 	<key>sequestrar</key>
@@ -1201,6 +1270,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>null</string>
 		</dict>
 	</dict>
 	<key>invocar</key>
@@ -1241,6 +1312,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 	</dict>
@@ -1325,6 +1398,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 	</dict>

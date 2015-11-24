@@ -149,7 +149,7 @@ class Preposicao: NSObject {
             
             if (posVerboConfere != -1){
                 
-                while(texto[2].flexions[posVerboFlexion].text != "Infinitivo"){
+                while(texto[2].flexions[posVerboFlexion].text != "Infinitivo") && (texto[2].flexions[posVerboFlexion].text != "Infinitivo Flexionado - 1ª singular"){
                     posVerboFlexion = posVerboFlexion - 1
                 }
                 
@@ -158,6 +158,10 @@ class Preposicao: NSObject {
                     colocaPreposicao = test
                 }
                 else{
+                    
+                    print(posicaoMotto)
+                    print(posVerbo)
+                    print(texto[2].flexions[posVerboFlexion].text)
                     
                     let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
                     

@@ -28,9 +28,13 @@ class VerboEstrutura : NSObject {
         
         for (var i = 0; i < frase[1].mottos[0].categories.count; i++)
         {
-            if (frase[1].mottos[0].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular")
+            if (frase[1].mottos[0].categories[i].text == "verbo")
             {
-                posVerbo = i
+                for flexion in frase[1].flexions{
+                    if flexion.text == "Infinitivo Flexionado - 1ª singular"{
+                        posVerbo = i
+                    }
+                }
             }
         }
         

@@ -132,6 +132,7 @@ class ComplementoEstrutura : NSObject {
             }
         }
         
+        arrayArtigos.append(frase[2].text + ".")
         return arrayArtigos
     }
 }
