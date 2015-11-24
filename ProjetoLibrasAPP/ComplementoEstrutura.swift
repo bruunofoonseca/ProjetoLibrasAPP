@@ -22,6 +22,7 @@ class ComplementoEstrutura : NSObject {
     var arrayArtigos : [String] = [""]
     var pronomeTonico : [String] = []
     var fraseClassificada : [Word] = []
+    var posicaoMotto = 0
     
     /**********     FUNÇÃO QUE TRATA O COMPLEMENTO DE ACORDO COM A FRASE   **********/
     
@@ -34,12 +35,19 @@ class ComplementoEstrutura : NSObject {
         let posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
         
-        for (var i = 0; i < frase[2].mottos[0].categories.count; i++){
-            if (frase[2].mottos[0].categories[i].text == "pronome"){
+        for(var i = 0; i < frase[2].mottos.count; i++){
+            if (frase[2].text == frase[2].mottos[i].text){
+                posicaoMotto = i
+            }
+        }
+        
+        
+        for (var i = 0; i < frase[2].mottos[posicaoMotto].categories.count; i++){
+            if (frase[2].mottos[posicaoMotto].categories[i].text == "pronome"){
                 posPronome = i
                 posPronomeConfere = i
             }
-            else if (frase[2].mottos[0].categories[i].text == "verbo"){
+            else if (frase[2].mottos[posicaoMotto].categories[i].text == "verbo"){
                 for (var j = 0; j < frase[2].flexions.count; j++){
                     if (frase[2].flexions[j].text == "Infinitivo Flexionado - 1ª singular"){
                         posVerbo = i
@@ -47,7 +55,7 @@ class ComplementoEstrutura : NSObject {
                     }
                 }
             }
-            else if (frase[2].mottos[0].categories[i].text == "nome feminino" || frase[2].mottos[0].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
+            else if (frase[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || frase[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
         }
@@ -71,7 +79,7 @@ class ComplementoEstrutura : NSObject {
         
         arrayArtigos.removeAll()
         
-        for compCategory in frase[2].mottos[0].categories{
+        for compCategory in frase[2].mottos[posicaoMotto].categories{
             if (compCategory.text == "adjetivo")
             {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
@@ -102,7 +110,7 @@ class ComplementoEstrutura : NSObject {
                     return arrayArtigos
                 }
                 else if(preposicao == "enquanto"){
-                    arrayArtigos.append(translator.get_verbs(frase[2].mottos[0].text, flexion: "Pretérito Imperfeito - 1ª singular") + ".")
+                    arrayArtigos.append(translator.get_verbs(frase[2].mottos[posicaoMotto].text, flexion: "Pretérito Imperfeito - 1ª singular") + ".")
                 }
                 else{
                     arrayArtigos.append(frase[2].text)
