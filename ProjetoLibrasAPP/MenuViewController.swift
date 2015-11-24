@@ -10,10 +10,19 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
+    @IBOutlet weak var btnTraducao: UIButton!
+    
+    var internetObject = InternetConnection()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        observerInternet()
         hideNavigation()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        internetObject.verifyInternetStatus()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +47,30 @@ class MenuViewController: UIViewController {
     
     func hideNavigation(){
         self.navigationController?.navigationBar.hidden = true
+    }
+    
+    /* Adiciona observer para verificar a internet */
+    
+    func observerInternet(){
+        NSNotificationCenter.defaultCenter().addObserver(internetObject, selector: "reachabilityChanged:", name: kReachabilityChangedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+    }
+    
+    /* Verifica a mudança de estado da internet e emite o alert */
+    
+    func reachabilityStatusChanged() {
+        if reachabilityStatus == kNOTREACHABLE {
+            let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            //btnTraducao.enabled = false
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else {
+            //btnTraducao.enabled = true
+        }
     }
 
 }

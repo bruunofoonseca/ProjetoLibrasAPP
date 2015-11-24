@@ -34,6 +34,8 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     
     var callTranslation:CallTranslation!
     
+    var internetObject = InternetConnection()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         super.hideBackButton()
@@ -60,8 +62,10 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     }
     
     override func viewDidAppear(animated: Bool) {
+        internetObject.verifyInternetStatus()
         mainTextfield.becomeFirstResponder()
     }
+    
     
     @IBAction func showMenu(sender: AnyObject) {
         super.showMenu()
@@ -71,22 +75,25 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     
     func traduzFrase() {
         if (frase[0] != "" && frase[1] != "" && frase[2] != "") {
-            self.startLoading()
-            
-            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            if !super.reachabilityStatusChanged(){
                 
-                let dispatchGroup = dispatch_group_create()
+                self.startLoading()
                 
-                dispatch_group_enter(dispatchGroup)
-                self.callTranslation.traducaoTexto(self.textoUsuario.text!)
-                dispatch_group_leave(dispatchGroup)
-                
-                
-                dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), { () -> Void in
-                    self.stopLoading()
-                    self.performSegueWithIdentifier("ShowTraduzido", sender: nil)
-                })
+                let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+                dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                    
+                    let dispatchGroup = dispatch_group_create()
+                    
+                    dispatch_group_enter(dispatchGroup)
+                    self.callTranslation.traducaoTexto(self.textoUsuario.text!)
+                    dispatch_group_leave(dispatchGroup)
+                    
+                    
+                    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), { () -> Void in
+                        self.stopLoading()
+                        self.performSegueWithIdentifier("ShowTraduzido", sender: nil)
+                    })
+                }
             }
         }
     }
@@ -141,11 +148,10 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     
     func avisoNenhumTexto() {
         
-        let alert = UIAlertView()
-        alert.title = "Atenção"
-        alert.message = "Não esqueça da palavra!"
-        alert.addButtonWithTitle("Ok")
-        alert.show()
+        let alertController = UIAlertController(title: "Atenção", message: "Não esqueça da palavra!", preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(defaultAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func limpaTextoNoFinal() {

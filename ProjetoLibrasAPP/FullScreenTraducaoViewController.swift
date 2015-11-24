@@ -36,7 +36,7 @@ class FullScreenTraducaoViewController: ViewController {
         
         let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: frase)
         nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
-        nextSpeach.rate = AVSpeechUtteranceMinimumSpeechRate
+        nextSpeach.rate = 0.42
         synt.speakUtterance(nextSpeach)
     }
 

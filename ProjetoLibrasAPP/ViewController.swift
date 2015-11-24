@@ -40,4 +40,18 @@ class ViewController: UIViewController, UIBarPositioningDelegate {
     func hideNavigation(){
         self.navigationController?.navigationBar.hidden = true
     }
+    
+    func reachabilityStatusChanged() -> Bool {
+        if reachabilityStatus == kNOTREACHABLE {
+            let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.navigationController?.popToRootViewControllerAnimated(true)
+            //self.presentViewController(alertController, animated: true, completion: nil)
+            return true
+        }else{
+            return false
+        }
+    }
 }
