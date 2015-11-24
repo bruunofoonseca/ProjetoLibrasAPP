@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		06082F261BD988240029B5A8 /* FraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06082F251BD988240029B5A8 /* FraseViewController.swift */; };
 		062BF6341C039DF500273C81 /* Adverbio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BF6331C039DF500273C81 /* Adverbio.swift */; settings = {ASSET_TAGS = (); }; };
-		062BF6361C039E4700273C81 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6351C039E4700273C81 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
 		062BF6381C039E7D00273C81 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */; settings = {ASSET_TAGS = (); }; };
 		062BF63A1C039E8B00273C81 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6391C039E8B00273C81 /* Preposicao.plist */; settings = {ASSET_TAGS = (); }; };
 		062BF63C1C039E9600273C81 /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */; settings = {ASSET_TAGS = (); }; };
@@ -79,7 +78,6 @@
 /* Begin PBXFileReference section */
 		06082F251BD988240029B5A8 /* FraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FraseViewController.swift; path = ../FraseViewController.swift; sourceTree = "<group>"; };
 		062BF6331C039DF500273C81 /* Adverbio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adverbio.swift; sourceTree = "<group>"; };
-		062BF6351C039E4700273C81 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEu.plist; sourceTree = "<group>"; };
 		062BF6391C039E8B00273C81 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEle.plist; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 		41DA90321BBC9B8300F8C56B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				062BF6351C039E4700273C81 /* Preposicao.plist */,
 				41DA902C1BBC9B7200F8C56B /* Word.swift */,
 				41DA902D1BBC9B7200F8C56B /* Category.swift */,
 				41DA902E1BBC9B7200F8C56B /* Flexion.swift */,
@@ -520,7 +517,6 @@
 				06B8CAB01BF667C500B70EE3 /* excluir.png in Resources */,
 				C3E641D91BE3945200C645A0 /* New.storyboard in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
-				062BF6361C039E4700273C81 /* Preposicao.plist in Resources */,
 				062BF63A1C039E8B00273C81 /* Preposicao.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
