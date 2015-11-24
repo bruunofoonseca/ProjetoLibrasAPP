@@ -27,6 +27,9 @@ class Verbo: NSObject {
     {
         var conjugVerbo = verbo.text
         
+        posicaoMottoVerb = 0
+        posicaoMottoSuj = 0
+        
         for(var i = 0; i < sujeito.mottos.count; i++){
             if (sujeito.text == sujeito.mottos[i].text){
                 posicaoMottoSuj = i

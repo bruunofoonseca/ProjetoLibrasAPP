@@ -50,6 +50,9 @@ class Preposicao: NSObject {
         
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao))
         
+        posicaoMotto = 0
+        posicaoMottoVerbo = 0
+        
         for(var i = 0; i < texto[2].mottos.count; i++){
             if (texto[2].text == texto[2].mottos[i].text){
                 posicaoMotto = i
@@ -116,7 +119,7 @@ class Preposicao: NSObject {
                 posPronomeFlexion = posPronomeFlexion - 1
             }
             
-            let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posPronome].text)?.valueForKey(texto[2].flexions[posPronomeFlexion].text) as AnyObject? as! String
+            let test = dict!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posPronome].text)?.valueForKey(texto[2].flexions[posPronomeFlexion].text) as AnyObject? as! String
             
             colocaPreposicao = test
             
@@ -138,7 +141,7 @@ class Preposicao: NSObject {
                 posPronomeFlexion = posPronomeFlexion - 1
             }
             
-            let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posPronome].text)?.valueForKey(texto[2].flexions[posPronomeFlexion].text) as AnyObject? as! String
+            let test = dict!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posPronome].text)?.valueForKey(texto[2].flexions[posPronomeFlexion].text) as AnyObject? as! String
             
             colocaPreposicao = test
             
@@ -163,7 +166,7 @@ class Preposicao: NSObject {
                     print(posVerbo)
                     print(texto[2].flexions[posVerboFlexion].text)
                     
-                    let test = dict!.objectForKey(texto[1].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
+                    let test = dict!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
                     
                     colocaPreposicao = test
                 }

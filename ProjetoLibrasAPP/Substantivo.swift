@@ -25,6 +25,8 @@ class Substantivo: NSObject {
         recebeArtigo.removeAll()
         recebeArtigo.removeAll()
         
+        posicaoMotto = 0
+        
         for(var i = 0; i < frase[posicao].mottos.count; i++){
             if (frase[posicao].text == frase[posicao].mottos[i].text){
                 posicaoMotto = i

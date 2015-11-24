@@ -72,11 +72,10 @@
 
 /* Begin PBXFileReference section */
 		062BF6331C039DF500273C81 /* Adverbio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adverbio.swift; sourceTree = "<group>"; };
-		062BF6351C039E4700273C81 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEu.plist; sourceTree = "<group>"; };
-		062BF6391C039E8B00273C81 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PronomeObliquosEle.plist; sourceTree = "<group>"; };
 		062BF63D1C039EA100273C81 /* PreposicaoExcecao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PreposicaoExcecao.plist; sourceTree = "<group>"; };
+		068E9D171C04F38C00886DC2 /* Preposicao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preposicao.plist; sourceTree = "<group>"; };
 		069291921BEBE79300E98F5D /* Motto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motto.swift; sourceTree = "<group>"; };
 		06B8CAAF1BF667C500B70EE3 /* excluir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = excluir.png; sourceTree = "<group>"; };
 		06B8CAB11BF667CD00B70EE3 /* mover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mover.png; sourceTree = "<group>"; };
@@ -162,7 +161,7 @@
 		06D96AED1BD0A81700679110 /* PList */ = {
 			isa = PBXGroup;
 			children = (
-				062BF6391C039E8B00273C81 /* Preposicao.plist */,
+				068E9D171C04F38C00886DC2 /* Preposicao.plist */,
 				062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */,
 				062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */,
 				062BF63D1C039EA100273C81 /* PreposicaoExcecao.plist */,
@@ -183,7 +182,6 @@
 		41DA90321BBC9B8300F8C56B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				062BF6351C039E4700273C81 /* Preposicao.plist */,
 				41DA902C1BBC9B7200F8C56B /* Word.swift */,
 				41DA902D1BBC9B7200F8C56B /* Category.swift */,
 				41DA902E1BBC9B7200F8C56B /* Flexion.swift */,
@@ -472,8 +470,7 @@
 				C3CBBE781BBC94060035A1D4 /* Assets.xcassets in Resources */,
 				06B8CAB01BF667C500B70EE3 /* excluir.png in Resources */,
 				C3CBBE731BBC94060035A1D4 /* Main.storyboard in Resources */,
-				062BF6361C039E4700273C81 /* Preposicao.plist in Resources */,
-				062BF63A1C039E8B00273C81 /* Preposicao.plist in Resources */,
+				068E9D181C04F38C00886DC2 /* Preposicao.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

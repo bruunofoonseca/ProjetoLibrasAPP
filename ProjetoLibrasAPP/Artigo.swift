@@ -24,6 +24,7 @@ class Artigo: NSObject {
     func colocarArtigoDefinido(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String] {
         
         artigos.removeAll()
+        posicaoMotto = 0
         
         for(var i = 0; i < frase[posicao].mottos.count; i++){
             if (frase[posicao].text == frase[posicao].mottos[i].text){

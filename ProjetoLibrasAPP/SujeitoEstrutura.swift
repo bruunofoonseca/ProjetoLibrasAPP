@@ -30,6 +30,8 @@ class SujeitoEstrutura : NSObject {
         var posSubstantivoFlexion = -1
         arrayArtigos.removeAll()
         
+        posicaoMotto = 0
+        
         for(var i = 0; i < frase[0].mottos.count; i++){
             if (frase[0].text == frase[0].mottos[i].text){
                 posicaoMotto = i
