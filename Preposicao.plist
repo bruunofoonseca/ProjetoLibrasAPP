@@ -20,7 +20,7 @@
 			<key>Infinitivo</key>
 			<string>de</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>de</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
@@ -205,17 +205,6 @@
 			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string>com</string>
-			<key>Feminino plural</key>
-			<string>com</string>
-			<key>Masculino singular</key>
-			<string>com</string>
-			<key>Masculino plural</key>
-			<string>com</string>
-		</dict>
 	</dict>
 	<key>fazer</key>
 	<dict>
@@ -312,9 +301,9 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>null</string>
+			<string>para</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -357,7 +346,7 @@
 			<key>Infinitivo</key>
 			<string>para</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -484,9 +473,9 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>null</string>
+			<string>para</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -572,7 +561,7 @@
 			<key>Infinitivo</key>
 			<string>a</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>a</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -669,7 +658,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>estudar</key>
@@ -699,9 +688,9 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>depois de</string>
+			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -970,7 +959,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>ditar</string>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>empatar</key>
@@ -1088,7 +1077,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -1142,7 +1131,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>caminhar</key>
@@ -1185,7 +1174,7 @@
 			<key>Infinitivo</key>
 			<string>para</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>para</string>
 		</dict>
 	</dict>
 	<key>derramar</key>
@@ -1228,7 +1217,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>sequestrar</key>
@@ -1271,7 +1260,7 @@
 			<key>Infinitivo</key>
 			<string>e</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>e</string>
 		</dict>
 	</dict>
 	<key>invocar</key>
@@ -1559,8 +1548,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -2378,7 +2365,7 @@
 			<key>Infinitivo</key>
 			<string>enquanto</string>
 			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>enquanto</string>
+			<string>notar</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -3667,8 +3654,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -3709,8 +3694,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -3753,8 +3736,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -3795,8 +3776,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -3839,8 +3818,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -3881,8 +3858,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -3925,8 +3900,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -3967,8 +3940,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4011,8 +3982,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4053,8 +4022,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4097,8 +4064,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4139,8 +4104,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>depois</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>depois</string>
 		</dict>
 		<key>pronome</key>
@@ -4183,8 +4146,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>depois</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>depois</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4225,8 +4186,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -4269,8 +4228,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4311,8 +4268,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -4355,8 +4310,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4397,8 +4350,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -4441,8 +4392,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4483,8 +4432,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4527,8 +4474,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4569,8 +4514,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4613,8 +4556,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4655,8 +4596,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>depois de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
@@ -4699,8 +4638,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4741,8 +4678,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4785,8 +4720,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>a</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>a</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4827,8 +4760,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4871,8 +4802,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4913,8 +4842,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>depois</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>depois</string>
 		</dict>
 		<key>pronome</key>
@@ -4957,8 +4884,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4999,8 +4924,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5043,8 +4966,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5085,8 +5006,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5129,8 +5048,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5171,8 +5088,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5215,8 +5130,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5257,8 +5170,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5301,8 +5212,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5343,8 +5252,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5387,8 +5294,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5430,8 +5335,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5472,9 +5375,7 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>null</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>null</string>
+			<string>à</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5515,9 +5416,7 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
+			<string>o</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5558,8 +5457,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5602,8 +5499,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5644,8 +5539,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5688,8 +5581,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5730,8 +5621,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5774,8 +5663,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5816,8 +5703,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5860,8 +5745,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5902,8 +5785,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5946,8 +5827,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5988,8 +5867,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>null</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -6032,8 +5909,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6074,8 +5949,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -6118,8 +5991,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>enquanto</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>enquanto</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6160,8 +6031,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -6204,8 +6073,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6246,8 +6113,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -6290,8 +6155,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6332,8 +6195,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -6376,8 +6237,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6418,8 +6277,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -6462,8 +6319,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6504,8 +6359,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -6548,8 +6401,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6590,8 +6441,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -6634,8 +6483,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6676,8 +6523,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>ao</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>ao</string>
 		</dict>
 		<key>pronome</key>
@@ -6720,8 +6565,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6762,8 +6605,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -6806,8 +6647,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6848,8 +6687,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -6892,8 +6729,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -6934,8 +6769,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -6978,8 +6811,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7020,8 +6851,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -7064,8 +6893,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7106,8 +6933,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7150,8 +6975,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7192,8 +7015,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -7236,8 +7057,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7278,8 +7097,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7322,8 +7139,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7364,8 +7179,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -7408,8 +7221,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7450,8 +7261,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -7494,8 +7303,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7536,8 +7343,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7580,8 +7385,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7622,8 +7425,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7666,8 +7467,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7708,8 +7507,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7752,8 +7549,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7794,8 +7589,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>de</string>
 		</dict>
 		<key>pronome</key>
@@ -7838,8 +7631,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7880,8 +7671,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -7924,8 +7713,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -7966,8 +7753,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8010,8 +7795,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8052,8 +7835,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8096,8 +7877,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8138,8 +7917,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -8182,8 +7959,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8224,8 +7999,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -8268,8 +8041,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8310,8 +8081,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>null</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>null</string>
 		</dict>
 		<key>pronome</key>
@@ -8354,8 +8123,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8396,8 +8163,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -8440,8 +8205,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8482,8 +8245,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8526,8 +8287,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8568,8 +8327,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8612,8 +8369,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8654,8 +8409,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8698,8 +8451,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8740,8 +8491,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>de</string>
 		</dict>
 		<key>pronome</key>
@@ -8784,8 +8533,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>depois de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8826,8 +8573,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8870,8 +8615,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>enquanto</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>enquanto</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8912,8 +8655,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -8956,8 +8697,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -8998,8 +8737,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -9042,8 +8779,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9084,8 +8819,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -9128,8 +8861,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9170,8 +8901,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9214,8 +8943,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9256,8 +8983,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9300,8 +9025,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9342,8 +9065,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9386,8 +9107,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9428,8 +9147,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -9472,8 +9189,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9514,8 +9229,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9558,8 +9271,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9600,8 +9311,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>o porque</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>o porque</string>
 		</dict>
 		<key>pronome</key>
@@ -9644,8 +9353,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9686,8 +9393,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9730,8 +9435,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>por</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>por</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9772,8 +9475,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>em</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>em</string>
 		</dict>
 		<key>pronome</key>
@@ -9816,8 +9517,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9858,8 +9557,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>depois de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
@@ -9902,8 +9599,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>depois de</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -9944,8 +9639,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -9988,8 +9681,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10030,8 +9721,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>de tanto</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>de tanto</string>
 		</dict>
 		<key>pronome</key>
@@ -10074,8 +9763,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10116,8 +9803,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -10160,8 +9845,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>o porque</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>o porque</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10203,8 +9886,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10245,9 +9926,7 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>e</string>
+			<string></string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10288,8 +9967,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -10332,8 +10009,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>em</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>em</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10374,8 +10049,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>e</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -10418,8 +10091,6 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
-			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -10460,8 +10131,6 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -10504,429 +10173,427 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
-			<key>Infinitivo Flexionado - 1ª singular</key>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>a</string>
+			<key>Feminino plural</key>
+			<string>a</string>
+			<key>Masculino singular</key>
+			<string>a</string>
+			<key>Masculino plural</key>
+			<string>a</string>
+		</dict>
+	</dict>
+	<key>vir</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>com a</string>
+			<key>Feminino singular</key>
+			<string>com a</string>
+			<key>plur</key>
+			<string>com as</string>
+			<key>Feminino plural</key>
+			<string>com as</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>com o</string>
+			<key>Masculino singular</key>
+			<string>com o</string>
+			<key>plur</key>
+			<string>com os</string>
+			<key>Masculino plural</key>
+			<string>com os</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>null</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
+	</dict>
+	<key>virar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>a</string>
+			<key>Feminino singular</key>
+			<string>a</string>
+			<key>plur</key>
+			<string>as</string>
+			<key>Feminino plural</key>
+			<string>as</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>o</string>
+			<key>Masculino singular</key>
+			<string>o</string>
+			<key>plur</key>
+			<string>os</string>
+			<key>Masculino plural</key>
+			<string>os</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
+			<string>à</string>
+			<key>Feminino plural</key>
+			<string>à</string>
+			<key>Masculino singular</key>
+			<string>à</string>
+			<key>Masculino plural</key>
+			<string>à</string>
+		</dict>
+	</dict>
+	<key>telefonar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
+			<string>à</string>
+			<key>Feminino singular</key>
+			<string>à</string>
+			<key>plur</key>
+			<string>às</string>
+			<key>Feminino plural</key>
+			<string>às</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>ao</string>
+			<key>Masculino singular</key>
+			<string>ao</string>
+			<key>plur</key>
+			<string>aos</string>
+			<key>Masculino plural</key>
+			<string>aos</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>e</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>para</string>
+			<key>Feminino plural</key>
+			<string>para</string>
+			<key>Masculino singular</key>
+			<string>para</string>
+			<key>Masculino plural</key>
+			<string>para</string>
+		</dict>
+	</dict>
+	<key>terminar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
 			<string>a</string>
-			<key>Feminino plural</key>
+			<key>Feminino singular</key>
 			<string>a</string>
+			<key>plur</key>
+			<string>as</string>
+			<key>Feminino plural</key>
+			<string>as</string>
+		</dict>
+		<key>nome masculino</key>
+		<dict>
+			<key>sing</key>
+			<string>o</string>
 			<key>Masculino singular</key>
+			<string>o</string>
+			<key>plur</key>
+			<string>os</string>
+			<key>Masculino plural</key>
+			<string>os</string>
+		</dict>
+		<key>verbo</key>
+		<dict>
+			<key>Infinitivo</key>
+			<string>de</string>
+		</dict>
+		<key>pronome</key>
+		<dict>
+			<key>Feminino singular</key>
+			<string>com</string>
+			<key>Feminino plural</key>
+			<string>com</string>
+			<key>Masculino singular</key>
+			<string>com</string>
+			<key>Masculino plural</key>
+			<string>com</string>
+		</dict>
+	</dict>
+	<key>suportar</key>
+	<dict>
+		<key>nome feminino</key>
+		<dict>
+			<key>sing</key>
 			<string>a</string>
-			<key>Masculino plural</key>
+			<key>Feminino singular</key>
 			<string>a</string>
-		</dict>
-	</dict>
-	<key>1</key>
-	<dict>
-		<key>nome feminino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Feminino singular</key>
-			<string></string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 2</key>
+	<key>supor</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 3</key>
+	<key>substituir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 4</key>
+	<key>submeter</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 	</dict>
-	<key>1 - 5</key>
+	<key>subir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>na</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>na</string>
 			<key>plur</key>
-			<string></string>
+			<string>nas</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>no</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>no</string>
 			<key>plur</key>
-			<string></string>
+			<string>nos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>nos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 6</key>
+	<key>somar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-	</dict>
-	<key>1 - 7</key>
-	<dict>
-		<key>nome feminino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-		</dict>
-		<key>nome masculino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-		<key>verbo</key>
-		<dict>
-			<key>Infinitivo</key>
-			<string></string>
-		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-	</dict>
-	<key>1 - 8</key>
-	<dict>
-		<key>nome feminino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-		</dict>
-		<key>nome masculino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-		<key>verbo</key>
-		<dict>
-			<key>Infinitivo</key>
-			<string></string>
-		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-	</dict>
-	<key>1 - 9</key>
-	<dict>
-		<key>nome feminino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-		</dict>
-		<key>nome masculino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-		<key>verbo</key>
-		<dict>
-			<key>Infinitivo</key>
-			<string></string>
-		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-	</dict>
-	<key>1 - 10</key>
-	<dict>
-		<key>nome feminino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-		</dict>
-		<key>nome masculino</key>
-		<dict>
-			<key>sing</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>plur</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
-		</dict>
-		<key>verbo</key>
-		<dict>
-			<key>Infinitivo</key>
-			<string></string>
-		</dict>
-		<key>pronome</key>
-		<dict>
-			<key>Feminino singular</key>
-			<string></string>
-			<key>Feminino plural</key>
-			<string></string>
-			<key>Masculino singular</key>
-			<string></string>
-			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
 	<key>servir</key>
@@ -11257,3366 +10924,3366 @@
 			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 19</key>
+	<key>circular</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 20</key>
+	<key>conduzir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 21</key>
+	<key>adorar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 22</key>
+	<key>adotar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 23</key>
+	<key>adquirir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 24</key>
+	<key>agitar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 25</key>
+	<key>alterar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 26</key>
+	<key>analisar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 27</key>
+	<key>anular</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 28</key>
+	<key>aprender</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 29</key>
+	<key>apertar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 30</key>
+	<key>apostar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 31</key>
+	<key>advertir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 32</key>
+	<key>afirmar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 	</dict>
-	<key>1 - 33</key>
+	<key>agradecer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>às</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>ao</string>
 			<key>plur</key>
-			<string></string>
+			<string>aos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>aos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 	</dict>
-	<key>1 - 34</key>
+	<key>agir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 35</key>
+	<key>agradar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 36</key>
+	<key>ajudar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 37</key>
+	<key>alertar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>às</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>ao</string>
 			<key>plur</key>
-			<string></string>
+			<string>aos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>aos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 38</key>
+	<key>ajustar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>às</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>ao</string>
 			<key>plur</key>
-			<string></string>
+			<string>aos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>aos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 39</key>
+	<key>anunciar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>às</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>ao</string>
 			<key>plur</key>
-			<string></string>
+			<string>aos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>aos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 40</key>
+	<key>assinar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 41</key>
+	<key>conquistar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>por</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 42</key>
+	<key>consultar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 43</key>
+	<key>contemplar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 44</key>
+	<key>controlar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 45</key>
+	<key>conviver</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 46</key>
+	<key>cortar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 47</key>
+	<key>criticar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 48</key>
+	<key>receber</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>de</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>de</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>de</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>de</string>
 		</dict>
 	</dict>
-	<key>1 - 49</key>
+	<key>recusar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>por</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>por</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>por</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>por</string>
 		</dict>
 	</dict>
-	<key>1 - 50</key>
+	<key>retratar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>em</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 51</key>
+	<key>desculpar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 52</key>
+	<key>descartar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 53</key>
+	<key>descer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 54</key>
+	<key>desempenhar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 55</key>
+	<key>desejar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 56</key>
+	<key>descrever</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 57</key>
+	<key>designar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 58</key>
+	<key>desligar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 59</key>
+	<key>deslocar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 60</key>
+	<key>destinar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>à</string>
 		</dict>
 	</dict>
-	<key>1 - 61</key>
+	<key>acionar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 62</key>
+	<key>atualizar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 63</key>
+	<key>admirar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 64</key>
+	<key>afundar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 65</key>
+	<key>andar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 66</key>
+	<key>apresentar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 67</key>
+	<key>arranjar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>uma</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>uma</string>
 			<key>plur</key>
-			<string></string>
+			<string>algumas</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>algumas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>um </string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>um</string>
 			<key>plur</key>
-			<string></string>
+			<string>alguns</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>alguns</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 68</key>
+	<key>avaliar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 69</key>
+	<key>carregar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 70</key>
+	<key>comemorar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 71</key>
+	<key>escrever</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>na</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>na</string>
 			<key>plur</key>
-			<string></string>
+			<string>nas</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>no</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>no</string>
 			<key>plur</key>
-			<string></string>
+			<string>nos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>nos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 72</key>
+	<key>esgotar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 73</key>
+	<key>esperar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 74</key>
+	<key>estender</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 75</key>
+	<key>esquecer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 76</key>
+	<key>exigir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>da</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>da</string>
 			<key>plur</key>
-			<string></string>
+			<string>das</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>das</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>do</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>dos</string>
 			<key>plur</key>
-			<string></string>
+			<string>dos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>dos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 77</key>
+	<key>existir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>na</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>na</string>
 			<key>plur</key>
-			<string></string>
+			<string>nas</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>nas</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>no</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>no</string>
 			<key>plur</key>
-			<string></string>
+			<string>nos</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>nos</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 78</key>
+	<key>excluir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 79</key>
+	<key>exportar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 80</key>
+	<key>expulsar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>null</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 	</dict>
-	<key>1 - 81</key>
+	<key>conhecer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 82</key>
+	<key>conseguir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 83</key>
+	<key>conservar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 84</key>
+	<key>elogiar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>o porque</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 85</key>
+	<key>esmagar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 86</key>
+	<key>evidenciar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 87</key>
+	<key>evitar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>null</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 88</key>
+	<key>impedir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 89</key>
+	<key>implicar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>em</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 90</key>
+	<key>justificar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>à</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>à</string>
 			<key>plur</key>
-			<string></string>
+			<string>às</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>às</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>ao</string>
 			<key>plur</key>
-			<string></string>
+			<string>ao</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>ao</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>o porque</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 91</key>
+	<key>libertar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 92</key>
+	<key>marcar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com a</string>
 			<key>plur</key>
-			<string></string>
+			<string>com as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>com o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com o</string>
 			<key>plur</key>
-			<string></string>
+			<string>com os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>com</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>com</string>
 		</dict>
 	</dict>
-	<key>1 - 93</key>
+	<key>mover</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 94</key>
+	<key>nomear</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 95</key>
+	<key>obedecer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>em</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 96</key>
+	<key>oferecer</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 97</key>
+	<key>pagar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>o</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 98</key>
+	<key>perseguir</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>a</string>
 		</dict>
 	</dict>
-	<key>1 - 99</key>
+	<key>pintar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
-	<key>1 - 100</key>
+	<key>recuperar</key>
 	<dict>
 		<key>nome feminino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>a</string>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>a</string>
 			<key>plur</key>
-			<string></string>
+			<string>as</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>as</string>
 		</dict>
 		<key>nome masculino</key>
 		<dict>
 			<key>sing</key>
-			<string></string>
+			<string>o</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>o</string>
 			<key>plur</key>
-			<string></string>
+			<string>os</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>os</string>
 		</dict>
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
-			<string></string>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
 			<key>Feminino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Feminino plural</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino singular</key>
-			<string></string>
+			<string>para</string>
 			<key>Masculino plural</key>
-			<string></string>
+			<string>para</string>
 		</dict>
 	</dict>
 </dict>

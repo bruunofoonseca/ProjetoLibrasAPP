@@ -51,8 +51,9 @@ class CallTranslation: NSObject {
         
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
-        while(i != fraseClassificada.count){
+        while(i != 3){
             for(var j = 0; j < fraseClassificada.count; j++){
+        
                 if(fraseClassificada[j].text == fraseOrganizada[i]){
                     aux = fraseClassificada[i]
                     fraseClassificada[i] = fraseClassificada[j]
@@ -61,6 +62,10 @@ class CallTranslation: NSObject {
             }
             i++
         }
+        
+        print(fraseClassificada[1].text)
+        print(fraseClassificada[2].text)
+        print(fraseClassificada.count)
         
         if self.fraseClassificada.count == 3
         {
