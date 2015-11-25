@@ -64,12 +64,7 @@ class MenuViewController: UIViewController {
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
             
-            //btnTraducao.enabled = false
-            
             self.presentViewController(alertController, animated: true, completion: nil)
-        }
-        else {
-            //btnTraducao.enabled = true
         }
     }
 

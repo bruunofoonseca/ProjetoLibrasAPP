@@ -377,7 +377,7 @@
                                     <constraint firstItem="5Yh-wD-D8h" firstAttribute="centerY" secondItem="tLy-iF-1Xw" secondAttribute="centerY" id="uBp-ac-xtu"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-eL-ZpR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-eL-ZpR">
                                 <rect key="frame" x="0.0" y="40" width="320" height="440"/>
                                 <animations/>
                             </scrollView>
