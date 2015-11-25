@@ -19,6 +19,7 @@ class TraduzidoViewController: ViewController {
     var frases : [[String]] = []
     var fraseTraduzida : [String] = []
     var fraseUsuario = ""
+    var fraseList = [String?](count: 3, repeatedValue: nil)
     
     @IBOutlet weak var viewFraseTraduzida: UIView!
     @IBOutlet weak var viewFraseusuario: UIView!
@@ -32,6 +33,9 @@ class TraduzidoViewController: ViewController {
         customizaViews()
         
         super.showNavigation()
+        
+        coloreFraseSurdo()
+        coloreFraseTradutor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +52,9 @@ class TraduzidoViewController: ViewController {
         let index = tempoVerbalControl.selectedSegmentIndex
         
         fraseTraduzidaLabel.text = fraseTraduzida[index]
+        
+        coloreFraseSurdo()
+        coloreFraseTradutor()
     }
     
     @IBAction func mudaTempoVerbal(sender: UISegmentedControl) {
@@ -169,6 +176,174 @@ class TraduzidoViewController: ViewController {
         nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
         nextSpeach.rate = 0.42
         synt.speakUtterance(nextSpeach)
+        
+        self.view.makeToast(message: "Falando frase")
+    }
+    
+    /* Colore frases */
+    
+    func coloreFraseSurdo(){
+        let texto = fraseList[0]! + " " + fraseList[1]! + " " + fraseList[2]!
+        
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto)
+        
+        var initial = 0
+        var final = 0
+        
+        if (fraseList[0]?.characters.count != 0){
+            initial = 0
+            final = (fraseList[0]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[1]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + 1
+            final = (fraseList[1]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[2]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + (fraseList[1]?.characters.count)! + 2
+            final = (fraseList[2]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        fraseUsuarioLabel.attributedText = myMutableString
+    }
+    
+    func coloreFraseTradutor(){
+        
+        if(frases == []){
+            coloreIgual()
+        }else{
+            var sujeito:Int = 0, verbo:Int = 0, complemento:Int = 0
+            
+            let tempoVerbal = tempoVerbalControl.selectedSegmentIndex
+            
+            if (tempoVerbal == 0){
+                sujeito = 0
+                verbo = 1
+                complemento = 2
+            }else if(tempoVerbal == 1){
+                sujeito = 3
+                verbo = 4
+                complemento = 5
+            }else if(tempoVerbal == 2){
+                sujeito = 6
+                verbo = 7
+                complemento = 8
+            }
+            
+            let texto = fraseTraduzidaLabel.text
+            
+            var myMutableString = NSMutableAttributedString()
+            myMutableString = NSMutableAttributedString(string: texto!)
+            
+            var initial = 0
+            var final = 0
+            
+            // Sujeito
+            initial = 0
+            for palavra in frases[sujeito]{
+                if (palavra != "null" && !palavra.isEmpty) {
+                    initial += palavra.characters.count + 1
+                }
+            }
+            initial -= 1
+            if (initial > 0){
+                initial -= frases[sujeito][(frases[sujeito].count - 1)].characters.count
+            }
+            final = frases[sujeito][(frases[sujeito].count - 1)].characters.count
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+            
+            
+            // Verbo
+            initial = 0
+            for palavra in frases[sujeito]{
+                if (palavra != "null" && !palavra.isEmpty) {
+                    initial += palavra.characters.count + 1
+                }
+            }
+            final = frases[verbo][0].characters.count
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+            
+            
+            // Complemento
+            initial = 0
+            for palavra in frases[sujeito]{
+                if (palavra != "null" && !palavra.isEmpty) {
+                    initial += palavra.characters.count + 1
+                }
+            }
+            for palavra in frases[verbo]{
+                if (palavra != "null" && !palavra.isEmpty && palavra != "") {
+                    initial += palavra.characters.count + 1
+                }
+            }
+            
+            
+            if Array(texto!.characters)[(texto!.characters.count - 2)] == "."{
+                print(frases[complemento][0].characters.count)
+                if (frases[complemento].count == 1) && (frases[verbo][1] != " ") {
+                    initial -= 1
+                }
+                else if (frases[complemento].count > 1) && (frases[verbo][1] != " ") && (frases[complemento][0].characters.count == 1){
+                    initial -= -1
+                }
+                else if (frases[complemento].count > 1) && (frases[complemento][0].characters.count > 1){
+                    initial += 2
+                }
+                else{
+                    initial -= 2
+                }
+            }
+            else{
+                initial -= 2
+            }
+            
+            final = frases[complemento][(frases[complemento].count - 1)].characters.count
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+            
+            
+            fraseTraduzidaLabel.attributedText = myMutableString
+        }
+    }
+    
+    func coloreIgual(){
+        let texto = fraseTraduzidaLabel.text
+        
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: texto!)
+        
+        var initial = 0
+        var final = 0
+        
+        if (fraseList[0]?.characters.count != 0){
+            initial = 0
+            final = (fraseList[0]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[1]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + 1
+            final = (fraseList[1]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        if (fraseList[2]?.characters.count != 0){
+            initial = (fraseList[0]?.characters.count)! + (fraseList[1]?.characters.count)! + 2
+            final = (fraseList[2]?.characters.count)!
+            
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.29, green:0.63, blue:0.07, alpha:1.0), range:NSRange(location:initial, length:final))
+        }
+        
+        fraseTraduzidaLabel.attributedText = myMutableString
     }
     
 }

@@ -21,6 +21,8 @@ class FullScreenTraducaoViewController: ViewController {
         falarFrase()
         
         super.showNavigation()
+        
+        self.view.makeToast(message: "Falando frase")
     }
 
     override func didReceiveMemoryWarning() {

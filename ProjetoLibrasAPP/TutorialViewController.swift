@@ -18,6 +18,7 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         super.showNavigation()
+        super.hideBackButton()
     }
 
     override func viewDidLayoutSubviews() {

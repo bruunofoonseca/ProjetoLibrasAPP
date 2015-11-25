@@ -89,6 +89,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
                 
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
                 juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
@@ -114,6 +118,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(sujeitoClassificado)
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
                 
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
@@ -142,6 +150,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
                 
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
                 juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
@@ -168,6 +180,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(sujeitoClassificado)
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
                 
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
