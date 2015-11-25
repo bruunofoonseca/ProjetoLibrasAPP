@@ -43,12 +43,6 @@ class ViewController: UIViewController, UIBarPositioningDelegate {
     
     func reachabilityStatusChanged() -> Bool {
         if reachabilityStatus == kNOTREACHABLE {
-            let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            self.navigationController?.popToRootViewControllerAnimated(true)
-            //self.presentViewController(alertController, animated: true, completion: nil)
             return true
         }else{
             return false

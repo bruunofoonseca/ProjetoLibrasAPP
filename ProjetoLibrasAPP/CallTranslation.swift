@@ -27,6 +27,8 @@ class CallTranslation: NSObject {
     var juntaPalavras : String = ""
     var translationDelegate: CallTranslationDelegate?
     var frases : [[String]] = []
+    var organizaFrase : [Word] = []
+
     
     override init() {
         
@@ -40,27 +42,45 @@ class CallTranslation: NSObject {
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
         var frase = text
         var fraseOrganizada : [String] = []
-        fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
+        fraseOrganizada = frase.lowercaseString.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         frase = (frase.lowercaseString)
         self.juntaPalavras.removeAll()
         // Chama a API para classificar as frases.
         fraseClassificada = classifica.classify(frase)
         
-        var i = 0
-        var aux : Word
+//        var i = 0
+          var entrou = false
+//        var aux : Word
+//        
+//        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
+//        
+//        for orgWord in fraseOrganizada
+//        {
+//            for desorgWord in fraseClassificada
+//            {
+//                if orgWord == desorgWord.text
+//                {
+//                    aux = fraseClassificada[i]
+//                    fraseClassificada[i] = fraseClassificada[j]
+//                    fraseClassificada[j] = aux
+//                }
+//                j++
+//            }
+//            j = 0
+//            i++
+//        }
         
-        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
+        organizaFrase.removeAll()
         
-        while(i != 3){
-            for(var j = 0; j < fraseClassificada.count; j++){
-        
-                if(fraseClassificada[j].text == fraseOrganizada[i]){
-                    aux = fraseClassificada[i]
-                    fraseClassificada[i] = fraseClassificada[j]
-                    fraseClassificada[j] = aux
+        for i in fraseOrganizada{
+            for j in fraseClassificada{
+                if (i == j.text || i == j.mottos[0].text) && (!entrou){
+                    organizaFrase.append(j)
+                    entrou = true
                 }
             }
-            i++
+            
+            entrou = false
         }
         
         
@@ -73,15 +93,15 @@ class CallTranslation: NSObject {
                 juntaPalavras.removeAll()
                 
                 // Chama a classe que trata o sujeito.
-                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                self.sujeitoClassificado = sujeito.tratarSujeito(organizaFrase)
                 print(sujeitoClassificado)
                 
                 // Chama a classe que trata o Verbo.
-                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
+                self.verboClassificado = verbo.tratarVerbo(organizaFrase, tempo: 1)
                 print(verboClassificado)
                 
                 // Chama a classe que trata o complemento
-                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                self.complementoClassificado = complemento.tratarComplemento(organizaFrase, preposicao: verboClassificado[1])
                 print(complementoClassificado)
                 
                 // Feito para juntar as palavras em uma String e colocar na tela.
@@ -106,13 +126,13 @@ class CallTranslation: NSObject {
                 juntaPalavras.removeAll()
                 
                 // Chama a classe que trata o sujeito.
-                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                self.sujeitoClassificado = sujeito.tratarSujeito(organizaFrase)
                 
                 // Chama a classe que trata o Verbo.
-                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 0)
+                self.verboClassificado = verbo.tratarVerbo(organizaFrase, tempo: 0)
                 
                 // Chama a classe que trata o complemento
-                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                self.complementoClassificado = complemento.tratarComplemento(organizaFrase, preposicao: verboClassificado[1])
                 
                 // Feito para juntar as palavras em uma String e colocar na tela.
                 metodoJuntaPalavra(sujeitoClassificado)
@@ -134,15 +154,15 @@ class CallTranslation: NSObject {
                 juntaPalavras.removeAll()
                 
                 // Chama a classe que trata o sujeito.
-                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                self.sujeitoClassificado = sujeito.tratarSujeito(organizaFrase)
                 print(sujeitoClassificado)
                 
                 // Chama a classe que trata o Verbo.
-                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
+                self.verboClassificado = verbo.tratarVerbo(organizaFrase, tempo: 1)
                 print(verboClassificado)
                 
                 // Chama a classe que trata o complemento
-                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                self.complementoClassificado = complemento.tratarComplemento(organizaFrase, preposicao: verboClassificado[1])
                 print(complementoClassificado)
                 
                 // Feito para juntar as palavras em uma String e colocar na tela.
@@ -165,15 +185,15 @@ class CallTranslation: NSObject {
                 juntaPalavras.removeAll()
                 
                 // Chama a classe que trata o sujeito.
-                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                self.sujeitoClassificado = sujeito.tratarSujeito(organizaFrase)
                 print(sujeitoClassificado)
                 
                 // Chama a classe que trata o Verbo.
-                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 2)
+                self.verboClassificado = verbo.tratarVerbo(organizaFrase, tempo: 2)
                 print(verboClassificado)
                 
                 // Chama a classe que trata o complemento
-                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                self.complementoClassificado = complemento.tratarComplemento(organizaFrase, preposicao: verboClassificado[1])
                 print(complementoClassificado)
                 
                 // Feito para juntar as palavras em uma String e colocar na tela.

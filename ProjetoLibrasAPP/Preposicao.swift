@@ -191,7 +191,7 @@ class Preposicao: NSObject {
             }
             
             if(verificaExcecao(texto, dict: dictPronomeExcecao, posicao: 1)){
-                let test = dictPronomeExcecao!.objectForKey(texto[1].text)?.valueForKey(texto[2].text) as AnyObject? as! String
+                let test = dictPronomeExcecao!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.valueForKey(texto[2].text) as AnyObject? as! String
                 colocaPreposicao = test
             }
             else{

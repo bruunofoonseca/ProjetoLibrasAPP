@@ -11,6 +11,7 @@
 		062BF6381C039E7D00273C81 /* PronomeObliquosEu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF6371C039E7D00273C81 /* PronomeObliquosEu.plist */; };
 		062BF63C1C039E9600273C81 /* PronomeObliquosEle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF63B1C039E9600273C81 /* PronomeObliquosEle.plist */; };
 		062BF63E1C039EA100273C81 /* PreposicaoExcecao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062BF63D1C039EA100273C81 /* PreposicaoExcecao.plist */; };
+		068E9D191C06098300886DC2 /* Preposicao.plist in Resources */ = {isa = PBXBuildFile; fileRef = 068E9D171C04F38C00886DC2 /* Preposicao.plist */; };
 		069291931BEBE79300E98F5D /* Motto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069291921BEBE79300E98F5D /* Motto.swift */; };
 		06B8CAB01BF667C500B70EE3 /* excluir.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B8CAAF1BF667C500B70EE3 /* excluir.png */; };
 		06B8CAB21BF667CD00B70EE3 /* mover.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B8CAB11BF667CD00B70EE3 /* mover.png */; };
@@ -470,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068E9D191C06098300886DC2 /* Preposicao.plist in Resources */,
 				B06C99061BC7FEAE0096B633 /* weblysleekuisl.ttf in Resources */,
 				062BF63C1C039E9600273C81 /* PronomeObliquosEle.plist in Resources */,
 				062BF63E1C039EA100273C81 /* PreposicaoExcecao.plist in Resources */,
@@ -646,7 +648,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjetoLibrasAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -808,7 +810,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjetoLibrasAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -827,7 +829,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProjetoLibrasAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bepid.ProjetoLibrasAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

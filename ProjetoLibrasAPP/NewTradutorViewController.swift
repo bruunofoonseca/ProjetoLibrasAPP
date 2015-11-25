@@ -34,7 +34,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     
     var callTranslation:CallTranslation!
     
-    var internetObject = InternetConnection()
+    //var internetObject = InternetConnection()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,22 +50,20 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         
         keyboardNotifications()
         initializeScroll()
-        
         callTranslation = CallTranslation.init()
         callTranslation.translationDelegate = self
         
         super.showNavigation()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     override func viewDidAppear(animated: Bool) {
-        internetObject.verifyInternetStatus()
+        //internetObject.verifyInternetStatus()
         mainTextfield.becomeFirstResponder()
     }
-    
     
     @IBAction func showMenu(sender: AnyObject) {
         super.showMenu()
@@ -74,8 +72,10 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     /* Traduz Palavra */
     
     func traduzFrase() {
-        if (frase[0] != "" && frase[1] != "" && frase[2] != "") {
-            if !super.reachabilityStatusChanged(){
+        if (frase[0] != "" && frase[1] != "" && frase[2] != "")
+        {
+            if !super.reachabilityStatusChanged()
+            {
                 
                 self.startLoading()
                 
@@ -88,12 +88,17 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
                     self.callTranslation.traducaoTexto(self.textoUsuario.text!)
                     dispatch_group_leave(dispatchGroup)
                     
-                    
+
                     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), { () -> Void in
                         self.stopLoading()
                         self.performSegueWithIdentifier("ShowTraduzido", sender: nil)
                     })
                 }
+            }
+            else
+            {
+                limpaTextoNoFinal()
+                alertTraduzFrase()
             }
         }
     }
@@ -122,6 +127,21 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         }
         
         textoUsuario.text = ""
+    }
+    
+    func alertTraduzFrase() {
+        
+        let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .Default){
+            UIAlertAction in
+            print("pertou")
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        }
+        
+        alertController.addAction(defaultAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
     }
     
     /* Proxima Palavra */
@@ -184,7 +204,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         self.scrollView.addSubview(img1)
         self.scrollView.addSubview(img2)
         self.scrollView.addSubview(img3)
-        
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width * 3, self.scrollView.frame.height - 100)
         self.scrollView.delegate = self
     }
