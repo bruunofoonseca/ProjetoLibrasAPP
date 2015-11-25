@@ -51,12 +51,16 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
     }
     
     @IBAction func next(sender: AnyObject) {
-        currentPage += 1
+        if currentPage < 12{
+            currentPage += 1
+        }
         self.scrollView.scrollRectToVisible(CGRect(x: (scrollView.frame.width * CGFloat(currentPage)), y: 0, width: scrollView.frame.width, height: scrollView.frame.height), animated: true)
     }
     
     @IBAction func back(sender: AnyObject) {
-        currentPage -= 1
+        if currentPage > 0{
+            currentPage -= 1
+        }
         self.scrollView.scrollRectToVisible(CGRect(x: (scrollView.frame.width * CGFloat(currentPage)), y: 0, width: scrollView.frame.width, height: scrollView.frame.height), animated: true)
     }
 }
