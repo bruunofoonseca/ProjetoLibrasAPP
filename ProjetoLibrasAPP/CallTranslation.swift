@@ -63,9 +63,6 @@ class CallTranslation: NSObject {
             i++
         }
         
-        print(fraseClassificada[1].text)
-        print(fraseClassificada[2].text)
-        print(fraseClassificada.count)
         
         if self.fraseClassificada.count == 3
         {

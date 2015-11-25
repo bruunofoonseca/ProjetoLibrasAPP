@@ -35,6 +35,7 @@
 		B070D3B41C04ED3600DC5A79 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B070D3B31C04ED3600DC5A79 /* Reachability.m */; };
 		C30181061BFBA377005003CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181051BFBA377005003CE /* MenuViewController.swift */; };
 		C30181081BFBA3A6005003CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30181071BFBA3A6005003CE /* ViewController.swift */; };
+		C32C32A81C061E560032E475 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32C32A71C061E560032E475 /* TutorialViewController.swift */; };
 		C337F6121BE6867700B064CD /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C340559E1BF3BAA40055555D /* CallTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340559D1BF3BAA40055555D /* CallTranslation.swift */; };
 		C34E5B6F1BFD2B97001AE2DE /* NewTradutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E5B6E1BFD2B97001AE2DE /* NewTradutorViewController.swift */; };
@@ -103,6 +104,7 @@
 		B070D3B31C04ED3600DC5A79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C30181051BFBA377005003CE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C30181071BFBA3A6005003CE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C32C32A71C061E560032E475 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		C340559D1BF3BAA40055555D /* CallTranslation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTranslation.swift; sourceTree = "<group>"; };
 		C34E5B6E1BFD2B97001AE2DE /* NewTradutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTradutorViewController.swift; sourceTree = "<group>"; };
 		C382DA181BFD0A37002B3395 /* FrasesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrasesTableViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		C30181021BFB9679005003CE /* Novo layout */ = {
 			isa = PBXGroup;
 			children = (
+				C32C32A61C061E400032E475 /* Tutorial */,
 				B070D3B51C04ED7700DC5A79 /* InternetConnection */,
 				C34E5B6D1BFD2AF6001AE2DE /* Tradutor */,
 				C34E5B6C1BFD247C001AE2DE /* Frases */,
@@ -244,6 +247,14 @@
 				C30181071BFBA3A6005003CE /* ViewController.swift */,
 			);
 			name = "Novo layout";
+			sourceTree = "<group>";
+		};
+		C32C32A61C061E400032E475 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				C32C32A71C061E560032E475 /* TutorialViewController.swift */,
+			);
+			name = Tutorial;
 			sourceTree = "<group>";
 		};
 		C34E5B6C1BFD247C001AE2DE /* Frases */ = {
@@ -522,6 +533,7 @@
 				410E74811BD01CD000512F18 /* Adjetivo.swift in Sources */,
 				41FDD8961BBEF52F005CA9F8 /* VerboEstrutura.swift in Sources */,
 				41EA443C1BBDD6600076C6C2 /* Artigo.swift in Sources */,
+				C32C32A81C061E560032E475 /* TutorialViewController.swift in Sources */,
 				C382DA1B1BFD1CA5002B3395 /* ShowFraseViewController.swift in Sources */,
 				C30181061BFBA377005003CE /* MenuViewController.swift in Sources */,
 				C3CBBE6E1BBC94060035A1D4 /* AppDelegate.swift in Sources */,

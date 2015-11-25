@@ -253,35 +253,82 @@
                     <connections>
                         <outlet property="btnTraducao" destination="wY5-og-7wR" id="TQ7-xZ-SSx"/>
                         <segue destination="M9E-ee-EoA" kind="show" identifier="ShowTradutor" id="PNj-ya-FsE"/>
-                        <segue destination="QFC-1a-xaN" kind="show" identifier="ShowVideos" id="hZC-Rf-6Bh"/>
                         <segue destination="X9I-zk-n7U" kind="show" identifier="ShowFrases" id="rj7-JO-LPG"/>
+                        <segue destination="R2l-Lv-rRP" kind="show" identifier="ShowVideos" id="whe-uQ-QeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-fX-5Jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-603" y="-1761"/>
         </scene>
-        <!--Videos-->
-        <scene sceneID="hPJ-l7-0nv">
+        <!--Explicação-->
+        <scene sceneID="0U8-Jq-cC1">
             <objects>
-                <viewController title="Videos" id="QFC-1a-xaN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial" id="R2l-Lv-rRP" customClass="TutorialViewController" customModule="ProjetoLibrasAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tdt-ld-10n"/>
-                        <viewControllerLayoutGuide type="bottom" id="wGr-GY-glX"/>
+                        <viewControllerLayoutGuide type="top" id="UHy-Dp-tXV"/>
+                        <viewControllerLayoutGuide type="bottom" id="hjs-Bb-bQQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="THv-gW-rLz">
+                    <view key="view" contentMode="scaleToFill" id="48k-ky-9ii">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" red="0.86301342219999999" green="0.86301342219999999" blue="0.86301342219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="r1W-mU-Zx6">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPI-pb-2Yd">
+                                <rect key="frame" x="20" y="84" width="280" height="376"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-mh-SSj">
+                                <rect key="frame" x="20" y="84" width="280" height="376"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="htp-MJ-lJ6" appends="YES" id="WOY-PE-mFG"/>
+                                    <outletCollection property="gestureRecognizers" destination="GDX-ph-e7R" appends="YES" id="JaX-q8-0OY"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="r1W-mU-Zx6" secondAttribute="trailing" id="6dz-3X-Wuj"/>
+                            <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="q4a-mh-SSj" secondAttribute="bottom" constant="20" id="D0P-y9-N0t"/>
+                            <constraint firstItem="r1W-mU-Zx6" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" id="ER0-tS-vIv"/>
+                            <constraint firstAttribute="trailing" secondItem="q4a-mh-SSj" secondAttribute="trailing" constant="20" id="ID7-lf-s3Q"/>
+                            <constraint firstItem="BPI-pb-2Yd" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" constant="20" id="P18-yN-zH8"/>
+                            <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="BPI-pb-2Yd" secondAttribute="bottom" constant="20" id="PMK-Ak-5CN"/>
+                            <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="r1W-mU-Zx6" secondAttribute="bottom" id="PwE-t9-LkR"/>
+                            <constraint firstItem="r1W-mU-Zx6" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" id="b1f-S3-Xh4"/>
+                            <constraint firstItem="q4a-mh-SSj" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" constant="20" id="gLu-j3-5JE"/>
+                            <constraint firstItem="q4a-mh-SSj" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" constant="20" id="rGD-xf-TGd"/>
+                            <constraint firstItem="BPI-pb-2Yd" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" constant="20" id="svw-fk-LJM"/>
+                            <constraint firstAttribute="trailing" secondItem="BPI-pb-2Yd" secondAttribute="trailing" constant="20" id="y0c-4O-3CV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Explicação" id="q2l-oV-jD0">
+                        <barButtonItem key="rightBarButtonItem" image="hamburguer" id="Q0g-ni-8sS">
+                            <connections>
+                                <action selector="showMenu:" destination="R2l-Lv-rRP" id="MF9-h0-yi5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="QAm-rw-mKR" kind="show" identifier="ShowVideo" id="4a6-dy-hlC"/>
+                        <outlet property="guideView" destination="BPI-pb-2Yd" id="23U-Aj-Mao"/>
+                        <outlet property="scrollView" destination="q4a-mh-SSj" id="Haq-m2-dyD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P6b-Sl-nHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fd1-Wo-s3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="htp-MJ-lJ6">
+                    <connections>
+                        <action selector="next:" destination="R2l-Lv-rRP" id="F0S-WU-hWK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="GDX-ph-e7R">
+                    <connections>
+                        <action selector="back:" destination="R2l-Lv-rRP" id="cV3-3j-EOo"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="364" y="-2513"/>
+            <point key="canvasLocation" x="364" y="-2542"/>
         </scene>
         <!--Frases-->
         <scene sceneID="eHU-2Q-cNp">
@@ -524,25 +571,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF7-h2-Zw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363" y="-952"/>
-        </scene>
-        <!--Video-->
-        <scene sceneID="wKi-Jh-l6u">
-            <objects>
-                <viewController title="Video" id="QAm-rw-mKR" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rQ6-qi-nGK"/>
-                        <viewControllerLayoutGuide type="bottom" id="qh7-xT-Ed8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cEC-Wg-wXo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" red="0.86301342219999999" green="0.86301342219999999" blue="0.86301342219999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3g8-CG-mPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1096" y="-2513"/>
         </scene>
         <!--Full Screen Frases-->
         <scene sceneID="uYQ-l5-Zgd">
