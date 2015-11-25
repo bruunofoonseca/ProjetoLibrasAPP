@@ -52,13 +52,6 @@ class CallTranslation: NSObject {
         
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
-        for word in fraseClassificada
-        {
-            print(word.text)
-        }
-        
-        print("------------------")
-        
         for orgWord in fraseOrganizada
         {
             for desorgWord in fraseClassificada
@@ -80,11 +73,6 @@ class CallTranslation: NSObject {
         while count < fraseClassificada.count
         {
             fraseClassificada.removeAtIndex(count)
-        }
-        
-        for word in fraseClassificada
-        {
-            print(word.text)
         }
         
         if self.fraseClassificada.count == 3
