@@ -47,22 +47,45 @@ class CallTranslation: NSObject {
         fraseClassificada = classifica.classify(frase)
         
         var i = 0
+        var j = 0
         var aux : Word
         
         //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
-        while(i != fraseClassificada.count){
-            for(var j = 0; j < fraseClassificada.count; j++){
+        for word in fraseClassificada
+        {
+            print(word.text)
+        }
         
-                if(fraseClassificada[j].text == fraseOrganizada[i]){
+        print("------------------")
+        
+        for orgWord in fraseOrganizada
+        {
+            for desorgWord in fraseClassificada
+            {
+                if orgWord == desorgWord.text
+                {
                     aux = fraseClassificada[i]
                     fraseClassificada[i] = fraseClassificada[j]
                     fraseClassificada[j] = aux
                 }
+                j++
             }
+            j = 0
             i++
         }
-    
+        
+        let count = 3
+        
+        while count < fraseClassificada.count
+        {
+            fraseClassificada.removeAtIndex(count)
+        }
+        
+        for word in fraseClassificada
+        {
+            print(word.text)
+        }
         
         if self.fraseClassificada.count == 3
         {
