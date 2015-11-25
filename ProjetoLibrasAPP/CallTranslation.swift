@@ -48,12 +48,12 @@ class CallTranslation: NSObject {
         // Chama a API para classificar as frases.
         fraseClassificada = classifica.classify(frase)
         
-        //var i = 0
-        //var j = 0
-        //var aux : Word
-        
-        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-        
+//        var i = 0
+          var entrou = false
+//        var aux : Word
+//        
+//        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
+//        
 //        for orgWord in fraseOrganizada
 //        {
 //            for desorgWord in fraseClassificada
@@ -74,22 +74,25 @@ class CallTranslation: NSObject {
         
         for i in fraseOrganizada{
             for j in fraseClassificada{
-                if i == j.text{
+                if (i == j.text || i == j.mottos[0].text) && (!entrou){
                     organizaFrase.append(j)
+                    entrou = true
                 }
             }
+            
+            entrou = false
         }
-        
+
 //        let count = 3
-        
+//        
 //        while count < fraseClassificada.count
 //        {
 //            fraseClassificada.removeAtIndex(count)
 //        }
-        
+//        
         if organizaFrase.count == 3
         {
-            if organizaFrase[2].text == "ontem"
+            if fraseClassificada[2].text == "ontem"
             {
                 //------------------> FRASE NO PASSADO <-------------------
                 
