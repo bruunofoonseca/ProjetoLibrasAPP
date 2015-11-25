@@ -122,6 +122,8 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
             
             svc.fraseUsuario = textoUsuario.text!
             svc.fraseTraduzida = self.fraseTraduzida
+            svc.fraseList = frase
+            svc.frases = frases
         }
         
         textoUsuario.text = ""

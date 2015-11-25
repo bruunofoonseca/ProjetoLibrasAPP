@@ -82,15 +82,9 @@ class CallTranslation: NSObject {
             
             entrou = false
         }
-
-//        let count = 3
-//        
-//        while count < fraseClassificada.count
-//        {
-//            fraseClassificada.removeAtIndex(count)
-//        }
-//        
-        if organizaFrase.count == 3
+        
+        
+        if self.fraseClassificada.count == 3
         {
             if fraseClassificada[2].text == "ontem"
             {
@@ -114,6 +108,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(sujeitoClassificado)
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
                 
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
@@ -140,6 +138,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(sujeitoClassificado)
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
                 
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
@@ -168,6 +170,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
                 
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 
                 juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
@@ -194,6 +200,10 @@ class CallTranslation: NSObject {
                 metodoJuntaPalavra(sujeitoClassificado)
                 metodoJuntaPalavra(verboClassificado)
                 metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
                 
                 /**********    COLOCA EM LETRA MAÍUSCULA   **********/
                 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ShowFraseViewController: ViewController {
 
@@ -18,6 +19,9 @@ class ShowFraseViewController: ViewController {
         fraseLabel.text = frase
         
         super.showNavigation()
+        falarFrase()
+        
+        self.view.makeToast(message: "Falando frase")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,5 +30,14 @@ class ShowFraseViewController: ViewController {
     
     @IBAction func showMenu(sender: AnyObject) {
         super.showMenu()
+    }
+    
+    func falarFrase(){
+        let synt: AVSpeechSynthesizer = AVSpeechSynthesizer()
+        
+        let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: frase)
+        nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
+        nextSpeach.rate = 0.42
+        synt.speakUtterance(nextSpeach)
     }
 }
