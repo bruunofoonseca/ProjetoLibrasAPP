@@ -12,13 +12,16 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var guideView: UIView!
+    @IBOutlet weak var contagemLabel: UILabel!
     
     var currentPage:CGFloat = 0.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         super.showNavigation()
         super.hideBackButton()
+        contagemLabel.text = "1/13"
     }
 
     override func viewDidLayoutSubviews() {
@@ -54,6 +57,7 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
     @IBAction func next(sender: AnyObject) {
         if currentPage < 12{
             currentPage += 1
+            contagemLabel.text = String(Int(currentPage)+1) + "/13"
         }
         self.scrollView.scrollRectToVisible(CGRect(x: (scrollView.frame.width * CGFloat(currentPage)), y: 0, width: scrollView.frame.width, height: scrollView.frame.height), animated: true)
     }
@@ -61,6 +65,7 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
     @IBAction func back(sender: AnyObject) {
         if currentPage > 0{
             currentPage -= 1
+            contagemLabel.text = String(Int(currentPage)+1) + "/13"
         }
         self.scrollView.scrollRectToVisible(CGRect(x: (scrollView.frame.width * CGFloat(currentPage)), y: 0, width: scrollView.frame.width, height: scrollView.frame.height), animated: true)
     }

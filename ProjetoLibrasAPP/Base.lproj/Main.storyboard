@@ -22,6 +22,7 @@
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
             <string>WeblySleekUISemilight</string>
+            <string>WeblySleekUISemilight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -287,18 +288,28 @@
                                     <outletCollection property="gestureRecognizers" destination="GDX-ph-e7R" appends="YES" id="JaX-q8-0OY"/>
                                 </connections>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ1-BD-1vN">
+                                <rect key="frame" x="0.0" y="460" width="320" height="20"/>
+                                <fontDescription key="fontDescription" name="WeblySleekUISemilight" family="WeblySleek UI" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.66468852759999997" blue="0.71753251549999997" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="dJ1-BD-1vN" secondAttribute="bottom" id="2Ff-C5-yDz"/>
                             <constraint firstAttribute="trailing" secondItem="r1W-mU-Zx6" secondAttribute="trailing" id="6dz-3X-Wuj"/>
+                            <constraint firstItem="dJ1-BD-1vN" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" id="AE4-Xa-BCx"/>
                             <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="q4a-mh-SSj" secondAttribute="bottom" constant="20" id="D0P-y9-N0t"/>
                             <constraint firstItem="r1W-mU-Zx6" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" id="ER0-tS-vIv"/>
                             <constraint firstAttribute="trailing" secondItem="q4a-mh-SSj" secondAttribute="trailing" constant="20" id="ID7-lf-s3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="dJ1-BD-1vN" secondAttribute="trailing" id="Lsl-DZ-B0B"/>
                             <constraint firstItem="BPI-pb-2Yd" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" constant="20" id="P18-yN-zH8"/>
                             <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="BPI-pb-2Yd" secondAttribute="bottom" constant="20" id="PMK-Ak-5CN"/>
                             <constraint firstItem="hjs-Bb-bQQ" firstAttribute="top" secondItem="r1W-mU-Zx6" secondAttribute="bottom" id="PwE-t9-LkR"/>
                             <constraint firstItem="r1W-mU-Zx6" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" id="b1f-S3-Xh4"/>
                             <constraint firstItem="q4a-mh-SSj" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" constant="20" id="gLu-j3-5JE"/>
+                            <constraint firstItem="dJ1-BD-1vN" firstAttribute="top" secondItem="q4a-mh-SSj" secondAttribute="bottom" id="nGe-UE-ixe"/>
                             <constraint firstItem="q4a-mh-SSj" firstAttribute="top" secondItem="UHy-Dp-tXV" secondAttribute="bottom" constant="20" id="rGD-xf-TGd"/>
                             <constraint firstItem="BPI-pb-2Yd" firstAttribute="leading" secondItem="48k-ky-9ii" secondAttribute="leading" constant="20" id="svw-fk-LJM"/>
                             <constraint firstAttribute="trailing" secondItem="BPI-pb-2Yd" secondAttribute="trailing" constant="20" id="y0c-4O-3CV"/>
@@ -312,6 +323,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="contagemLabel" destination="dJ1-BD-1vN" id="BDX-bo-Og1"/>
                         <outlet property="guideView" destination="BPI-pb-2Yd" id="23U-Aj-Mao"/>
                         <outlet property="scrollView" destination="q4a-mh-SSj" id="Haq-m2-dyD"/>
                     </connections>
