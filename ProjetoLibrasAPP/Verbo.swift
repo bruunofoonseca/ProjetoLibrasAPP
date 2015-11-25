@@ -74,7 +74,7 @@ class Verbo: NSObject {
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Presente - 3ª singular")
                 }
-                else if sujeito.text == "nós"
+                else if sujeito.text == "nós" || sujeito.text == "nos"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Presente - 1ª plural")
                 }
@@ -85,6 +85,9 @@ class Verbo: NSObject {
                 else if sujeito.text == "eles" || sujeito.text == "elas" || sujeito.text == "vocês"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Presente - 3ª plural")
+                }
+                else{
+                    conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Presente - 3ª singular")
                 }
             }
         }
@@ -142,7 +145,7 @@ class Verbo: NSObject {
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Pretérito Perfeito Simples - 3ª singular")
                 }
-                else if sujeito.text == "nós"
+                else if sujeito.text == "nós" || sujeito.text == "nos"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Pretérito Perfeito Simples - 1ª plural")
                 }
@@ -153,6 +156,9 @@ class Verbo: NSObject {
                 else if sujeito.text == "eles" || sujeito.text == "elas" || sujeito.text == "vocês"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Pretérito Perfeito Simples - 3ª plural")
+                }
+                else{
+                    conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Pretérito Perfeito Simples - 3ª singular")
                 }
             }
         }
@@ -210,7 +216,7 @@ class Verbo: NSObject {
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Futuro - 3ª singular")
                 }
-                else if sujeito.text == "nós"
+                else if sujeito.text == "nós" || sujeito.text == "nos"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Futuro - 1ª plural")
                 }
@@ -221,6 +227,9 @@ class Verbo: NSObject {
                 else if sujeito.text == "eles" || sujeito.text == "elas" || sujeito.text == "vocês"
                 {
                     conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Futuro - 3ª plural")
+                }
+                else{
+                    conjugVerbo = api.get_verbs(verbo.mottos[posicaoMottoVerb].text, flexion: "Futuro - 3ª singular")
                 }
             }
         }
