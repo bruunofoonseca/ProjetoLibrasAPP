@@ -42,7 +42,7 @@ class CallTranslation: NSObject {
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
         var frase = text
         var fraseOrganizada : [String] = []
-        fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
+        fraseOrganizada = frase.lowercaseString.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         frase = (frase.lowercaseString)
         self.juntaPalavras.removeAll()
         // Chama a API para classificar as frases.

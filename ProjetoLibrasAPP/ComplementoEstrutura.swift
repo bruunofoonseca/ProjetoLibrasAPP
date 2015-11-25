@@ -35,6 +35,8 @@ class ComplementoEstrutura : NSObject {
         let posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
         
+        posicaoMotto = 0
+        
         for(var i = 0; i < frase[2].mottos.count; i++){
             if (frase[2].text == frase[2].mottos[i].text){
                 posicaoMotto = i
