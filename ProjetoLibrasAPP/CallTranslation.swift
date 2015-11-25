@@ -47,28 +47,10 @@ class CallTranslation: NSObject {
         self.juntaPalavras.removeAll()
         // Chama a API para classificar as frases.
         fraseClassificada = classifica.classify(frase)
-        
-//        var i = 0
+
           var entrou = false
-//        var aux : Word
-//        
-//        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-//        
-//        for orgWord in fraseOrganizada
-//        {
-//            for desorgWord in fraseClassificada
-//            {
-//                if orgWord == desorgWord.text
-//                {
-//                    aux = fraseClassificada[i]
-//                    fraseClassificada[i] = fraseClassificada[j]
-//                    fraseClassificada[j] = aux
-//                }
-//                j++
-//            }
-//            j = 0
-//            i++
-//        }
+       
+        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
         
         organizaFrase.removeAll()
         
@@ -84,7 +66,7 @@ class CallTranslation: NSObject {
         }
         
         
-        if self.fraseClassificada.count == 3
+        if self.organizaFrase.count == 3
         {
             if fraseClassificada[2].text == "ontem"
             {
