@@ -197,7 +197,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         img2.image = UIImage(named: "Fundo1")
         
         let img3 = UIImageView(frame: CGRect(x: scrollViewWidth * 2, y: 0, width: scrollViewWidth, height: scrollViewHeight))
-        img3.image = UIImage(named: "Fundo2")
+        img3.image = UIImage(named: "VerdeS-1")
         
         self.scrollView.addSubview(img1)
         self.scrollView.addSubview(img2)
