@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="009-kx-ynk">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -256,6 +256,8 @@
                         <segue destination="M9E-ee-EoA" kind="show" identifier="ShowTradutor" id="PNj-ya-FsE"/>
                         <segue destination="X9I-zk-n7U" kind="show" identifier="ShowFrases" id="rj7-JO-LPG"/>
                         <segue destination="R2l-Lv-rRP" kind="show" identifier="ShowVideos" id="whe-uQ-QeE"/>
+                        <segue destination="M9E-ee-EoA" kind="show" identifier="ShowFirst" animates="NO" id="gMu-Oy-Zny"/>
+                        <segue destination="R2l-Lv-rRP" kind="show" identifier="ShowFirstTutorial" animates="NO" id="5yI-u1-hUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXA-fX-5Jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1070,4 +1072,8 @@
         <image name="hamburguer" width="44" height="44"/>
         <image name="logo-1" width="110" height="110"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gMu-Oy-Zny"/>
+        <segue reference="5yI-u1-hUM"/>
+    </inferredMetricsTieBreakers>
 </document>

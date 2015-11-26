@@ -19,6 +19,10 @@ class MenuViewController: UIViewController {
         
         observerInternet()
         hideNavigation()
+        
+        if !checkFirstTimeEver(){
+            checkFirstTimeOpen()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -67,5 +71,26 @@ class MenuViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
+    
+    /* Verifica se é a primeira vez abrindo o app do inicio */
+    
+    func checkFirstTimeOpen(){
+        if(NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce") == false){
+            // This is the first launch ever
+            performSegueWithIdentifier("ShowFirst", sender: self)
+        }
+    }
+    
+    /* Verifica se é a primeira vez usando o app após instalado */
 
+    func checkFirstTimeEver() -> Bool{
+        let hasLaunch = NSUserDefaults.standardUserDefaults().boolForKey("FirstLaunch")
+        if !hasLaunch  {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstLaunch")
+            performSegueWithIdentifier("ShowFirstTutorial", sender: self)
+            return true
+        }else{
+            return false
+        }
+    }
 }
