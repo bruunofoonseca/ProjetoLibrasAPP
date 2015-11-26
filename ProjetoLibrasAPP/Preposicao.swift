@@ -46,6 +46,7 @@ class Preposicao: NSObject {
         var posVerbo = -1
         var posVerboConfere = -1
         var posSubstantivo = -1
+        var posSubstantivoConfere = -1
         posPronomeFlexion = posPronome
         
         pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao))
@@ -79,6 +80,7 @@ class Preposicao: NSObject {
             }
             else if (texto[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || texto[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
+                posSubstantivoConfere = i
             }
         }
         
@@ -166,6 +168,12 @@ class Preposicao: NSObject {
                     colocaPreposicao = test
                 }
             }
+        }
+        else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "advérbio"){
+            colocaPreposicao = ""
+        }
+        else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "adjetivo"){
+            colocaPreposicao = ""
         }
         else if (posSubstantivo != -1){
             var posSubstantivoFlexion = (texto[2].flexions.count - 1)

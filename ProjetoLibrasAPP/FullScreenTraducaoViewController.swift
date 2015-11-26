@@ -41,5 +41,11 @@ class FullScreenTraducaoViewController: ViewController {
         nextSpeach.rate = 0.42
         synt.speakUtterance(nextSpeach)
     }
+    
+    
+    @IBAction func falar(sender: AnyObject) {
+       self.view.makeToast(message: "Falando frase")
+        falarFrase()
+    }
 
 }

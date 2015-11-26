@@ -39,7 +39,23 @@ class InternetConnection:UIViewController {
     func statusChangedWithReachability(currentReachabilityStatus: Reachability) {
         let networkStatus:NetworkStatus = currentReachabilityStatus.currentReachabilityStatus()
         
+<<<<<<< HEAD
         //debugPrint("Status value: \(networkStatus.rawValue)")
+=======
+        debugPrint("Status value: \(networkStatus.rawValue)")
+        
+        if networkStatus.rawValue == NotReachable.rawValue {
+            debugPrint("Network Not Reachable!")
+            reachabilityStatus = kNOTREACHABLE
+        }
+        else if networkStatus.rawValue == ReachableViaWiFi.rawValue {
+            debugPrint("Network reachable with WIFI!")
+            reachabilityStatus = kREACHABLEWITHWIFI
+        }
+        else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
+            debugPrint("Network reachable with WWan!")
+        }
+>>>>>>> origin/master
         
         if networkStatus.rawValue == NotReachable.rawValue {
             //debugPrint("Network Not Reachable!")
@@ -50,7 +66,10 @@ class InternetConnection:UIViewController {
             reachabilityStatus = kREACHABLEWITHWIFI
         }
         else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
+<<<<<<< HEAD
             //debugPrint("Network reachable with WWan!")
+=======
+>>>>>>> origin/master
             reachabilityStatus = kREACHABLEWITHWWAN
         }
         
