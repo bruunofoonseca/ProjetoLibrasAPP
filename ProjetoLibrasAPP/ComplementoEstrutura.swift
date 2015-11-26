@@ -34,6 +34,7 @@ class ComplementoEstrutura : NSObject {
         var posVerboConfere = -1
         let posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
+        var posAdverbio = -1
         
         posicaoMotto = 0
         
@@ -60,7 +61,12 @@ class ComplementoEstrutura : NSObject {
             else if (frase[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || frase[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
             }
+            else if(frase[2].mottos[posicaoMotto].categories[i].text == "advérbio"){
+                posAdverbio = i
+            }
         }
+        
+        print(posAdverbio)
         
         if (posPronome == -1){
             posPronomeConfere = posPronome
@@ -115,15 +121,15 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(translator.get_verbs(frase[2].mottos[posicaoMotto].text, flexion: "Pretérito Imperfeito - 1ª singular") + ".")
                 }
                 else{
-                    arrayArtigos.append(frase[2].text)
+                    arrayArtigos.append(frase[2].text + ".")
                     return arrayArtigos
                 }
             }
-            else if (frase[2].mottos[0].categories[posSubstantivo].text == "nome feminino") || (frase[2].mottos[0].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1) && (posVerboConfere == -1){
+            else if (frase[2].mottos[posicaoMotto].categories[posSubstantivo].text == "nome feminino") || (frase[2].mottos[posicaoMotto].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1) && (posVerboConfere == -1) && (posAdverbio == -1){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
                 
-                posSubstantivoFlexion = relacionar.relacionaFlexion(frase, posicaoFrase: 2, posicao: posSubstantivo)
+                posSubstantivoFlexion = relacionar.relacionaFlexion(frase, posicaoFrase: 2, posicao: posSubstantivo, posicaoDoPai: posicaoMotto)
                 
                 if (preposicao == "null") || (preposicao == "") {
                     arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)

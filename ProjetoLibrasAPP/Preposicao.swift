@@ -172,6 +172,9 @@ class Preposicao: NSObject {
                 }
             }
         }
+        else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "advérbio"){
+            colocaPreposicao = ""
+        }
         else if (posSubstantivo != -1){
             var posSubstantivoFlexion = (texto[2].flexions.count - 1)
             

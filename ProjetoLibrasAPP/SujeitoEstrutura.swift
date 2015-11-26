@@ -55,11 +55,11 @@ class SujeitoEstrutura : NSObject {
         }
         
         if (posPronome != -1){
-            posSubstantivoFlexion = relacionaFlexion(frase,posicaoFrase: 0, posicao: posPronome)
+            posSubstantivoFlexion = relacionaFlexion(frase,posicaoFrase: 0, posicao: posPronome, posicaoDoPai: posicaoMotto)
             arrayArtigos = objPronome.categorizarPronome(frase, posicao: 0, posCategoria: posPronome, posFlexion: posSubstantivoFlexion)
         }
         else if (posSubstantivo != -1){
-            posSubstantivoFlexion = relacionaFlexion(frase, posicaoFrase: 0, posicao: posSubstantivo)
+            posSubstantivoFlexion = relacionaFlexion(frase, posicaoFrase: 0, posicao: posSubstantivo, posicaoDoPai: posicaoMotto)
             if (frase[0].mottos[posicaoMotto].categories[posSubstantivo].text == "nome feminino") || (frase[0].mottos[posicaoMotto].categories[posSubstantivo].text == "nome masculino") && (posVerbo == -1) && (posSubstantivo != -1){
                 arrayArtigos = objSubstantivo.classificaSubstantivo(frase, posicao: 0, posCategoria: posSubstantivo, posFlexion: posSubstantivoFlexion)
             }
@@ -69,13 +69,15 @@ class SujeitoEstrutura : NSObject {
         return arrayArtigos
     }
     
-    func relacionaFlexion(frase : [Word],posicaoFrase : Int, posicao : Int) -> Int {
+    func relacionaFlexion(frase : [Word],posicaoFrase : Int, posicao : Int, posicaoDoPai: Int) -> Int {
         var posicaoFlexion = 0
+        print(frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text)
         for (var i = 0; i < frase[posicaoFrase].flexions.count; i++){
-            if (frase[posicaoFrase].mottos[posicaoMotto].categories[posicao].text == "pronome") && (frase[0].flexions[i].text == "Feminino singular") || (frase[posicaoFrase].flexions[i].text == "Masculino singular") || (frase[posicaoFrase].flexions[i].text == "Feminino plural") || (frase[posicaoFrase].flexions[i].text == "Masculino plural"){
+            print(frase[posicaoFrase].flexions[i].text)
+            if (frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text == "pronome") && (frase[posicaoFrase].flexions[i].text == "Feminino singular") || (frase[posicaoFrase].flexions[i].text == "Masculino singular") || (frase[posicaoFrase].flexions[i].text == "Feminino plural") || (frase[posicaoFrase].flexions[i].text == "Masculino plural"){
                 posicaoFlexion = i
             }
-            else if (frase[posicaoFrase].mottos[posicaoMotto].categories[posicao].text == "nome feminino" || frase[posicaoFrase].mottos[posicaoMotto].categories[posicao].text == "nome masculino") && (frase[posicaoFrase].flexions[i].text == "sing" || frase[posicaoFrase].flexions[i].text == "plur"){
+            else if (frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text == "nome feminino" || frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text == "nome masculino") && (frase[posicaoFrase].flexions[i].text == "sing" || frase[posicaoFrase].flexions[i].text == "plur"){
                 posicaoFlexion = i
             }
         }
