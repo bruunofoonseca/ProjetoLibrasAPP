@@ -123,7 +123,7 @@ class ComplementoEstrutura : NSObject {
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
                 
-                posSubstantivoFlexion = relacionar.relacionaFlexion(frase, posicaoFrase: 2, posicao: posSubstantivo)
+                posSubstantivoFlexion = relacionar.relacionaFlexion(frase, posicaoFrase: 2, posicao: posSubstantivo , posicaoDoPai: posicaoMotto)
                 
                 if (preposicao == "null") || (preposicao == "") {
                     arrayArtigos = objArtigo.colocarArtigoDefinido(frase, posicao: 2, posCategoria : posSubstantivo, posFlexion : posSubstantivoFlexion)

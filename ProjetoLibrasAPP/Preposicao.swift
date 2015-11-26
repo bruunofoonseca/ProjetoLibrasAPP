@@ -172,7 +172,7 @@ class Preposicao: NSObject {
         else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "advérbio"){
             colocaPreposicao = ""
         }
-        else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "adjetivo"){
+        else if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "adjetivo") && (posSubstantivoConfere == -1){
             colocaPreposicao = ""
         }
         else if (posSubstantivo != -1){
