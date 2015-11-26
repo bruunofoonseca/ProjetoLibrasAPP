@@ -121,7 +121,7 @@ class TraduzidoViewController: ViewController {
             }
         }
         catch{
-            print("Erro")
+            debugPrint("Erro")
         }
         
         for itens in arrayDeFrases{
@@ -140,7 +140,7 @@ class TraduzidoViewController: ViewController {
                 try contexto.save()
             }
             catch{
-                print("Erro ao salvar")
+                debugPrint("Erro ao salvar")
             }
             
             self.view.makeToast(message: "Frase salva!")

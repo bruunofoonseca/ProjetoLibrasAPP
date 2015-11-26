@@ -101,8 +101,6 @@ class Preposicao: NSObject {
             posVerboConfere = posVerbo
         }
         
-        print(texto[1].mottos[posicaoMottoVerbo].text)
-        
         if (!verificaVerboNaLista(texto, dict: self.dict, posicao: 1)){
             if(texto[2].mottos[posicaoMotto].categories[posVerbo].text == "verbo"){
                 colocaPreposicao = "e"
@@ -162,9 +160,6 @@ class Preposicao: NSObject {
                 }
                 else{
                     
-                    print(posicaoMotto)
-                    print(posVerbo)
-                    print(texto[2].flexions[posVerboFlexion].text)
                     
                     let test = dict!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
                     
