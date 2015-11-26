@@ -37,7 +37,17 @@ class ShowFraseViewController: ViewController {
         
         let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: frase)
         nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
-        nextSpeach.rate = 0.42
+        
+        let os = NSProcessInfo().operatingSystemVersion
+        switch (os.majorVersion){
+        case 8:
+            nextSpeach.rate = 0
+            break
+        default:
+            nextSpeach.rate = 0.42
+            break
+        }
+        
         synt.speakUtterance(nextSpeach)
     }
     
