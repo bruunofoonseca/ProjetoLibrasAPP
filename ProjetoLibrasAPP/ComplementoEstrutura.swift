@@ -119,7 +119,7 @@ class ComplementoEstrutura : NSObject {
                     return arrayArtigos
                 }
             }
-            else if (frase[2].mottos[0].categories[posSubstantivo].text == "nome feminino") || (frase[2].mottos[0].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1) && (posVerboConfere == -1){
+            else if (frase[2].mottos[posicaoMotto].categories[posSubstantivo].text == "nome feminino") || (frase[2].mottos[posicaoMotto].categories[posSubstantivo].text == "nome masculino") && (posPronomeConfere == -1) && (posVerboConfere == -1){
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR SUBSTANTIVO   **********/
                 

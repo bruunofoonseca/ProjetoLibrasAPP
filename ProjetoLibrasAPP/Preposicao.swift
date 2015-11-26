@@ -204,7 +204,7 @@ class Preposicao: NSObject {
             }
         }
         
-        if (texto[1].text == "estar") || (texto[1].text == "poder") || (texto[1].text == "estudar") && (texto[2].text == "casa"){
+        if ((texto[1].text == "estar") || (texto[1].text == "poder") || (texto[1].text == "estudar")) && (texto[2].text == "casa"){
             colocaPreposicao = "em"
         }
         
