@@ -4334,6 +4334,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4382,6 +4384,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -4432,6 +4436,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4480,6 +4486,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -4530,6 +4538,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4578,6 +4588,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4628,6 +4640,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4676,6 +4690,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4726,6 +4742,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4774,6 +4792,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -4824,6 +4844,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4872,6 +4894,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>depois</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>depois</string>
 		</dict>
 		<key>pronome</key>
@@ -4922,6 +4946,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>depois</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>depois</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -4970,6 +4996,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5020,6 +5048,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5068,6 +5098,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5118,6 +5150,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5166,6 +5200,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>
@@ -5216,6 +5252,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>para</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5264,6 +5302,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5314,6 +5354,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5362,6 +5404,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>e</string>
 		</dict>
 		<key>pronome</key>
@@ -5412,6 +5456,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>e</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>e</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5461,6 +5507,8 @@
 		<dict>
 			<key>Infinitivo</key>
 			<string>depois de</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
+			<string>depois de</string>
 		</dict>
 		<key>pronome</key>
 		<dict>
@@ -5509,6 +5557,8 @@
 		<key>verbo</key>
 		<dict>
 			<key>Infinitivo</key>
+			<string>para</string>
+			<key>Infinitivo Flexionado - 1ª singular</key>
 			<string>para</string>
 		</dict>
 		<key>pronome</key>

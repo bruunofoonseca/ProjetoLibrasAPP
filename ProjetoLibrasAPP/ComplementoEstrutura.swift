@@ -35,6 +35,8 @@ class ComplementoEstrutura : NSObject {
         let posVerboCategoria1 = -1
         var posSubstantivoFlexion = -1
         var posAdverbio = -1
+        var posSubstantivoConfere = -1
+
         
         posicaoMotto = 0
         
@@ -60,6 +62,7 @@ class ComplementoEstrutura : NSObject {
             }
             else if (frase[2].mottos[posicaoMotto].categories[i].text == "nome feminino" || frase[2].mottos[posicaoMotto].categories[i].text == "nome masculino" ) && (posSubstantivo == -1){
                 posSubstantivo = i
+                posSubstantivoConfere = i
             }
             else if(frase[2].mottos[posicaoMotto].categories[i].text == "advérbio"){
                 posAdverbio = i
@@ -86,7 +89,7 @@ class ComplementoEstrutura : NSObject {
         arrayArtigos.removeAll()
         
         for compCategory in frase[2].mottos[posicaoMotto].categories{
-            if (compCategory.text == "adjetivo")
+            if (compCategory.text == "adjetivo") && (posSubstantivoConfere == -1)
             {
                 arrayArtigos.append(objAdjetivo.tratarAdjetivo(frase[2], sujeito: frase[0]) + ".")
                 return arrayArtigos
