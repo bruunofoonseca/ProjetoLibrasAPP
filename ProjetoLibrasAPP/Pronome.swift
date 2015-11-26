@@ -94,7 +94,7 @@ class Pronome: NSObject {
                     pronomeTransformado = dictPronomeEle!.objectForKey(frase[1].text)?.valueForKey(frase[2].text) as AnyObject? as! String
                 }
             }
-            else if (frase[2].text == "nós"){
+            else if (frase[2].text == "nós") || (frase[2].text == "nos"){
                 if(!verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "conosco"
                 }

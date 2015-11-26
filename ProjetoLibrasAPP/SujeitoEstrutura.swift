@@ -71,9 +71,7 @@ class SujeitoEstrutura : NSObject {
     
     func relacionaFlexion(frase : [Word],posicaoFrase : Int, posicao : Int, posicaoDoPai: Int) -> Int {
         var posicaoFlexion = 0
-        print(frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text)
         for (var i = 0; i < frase[posicaoFrase].flexions.count; i++){
-            print(frase[posicaoFrase].flexions[i].text)
             if (frase[posicaoFrase].mottos[posicaoDoPai].categories[posicao].text == "pronome") && (frase[posicaoFrase].flexions[i].text == "Feminino singular") || (frase[posicaoFrase].flexions[i].text == "Masculino singular") || (frase[posicaoFrase].flexions[i].text == "Feminino plural") || (frase[posicaoFrase].flexions[i].text == "Masculino plural"){
                 posicaoFlexion = i
             }

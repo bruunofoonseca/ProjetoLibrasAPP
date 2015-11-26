@@ -271,16 +271,9 @@ class TraduzidoViewController: ViewController {
                 }
             }
             
-            print(frases[verbo][0])
             final = frases[verbo][0].characters.count
         
             myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
-            
-            print(initial)
-            print(frases[verbo].count)
-            print(final)
-            print("acabou")
-            
             
             // Complemento
             initial = 0

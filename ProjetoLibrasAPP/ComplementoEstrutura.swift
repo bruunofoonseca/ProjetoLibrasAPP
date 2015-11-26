@@ -65,9 +65,7 @@ class ComplementoEstrutura : NSObject {
                 posAdverbio = i
             }
         }
-        
-        print(posAdverbio)
-        
+                
         if (posPronome == -1){
             posPronomeConfere = posPronome
             posPronome = 0

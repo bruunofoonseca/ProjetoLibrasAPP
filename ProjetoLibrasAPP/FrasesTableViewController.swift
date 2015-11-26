@@ -253,7 +253,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
             }
         }
         catch{
-            debugPrint("erro")
+            debugPrint("erro ao mover")
         }
     }
 
@@ -292,7 +292,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
                 }
             }
             catch{
-                debugPrint("error")
+                debugPrint("erro ao deletar")
             }
             
             self.tableView.reloadData()

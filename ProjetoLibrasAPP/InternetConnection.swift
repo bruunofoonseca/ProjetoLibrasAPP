@@ -51,7 +51,6 @@ class InternetConnection:UIViewController {
         }
         else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
             debugPrint("Network reachable with WWan!")
-        //print("Status value: \(networkStatus.rawValue)")
         }
         
         if networkStatus.rawValue == NotReachable.rawValue {
