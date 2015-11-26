@@ -76,7 +76,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         {
             if !super.reachabilityStatusChanged()
             {
-                
+                mainTextfield.resignFirstResponder()
                 self.startLoading()
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
@@ -111,10 +111,11 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         fraseTraduzida.append((traducao.objectForKey("Passado") as? String)!)
         fraseTraduzida.append((traducao.objectForKey("Presente") as? String)!)
         fraseTraduzida.append((traducao.objectForKey("Futuro") as? String)!)
+        
+        //mainTextfield.resignFirstResponder()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        mainTextfield.resignFirstResponder()
         
         if segue.identifier == "ShowTraduzido" {
             
@@ -132,14 +133,15 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     func alertTraduzFrase() {
         
         let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
-        
         let defaultAction = UIAlertAction(title: "OK", style: .Default){
             UIAlertAction in
+            self.mainTextfield.resignFirstResponder()
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
         
         alertController.addAction(defaultAction)
         self.presentViewController(alertController, animated: true, completion: nil)
+        
     }
     
     /* Proxima Palavra */
@@ -419,7 +421,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     /* Loading view */
     
     func startLoading(){
-        mainTextfield.resignFirstResponder()
         
         loadingView.backgroundColor = UIColor(white: 0, alpha: 0.8)
         loadingView.superview!.bringSubviewToFront(loadingView)

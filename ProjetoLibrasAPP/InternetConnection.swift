@@ -27,11 +27,11 @@ class InternetConnection:UIViewController {
         if internetReach != nil {
             statusChangedWithReachability(internetReach!)
         }
-
+        
     }
     
     func reachabilityChanged(notification: NSNotification) {
-        debugPrint("Reachability Status Changed...")
+        //debugPrint("Reachability Status Changed...")
         reachability = notification.object as? Reachability
         statusChangedWithReachability(reachability!)
     }
@@ -39,30 +39,18 @@ class InternetConnection:UIViewController {
     func statusChangedWithReachability(currentReachabilityStatus: Reachability) {
         let networkStatus:NetworkStatus = currentReachabilityStatus.currentReachabilityStatus()
         
-<<<<<<< Updated upstream
-        debugPrint("Status value: \(networkStatus.rawValue)")
+        //debugPrint("Status value: \(networkStatus.rawValue)")
         
         if networkStatus.rawValue == NotReachable.rawValue {
-            debugPrint("Network Not Reachable!")
+            //debugPrint("Network Not Reachable!")
             reachabilityStatus = kNOTREACHABLE
         }
         else if networkStatus.rawValue == ReachableViaWiFi.rawValue {
-            debugPrint("Network reachable with WIFI!")
+            //debugPrint("Network reachable with WIFI!")
             reachabilityStatus = kREACHABLEWITHWIFI
         }
         else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
-            debugPrint("Network reachable with WWan!")
-=======
-        //print("Status value: \(networkStatus.rawValue)")
-        
-        if networkStatus.rawValue == NotReachable.rawValue {
-            reachabilityStatus = kNOTREACHABLE
-        }
-        else if networkStatus.rawValue == ReachableViaWiFi.rawValue {
-            reachabilityStatus = kREACHABLEWITHWIFI
-        }
-        else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
->>>>>>> Stashed changes
+            //debugPrint("Network reachable with WWan!")
             reachabilityStatus = kREACHABLEWITHWWAN
         }
         
@@ -74,5 +62,5 @@ class InternetConnection:UIViewController {
         if reachabilityStatus == kNOTREACHABLE {
         }
     }
-        
+    
 }
