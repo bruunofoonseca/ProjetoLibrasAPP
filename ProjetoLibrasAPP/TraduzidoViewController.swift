@@ -121,7 +121,7 @@ class TraduzidoViewController: ViewController {
             }
         }
         catch{
-            print("Erro")
+            debugPrint("Erro")
         }
         
         for itens in arrayDeFrases{
@@ -140,7 +140,7 @@ class TraduzidoViewController: ViewController {
                 try contexto.save()
             }
             catch{
-                print("Erro ao salvar")
+                debugPrint("Erro ao salvar")
             }
             
             self.view.makeToast(message: "Frase salva!")
@@ -224,11 +224,11 @@ class TraduzidoViewController: ViewController {
             
             let tempoVerbal = tempoVerbalControl.selectedSegmentIndex
             
-            if (tempoVerbal == 0){
+            if (tempoVerbal == 1){
                 sujeito = 0
                 verbo = 1
                 complemento = 2
-            }else if(tempoVerbal == 1){
+            }else if(tempoVerbal == 0){
                 sujeito = 3
                 verbo = 4
                 complemento = 5
@@ -257,8 +257,10 @@ class TraduzidoViewController: ViewController {
             if (initial > 0){
                 initial -= frases[sujeito][(frases[sujeito].count - 1)].characters.count
             }
+            
             final = frases[sujeito][(frases[sujeito].count - 1)].characters.count
             myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:0.38, green:0.05, blue:0.65, alpha:1.0), range:NSRange(location:initial, length:final))
+            
             
             
             // Verbo
@@ -268,9 +270,10 @@ class TraduzidoViewController: ViewController {
                     initial += palavra.characters.count + 1
                 }
             }
-            final = frases[verbo][0].characters.count
-            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
             
+            final = frases[verbo][0].characters.count
+        
+            myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
             
             // Complemento
             initial = 0
@@ -280,22 +283,27 @@ class TraduzidoViewController: ViewController {
                 }
             }
             for palavra in frases[verbo]{
-                if (palavra != "null" && !palavra.isEmpty && palavra != "") {
+                if (palavra != "null" && !palavra.isEmpty) {
                     initial += palavra.characters.count + 1
                 }
             }
             
             
             if Array(texto!.characters)[(texto!.characters.count - 2)] == "."{
-                print(frases[complemento][0].characters.count)
-                if (frases[complemento].count == 1) && (frases[verbo][1] != " ") {
+                if (frases[complemento].count == 1) && (frases[verbo][1] != " ") && (frases[verbo][1] != ""){
                     initial -= 1
+                }
+                else if(frases[complemento].count == 1) && (frases[verbo][1] != " ") && (frases[verbo][1] != ""){
+                    initial += 1
                 }
                 else if (frases[complemento].count > 1) && (frases[verbo][1] != " ") && (frases[complemento][0].characters.count == 1){
                     initial -= -1
                 }
                 else if (frases[complemento].count > 1) && (frases[complemento][0].characters.count > 1){
                     initial += 2
+                }
+                else if(frases[verbo][1] == ""){
+                    initial -= 1
                 }
                 else{
                     initial -= 2

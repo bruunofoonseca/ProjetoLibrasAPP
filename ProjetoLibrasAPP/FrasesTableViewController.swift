@@ -69,7 +69,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
         }
             
         catch{
-            print("Erro ao salvar")
+            debugPrint("Erro ao salvar")
         }
         
         return i
@@ -120,7 +120,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
                 context.deleteObject(deletar as! NSManagedObject)
             }
             catch{
-                print("error")
+                debugPrint("error")
             }
             
             self.tableView.reloadData()
@@ -249,11 +249,11 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
                 try contxt.save()
             }
             catch{
-                print("erro ao salvar no core data")
+                debugPrint("erro ao salvar no core data")
             }
         }
         catch{
-            print("erro")
+            debugPrint("erro ao mover")
         }
     }
 
@@ -292,7 +292,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
                 }
             }
             catch{
-                print("error")
+                debugPrint("erro ao deletar")
             }
             
             self.tableView.reloadData()
