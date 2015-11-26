@@ -53,6 +53,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         callTranslation = CallTranslation.init()
         callTranslation.translationDelegate = self
         
+        mainTextfield.becomeFirstResponder()
         super.showNavigation()
     }
     
@@ -62,7 +63,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     
     override func viewDidAppear(animated: Bool) {
         //internetObject.verifyInternetStatus()
-        mainTextfield.becomeFirstResponder()
     }
     
     @IBAction func showMenu(sender: AnyObject) {
@@ -76,7 +76,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         {
             if !super.reachabilityStatusChanged()
             {
-                mainTextfield.resignFirstResponder()
+                self.mainTextfield.resignFirstResponder()
                 self.startLoading()
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
@@ -111,8 +111,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         fraseTraduzida.append((traducao.objectForKey("Passado") as? String)!)
         fraseTraduzida.append((traducao.objectForKey("Presente") as? String)!)
         fraseTraduzida.append((traducao.objectForKey("Futuro") as? String)!)
-        
-        //mainTextfield.resignFirstResponder()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -150,6 +148,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         if mainTextfield.text == "" {
             avisoNenhumTexto()
         }else{
+            
             limpaTextoNoFinal()
             colocaPalavraNaFrase()
             mostraFrase()
