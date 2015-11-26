@@ -63,7 +63,7 @@ class Adjetivo : NSObject {
             }
         }
         
-        if adjetivoTratado == ""
+        if (adjetivoTratado == nil) || (adjetivoTratado == "")
         {
             adjetivoTratado = adjetivo.text
         }

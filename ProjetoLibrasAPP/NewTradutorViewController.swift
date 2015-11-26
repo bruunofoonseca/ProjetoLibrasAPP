@@ -135,7 +135,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         
         let defaultAction = UIAlertAction(title: "OK", style: .Default){
             UIAlertAction in
-            print("pertou")
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
         

@@ -129,7 +129,7 @@ class Translator: NSObject {
             
         } catch let error as NSError {
             
-            print(error)
+            debugPrint(error)
             
             return []
         }
@@ -247,7 +247,7 @@ class Translator: NSObject {
             
         } catch let error as NSError {
             
-            print(error)
+            debugPrint(error)
             
             return motto
         }
@@ -369,7 +369,7 @@ class Translator: NSObject {
             
         } catch let error as NSError {
             
-            print(error)
+            debugPrint(error)
             
             return motto
         }
