@@ -140,7 +140,6 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         
         alertController.addAction(defaultAction)
         self.presentViewController(alertController, animated: true, completion: nil)
-        
     }
     
     /* Proxima Palavra */

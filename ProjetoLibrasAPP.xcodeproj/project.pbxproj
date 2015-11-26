@@ -426,9 +426,7 @@
 					};
 					C3CBBE691BBC94050035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
-
-						DevelopmentTeam = ETCP9R5EPN;
-
+						DevelopmentTeam = 7S84RQ3NGE;
 					};
 					C3CBBE801BBC94060035A1D4 = {
 						CreatedOnToolsVersion = 7.0;
