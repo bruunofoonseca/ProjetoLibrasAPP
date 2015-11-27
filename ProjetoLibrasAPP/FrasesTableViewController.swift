@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate, UISearchBarDelegate {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     
     let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -37,7 +37,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
     func showNavigation(){
         self.navigationController?.navigationBar.hidden = false
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -78,7 +78,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(searchActive) {
             return filteredSentences.count
@@ -86,7 +86,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
         
         return atualizarTotalDasFrases()
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("frase")!
         
@@ -159,31 +159,31 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
     }
     
     /********** MÉTODO PARA MOVER A TABLE VIEW  **********/
-
+    
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
     /********** MÉTODO RESPONSÁVEL PELA AÇÃO DE MOSTRAR OS BOTÕES DELETAR E MOVER  **********/
- 
+    
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         /********** BOTÃO DELETAR  **********/
-
+        
         let deleteAction = UITableViewRowAction(style: .Normal, title: "     "){
             (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             self.request.returnsObjectsAsFaults = false
             self.deletarFraseIndexPath = indexPath
             self.confirmDelete()
         }
-
+        
         deleteAction.backgroundColor = UIColor(patternImage: UIImage(named: "excluir")!)
-
+        
         /********** BOTÃO MOVER  **********/
         
         let moverAction = UITableViewRowAction(style: .Normal, title: "     "){
             (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             self.editing = false
-    
+            
             if(!self.ativo){
                 self.moverCell()
                 self.ativo = true
@@ -211,11 +211,11 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
         
         let val = self.arrayTableView.removeAtIndex(fromIndexPath.row)
-
+        
         // insert it into the new position
         
         self.arrayTableView.insert(val, atIndex: toIndexPath.row)
-
+        
         do {
             let contxt: NSManagedObjectContext = self.appDelegate.managedObjectContext
             request.sortDescriptors = [sortDescriptor]
@@ -229,7 +229,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
                     MyData[MyData.count - 1 - count].setValue(MyData.count - count-2, forKey: "orderPosition")
                     count++
                 }
-
+                
                 MyData[MyData.count - count - 1].setValue(MyData.count - 1 - toIndexPath.row, forKey: "orderPosition")
             }
             
@@ -256,14 +256,14 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
             debugPrint("erro")
         }
     }
-
+    
     /********** MÉTODO PARA CONFIRMAR A DELEÇÃO DA FRASE E ATUALIZA A EXCLUSÃO NO CORE DATA  **********/
-
+    
     func confirmDelete() {
         let alert = UIAlertController(title: "Deletar Frase", message: "Você tem certeza que deseja deletar?", preferredStyle: .ActionSheet)
         let DeleteAction = UIAlertAction(title: "Deletar", style: .Destructive, handler: confirmaDeletar)
         let CancelAction = UIAlertAction(title: "Cancelar", style: .Cancel, handler: cancelaDeletar)
-
+        
         alert.addAction(DeleteAction)
         alert.addAction(CancelAction)
         
@@ -272,7 +272,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
         alert.popoverPresentationController?.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0)
         self.presentViewController(alert, animated: true, completion: nil)
     }
-
+    
     func confirmaDeletar(alertAction: UIAlertAction!) -> Void {
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext
@@ -298,7 +298,7 @@ class FrasesTableViewController: UITableViewController, UISearchDisplayDelegate,
             self.tableView.reloadData()
         }
     }
-
+    
     /********** MÉTODO QUE CANCELA A EXCLUSÃO DA FRASE  **********/
     
     func cancelaDeletar(alertAction: UIAlertAction!) {

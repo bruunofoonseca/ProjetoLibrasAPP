@@ -37,7 +37,7 @@ class InternetConnection:UIViewController {
     
     func statusChangedWithReachability(currentReachabilityStatus: Reachability) {
         let networkStatus:NetworkStatus = currentReachabilityStatus.currentReachabilityStatus()
-
+        
         
         if networkStatus.rawValue == NotReachable.rawValue {
             reachabilityStatus = kNOTREACHABLE
@@ -49,7 +49,7 @@ class InternetConnection:UIViewController {
         else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
             reachabilityStatus = kREACHABLEWITHWWAN
         }
-
+        
         
         NSNotificationCenter.defaultCenter().postNotificationName("ReachStatusChanged", object: nil)
         
