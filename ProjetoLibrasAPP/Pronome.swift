@@ -59,6 +59,10 @@ class Pronome: NSObject {
             }
         }
         
+        if (posicao == -1){
+            posicao = 0
+        }
+        
         if(frase[1].mottos[posicaoDoPai].categories[posicao].text == "verbo"){
             
             if(frase[2].text == "eu") {
