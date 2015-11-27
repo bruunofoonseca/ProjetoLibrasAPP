@@ -49,15 +49,19 @@ class Pronome: NSObject {
     
     /**********     TRANSFORMA EM PRONOME OBLIQUO CASO NECESSÁRIO   **********/
     
-    func transformaEmPronomeObliquosTonico (frase : [Word], var posicao : Int) -> String{
+    func transformaEmPronomeObliquosTonico (frase : [Word], var posicao : Int, posicaoDoPai : Int) -> String{
         
         var pronomeTransformado = frase[2].text
         
-        if (posicao == -1){
-            posicao = 0
+        posicao = 0
+        
+        for (var i = 0 ; i < frase[1].mottos[posicaoDoPai].categories.count; i++){
+            if(frase[1].mottos[posicaoDoPai].categories[i].text == "verbo"){
+                posicao = i
+            }
         }
         
-        if(frase[1].mottos[0].categories[posicao].text == "verbo"){
+        if(frase[1].mottos[posicaoDoPai].categories[posicao].text == "verbo"){
             
             if(frase[2].text == "eu") {
                 if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){

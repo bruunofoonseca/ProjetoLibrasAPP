@@ -23,6 +23,8 @@ class ComplementoEstrutura : NSObject {
     var pronomeTonico : [String] = []
     var fraseClassificada : [Word] = []
     var posicaoMotto = 0
+    var posicaoMottoVerbo = 0
+
     
     /**********     FUNÇÃO QUE TRATA O COMPLEMENTO DE ACORDO COM A FRASE   **********/
     
@@ -36,10 +38,17 @@ class ComplementoEstrutura : NSObject {
         var posSubstantivoFlexion = -1
         
         posicaoMotto = 0
+        posicaoMottoVerbo = 0
+
         
         for(var i = 0; i < frase[2].mottos.count; i++){
             if (frase[2].text == frase[2].mottos[i].text){
                 posicaoMotto = i
+            }
+        }
+        for(var i = 0; i < frase[1].mottos.count; i++){
+            if (frase[1].text == frase[1].mottos[i].text){
+                posicaoMottoVerbo = i
             }
         }
         
@@ -91,7 +100,7 @@ class ComplementoEstrutura : NSObject {
                 
                 /**********     IRÁ COLOCAR ARTIGO CASO NÃO TENHA PREPOSIÇÃO QUANDO FOR PRONOME   **********/
                 
-                pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase, posicao: posVerboCategoria1))
+                pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(frase, posicao: posVerboCategoria1, posicaoDoPai: posicaoMottoVerbo))
                 if (preposicao == "null"){
                     arrayArtigos = objPronome.categorizarPronome(frase, posicao: 2, posCategoria : 0, posFlexion: 0)
                 }

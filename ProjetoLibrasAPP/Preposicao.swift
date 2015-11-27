@@ -49,7 +49,7 @@ class Preposicao: NSObject {
         var posSubstantivoConfere = -1
         posPronomeFlexion = posPronome
         
-        pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao))
+        pronomeTonico.append(objPronome.transformaEmPronomeObliquosTonico(texto, posicao: posicao, posicaoDoPai: posicaoMottoVerbo))
         
         posicaoMotto = 0
         posicaoMottoVerbo = 0
@@ -161,8 +161,6 @@ class Preposicao: NSObject {
                     colocaPreposicao = test
                 }
                 else{
-                    
-                    
                     let test = dict!.objectForKey(texto[1].mottos[posicaoMottoVerbo].text)?.objectForKey(texto[2].mottos[posicaoMotto].categories[posVerbo].text)?.valueForKey(texto[2].flexions[posVerboFlexion].text) as AnyObject? as! String
                     
                     colocaPreposicao = test
