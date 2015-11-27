@@ -19,9 +19,6 @@ class ShowFraseViewController: ViewController {
         fraseLabel.text = frase
         
         super.showNavigation()
-        falarFrase()
-        
-        self.view.makeToast(message: "Falando frase")
     }
     
     override func didReceiveMemoryWarning() {

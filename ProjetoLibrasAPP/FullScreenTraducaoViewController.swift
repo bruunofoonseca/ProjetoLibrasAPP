@@ -18,11 +18,8 @@ class FullScreenTraducaoViewController: ViewController {
         super.viewDidLoad()
         
         fraseLabel.text = frase
-        falarFrase()
         
         super.showNavigation()
-        
-        self.view.makeToast(message: "Falando frase")
     }
     
     override func didReceiveMemoryWarning() {
