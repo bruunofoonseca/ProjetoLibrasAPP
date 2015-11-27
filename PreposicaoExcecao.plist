@@ -504,5 +504,10 @@
 		<key>meninos</key>
 		<string>para o</string>
 	</dict>
+	<key>vir</key>
+	<dict>
+		<key>cozinha</key>
+		<string>para a</string>
+	</dict>
 </dict>
 </plist>

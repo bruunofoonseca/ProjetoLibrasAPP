@@ -115,7 +115,7 @@ class ComplementoEstrutura : NSObject {
                     arrayArtigos.append(translator.get_verbs(frase[2].mottos[posicaoMotto].text, flexion: "Pretérito Imperfeito - 1ª singular") + ".")
                 }
                 else{
-                    arrayArtigos.append(frase[2].text)
+                    arrayArtigos.append(frase[2].text + ".")
                     return arrayArtigos
                 }
             }

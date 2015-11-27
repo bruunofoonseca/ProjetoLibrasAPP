@@ -186,7 +186,7 @@ class Preposicao: NSObject {
             }
             else if (texto[2].mottos[posicaoMotto].categories[posSubstantivo].text == "nome masculino"){
                 
-                while (texto[2].flexions[posSubstantivoFlexion].text != "sing" && texto[2].flexions[posSubstantivoFlexion].text != "plur" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino plural" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino singular" && texto[2].flexions[posSubstantivoFlexion].text != "Feminino singular" && texto[2].flexions[posSubstantivoFlexion].text != "Feminino plural"){
+                while (texto[2].flexions[posSubstantivoFlexion].text != "sing" && texto[2].flexions[posSubstantivoFlexion].text != "plur" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino plural" && texto[2].flexions[posSubstantivoFlexion].text != "Masculino singular" && texto[2].flexions[posSubstantivoFlexion].text != "Feminino singular" && texto[2].flexions[posSubstantivoFlexion].text != "Feminino plural") && (posSubstantivoFlexion > 0){
                     posSubstantivoFlexion = posSubstantivoFlexion - 1
                     
                 }

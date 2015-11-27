@@ -11,7 +11,7 @@ import CoreData
 import AVFoundation
 
 class TraduzidoViewController: ViewController {
-
+    
     @IBOutlet weak var fraseUsuarioLabel: UILabel!
     @IBOutlet weak var fraseTraduzidaLabel: UILabel!
     @IBOutlet weak var tempoVerbalControl: UISegmentedControl!
@@ -26,7 +26,7 @@ class TraduzidoViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         fraseUsuarioLabel.text = fraseUsuario
         selecionaFrase()
         
@@ -37,7 +37,7 @@ class TraduzidoViewController: ViewController {
         coloreFraseSurdo()
         coloreFraseTradutor()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -174,17 +174,7 @@ class TraduzidoViewController: ViewController {
         
         let nextSpeach:AVSpeechUtterance = AVSpeechUtterance(string: fraseTraduzidaLabel.text!)
         nextSpeach.voice = AVSpeechSynthesisVoice(language: "pt-BR")
-        
-        let os = NSProcessInfo().operatingSystemVersion
-        switch (os.majorVersion){
-        case 8:
-            nextSpeach.rate = 0
-            break
-        default:
-            nextSpeach.rate = 0.42
-            break
-        }
-        
+        nextSpeach.rate = 0.42
         synt.speakUtterance(nextSpeach)
         
         self.view.makeToast(message: "Falando frase")
@@ -282,7 +272,7 @@ class TraduzidoViewController: ViewController {
             }
             
             final = frases[verbo][0].characters.count
-        
+            
             myMutableString.addAttribute(NSForegroundColorAttributeName, value:UIColor(red:1.00, green:0.62, blue:0.12, alpha:1.0), range:NSRange(location:initial, length:final))
             
             // Complemento
