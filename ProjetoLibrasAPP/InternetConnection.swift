@@ -40,15 +40,12 @@ class InternetConnection:UIViewController {
         
         
         if networkStatus.rawValue == NotReachable.rawValue {
-            debugPrint("Network not reachable!")
             reachabilityStatus = kNOTREACHABLE
         }
         else if networkStatus.rawValue == ReachableViaWiFi.rawValue {
-            debugPrint("Network reachable with WIFI!")
             reachabilityStatus = kREACHABLEWITHWIFI
         }
         else if networkStatus.rawValue == ReachableViaWWAN.rawValue {
-            debugPrint("Network reachable with WWAN!")
             reachabilityStatus = kREACHABLEWITHWWAN
         }
         
