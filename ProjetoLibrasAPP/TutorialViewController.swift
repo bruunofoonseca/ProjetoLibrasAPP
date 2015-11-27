@@ -9,7 +9,7 @@
 import UIKit
 
 class TutorialViewController: ViewController, UIScrollViewDelegate {
-
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var guideView: UIView!
     @IBOutlet weak var contagemLabel: UILabel!
@@ -23,7 +23,7 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
         super.hideBackButton()
         contagemLabel.text = "1/13"
     }
-
+    
     override func viewDidLayoutSubviews() {
         initializeScroll()
     }
@@ -31,7 +31,7 @@ class TutorialViewController: ViewController, UIScrollViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     @IBAction func showMenu(sender: AnyObject) {
         super.showMenu()
     }

@@ -24,9 +24,6 @@ class Translator: NSObject {
             var words_list:[Word]
             words_list = []
             
-            //            phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            //phrase = phrase.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            
             let aux = "https://libiapi.herokuapp.com/word/classify_words/true/" + phrase + "/"
             let endpoint = NSURL(string: aux.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!)
             let data:NSData = NSData(contentsOfURL: endpoint!)!
@@ -142,8 +139,8 @@ class Translator: NSObject {
             var words_list:[Word]
             words_list = []
             
-            var params:String = motto//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "/" + flexion//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            var params:String = motto
+            params = params + "/" + flexion
             
             let endpoint = "https://libiapi.herokuapp.com/word/classify_verbs/true/" + params + "/"
             let url = endpoint.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
@@ -260,8 +257,8 @@ class Translator: NSObject {
             var words_list:[Word]
             words_list = []
             
-            var params:String = motto//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-            params = params + "/" + flexion//.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            var params:String = motto
+            params = params + "/" + flexion
             
             let endpoint = "https://libiapi.herokuapp.com/word/classify_adjectives/true/" + params + "/"
             let url = endpoint.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())

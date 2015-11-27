@@ -24,7 +24,7 @@ class ComplementoEstrutura : NSObject {
     var fraseClassificada : [Word] = []
     var posicaoMotto = 0
     var posicaoMottoVerbo = 0
-
+    
     
     /**********     FUNÇÃO QUE TRATA O COMPLEMENTO DE ACORDO COM A FRASE   **********/
     
@@ -39,7 +39,7 @@ class ComplementoEstrutura : NSObject {
         
         posicaoMotto = 0
         posicaoMottoVerbo = 0
-
+        
         
         for(var i = 0; i < frase[2].mottos.count; i++){
             if (frase[2].text == frase[2].mottos[i].text){

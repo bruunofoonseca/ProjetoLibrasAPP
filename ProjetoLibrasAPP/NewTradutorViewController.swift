@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollViewDelegate, CallTranslationDelegate {
-
+    
     @IBOutlet weak var sujeitoButton: UIButton!
     @IBOutlet weak var verboButton: UIButton!
     @IBOutlet weak var complementoButton: UIButton!
@@ -93,7 +93,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
                     self.callTranslation.traducaoTexto(self.textoUsuario.text!)
                     dispatch_group_leave(dispatchGroup)
                     
-
+                    
                     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), { () -> Void in
                         self.stopLoading()
                         self.performSegueWithIdentifier("ShowTraduzido", sender: nil)
@@ -360,7 +360,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         
         var myMutableString = NSMutableAttributedString()
         myMutableString = NSMutableAttributedString(string: texto)
-
+        
         var initial = 0
         var final = 0
         
@@ -394,7 +394,7 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         avancaPalavra()
         return true
     }
-
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if (string == " "){
             avancaPalavra()

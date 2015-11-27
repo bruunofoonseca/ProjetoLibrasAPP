@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class ShowFraseViewController: ViewController {
-
+    
     var frase:String = ""
     @IBOutlet weak var fraseLabel: UILabel!
     
@@ -23,7 +23,7 @@ class ShowFraseViewController: ViewController {
         
         self.view.makeToast(message: "Falando frase")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

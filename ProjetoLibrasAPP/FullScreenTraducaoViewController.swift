@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class FullScreenTraducaoViewController: ViewController {
-
+    
     @IBOutlet weak var fraseLabel: UILabel!
     var frase : String = ""
     
@@ -24,7 +24,7 @@ class FullScreenTraducaoViewController: ViewController {
         
         self.view.makeToast(message: "Falando frase")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -54,8 +54,8 @@ class FullScreenTraducaoViewController: ViewController {
     
     
     @IBAction func falar(sender: AnyObject) {
-       self.view.makeToast(message: "Falando frase")
+        self.view.makeToast(message: "Falando frase")
         falarFrase()
     }
-
+    
 }

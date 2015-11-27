@@ -25,7 +25,7 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         internetObject.verifyInternetStatus()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -60,7 +60,7 @@ class MenuViewController: UIViewController {
     }
     
     /* Verifica se é a primeira vez usando o app após instalado */
-
+    
     func checkFirstTimeEver() -> Bool{
         let hasLaunch = NSUserDefaults.standardUserDefaults().boolForKey("FirstLaunch")
         if !hasLaunch  {
