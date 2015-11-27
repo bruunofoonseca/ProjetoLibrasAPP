@@ -53,8 +53,6 @@ class Pronome: NSObject {
         
         var pronomeTransformado = frase[2].text
         
-        posicao = 0
-        
         for (var i = 0 ; i < frase[1].mottos[posicaoDoPai].categories.count; i++){
             if(frase[1].mottos[posicaoDoPai].categories[i].text == "verbo"){
                 posicao = i
