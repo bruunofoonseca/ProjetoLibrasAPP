@@ -9,20 +9,38 @@
 import UIKit
 import CoreData
 
+var internetObject = InternetConnection()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         UINavigationBar.appearance().barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
         UINavigationBar.appearance().tintColor = UIColor(red:0.19, green:0.66, blue:0.71, alpha:1.0)
-        
         NSThread.sleepForTimeInterval(0.5)
         
+        observerInternet()
+        internetObject.verifyInternetStatus()
+        
         return true
+    }
+    
+    /* Adiciona observer para verificar a internet */
+    
+    func observerInternet(){
+        NSNotificationCenter.defaultCenter().addObserver(internetObject, selector: "reachabilityChanged:", name: kReachabilityChangedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+    }
+    
+    /* Verifica a mudança de estado da internet e emite o alert */
+    
+    func reachabilityStatusChanged() {
+        if reachabilityStatus == kNOTREACHABLE {
+            
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

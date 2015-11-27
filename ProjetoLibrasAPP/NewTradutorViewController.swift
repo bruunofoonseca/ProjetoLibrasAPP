@@ -53,8 +53,8 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         callTranslation = CallTranslation.init()
         callTranslation.translationDelegate = self
         
-        mainTextfield.becomeFirstResponder()
         super.showNavigation()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,7 +62,12 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
     }
     
     override func viewDidAppear(animated: Bool) {
-        //internetObject.verifyInternetStatus()
+        if super.reachabilityStatusChanged(){
+            alert()
+        }
+        else {
+            mainTextfield.becomeFirstResponder()
+        }
     }
     
     @IBAction func showMenu(sender: AnyObject) {
@@ -128,6 +133,8 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
         textoUsuario.text = ""
     }
     
+    /* Alerts */
+    
     func alertTraduzFrase() {
         
         let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
@@ -136,10 +143,19 @@ class NewTradutorViewController: ViewController, UITextFieldDelegate, UIScrollVi
             self.mainTextfield.resignFirstResponder()
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
-        
         alertController.addAction(defaultAction)
         self.presentViewController(alertController, animated: true, completion: nil)
         
+    }
+    
+    func alert() {
+        let alertController = UIAlertController(title: "Atenção", message: "Sem conexão com a internet!", preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .Default){
+            UIAlertAction in
+            self.mainTextfield.becomeFirstResponder()
+        }
+        alertController.addAction(defaultAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     /* Proxima Palavra */
