@@ -26,7 +26,6 @@ class Pronome: NSObject {
         super.init()
     }
     
-    
     /**********     FUNÇÃO QUE TRATA O PRONOME DE ACORDO COM SUA PARTICULARIDADE   **********/
     
     func categorizarPronome(frase : [Word], posicao : Int, posCategoria : Int, posFlexion : Int) -> [String]{
@@ -50,15 +49,21 @@ class Pronome: NSObject {
     
     /**********     TRANSFORMA EM PRONOME OBLIQUO CASO NECESSÁRIO   **********/
     
-    func transformaEmPronomeObliquosTonico (frase : [Word], var posicao : Int) -> String{
+    func transformaEmPronomeObliquosTonico (frase : [Word], var posicao : Int, posicaoDoPai : Int) -> String{
         
         var pronomeTransformado = frase[2].text
+        
+        for (var i = 0 ; i < frase[1].mottos[posicaoDoPai].categories.count; i++){
+            if(frase[1].mottos[posicaoDoPai].categories[i].text == "verbo"){
+                posicao = i
+            }
+        }
         
         if (posicao == -1){
             posicao = 0
         }
         
-        if(frase[1].mottos[0].categories[posicao].text == "verbo"){
+        if(frase[1].mottos[posicaoDoPai].categories[posicao].text == "verbo"){
             
             if(frase[2].text == "eu") {
                 if(verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
@@ -95,7 +100,7 @@ class Pronome: NSObject {
                     pronomeTransformado = dictPronomeEle!.objectForKey(frase[1].text)?.valueForKey(frase[2].text) as AnyObject? as! String
                 }
             }
-            else if (frase[2].text == "nós"){
+            else if (frase[2].text == "nós") || (frase[2].text == "nos"){
                 if(!verificaVerboNaLista(frase, dict: dictPronomeEu, posicao: 1)){
                     pronomeTransformado = "conosco"
                 }
@@ -120,5 +125,4 @@ class Pronome: NSObject {
         }
         return false
     }
-    
 }

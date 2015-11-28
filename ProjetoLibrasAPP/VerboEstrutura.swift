@@ -28,12 +28,15 @@ class VerboEstrutura : NSObject {
         
         for (var i = 0; i < frase[1].mottos[0].categories.count; i++)
         {
-            if (frase[1].mottos[0].categories[i].text == "verbo") && (frase[1].flexions[i].text == "Infinitivo Flexionado - 1ª singular")
+            if (frase[1].mottos[0].categories[i].text == "verbo")
             {
-                posVerbo = i
+                for flexion in frase[1].flexions{
+                    if flexion.text == "Infinitivo Flexionado - 1ª singular"{
+                        posVerbo = i
+                    }
+                }
             }
         }
-        
         
         for _ in frase[1].mottos[0].categories{
             
@@ -56,6 +59,18 @@ class VerboEstrutura : NSObject {
                     if category.text == "verbo"
                     {
                         defVerbo.append(objVerbo.conjugVerboSujeitoPassado(frase[0], verbo: frase[1]))
+                        defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
+                        return defVerbo
+                    }
+                }
+            }
+            else if tempo == 2
+            {
+                for category in frase[1].mottos[0].categories
+                {
+                    if category.text == "verbo"
+                    {
+                        defVerbo.append(objVerbo.conjugVerboSujeitoFuturo(frase[0], verbo: frase[1]))
                         defVerbo.append(objPreposicao.inserePreposicao(frase, posicao: posVerbo))
                         return defVerbo
                     }

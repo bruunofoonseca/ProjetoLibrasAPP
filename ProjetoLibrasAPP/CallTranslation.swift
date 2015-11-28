@@ -28,6 +28,7 @@ class CallTranslation: NSObject {
     var translationDelegate: CallTranslationDelegate?
     var frases : [[String]] = []
     
+    
     override init() {
         
     }
@@ -40,93 +41,159 @@ class CallTranslation: NSObject {
         let separadorDasPalavras = NSCharacterSet(charactersInString: " ")
         var frase = text
         var fraseOrganizada : [String] = []
-        fraseOrganizada = frase.componentsSeparatedByCharactersInSet(separadorDasPalavras)
+        fraseOrganizada = frase.lowercaseString.componentsSeparatedByCharactersInSet(separadorDasPalavras)
         frase = (frase.lowercaseString)
+        self.juntaPalavras.removeAll()
         // Chama a API para classificar as frases.
         fraseClassificada = classifica.classify(frase)
         
-        var i = 0
-        var aux : Word
-        
-        //ORDENA AS PALAVRAS NA ORDEM DIGITADA
-        
-        while(i != fraseClassificada.count){
-            for(var j = 0; j < fraseClassificada.count; j++){
-                if(fraseClassificada[j].text == fraseOrganizada[i]){
-                    aux = fraseClassificada[i]
-                    fraseClassificada[i] = fraseClassificada[j]
-                    fraseClassificada[j] = aux
-                }
-            }
-            i++
-        }
-        
-        if self.fraseClassificada.count == 3
+        if self.fraseClassificada.count >= 3
         {
-            // Chama a classe que trata o sujeito.
-            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+            var i = 0
+            var j = 0
+            var aux : Word
             
-            // Chama a classe que trata o Verbo.
-            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 0)
+            //ORDENA AS PALAVRAS NA ORDEM DIGITADA
             
-            // Chama a classe que trata o complemento
-            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+            for orgWord in fraseOrganizada
+            {
+                for desorgWord in fraseClassificada
+                {
+                    if orgWord == desorgWord.text
+                    {
+                        aux = fraseClassificada[i]
+                        fraseClassificada[i] = fraseClassificada[j]
+                        fraseClassificada[j] = aux
+                    }
+                    j++
+                }
+                j = 0
+                i++
+            }
             
-            print("Presente ================================")
-            print(sujeitoClassificado)
-            print(verboClassificado)
-            print(complementoClassificado)
-            print("================================")
+            let count = 3
             
-            // Feito para juntar as palavras em uma String e colocar na tela.
-            metodoJuntaPalavra(sujeitoClassificado)
-            metodoJuntaPalavra(verboClassificado)
-            metodoJuntaPalavra(complementoClassificado)
+            while count < fraseClassificada.count
+            {
+                fraseClassificada.removeAtIndex(count)
+            }
             
-            frases.append(sujeitoClassificado)
-            frases.append(verboClassificado)
-            frases.append(complementoClassificado)
-            
-            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
-            
-            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
-            
-            dicty.setValue(self.juntaPalavras, forKey: "Presente")
-            
-            //------------------> FRASE NO PASSADO <-------------------
-            
-            juntaPalavras.removeAll()
-            
-            // Chama a classe que trata o sujeito.
-            self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
-            
-            // Chama a classe que trata o Verbo.
-            self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
-            
-            // Chama a classe que trata o complemento
-            self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
-            
-            print("Passado ================================")
-            print(sujeitoClassificado)
-            print(verboClassificado)
-            print(complementoClassificado)
-            print("================================")
-            
-            // Feito para juntar as palavras em uma String e colocar na tela.
-            metodoJuntaPalavra(sujeitoClassificado)
-            metodoJuntaPalavra(verboClassificado)
-            print(verboClassificado)
-            metodoJuntaPalavra(complementoClassificado)
-            
-            frases.append(sujeitoClassificado)
-            frases.append(verboClassificado)
-            frases.append(complementoClassificado)
-            
-            /**********    COLOCA EM LETRA MAÍUSCULA   **********/
-            
-            juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
-            
-            dicty.setValue(juntaPalavras, forKey: "Passado")
+            if fraseClassificada[2].text == "ontem"
+            {
+                //------------------> FRASE NO PASSADO <-------------------
+                
+                juntaPalavras.removeAll()
+                
+                // Chama a classe que trata o sujeito.
+                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                
+                // Chama a classe que trata o Verbo.
+                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
+                
+                // Chama a classe que trata o complemento
+                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                
+                // Feito para juntar as palavras em uma String e colocar na tela.
+                metodoJuntaPalavra(sujeitoClassificado)
+                metodoJuntaPalavra(verboClassificado)
+                metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
+                /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+                
+                juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+                
+                dicty.setValue(juntaPalavras, forKey: "Passado")
+            }
+            else
+            {
+                //------------------> FRASE NO PRESENTE <-------------------
+                
+                juntaPalavras.removeAll()
+                
+                // Chama a classe que trata o sujeito.
+                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                
+                // Chama a classe que trata o Verbo.
+                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 0)
+                
+                // Chama a classe que trata o complemento
+                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                
+                // Feito para juntar as palavras em uma String e colocar na tela.
+                metodoJuntaPalavra(sujeitoClassificado)
+                metodoJuntaPalavra(verboClassificado)
+                metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
+                /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+                
+                juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+                
+                dicty.setValue(self.juntaPalavras, forKey: "Presente")
+                
+                //------------------> FRASE NO PASSADO <-------------------
+                
+                juntaPalavras.removeAll()
+                
+                // Chama a classe que trata o sujeito.
+                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                
+                // Chama a classe que trata o Verbo.
+                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 1)
+                
+                // Chama a classe que trata o complemento
+                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                
+                // Feito para juntar as palavras em uma String e colocar na tela.
+                metodoJuntaPalavra(sujeitoClassificado)
+                metodoJuntaPalavra(verboClassificado)
+                metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
+                /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+                
+                juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+                
+                dicty.setValue(juntaPalavras, forKey: "Passado")
+                
+                //------------------> FRASE NO FUTURO <-------------------
+                
+                juntaPalavras.removeAll()
+                
+                // Chama a classe que trata o sujeito.
+                self.sujeitoClassificado = sujeito.tratarSujeito(fraseClassificada)
+                
+                // Chama a classe que trata o Verbo.
+                self.verboClassificado = verbo.tratarVerbo(fraseClassificada, tempo: 2)
+                
+                // Chama a classe que trata o complemento
+                self.complementoClassificado = complemento.tratarComplemento(fraseClassificada, preposicao: verboClassificado[1])
+                
+                // Feito para juntar as palavras em uma String e colocar na tela.
+                metodoJuntaPalavra(sujeitoClassificado)
+                metodoJuntaPalavra(verboClassificado)
+                metodoJuntaPalavra(complementoClassificado)
+                
+                frases.append(sujeitoClassificado)
+                frases.append(verboClassificado)
+                frases.append(complementoClassificado)
+                
+                /**********    COLOCA EM LETRA MAÍUSCULA   **********/
+                
+                juntaPalavras.replaceRange(juntaPalavras.startIndex...juntaPalavras.startIndex, with: String(juntaPalavras[juntaPalavras.startIndex]).capitalizedString)
+                
+                dicty.setValue(juntaPalavras, forKey: "Futuro")
+            }
             
             //Retorna Dicionário
             self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
@@ -135,6 +202,7 @@ class CallTranslation: NSObject {
         {
             dicty.setValue(text, forKey: "Presente")
             dicty.setValue(text, forKey: "Passado")
+            dicty.setValue(text, forKey: "Futuro")
             
             self.translationDelegate?.traducaoSucesso(dicty, frases: frases)
         }

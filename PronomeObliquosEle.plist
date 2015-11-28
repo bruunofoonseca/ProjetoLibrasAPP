@@ -112,5 +112,60 @@
 		<key>elas</key>
 		<string>delas</string>
 	</dict>
+	<key>apanhar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>chover</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
+	<key>confiar</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
+	<key>desviar</key>
+	<dict>
+		<key>ele</key>
+		<string>dele</string>
+		<key>eles</key>
+		<string>deles</string>
+		<key>ela</key>
+		<string>dela</string>
+		<key>elas</key>
+		<string>delas</string>
+	</dict>
+	<key>investir</key>
+	<dict>
+		<key>ele</key>
+		<string>nele</string>
+		<key>eles</key>
+		<string>neles</string>
+		<key>ela</key>
+		<string>nela</string>
+		<key>elas</key>
+		<string>nelas</string>
+	</dict>
 </dict>
 </plist>

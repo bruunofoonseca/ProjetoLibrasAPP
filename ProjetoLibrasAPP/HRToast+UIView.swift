@@ -11,7 +11,7 @@ import UIKit
 /*
 *  Infix overload method
 */
- func /(lhs: CGFloat, rhs: Int) -> CGFloat {
+func /(lhs: CGFloat, rhs: Int) -> CGFloat {
     return lhs / CGFloat(rhs)
 }
 
@@ -132,7 +132,7 @@ extension UIView {
     func makeToastActivity() {
         self.makeToastActivity(position: HRToastActivityPositionDefault)
     }
-
+    
     func makeToastActivityWithMessage(message msg: String){
         self.makeToastActivity(position: HRToastActivityPositionDefault, message: msg)
     }
@@ -169,7 +169,7 @@ extension UIView {
             activityMessageLabel.text = msg
             activityView.addSubview(activityMessageLabel)
         }
-
+        
         self.addSubview(activityView)
         
         // associate activity view with self
@@ -251,7 +251,7 @@ extension UIView {
             return position.CGPointValue
         }
         
-        print("Warning: Invalid position for toast.")
+        debugPrint("Warning: Invalid position for toast.")
         return self.centerPointForPosition(HRToastPositionDefault, toast: toast)
     }
     
